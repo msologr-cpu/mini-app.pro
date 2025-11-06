@@ -14,23 +14,64 @@ docReady(() => {
 
   const toggle = document.querySelector('[data-mobile-toggle]');
   const menu = document.querySelector('[data-mobile-menu]');
+  const overlay = document.querySelector('[data-mobile-overlay]');
+  const closeControl = document.querySelector('[data-mobile-close]');
+
   if (toggle && menu) {
-    toggle.addEventListener('click', () => {
+    const closeMenu = () => {
+      menu.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('mobile-menu-open');
+      if (overlay) {
+        overlay.setAttribute('hidden', '');
+      }
+    };
+
+    const openMenu = () => {
+      menu.removeAttribute('hidden');
+      if (overlay) {
+        overlay.removeAttribute('hidden');
+      }
+      window.requestAnimationFrame(() => {
+        menu.classList.add('is-open');
+      });
+      toggle.setAttribute('aria-expanded', 'true');
+      document.body.classList.add('mobile-menu-open');
+    };
+
+    const toggleMenu = () => {
       const isHidden = menu.hasAttribute('hidden');
       if (isHidden) {
-        menu.removeAttribute('hidden');
-        toggle.setAttribute('aria-expanded', 'true');
+        openMenu();
       } else {
+        closeMenu();
+      }
+    };
+
+    toggle.addEventListener('click', toggleMenu);
+
+    menu.addEventListener('transitionend', (event) => {
+      if (event.propertyName === 'transform' && !menu.classList.contains('is-open')) {
         menu.setAttribute('hidden', '');
-        toggle.setAttribute('aria-expanded', 'false');
       }
     });
 
+    if (overlay) {
+      overlay.addEventListener('click', closeMenu);
+    }
+
+    if (closeControl) {
+      closeControl.addEventListener('click', closeMenu);
+    }
+
     menu.querySelectorAll('a[href^="#"]').forEach((link) => {
-      link.addEventListener('click', () => {
-        menu.setAttribute('hidden', '');
-        toggle.setAttribute('aria-expanded', 'false');
-      });
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !menu.hasAttribute('hidden')) {
+        closeMenu();
+      }
     });
   }
 
