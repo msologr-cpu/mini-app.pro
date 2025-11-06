@@ -1,0 +1,37 @@
+[
+  {
+    "id": "intro",
+    "topic": "What is a Mini App",
+    "text": "Мини-приложение Telegram — это легкий веб-сервис, запускающийся в режиме Web App без установки; mini app runs inside Telegram, giving instant access to ordering, booking, surveys and games without consuming device storage."
+  },
+  {
+    "id": "api",
+    "topic": "Telegram API integration",
+    "text": "Mini apps rely on Telegram API for bot dialogs, payments, user authorisation and notifications; builders connect HTML, CSS, JavaScript interfaces to official API endpoints to sync data securely."
+  },
+  {
+    "id": "nocode",
+    "topic": "No-code creation workflow",
+    "text": "Процесс создания включает выбор конструктора (Tars, ManyChat, Chatfuel, Landbot), настройку интерфейса, подключение Telegram API, тестирование на устройствах и запуск с последующей оптимизацией."
+  },
+  {
+    "id": "benefits",
+    "topic": "Mini App advantages",
+    "text": "Mini apps удобны для бизнеса и пользователей: продажи и сервис в одном окне Telegram, автоматизация поддержки, интеграция с CRM и платежами, мгновенные обновления без магазинов приложений."
+  },
+  {
+    "id": "examples",
+    "topic": "Mini App use cases",
+    "text": "Примеры внедрения: e-commerce магазины, сервисы бронирования ресторанов и салонов, игры и квизы, коворкинги с лояльностью, клубы и сообщества с онбордингом и геймификацией."
+  },
+  {
+    "id": "future",
+    "topic": "Future trends",
+    "text": "Будущие тренды: автоматизация продаж и поддержки, экосистемы умных городов, персонализированные образовательные платформы, глубокая геймификация и интеграция с голосовыми ассистентами."
+  },
+  {
+    "id": "cta",
+    "topic": "Unitee.Space CTA",
+    "text": "Unitee.Space приглашает создать Mini App без кода, подключить Telegram API и быстро запустить клиентский опыт."
+  }
+]

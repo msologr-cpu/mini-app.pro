@@ -1,0 +1,6 @@
+# Ensure binary assets retain their original encoding and are not subject to line ending conversions
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
