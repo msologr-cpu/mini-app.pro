@@ -25,6 +25,9 @@ docReady(() => {
       if (overlay) {
         overlay.setAttribute('hidden', '');
       }
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        menu.setAttribute('hidden', '');
+      }
     };
 
     const openMenu = () => {

@@ -1,0 +1,20 @@
+<svg width="560" height="420" viewBox="0 0 560 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-future" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef2ff" />
+      <stop offset="1" stop-color="#e0f2fe" />
+    </linearGradient>
+  </defs>
+  <rect width="560" height="420" rx="40" fill="url(#bg-future)" />
+  <rect x="88" y="76" width="384" height="268" rx="28" fill="#fff" opacity="0.97" />
+  <rect x="120" y="116" width="320" height="36" rx="18" fill="#2563eb" opacity="0.16" />
+  <rect x="120" y="168" width="320" height="148" rx="22" fill="#f8fafc" />
+  <rect x="152" y="192" width="256" height="24" rx="12" fill="#bfdbfe" />
+  <rect x="152" y="228" width="208" height="12" rx="6" fill="#cbd5f5" />
+  <rect x="152" y="252" width="180" height="12" rx="6" fill="#dbeafe" />
+  <path d="M336 250c0-22 18-40 40-40s40 18 40 40-18 40-40 40-40-18-40-40z" fill="#2563eb" opacity="0.1" />
+  <path d="M352 250l18 18 30-38" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="196" y="324" width="168" height="12" rx="6" fill="#cbd5f5" />
+  <circle cx="112" cy="104" r="24" fill="#93c5fd" opacity="0.3" />
+  <circle cx="456" cy="320" r="30" fill="#2563eb" opacity="0.18" />
+</svg>
