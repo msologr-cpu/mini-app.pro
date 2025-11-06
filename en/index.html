@@ -70,44 +70,62 @@
   <body class="bg-white text-slate-900 antialiased">
     <!-- TODO: Place analytics snippet (Google Analytics / Yandex Metrica / OpenAI Embedding) here -->
     <div class="min-h-screen flex flex-col">
-      <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <header class="site-header sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between nav-shell">
           <a href="#intro" class="flex items-center gap-2 font-semibold text-slate-900 tracking-tight">
             <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-indigo-400 to-blue-800 text-white shadow-md shadow-indigo-200/70">μ</span>
             <span class="text-lg">mini-app.pro</span>
           </a>
+          <nav class="hidden lg:flex primary-nav text-sm font-medium text-slate-600" aria-label="Primary menu">
+            <span class="nav-label">Sections</span>
+            <a href="#intro" class="nav-link">Overview</a>
+            <a href="#work" class="nav-link">How it works</a>
+            <a href="#benefits" class="nav-link">Benefits</a>
+            <a href="#examples" class="nav-link">Examples</a>
+            <a href="#future" class="nav-link">Future</a>
+            <a href="#cta" class="nav-link">Contact</a>
+          </nav>
+          <div class="hidden lg:flex items-center gap-4">
+            <a href="#cta" class="nav-action">Book a consultation</a>
+            <a href="../" class="nav-language">EN ↔ RU</a>
+          </div>
           <button
             type="button"
-            class="lg:hidden inline-flex items-center justify-center rounded-full border border-slate-200 bg-white p-2 text-slate-600 shadow-sm transition hover:border-indigo-300 hover:text-indigo-600"
+            class="hamburger lg:hidden"
             aria-label="Open menu"
+            aria-expanded="false"
             data-mobile-toggle
           >
-            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
+            <span class="sr-only">Menu</span>
           </button>
-          <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600">
-            <a href="#intro" class="nav-link">What is it</a>
-            <a href="#work" class="nav-link">How it works</a>
-            <a href="#benefits" class="nav-link">Benefits</a>
-            <a href="#examples" class="nav-link">Examples</a>
-            <a href="#future" class="nav-link">Future</a>
-            <a
-              href="../"
-              class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-700 shadow-sm transition hover:border-indigo-400 hover:text-indigo-600"
-            >
-              EN ↔ RU
-            </a>
-          </nav>
         </div>
-        <div class="lg:hidden" data-mobile-menu hidden>
-          <div class="px-6 pb-6 flex flex-col gap-4 text-sm font-medium text-slate-700 bg-white shadow-lg">
-            <a href="#intro" class="nav-link">What is it</a>
-            <a href="#work" class="nav-link">How it works</a>
-            <a href="#benefits" class="nav-link">Benefits</a>
-            <a href="#examples" class="nav-link">Examples</a>
-            <a href="#future" class="nav-link">Future</a>
-            <a href="../" class="nav-link uppercase tracking-[0.2em]">EN ↔ RU</a>
+        <div class="mobile-menu-backdrop" data-mobile-overlay hidden></div>
+        <div class="mobile-menu-panel" data-mobile-menu hidden>
+          <div class="mobile-menu-header">
+            <span class="font-semibold text-slate-900 tracking-tight">Explore</span>
+            <button type="button" class="mobile-close" aria-label="Close menu" data-mobile-close>Close ✕</button>
+          </div>
+          <div class="mobile-menu-body">
+            <nav aria-label="Mobile menu">
+              <a href="#intro" class="nav-link">Overview</a>
+              <a href="#work" class="nav-link">How it works</a>
+              <a href="#benefits" class="nav-link">Benefits</a>
+              <a href="#examples" class="nav-link">Examples</a>
+              <a href="#future" class="nav-link">Future</a>
+              <a href="#cta" class="nav-link">Contact</a>
+            </nav>
+            <a href="#cta" class="nav-action w-full justify-center">Book a consultation</a>
+            <a href="../" class="nav-language w-full justify-center">EN ↔ RU</a>
+          </div>
+          <div class="mobile-menu-footer">
+            <p>Launch your Telegram Mini App faster with the Unitee.Space builder.</p>
+            <a href="https://unitee.space" class="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600" target="_blank" rel="noopener">
+              Visit Unitee.Space
+              <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </div>
       </header>
@@ -373,29 +391,77 @@
             <p class="text-lg text-slate-600">In short, Telegram mini apps help companies elevate service quality, boost loyalty and minimise development and maintenance costs.</p>
           </div>
         </section>
-        <section data-topic="CTA" class="py-20 bg-slate-900" data-animate>
-          <div class="max-w-4xl mx-auto px-6 text-center text-white space-y-6">
-            <h2 class="text-3xl font-semibold">Launch your Mini App faster with Unitee.Space</h2>
-            <p class="text-lg text-slate-200">Visit the platform to deploy a fully-featured mini app, connect the Telegram API and craft a delightful digital experience for your audience.</p>
-            <a
-              href="https://unitee.space"
-              class="inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-indigo-400 to-blue-800 px-8 py-3 text-base font-semibold shadow-xl shadow-indigo-500/40 transition hover:scale-[1.02]"
-              target="_blank"
-              rel="noopener"
-            >
-              Build a Mini App on Unitee.Space
-              <span aria-hidden="true" class="text-xl">↗</span>
-            </a>
+        <section id="cta" data-topic="CTA" class="section-block section-cta" data-animate>
+          <div class="max-w-4xl mx-auto px-6">
+            <div class="surface-card cta-card text-center space-y-6">
+              <h2 class="text-3xl font-semibold text-white text-balance">Launch your Mini App faster with Unitee.Space</h2>
+              <p class="text-lg text-slate-200 leading-relaxed text-balance">Visit the platform to deploy a fully featured mini app, connect the Telegram API and deliver a polished digital experience for your audience.</p>
+              <a
+                href="https://unitee.space"
+                class="inline-flex items-center justify-center gap-3 rounded-full bg-white/10 px-8 py-3 text-base font-semibold text-white shadow-lg shadow-sky-500/20 ring-1 ring-white/20 transition hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                target="_blank"
+                rel="noopener"
+              >
+                Build a Mini App on Unitee.Space
+                <span aria-hidden="true" class="text-xl">↗</span>
+              </a>
+            </div>
           </div>
         </section>
       </main>
-      <footer class="bg-white border-t border-slate-100">
-        <div class="max-w-6xl mx-auto px-6 py-8 text-sm text-slate-500 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-          <p>© <span id="current-year"></span> mini-app.pro — Telegram mini apps, no code required.</p>
-          <p class="flex items-center gap-2">
-            <span class="h-2 w-2 rounded-full bg-gradient-to-r from-indigo-400 to-blue-700"></span>
-            Crafted for SEO and LLM-friendly indexing.
-          </p>
+      <footer class="site-footer">
+        <div class="max-w-7xl mx-auto px-6 py-16">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <a href="#intro" class="flex items-center gap-2 font-semibold text-slate-900 tracking-tight">
+                <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-indigo-400 to-blue-800 text-white shadow-md shadow-indigo-200/70">μ</span>
+                <span class="text-base">mini-app.pro</span>
+              </a>
+              <p>
+                Your source for Telegram Mini App insights, tutorials and tooling that help launch conversational web experiences without code.
+              </p>
+            </div>
+            <div>
+              <h3 class="footer-heading">Explore</h3>
+              <div class="footer-links">
+                <a href="#intro">Overview</a>
+                <a href="#work">How it works</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#examples">Examples</a>
+                <a href="#future">Future</a>
+                <a href="#cta">Contact</a>
+              </div>
+            </div>
+            <div>
+              <h3 class="footer-heading">Resources</h3>
+              <div class="footer-links">
+                <a href="https://core.telegram.org/bots/webapps" target="_blank" rel="noopener">Telegram Web Apps docs</a>
+                <a href="https://core.telegram.org/bots/api" target="_blank" rel="noopener">Telegram Bot API</a>
+                <a href="https://unitee.space" target="_blank" rel="noopener">Unitee.Space builder</a>
+              </div>
+            </div>
+            <div>
+              <h3 class="footer-heading">Contact</h3>
+              <div class="footer-links">
+                <a href="#cta">Book a consultation</a>
+                <a href="https://unitee.space" target="_blank" rel="noopener">Unitee.Space website</a>
+                <a href="https://www.linkedin.com/company/unitee-space/" target="_blank" rel="noopener">LinkedIn Unitee.Space</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-meta">
+            <div class="meta-row">
+              <p>© <span id="current-year"></span> mini-app.pro. All rights reserved.</p>
+              <a href="../" class="nav-language">EN ↔ RU</a>
+            </div>
+            <div class="meta-row">
+              <p>Crafted with attention to SEO, UX and LLM discoverability.</p>
+              <a href="https://unitee.space" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600">
+                Built by Unitee.Space
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
