@@ -1,0 +1,23 @@
+<svg width="560" height="420" viewBox="0 0 560 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-city" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eff6ff" />
+      <stop offset="1" stop-color="#e0f2fe" />
+    </linearGradient>
+  </defs>
+  <rect width="560" height="420" rx="40" fill="url(#bg-city)" />
+  <rect x="96" y="80" width="368" height="260" rx="28" fill="#fff" opacity="0.97" />
+  <rect x="132" y="122" width="296" height="36" rx="18" fill="#bfdbfe" opacity="0.6" />
+  <g fill="#2563eb" opacity="0.12">
+    <rect x="152" y="188" width="40" height="108" rx="12" />
+    <rect x="204" y="176" width="48" height="120" rx="12" />
+    <rect x="268" y="200" width="52" height="96" rx="12" />
+    <rect x="336" y="168" width="48" height="128" rx="12" />
+    <rect x="400" y="196" width="40" height="100" rx="12" />
+  </g>
+  <rect x="152" y="312" width="240" height="12" rx="6" fill="#cbd5f5" />
+  <path d="M180 212h16v40h-16zM236 196h16v56h-16zM300 220h16v32h-16zM368 188h16v64h-16zM420 224h16v28h-16z" fill="#1d4ed8" opacity="0.6" />
+  <path d="M164 262h304" stroke="#bae6fd" stroke-width="6" stroke-linecap="round" />
+  <circle cx="120" cy="108" r="22" fill="#93c5fd" opacity="0.25" />
+  <circle cx="452" cy="320" r="28" fill="#2563eb" opacity="0.18" />
+</svg>

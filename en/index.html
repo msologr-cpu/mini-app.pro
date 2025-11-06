@@ -94,16 +94,17 @@
             class="hamburger lg:hidden"
             aria-label="Open menu"
             aria-expanded="false"
+            aria-controls="mobile-menu"
             data-mobile-toggle
           >
             <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-            <span class="sr-only">Menu</span>
+            <span class="hamburger-label">Menu</span>
           </button>
         </div>
         <div class="mobile-menu-backdrop" data-mobile-overlay hidden></div>
-        <div class="mobile-menu-panel" data-mobile-menu hidden>
+        <div class="mobile-menu-panel" id="mobile-menu" data-mobile-menu hidden>
           <div class="mobile-menu-header">
             <span class="font-semibold text-slate-900 tracking-tight">Explore</span>
             <button type="button" class="mobile-close" aria-label="Close menu" data-mobile-close>Close ✕</button>
@@ -149,9 +150,9 @@
             </div>
             <div class="relative">
               <img
-                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-                alt="Telegram mini apps mark a new era of web technology"
-                class="w-full rounded-3xl border border-white/40 shadow-2xl shadow-indigo-200/60 object-cover"
+                src="../assets/images/hero-illustration.svg"
+                alt="Telegram mini app interface illustration"
+                class="illustration"
                 loading="lazy"
               />
             </div>
@@ -194,21 +195,21 @@
             </div>
             <div class="grid gap-8">
               <img
-                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-                alt="Admin panel of a Telegram mini app powered by Unitee"
-                class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+                src="../assets/images/creation-builder.svg"
+                alt="Mini App builder admin dashboard interface"
+                class="illustration"
                 loading="lazy"
               />
               <img
-                src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IC4AAACwAgCdASoIAAgAAkA0JaQAA3AA/v89WAAAAA=="
-                alt="Share Telegram mini apps and TON payments"
-                class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+                src="../assets/images/creation-distribution.svg"
+                alt="Sharing Telegram Mini Apps and launch campaigns"
+                class="illustration"
                 loading="lazy"
               />
               <img
-                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-                alt="Telegram mini apps are web applications"
-                class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+                src="../assets/images/creation-payments.svg"
+                alt="Configuring payments and features for a Mini App"
+                class="illustration"
                 loading="lazy"
               />
             </div>
@@ -218,17 +219,17 @@
           <div class="max-w-6xl mx-auto px-6 space-y-8">
             <h2 class="text-3xl font-semibold text-slate-900">Benefits and opportunities of Telegram mini apps</h2>
             <img
-              src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IC4AAACwAgCdASoIAAgAAkA0JaQAA3AA/v89WAAAAA=="
-              alt="Telegram platform represents the cutting edge of web technology"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="../assets/images/benefits-overview.svg"
+              alt="Key advantages of Telegram Mini Apps"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">Telegram mini apps are becoming a powerful business instrument because they offer fast and convenient access to services. Companies can interact with customers without building complex mobile apps or separate websites. </p>
             <h3 class="text-2xl font-semibold text-slate-900"><strong>How mini apps support business growth</strong></h3>
             <img
-              src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IC4AAACwAgCdASoIAAgAAkA0JaQAA3AA/v89WAAAAA=="
-              alt="Telegram keeps scaling after launch"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="../assets/images/benefits-integration.svg"
+              alt="Integrations between Mini Apps, bots and services"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">Mini apps are more than a website or a mobile alternative — they form an ecosystem that helps increase sales, automate processes and improve client communication. With their intuitive interfaces and <strong>Telegram API</strong> integration, companies leverage mini apps for:</p>
@@ -251,9 +252,9 @@
             <p class="text-lg text-slate-600">Mini apps also deliver an <strong>intuitive interface</strong> because they build upon familiar chatbot experiences. That matters for audiences that value <strong>simplicity and speed</strong>.</p>
             <h3 class="text-2xl font-semibold text-slate-900"><strong>Integrations with Telegram bots and external services</strong></h3>
             <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAn8B9eqlAU0AAAAASUVORK5CYII="
-              alt="Unitee is a builder for newcomers and experienced developers"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="../assets/images/benefits-integration.svg"
+              alt="Unitee.Space Mini App builder with integrations"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">One of the strongest points of mini apps is deep collaboration with <strong>Telegram bots</strong>. Bots automate processes such as:</p>
@@ -285,9 +286,9 @@
           <div class="max-w-6xl mx-auto px-6 space-y-8">
             <h2 class="text-3xl font-semibold text-slate-900"><strong>Successful Telegram mini app examples</strong></h2>
             <img
-              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-              alt="300,000 users already inside Unitee apps"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="../assets/images/examples-showcase.svg"
+              alt="Example Telegram Mini Apps for business"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">Telegram mini apps serve many industries: commerce, education, urban services and communities. Here are a few scenarios that show how companies use them to automate workflows, increase engagement and elevate customer experience.</p>
@@ -337,25 +338,25 @@
           <div class="max-w-6xl mx-auto px-6 space-y-8">
             <h2 class="text-3xl font-semibold text-slate-900"><strong>The future of Telegram mini apps</strong></h2>
             <img
-              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-              alt="Build apps for every OS without traditional developers"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="../assets/images/future-outlook.svg"
+              alt="Future roadmap for Telegram Mini Apps"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">Mini apps keep gaining traction thanks to seamless messenger integration, ease of use and wide business opportunities. Several trends will shape the next chapter.</p>
             <h3 class="text-2xl font-semibold text-slate-900"><strong>Business process automation</strong></h3>
             <img
-              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-              alt="No-code admin mode feels like a familiar CRM"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="../assets/images/future-automation.svg"
+              alt="Automating processes with Telegram Mini Apps"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">More companies choose mini apps to automate customer operations: online sales, booking systems, subscriber management and support. Restaurants already handle orders this way, and coworkings automate desk rentals without administrators. Voice assistant integrations are on the horizon, which will make interactions even more natural.</p>
             <h3 class="text-2xl font-semibold text-slate-900"><strong>Smart city ecosystems</strong></h3>
             <img
-              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-              alt="Add a Telegram icon to the phone home screen in seconds"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="../assets/images/future-smart-city.svg"
+              alt="Smart city services delivered through Mini Apps"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">Cities will embrace mini apps to improve quality of life. Such services help citizens:</p>
@@ -368,17 +369,17 @@
             <p class="text-lg text-slate-600">As smart cities evolve, Telegram mini apps will become a core layer that connects residents with services.</p>
             <h3 class="text-2xl font-semibold text-slate-900"><strong>Interactive learning platforms</strong></h3>
             <img
-              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-              alt="Your team or community can learn inside a Telegram mini app"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="../assets/images/future-education.svg"
+              alt="Learning experiences inside Telegram Mini Apps"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">Education is another domain where mini apps will thrive. They already power online courses, assessments and professional training. Future-ready platforms will adapt to each learner and deliver personalised programmes. Expect more gamified education with competitions, leaderboards, rewards and interactive lessons.</p>
             <h3 class="text-2xl font-semibold text-slate-900"><strong>Gamification and engagement</strong></h3>
             <img
-              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-              alt="Gamification inside a Telegram app"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="../assets/images/future-gamification.svg"
+              alt="Gamification and loyalty mechanics in Mini Apps"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">Telegram invests into gamified experiences, giving businesses new ways to create interactive mini apps. With bots and builders, teams can introduce loyalty programmes with points, competitions, quests and referral systems. These elements lift engagement, drive participation and increase time spent in the app.</p>
@@ -453,13 +454,6 @@
             <div class="meta-row">
               <p>© <span id="current-year"></span> mini-app.pro. All rights reserved.</p>
               <a href="../" class="nav-language">EN ↔ RU</a>
-            </div>
-            <div class="meta-row">
-              <p>Crafted with attention to SEO, UX and LLM discoverability.</p>
-              <a href="https://unitee.space" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600">
-                Built by Unitee.Space
-                <span aria-hidden="true">↗</span>
-              </a>
             </div>
           </div>
         </div>

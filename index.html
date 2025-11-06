@@ -94,16 +94,17 @@
             class="hamburger lg:hidden"
             aria-label="Открыть меню"
             aria-expanded="false"
+            aria-controls="mobile-menu"
             data-mobile-toggle
           >
             <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-            <span class="sr-only">Меню</span>
+            <span class="hamburger-label">Меню</span>
           </button>
         </div>
         <div class="mobile-menu-backdrop" data-mobile-overlay hidden></div>
-        <div class="mobile-menu-panel" data-mobile-menu hidden>
+        <div class="mobile-menu-panel" id="mobile-menu" data-mobile-menu hidden>
           <div class="mobile-menu-header">
             <span class="font-semibold text-slate-900 tracking-tight">Навигация</span>
             <button type="button" class="mobile-close" aria-label="Закрыть меню" data-mobile-close>Закрыть ✕</button>
@@ -149,9 +150,9 @@
               </div>
               <div class="relative">
                 <img
-                  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-                  alt="Телеграм миниап - это новая эра веб технологий"
-                  class="w-full rounded-3xl border border-white/40 shadow-2xl shadow-indigo-200/60 object-cover"
+                  src="assets/images/hero-illustration.svg"
+                  alt="Телеграм миниап — визуализация интерфейса Mini App"
+                  class="illustration"
                   loading="lazy"
                 />
               </div>
@@ -200,21 +201,21 @@
               </div>
               <div class="grid gap-8">
               <img
-                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-                alt="Админ панель Telegram mini apps на базе Юнити"
-                class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+                src="assets/images/creation-builder.svg"
+                alt="Админ-панель конструктора Mini App"
+                class="illustration"
                 loading="lazy"
               />
               <img
-                src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IC4AAACwAgCdASoIAAgAAkA0JaQAA3AA/v89WAAAAA=="
-                alt="Делитесь мини приложениями в Телеграм и монетой ton"
-                class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+                src="assets/images/creation-distribution.svg"
+                alt="Распространение Telegram Mini Apps и запуск кампаний"
+                class="illustration"
                 loading="lazy"
               />
               <img
-                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-                alt="Telegram mini app - это веб приложения"
-                class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+                src="assets/images/creation-payments.svg"
+                alt="Настройка платежей и функциональности Mini App"
+                class="illustration"
                 loading="lazy"
               />
               </div>
@@ -226,17 +227,17 @@
             <div class="surface-card space-y-8">
             <h2 class="text-3xl font-semibold text-slate-900">Преимущества и возможности мини-приложений в Telegram mini apps</h2>
             <img
-              src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IC4AAACwAgCdASoIAAgAAkA0JaQAA3AA/v89WAAAAA=="
-              alt="Платформа Телеграм - вершина веб технологий"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="assets/images/benefits-overview.svg"
+              alt="Ключевые преимущества Telegram Mini Apps"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">Мини-приложения в Telegram становятся мощным инструментом для бизнеса, поскольку предлагают удобный и быстрый доступ к сервисам. Они позволяют компаниям взаимодействовать с клиентами без необходимости разработки сложных мобильных приложений или веб-сайтов. </p>
             <h3 class="text-2xl font-semibold text-slate-900"><strong>Как  Mini App помогают бизнесу</strong></h3>
             <img
-              src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IC4AAACwAgCdASoIAAgAAkA0JaQAA3AA/v89WAAAAA=="
-              alt="После запуска Телеграм не останавливал свой рост ни разу"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="assets/images/benefits-integration.svg"
+              alt="Интеграция Mini App с ботами и сервисами"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">Мини-приложения — это не веб-сайт и не просто альтернатива мобильным приложениям, а целая экосистема, которая позволяет бизнесу увеличивать продажи, автоматизировать процессы и улучшать взаимодействие с клиентами. Благодаря удобному интерфейсу и интеграции с <strong>Telegram API</strong>, компании могут использовать Mini Apps для:</p>
@@ -259,9 +260,9 @@
             <p class="text-lg text-slate-600">Кроме того, Mini Apps предлагают <strong>интуитивно понятный интерфейс</strong>, так как разработаны с учётом привычного опыта взаимодействия с ботами и чатами в Telegram. Это особенно важно для пользователей, которые ценят <strong>простоту и скорость</strong> в цифровых сервисах.</p>
             <h3 class="text-2xl font-semibold text-slate-900"><strong>Интеграция с Telegram-ботами и внешними сервисами</strong></h3>
             <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAn8B9eqlAU0AAAAASUVORK5CYII="
-              alt="Юнити - конструктор как для новичков, так и для опытных разработчиков"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="assets/images/benefits-integration.svg"
+              alt="Юнити.Space — конструктор Mini App с интеграциями"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">Одно из ключевых преимуществ мини-приложений — возможность взаимодействия с <strong>Telegram-ботами</strong>. Боты могут использоваться для автоматизации многих процессов, таких как:</p>
@@ -295,9 +296,9 @@
             <div class="surface-card space-y-8">
             <h2 class="text-3xl font-semibold text-slate-900"><strong>Примеры успешных мини-приложений в Telegram</strong></h2>
             <img
-              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-              alt="300000 пользователей уже в приложениях Юнити"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="assets/images/examples-showcase.svg"
+              alt="Примеры Telegram Mini Apps для бизнеса"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">Mini-app в Телеграм находят применение в самых разных сферах: от бизнеса и образования до городской инфраструктуры и экосистем для сообществ. Рассмотрим несколько примеров, котрые демонстрируют, как компании используют мини-приложения для автоматизации процессов, повышения вовлечённости пользователей и улучшения клиентского опыта.</p>
@@ -349,25 +350,25 @@
             <div class="surface-card space-y-8">
             <h2 class="text-3xl font-semibold text-slate-900"><strong>Будущее мини-приложений в Telegram и перспективы развития</strong></h2>
             <img
-              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-              alt="Создание приложений для любых операционных систем без разработчиков"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="assets/images/future-outlook.svg"
+              alt="Будущее развития Telegram Mini Apps"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">Мини-приложения в Telegram продолжают набирать популярность благодаря своей удобной интеграции с мессенджером, простоте использования и широким возможностям для бизнеса. В ближайшие годы их развитие будет определяться несколькими ключевыми трендами.</p>
             <h3 class="text-2xl font-semibold text-slate-900"><strong>Автоматизация бизнес-процессов</strong></h3>
             <img
-              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-              alt="Режим администрирования без кода - все как в обычной crm"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="assets/images/future-automation.svg"
+              alt="Автоматизация процессов с помощью Mini App"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">Все больше компаний обращают внимание на Mini Apps как инструмент для автоматизации работы с клиентами. Это касается онлайн-продаж, системы бронирования, работы с подписчиками и поддержки пользователей. Например, уже сейчас мини-приложения позволяют ресторанам управлять заказами, а коворкингам — автоматизировать аренду рабочих мест без участия администратора. Скоро можно ожидать интеграцию Mini Apps с голосовыми ассистентами, что упростит взаимодействие пользователей с сервисами внутри Telegram.</p>
             <h3 class="text-2xl font-semibold text-slate-900"><strong>Развитие экосистемы умных городов</strong></h3>
             <img
-              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-              alt="легко добавьте иконку на рабочий стол телефона"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="assets/images/future-smart-city.svg"
+              alt="Городские сервисы в Telegram Mini Apps"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">Города начнут активно внедрять Mini Apps для улучшения качества жизни жителей. Такие сервисы помогают:</p>
@@ -380,17 +381,17 @@
             <p class="text-lg text-slate-600">С ростом умных городов мини-приложения Telegram станут важной частью городской инфраструктуры, обеспечивая связь между жителями и сервисами.</p>
             <h3 class="text-2xl font-semibold text-slate-900"><strong>Интерактивные образовательные платформы</strong></h3>
             <img
-              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-              alt="в ТМА может обучаться ваша команда или ваша аудитория"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="assets/images/future-education.svg"
+              alt="Онлайн-обучение на базе Mini Apps"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">Образование — еще одна сфера, где Mini Apps будут активно развиваться. Уже сейчас они используются для онлайн-курсов, тестирования знаний и профессионального обучения. В будущем такие платформы смогут автоматически адаптироваться под уровень пользователя, предлагая персонализированные программы обучения. Дополнительно можно ожидать развитие образовательных мини-приложений с элементами геймификации: соревнования, рейтинги, награды за достижения, интерактивные уроки.</p>
             <h3 class="text-2xl font-semibold text-slate-900"><strong>Геймификация и вовлечение пользователей</strong></h3>
             <img
-              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
-              alt="геймификация в tg app"
-              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              src="assets/images/future-gamification.svg"
+              alt="Геймификация и программы лояльности в Mini Apps"
+              class="illustration"
               loading="lazy"
             />
             <p class="text-lg text-slate-600">Telegram активно развивает геймификацию, что открывает бизнесу новые возможности для создания интерактивных мини-приложений. С помощью Telegram-ботов и платформы для создания приложений, компании могут интегрировать игровые элементы, такие как программы лояльности с накоплением баллов, соревнования и квесты, а также геймифицированные реферальные системы. Эти функции помогают повысить вовлеченность пользователей, стимулируют активное участие и увеличивают время, проведенное в приложении.</p>
@@ -467,13 +468,6 @@
             <div class="meta-row">
               <p>© <span id="current-year"></span> mini-app.pro. Все права защищены.</p>
               <a href="en/" class="nav-language">RU ↔ EN</a>
-            </div>
-            <div class="meta-row">
-              <p>Сделано с вниманием к SEO, UX и LLM-индексации.</p>
-              <a href="https://unitee.space" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600">
-                Команда Unitee.Space
-                <span aria-hidden="true">↗</span>
-              </a>
             </div>
           </div>
         </div>
