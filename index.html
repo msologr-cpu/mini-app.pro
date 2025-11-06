@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mini Apps в Telegram — создание, примеры и будущее | mini-app.pro</title>
+    <meta
+      name="description"
+      content="Полный гид по Telegram Mini Apps: как работают мини-приложения, конструкторы без программирования, преимущества для бизнеса, реальные примеры и прогнозы развития."
+    />
+    <meta property="og:title" content="Mini Apps в Telegram — создание, примеры и будущее" />
+    <meta
+      property="og:description"
+      content="Узнайте, что такое Telegram Mini Apps, как быстро создать мини-приложение без кода, какие преимущества оно даёт бизнесу и какие перспективы ждут платформу."
+    />
+    <meta property="og:image" content="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y=" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="alternate" hreflang="ru" href="https://mini-app.pro/" />
+    <link rel="alternate" hreflang="en" href="https://mini-app.pro/en/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css"
+      integrity="sha384-6ygnPZXoqBYwygJyI072QtdgQXl3k5iADG7n2AFD+a83H8XTur2qxGn8pY/+bexd"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Mini Apps в Telegram — создание, примеры и будущее",
+        "url": "https://mini-app.pro/",
+        "inLanguage": "ru",
+        "isPartOf": {
+          "@type": "Organization",
+          "name": "mini-app.pro",
+          "url": "https://mini-app.pro/",
+          "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAn8B9eqlAU0AAAAASUVORK5CYII="
+        },
+        "primaryImageOfPage": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y=",
+        "description": "Руководство по Telegram Mini Apps с описанием работы, преимуществ, примеров внедрения и перспектив развития",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Unitee.Space",
+          "url": "https://unitee.space"
+        },
+        "about": [
+          {
+            "@type": "Thing",
+            "name": "Telegram Mini Apps"
+          },
+          {
+            "@type": "Thing",
+            "name": "No-code конструктор Mini Apps"
+          }
+        ],
+        "mainEntity": {
+          "@type": "Article",
+          "headline": "Что такое миниап и как создать его в Телеграм без програмирования?",
+          "articleBody": "Мини-приложения в Telegram — это небольшие, но функциональные веб-сервисы, которые запускаются прямо в самом мессенджере...",
+          "author": {
+            "@type": "Organization",
+            "name": "mini-app.pro"
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-white text-slate-900 antialiased">
+    <!-- TODO: Вставьте скрипт аналитики (Google Analytics / Yandex Metrica / OpenAI Embedding) здесь -->
+    <div class="min-h-screen flex flex-col">
+      <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          <a href="#intro" class="flex items-center gap-2 font-semibold text-slate-900 tracking-tight">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-indigo-400 to-blue-800 text-white shadow-md shadow-indigo-200/70">μ</span>
+            <span class="text-lg">mini-app.pro</span>
+          </a>
+          <button
+            type="button"
+            class="lg:hidden inline-flex items-center justify-center rounded-full border border-slate-200 bg-white p-2 text-slate-600 shadow-sm transition hover:border-indigo-300 hover:text-indigo-600"
+            aria-label="Открыть меню"
+            data-mobile-toggle
+          >
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+          <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600">
+            <a href="#intro" class="nav-link">Что такое</a>
+            <a href="#work" class="nav-link">Как работают</a>
+            <a href="#benefits" class="nav-link">Преимущества</a>
+            <a href="#examples" class="nav-link">Примеры</a>
+            <a href="#future" class="nav-link">Будущее</a>
+            <a
+              href="/en/"
+              class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-700 shadow-sm transition hover:border-indigo-400 hover:text-indigo-600"
+            >
+              RU ↔ EN
+            </a>
+          </nav>
+        </div>
+        <div class="lg:hidden" data-mobile-menu hidden>
+          <div class="px-6 pb-6 flex flex-col gap-4 text-sm font-medium text-slate-700 bg-white shadow-lg">
+            <a href="#intro" class="nav-link">Что такое</a>
+            <a href="#work" class="nav-link">Как работают</a>
+            <a href="#benefits" class="nav-link">Преимущества</a>
+            <a href="#examples" class="nav-link">Примеры</a>
+            <a href="#future" class="nav-link">Будущее</a>
+            <a href="/en/" class="nav-link uppercase tracking-[0.2em]">RU ↔ EN</a>
+          </div>
+        </div>
+      </header>
+      <main class="flex-1">
+        <section
+          id="intro"
+          data-topic="Что такое Telegram Mini App"
+          class="relative overflow-hidden bg-gradient-to-b from-indigo-50 via-white to-white"
+          data-animate
+        >
+          <div class="absolute inset-0 -z-10 opacity-70" aria-hidden="true">
+            <div class="parallax-gradient" data-parallax></div>
+          </div>
+          <div class="max-w-6xl mx-auto px-6 py-20 lg:py-28 grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
+            <div class="space-y-6">
+              <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
+                Что такое миниап и как создать его в Телеграм без програмирования?
+              </h1>
+              <p class="text-lg text-slate-600">Мини-приложения в Telegram — это небольшие, но функциональные веб-сервисы, которые запускаются прямо в самом мессенджере. Они позволяют пользователям взаимодействовать с различными сервисами, не выходя из Телеграм. Например, можно заказать еду, забронировать билет, пройти опрос или сыграть в игру — всё это без необходимости скачивать отдельное приложение. Мини-приложения работают через Telegram API внутри мессенджера и не требуют установки, что делает их удобными для быстрого доступа и использования.</p>
+              <p class="text-lg text-slate-600">Главное отличие мини-приложений от традиционных мобильных приложений заключается в том, что они не занимают места на устройстве пользователя и не требуют его установки. Всё, что нужно — это Telegram. Это огромный плюс как для клиентов, так и для бизнеса.  Разработать мини-апп для Телеграм можно с использованием простых конструкторов, что открывает доступ к созданию таких приложений даже тем, кто не имеет опыта в программировании. Всё, что нужно — это настроить интерфейс и подключить необходимые функции с помощью встроенных инструментов. Это делает мини-приложения доступными не только для крупных компаний, но и для малого и среднего бизнеса, а также индивидуальных предпринимателей.</p>
+            </div>
+            <div class="relative">
+              <img
+                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
+                alt="Телеграм миниап - это новая эра веб технологий"
+                class="w-full rounded-3xl border border-white/40 shadow-2xl shadow-indigo-200/60 object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </section>
+        <section id="work" data-topic="Как работают Mini Apps" class="py-20 bg-white" data-animate>
+          <div class="max-w-5xl mx-auto px-6 space-y-8">
+            <h2 class="text-3xl font-semibold text-slate-900">Как работают мини-приложения в Telegram?</h2>
+            <p class="text-lg text-slate-600">Мини-приложения в Telegram — это веб-сервисы, которые работают внутри мессенджера, используя Телеграм API для взаимодействия с пользователем и другими сервисами. Эти приложения запускаются в специальном режиме <strong>Web App</strong> и не требуют установки, что делает их удобными и доступными на любом устройстве с поддержкой Telegram.</p>
+            <p class="text-lg text-slate-600">Для создания мини-приложений используется веб-технологии — <strong>HTML, CSS, JavaScript</strong> — что позволяет разработать функциональный интерфейс, который будет правильно отображаться на всех экранах, включая мобильные устройства и десктопы. Главное преимущество мини-приложений в том, что они не требуют загрузки из магазина приложений, и пользователю достаточно просто перейти по ссылке или взаимодействовать с ботом в Telegram.</p>
+            <h3 class="text-2xl font-semibold text-slate-900">Конструкторы мини-приложений</h3>
+            <p class="text-lg text-slate-600">С помощью простых конструкторов мини-приожений можно создать сервис за несколько шагов, не имея опыта в программировании. Популярные платформы предлагают готовые шаблоны, которые можно адаптировать под свои нужды. В таких конструкторах интеграция с <strong>Telegram API</strong> уже реализована, и вам остаётся лишь настроить параметры приложения: от интерфейса до функций. Это значительно сокращает время и затраты на разработку.</p>
+            <p class="text-lg text-slate-600">Для работы с конструктором необходимо выбрать шаблон, настроить его внешний вид, добавить нужные формы или кнопки и подключить бота. После этого приложение будет готово для использования. Это делает создание мини-приложений доступным не только для крупных компаний, но и для малого и среднего бизнеса, а также для людей без технического фона.<strong> </strong></p>
+            <h3 class="text-2xl font-semibold text-slate-900"><strong>Взаимодействие с Telegram API</strong></h3>
+            <p class="text-lg text-slate-600">Telegram API играет ключевую роль в работе мини-приложений, так как оно позволяет создавать ботов, получать данные пользователей и интегрировать приложения с внешними сервисами. Например, Telegram Mini App для онлайн-магазина может использовать <strong>Telegram платежную систему</strong>, чтобы обрабатывать транзакции, или интегрировать API для получения актуальных данных, таких как погода или новости. Через Телеграм АПИ мини-приложения могут получать данные о пользователе (с его разрешения), такие как имя и аватар, а также отправлять уведомления прямо в чат.</p>
+            <p class="text-lg text-slate-600"><strong>Удобство и безопасность</strong></p>
+            <p class="text-lg text-slate-600">Telegram Mini App также отличаются высоким уровнем безопасности. Поскольку все данные остаются внутри экосистемы app Telegram, пользователи могут быть уверены, что их личная информация защищена. Кроме того, благодаря встроенной авторизации через <strong>Telegram аккаунт</strong>, процесс регистрации становится максимально простым — достаточно одного клика, чтобы войти в мини-приложение. </p>
+            <p class="text-lg text-slate-600">Простота использования и безопасность делают мини-приложения в Telegram отличным выбором для бизнеса, который хочет предложить своим клиентам удобный и быстрый доступ к сервисам. Уже сейчас мини-приложения активно используются для онлайн-торговли, различных сервисов и даже игр, и с каждым годом их популярность только растёт.</p>
+          </div>
+        </section>
+        <section id="build" data-topic="Создание Mini App без кода" class="py-20 bg-slate-50" data-animate>
+          <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.05fr_0.95fr] gap-12 items-center">
+            <div class="space-y-8">
+              <h2 class="text-3xl font-semibold text-slate-900"> Как создать мини-приложение для Telegram без программирования?</h2>
+              <p class="text-lg text-slate-600">Создание мини-приложений для Telegram не обязательно требует глубоких знаний в программировании. Современные платформы и конструкторы позволяют создать функциональные веб-приложения без необходимости писать код. Это открывает огромные возможности для бизнесов, стартапов и даже индивидуальных предпринимателей, которые хотят использовать Телеграм как канал для предоставления услуг и товаров. Давайте рассмотрим, как можно создать Mini App с использованием готовых инструментов через Telegram бота.</p>
+              <p class="text-lg text-slate-600"><strong>Шаг 1: Выбор конструктора для Telegram Mini Apps</strong></p>
+              <p class="text-lg text-slate-600">Первым шагом в процессе создания мини-приложения является выбор конструктора. На рынке существует несколько платформ, которые предлагают готовые шаблоны для создания таких приложений. Среди самых популярных можно выделить <strong>Tars</strong>, <strong>ManyChat</strong>, <strong>Chatfuel</strong> и <strong>Landbot</strong>. Эти инструменты позволяют настроить приложение через визуальный интерфейс без необходимости писать код. После выбора платформы нужно зарегистрироваться, а затем приступить к созданию проекта. Конструкторы предлагают удобные интерфейсы с перетаскиванием элементов, что значительно упрощает процесс создания.</p>
+              <p class="text-lg text-slate-600"><strong>Шаг 2: Настройка интерфейса и добавление функций</strong></p>
+              <p class="text-lg text-slate-600">Следующий шаг — настройка интерфейса приложения. В конструкторах мини-приложений обычно доступны шаблоны с готовыми блоками, такими как <strong>кнопки</strong>, <strong>формы для ввода данных</strong>, <strong>картинки</strong> и другие элементы. Эти элементы можно перетаскивать на рабочее поле и настраивать под свои нужды.</p>
+              <p class="text-lg text-slate-600">Важно продумать, какой функционал должен быть доступен пользователям. Это могут быть формы для регистрации, опросы, кнопки для покупки товаров, способы оплаты, интеграции с внешними сервисами и многое другое. Также не стоит забывать о дизайне: он должен быть простым, интуитивно понятным и адаптивным для разных устройств.</p>
+              <p class="text-lg text-slate-600"><strong>Шаг 3: Интеграция с Telegram API telegram mini apps</strong></p>
+              <p class="text-lg text-slate-600">Для того чтобы мини-приложение могло работать внутри Telegram, необходимо интегрировать его с <strong>Telegram API</strong>. Конструкторы обычно предлагают простые инструменты для подключения бота и настройки взаимодействия с пользователем. Например, в платформе <strong>ManyChat</strong> это делается через специальный раздел, в котором можно настроить ответы бота на действия пользователя, подключить систему уведомлений и многое другое.</p>
+              <p class="text-lg text-slate-600">После интеграции с Telegram API, пользователи смогут взаимодействовать с вашим мини-приложением напрямую через чат с ботом, получать ответы на запросы, совершать покупки или записываться на услуги.</p>
+              <p class="text-lg text-slate-600"><strong>Шаг 4: Тестирование и запуск приложения</strong></p>
+              <p class="text-lg text-slate-600">После того как интерфейс настроен, а все функции интегрированы, необходимо провести тестирование. Важно проверить, как работает мини-приложение на различных устройствах и в разных браузерах. Некоторые конструкторы предлагают встроенные инструменты для тестирования, позволяя разработчикам видеть, как приложение будет выглядеть и работать в реальных условиях.</p>
+              <p class="text-lg text-slate-600">Тестирование поможет убедиться, что приложение работает корректно, все формы и кнопки функционируют, а интерфейс отображается правильно. Также стоит проверить скорость работы мини-приложения — оно не должно тормозить, чтобы не разочаровать клиентов.</p>
+              <p class="text-lg text-slate-600"><strong>Шаг 5: Привлечение пользователей и оптимизация</strong></p>
+              <p class="text-lg text-slate-600">Когда мини-приложение готово и протестировано, можно запустить его для широкой аудитории. Telegram предоставляет несколько способов продвижения, включая создание специализированных каналов и ботов для рекламы Telegram Mini App, а также прямую интеграцию с другими сервисами и платформами.</p>
+              <p class="text-lg text-slate-600">Кроме того, важно следить за отзывами пользователей и оптимизировать приложение по мере необходимости. Например, можно добавить новые функции, улучшить интерфейс или расширить функциональность. Таким образом, создание Mini Apps для Telegram с помощью конструктора — это быстрый и доступный способ вывести свой бизнес на новый уровень, предоставив пользователям удобный доступ к вашим услугам.</p>
+            </div>
+            <div class="grid gap-8">
+              <img
+                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
+                alt="Админ панель Telegram mini apps на базе Юнити"
+                class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+                loading="lazy"
+              />
+              <img
+                src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IC4AAACwAgCdASoIAAgAAkA0JaQAA3AA/v89WAAAAA=="
+                alt="Делитесь мини приложениями в Телеграм и монетой ton"
+                class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+                loading="lazy"
+              />
+              <img
+                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
+                alt="Telegram mini app - это веб приложения"
+                class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </section>
+        <section id="benefits" data-topic="Преимущества Mini Apps" class="py-20 bg-white" data-animate>
+          <div class="max-w-6xl mx-auto px-6 space-y-8">
+            <h2 class="text-3xl font-semibold text-slate-900">Преимущества и возможности мини-приложений в Telegram mini apps</h2>
+            <img
+              src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IC4AAACwAgCdASoIAAgAAkA0JaQAA3AA/v89WAAAAA=="
+              alt="Платформа Телеграм - вершина веб технологий"
+              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              loading="lazy"
+            />
+            <p class="text-lg text-slate-600">Мини-приложения в Telegram становятся мощным инструментом для бизнеса, поскольку предлагают удобный и быстрый доступ к сервисам. Они позволяют компаниям взаимодействовать с клиентами без необходимости разработки сложных мобильных приложений или веб-сайтов. </p>
+            <h3 class="text-2xl font-semibold text-slate-900"><strong>Как  Mini App помогают бизнесу</strong></h3>
+            <img
+              src="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IC4AAACwAgCdASoIAAgAAkA0JaQAA3AA/v89WAAAAA=="
+              alt="После запуска Телеграм не останавливал свой рост ни разу"
+              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              loading="lazy"
+            />
+            <p class="text-lg text-slate-600">Мини-приложения — это не веб-сайт и не просто альтернатива мобильным приложениям, а целая экосистема, которая позволяет бизнесу увеличивать продажи, автоматизировать процессы и улучшать взаимодействие с клиентами. Благодаря удобному интерфейсу и интеграции с <strong>Telegram API</strong>, компании могут использовать Mini Apps для:</p>
+            <ul class="list-disc list-inside space-y-3 text-lg text-slate-600">
+              <li><p>Продажи товаров и услуг через Telegram.</p></li>
+              <li><p>Автоматизации клиентского сервиса.</p></li>
+              <li><p>Проведения опросов и сбора данных.</p></li>
+              <li><p>Организации системы лояльности и бонусных программ.</p></li>
+              <li><p>Интеграции с CRM-системами для обработки заказов.</p></li>
+            </ul>
+            <p class="text-lg text-slate-600">Главное преимущество заключается в том, что пользователям не нужно загружать дополнительные программы — всё работает внутри мессенджера, который уже установлен на их устройствах.</p>
+            <p class="text-lg text-slate-600"><strong>Удобство для пользователей</strong></p>
+            <p class="text-lg text-slate-600">Мини-приложения значительно упрощают взаимодействие с сервисами. В отличие от классических мобильных приложений, они:</p>
+            <ul class="list-disc list-inside space-y-3 text-lg text-slate-600">
+              <li><p>Не требуют скачивания и установки.</p></li>
+              <li><p>Работают быстро и без лишних действий.</p></li>
+              <li><p>Доступны с любого устройства, где есть Telegram.</p></li>
+              <li><p>Автоматически обновляются без необходимости вмешательства пользователя.</p></li>
+            </ul>
+            <p class="text-lg text-slate-600">Кроме того, Mini Apps предлагают <strong>интуитивно понятный интерфейс</strong>, так как разработаны с учётом привычного опыта взаимодействия с ботами и чатами в Telegram. Это особенно важно для пользователей, которые ценят <strong>простоту и скорость</strong> в цифровых сервисах.</p>
+            <h3 class="text-2xl font-semibold text-slate-900"><strong>Интеграция с Telegram-ботами и внешними сервисами</strong></h3>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAn8B9eqlAU0AAAAASUVORK5CYII="
+              alt="Юнити - конструктор как для новичков, так и для опытных разработчиков"
+              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              loading="lazy"
+            />
+            <p class="text-lg text-slate-600">Одно из ключевых преимуществ мини-приложений — возможность взаимодействия с <strong>Telegram-ботами</strong>. Боты могут использоваться для автоматизации многих процессов, таких как:</p>
+            <ul class="list-disc list-inside space-y-3 text-lg text-slate-600">
+              <li><p>Приём заказов и оплата через Telegram.</p></li>
+              <li><p>Напоминания о встречах и бронированиях.</p></li>
+              <li><p>Поддержка клиентов через чат-бот.</p></li>
+              <li><p>Рассылка персонализированных предложений.</p></li>
+            </ul>
+            <p class="text-lg text-slate-600">Также мини-приложения могут быть интегрированы с внешними сервисами, таими как:</p>
+            <ul class="list-disc list-inside space-y-3 text-lg text-slate-600">
+              <li><p><strong>CRM-системы</strong> (например, Bitrix24, AmoCRM).</p></li>
+              <li><p><strong>Платёжные системы</strong> (Продамус, Мандарин, YooMoney и другие).</p></li>
+              <li><p><strong>Облачные базы данных</strong> (Google Sheets, календарь и другие).</p></li>
+            </ul>
+            <p class="text-lg text-slate-600">Благодаря этим возможностям бизнес получает <strong>гибкий инструмент для автоматизации и управления процессами и топ самых последних веб </strong><span class="bg-amber-100 text-amber-900 px-1 rounded">технологий</span></p>
+            <h3 class="text-2xl font-semibold text-slate-900"><strong>Экономия на разработке и поддержке</strong></h3>
+            <p class="text-lg text-slate-600">Разработка мобильного приложения для бизнеса традиционно является дорогостоящим процессом, который требует постоянных обновлений и поддержки. <strong>Мини аппы</strong> в <strong>Telegram</strong> решают эту проблему, предлагая более эффективное решение для бизнеса. С помощью <strong>платформы конструктора</strong> для <strong>мини-приложений</strong> компании могут:</p>
+            <ul class="list-disc list-inside space-y-3 text-lg text-slate-600">
+              <li><p>Избежать затрат на размещение в <strong>App Store</strong> или <strong>Google Play</strong>.</p></li>
+              <li><p>Легко адаптировать приложение под новые задачи без необходимости сложных доработок.</p></li>
+              <li><p>Работать в рамках <strong>Telegram</strong>, что значительно снижает расходы на рекламу и продвижение.</p></li>
+            </ul>
+            <p class="text-lg text-slate-600"><strong>Разработчики</strong> могут быстро создавать <strong>мини аппы</strong> без глубоких технических знаний, используя <strong>платформу конструктора</strong>. Это позволяет значительно ускорить запуск и обновление <strong>мини-приложений</strong>, давая <strong>команде</strong> возможность сосредоточиться на развитии бизнеса, а не на технических деталях. Такие <strong>решения</strong> обеспечивают гибкость, так как <strong>мини-приложения</strong> можно легко масштабировать и адаптировать под изменяющиеся нужды.</p>
+            <p class="text-lg text-slate-600">С помощью <strong>мини аппов</strong> в <strong>Telegram</strong>, компании могут предоставить своим клиентам удобный и доступный сервис, автоматизировать процессы и привлечь новых пользователей с минимальными затратами. Инструкция по запуску мини-приложений на платформе позволяет быстро обучить команду и наладить эффективное взаимодействие с клиентами.</p>
+          </div>
+        </section>
+        <section id="examples" data-topic="Примеры Mini Apps" class="py-20 bg-slate-50" data-animate>
+          <div class="max-w-6xl mx-auto px-6 space-y-8">
+            <h2 class="text-3xl font-semibold text-slate-900"><strong>Примеры успешных мини-приложений в Telegram</strong></h2>
+            <img
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
+              alt="300000 пользователей уже в приложениях Юнити"
+              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              loading="lazy"
+            />
+            <p class="text-lg text-slate-600">Mini-app в Телеграм находят применение в самых разных сферах: от бизнеса и образования до городской инфраструктуры и экосистем для сообществ. Рассмотрим несколько примеров, котрые демонстрируют, как компании используют мини-приложения для автоматизации процессов, повышения вовлечённости пользователей и улучшения клиентского опыта.</p>
+            <h3 class="text-2xl font-semibold text-slate-900"><strong>Онлайн-магазины и e-commerce</strong></h3>
+            <p class="text-lg text-slate-600">Многие компании используют мини-приложения для продажи товаров и услуг прямо в Telegram. Например, <strong>мини-магазины</strong> позволяют пользователям быстро выбирать товары, оформлять заказы и оплачивать покупки без выхода из мессенджера.</p>
+            <p class="text-lg text-slate-600"><strong>Примеры:</strong> Telegram-магазин по продаже одежды, где покупатели могут просматривать каталоги, добавлять товары в корзину и оплачивать их через встроенные платёжные системы.</p>
+            <ul class="list-disc list-inside space-y-3 text-lg text-slate-600">
+              <li><p>Удобство для клиентов: не нужно переходить на сайт, вся покупка происходит в одном окне.</p></li>
+              <li><p>Выгода для бизнеса: экономия на разработке мобильного приложения, снижение затрат на поддержку.</p></li>
+            </ul>
+            <h3 class="text-2xl font-semibold text-slate-900"><strong>Сервисы бронирования и заказов </strong></h3>
+            <p class="text-lg text-slate-600">Telegram Mini Apps идеально подходят для бизнеса, связанного с бронированием услуг. Например, рестораны, салоны красоты и отели могут использовать их для автоматизированного приёма заказов.</p>
+            <p class="text-lg text-slate-600"><strong>Пример:</strong> Mini App (приложении) для ресторана, позволяющее клиентам бронировать столики, выбирать блюда из меню и даже оплачивать заказ заранее.</p>
+            <ul class="list-disc list-inside space-y-3 text-lg text-slate-600">
+              <li><p>Удобство для клиентов: простой интерфейс, быстрое бронирование в два клика.</p></li>
+              <li><p>Выгода для бизнеса: снижение нагрузки на операторов, автоматизация записей и предоплаты.</p></li>
+            </ul>
+            <h3 class="text-2xl font-semibold text-slate-900"><strong>Игры и развлекательные приложения</strong></h3>
+            <p class="text-lg text-slate-600">Telegram также позволяет запускать Mini App для развлечений, включая <strong>квесты, викторины и мини-игры</strong>.</p>
+            <p class="text-lg text-slate-600"><strong>Пример:</strong> Интерактивная игра-квиз, где пользователи могут соревноваться друг с другом, получать баллы и выигрывать призы.</p>
+            <ul class="list-disc list-inside space-y-3 text-lg text-slate-600">
+              <li><p>Удобство для пользователей: мгновенный запуск, простота взаимодействия.</p></li>
+              <li><p>Выгода для бизнеса: увеличение вовлечённости аудитории, возможность монетизации через рекламу и платные подписки.</p></li>
+            </ul>
+            <h3 class="text-2xl font-semibold text-slate-900"><strong>Коворкинги и рабочие пространства</strong></h3>
+            <p class="text-lg text-slate-600">Telegram Mini Apps помогают коворкингам управлять пространством, повышать доходность и улучшать взаимодействие с резидентами.</p>
+            <ul class="list-disc list-inside space-y-3 text-lg text-slate-600">
+              <li><p>Бронировать рабочие места и переговорные комнаты.</p></li>
+              <li><p>Подключаться к программе лояльности и реферальной системе.</p></li>
+              <li><p>Заказывать еду и услуги внутри пространства.</p></li>
+              <li><p>Интегрироваться с CRM для анализа загрузки помещений и предпочтений резидентов.</p></li>
+            </ul>
+            <p class="text-lg text-slate-600"><strong>Преимущества</strong>: снижение текучести клиентов, повышение комфорта, оптимизация бизнес-процессов​.</p>
+            <h3 class="text-2xl font-semibold text-slate-900"><strong>Сообщества и клубы</strong></h3>
+            <p class="text-lg text-slate-600">Сообщества используют Telegram Mini Apps для управления подписками, взаимодействия участников и создания экосистемы.</p>
+            <ul class="list-disc list-inside space-y-3 text-lg text-slate-600">
+              <li><p>Автоматизированный онбординг новых участников.</p></li>
+              <li><p>Геймификация и нетворкинг (рандом-кофе, лидерборды, баллы за активность).</p></li>
+              <li><p>Программа лояльности с персонализированными предложениями.</p></li>
+              <li><p>Умные рассылки и аналитика для управления аудиторией.</p></li>
+            </ul>
+            <p class="text-lg text-slate-600"><strong>Преимущества</strong>: повышение активности участников, увеличение повторных покупок, рост лояльности​.</p>
+            <p class="text-lg text-slate-600">Эти примеры показывают, что мини-приложения в Telegram могут стать мощным инструментом для автоматизации процессов, повышения вовлечённости пользователей и монетизации бизнеса. </p>
+          </div>
+        </section>
+        <section id="future" data-topic="Будущее Mini Apps" class="py-20 bg-white" data-animate>
+          <div class="max-w-6xl mx-auto px-6 space-y-8">
+            <h2 class="text-3xl font-semibold text-slate-900"><strong>Будущее мини-приложений в Telegram и перспективы развития</strong></h2>
+            <img
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
+              alt="Создание приложений для любых операционных систем без разработчиков"
+              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              loading="lazy"
+            />
+            <p class="text-lg text-slate-600">Мини-приложения в Telegram продолжают набирать популярность благодаря своей удобной интеграции с мессенджером, простоте использования и широким возможностям для бизнеса. В ближайшие годы их развитие будет определяться несколькими ключевыми трендами.</p>
+            <h3 class="text-2xl font-semibold text-slate-900"><strong>Автоматизация бизнес-процессов</strong></h3>
+            <img
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
+              alt="Режим администрирования без кода - все как в обычной crm"
+              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              loading="lazy"
+            />
+            <p class="text-lg text-slate-600">Все больше компаний обращают внимание на Mini Apps как инструмент для автоматизации работы с клиентами. Это касается онлайн-продаж, системы бронирования, работы с подписчиками и поддержки пользователей. Например, уже сейчас мини-приложения позволяют ресторанам управлять заказами, а коворкингам — автоматизировать аренду рабочих мест без участия администратора. Скоро можно ожидать интеграцию Mini Apps с голосовыми ассистентами, что упростит взаимодействие пользователей с сервисами внутри Telegram.</p>
+            <h3 class="text-2xl font-semibold text-slate-900"><strong>Развитие экосистемы умных городов</strong></h3>
+            <img
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
+              alt="легко добавьте иконку на рабочий стол телефона"
+              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              loading="lazy"
+            />
+            <p class="text-lg text-slate-600">Города начнут активно внедрять Mini Apps для улучшения качества жизни жителей. Такие сервисы помогают:</p>
+            <ul class="list-disc list-inside space-y-3 text-lg text-slate-600">
+              <li><p>Подавать заявки в ЖКХ и следить за их статусом.</p></li>
+              <li><p>Оплачивать коммунальные услуги и парковки.</p></li>
+              <li><p>Бронировать билеты в театры и музеи.</p></li>
+              <li><p>Получать персонализированные рекомендации по мероприятиям и акциям.</p></li>
+            </ul>
+            <p class="text-lg text-slate-600">С ростом умных городов мини-приложения Telegram станут важной частью городской инфраструктуры, обеспечивая связь между жителями и сервисами.</p>
+            <h3 class="text-2xl font-semibold text-slate-900"><strong>Интерактивные образовательные платформы</strong></h3>
+            <img
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
+              alt="в ТМА может обучаться ваша команда или ваша аудитория"
+              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              loading="lazy"
+            />
+            <p class="text-lg text-slate-600">Образование — еще одна сфера, где Mini Apps будут активно развиваться. Уже сейчас они используются для онлайн-курсов, тестирования знаний и профессионального обучения. В будущем такие платформы смогут автоматически адаптироваться под уровень пользователя, предлагая персонализированные программы обучения. Дополнительно можно ожидать развитие образовательных мини-приложений с элементами геймификации: соревнования, рейтинги, награды за достижения, интерактивные уроки.</p>
+            <h3 class="text-2xl font-semibold text-slate-900"><strong>Геймификация и вовлечение пользователей</strong></h3>
+            <img
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUTEhIVFRUVFRUVFRUVFRUVFRUVFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0fHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQADBgECB//EADoQAAIBAgQCBgYBAwMFAAAAAAECAwQRAAUSIRMxQQYTIlFhcRRCkaGxwfAHFDNSYuHwFkNicoKSsvEVQ3OC/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/EACgRAQEAAgICAwACAwEAAAAAAAABAhEDBBIhMUEFMkFRExQyYf/aAAwDAQACEQMRAD8A9XREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAf/Y="
+              alt="геймификация в tg app"
+              class="w-full rounded-3xl border border-white/40 shadow-xl shadow-indigo-200/50 object-cover"
+              loading="lazy"
+            />
+            <p class="text-lg text-slate-600">Telegram активно развивает геймификацию, что открывает бизнесу новые возможности для создания интерактивных мини-приложений. С помощью Telegram-ботов и платформы для создания приложений, компании могут интегрировать игровые элементы, такие как программы лояльности с накоплением баллов, соревнования и квесты, а также геймифицированные реферальные системы. Эти функции помогают повысить вовлеченность пользователей, стимулируют активное участие и увеличивают время, проведенное в приложении.</p>
+            <p class="text-lg text-slate-600">Такой формат взаимодействия с клиентами позволяет бизнесу не только повысить лояльность клиентов, но и расширить базу через рефералов. Мини-приложения с элементами геймификации помогают создать уникальные решения для команд и бизнесов разных сфер, предоставляя доступ к удобным и понятным инструментам для повышения активности.</p>
+            <p class="text-lg text-slate-600">Будущее мини-приложений в Telegram связано с их глубокой интеграцией в бизнес-процессы, городские сервисы, образовательные платформы и другие сферы. Использование этих решений помогает компаниям автоматизировать процессы, улучшать клиентский опыт и создавать новые источники дохода, значительно упрощая взаимодействие с аудиторией.</p>
+            <p class="text-lg text-slate-600"><strong>Заключение</strong></p>
+            <p class="text-lg text-slate-600">Мини-приложения для Telegram — это эффективное решение для бизнеса, позволяющее запускать проекты без необходимости создавать отдельный веб-сайт. Все процессы, такие как регистрация пользователей, управление заказами и взаимодействие с клиентами, можно интегрировать в Telegram с помощью Telegram-ботов и соответствующих платформ для мини-приложений. Это упрощает запуск и обновление проектов, экономя время и ресурсы.</p>
+            <p class="text-lg text-slate-600">Кроме того, мини-приложения предлагают мощные инструменты аналитики и микросегментации. Они позволяют собирать данные о действиях пользователей и их предпочтениях, что помогает создавать персонализированные предложения и увеличивать вовлеченность.</p>
+            <p class="text-lg text-slate-600">Одним из главных преимуществ мини-приложений является то, что при внесении изменений в проект пользователю не нужно скачивать обновления, как в случае с мобильными приложениями. Все изменения применяются автоматически, улучшая пользовательский опыт и снижая вероятность ошибок. Также, ярлык Mini App можно разместить на экране телефоне, где он будет отображаться рядом с мобильными приложениями, предоставляя удобный доступ.</p>
+            <p class="text-lg text-slate-600">Таким образом, мини-приложения для Telegram — это эффективное решение для бизнеса, которое помогает улучшить сервис, повысить лояльность клиентов и значительно сократить расходы на разработку и поддержку.</p>
+          </div>
+        </section>
+        <section data-topic="CTA" class="py-20 bg-slate-900" data-animate>
+          <div class="max-w-4xl mx-auto px-6 text-center text-white space-y-6">
+            <h2 class="text-3xl font-semibold">Создайте своё Mini App быстрее вместе с Unitee.Space</h2>
+            <p class="text-lg text-slate-200">Перейдите на платформу, чтобы развернуть функциональное мини-приложение, подключить Telegram API и запустить удобный цифровой опыт для ваших клиентов.</p>
+            <a
+              href="https://unitee.space"
+              class="inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-indigo-400 to-blue-800 px-8 py-3 text-base font-semibold shadow-xl shadow-indigo-500/40 transition hover:scale-[1.02]"
+              target="_blank"
+              rel="noopener"
+            >
+              Создать MiniApp на Unitee.Space
+              <span aria-hidden="true" class="text-xl">↗</span>
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-white border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 py-8 text-sm text-slate-500 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+          <p>© <span id="current-year"></span> mini-app.pro — Telegram Mini Apps без кода.</p>
+          <p class="flex items-center gap-2">
+            <span class="h-2 w-2 rounded-full bg-gradient-to-r from-indigo-400 to-blue-700"></span>
+            Создано с вниманием к SEO и LLM-индексации.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/script.js" defer></script>
+  </body>
+</html>

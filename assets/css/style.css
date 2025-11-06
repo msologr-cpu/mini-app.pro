@@ -1,0 +1,107 @@
+:root {
+  --gradient-start: #6b73ff;
+  --gradient-end: #000dff;
+  --surface: 255 255 255;
+  --shadow: 79 70 229;
+}
+
+body {
+  font-family: 'Inter', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: rgb(var(--surface));
+}
+
+.nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 0.25rem;
+  transition: color 200ms ease, transform 200ms ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  opacity: 0;
+  transform: scaleX(0.4);
+  transform-origin: center;
+  transition: opacity 200ms ease, transform 250ms ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: rgb(79 70 229);
+  transform: translateY(-1px);
+}
+
+.nav-link:hover::after,
+.nav-link:focus-visible::after,
+.nav-link[aria-current='true']::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.parallax-gradient {
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle at top left, rgba(107, 115, 255, 0.45), transparent 55%),
+    radial-gradient(circle at 80% 20%, rgba(0, 13, 255, 0.35), transparent 60%),
+    radial-gradient(circle at 50% 80%, rgba(56, 189, 248, 0.25), transparent 60%);
+  filter: blur(0px);
+  transform: translate3d(0, 0, 0);
+}
+
+[data-animate] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section {
+  scroll-margin-top: 96px;
+}
+
+img {
+  transition: transform 400ms ease, box-shadow 400ms ease;
+}
+
+img:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 32px 70px rgba(var(--shadow), 0.18);
+}
+
+footer {
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(107, 115, 255, 0.08), transparent 65%);
+  pointer-events: none;
+}
+
+.gradient-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(107, 115, 255, 0.5), transparent);
+}
+
+@media (max-width: 768px) {
+  .parallax-gradient {
+    filter: blur(20px);
+  }
+  .nav-link::after {
+    display: none;
+  }
+}
