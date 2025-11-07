@@ -74,18 +74,50 @@ main {
 }
 
 .primary-nav {
+  display: none;
+}
+
+.primary-nav .nav-items {
   display: flex;
   align-items: center;
-  gap: clamp(1.5rem, 3vw, 2.5rem);
+  gap: clamp(1.25rem, 2.5vw, 2rem);
 }
 
 .primary-nav .nav-label {
-  display: block;
-  font-size: 0.65rem;
-  letter-spacing: 0.28em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem 0.95rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
   font-weight: 600;
-  color: rgba(15, 23, 42, 0.38);
+  color: rgba(15, 23, 42, 0.6);
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .primary-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    padding: 0.5rem 1.35rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(148, 163, 184, 0.28);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+  }
+
+  .primary-nav .nav-label {
+    color: rgba(15, 23, 42, 0.5);
+    background: rgba(37, 99, 235, 0.08);
+    border-color: rgba(37, 99, 235, 0.16);
+  }
 }
 
 .nav-action {
