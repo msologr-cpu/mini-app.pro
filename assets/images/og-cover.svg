@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f16" />
+      <stop offset="100%" stop-color="#111a2a" />
+    </linearGradient>
+    <radialGradient id="orb" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#00e0ff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0b0f16" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="orbPink" cx="80%" cy="10%" r="65%">
+      <stop offset="0%" stop-color="#ff4d91" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#0b0f16" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="480" cy="280" r="420" fill="url(#orb)" opacity="0.55" />
+  <circle cx="980" cy="120" r="420" fill="url(#orbPink)" opacity="0.6" />
+  <g opacity="0.12" stroke="#00e0ff" stroke-width="2">
+    <path d="M0 520l320-160 280 120 340-180 260 120" fill="none" />
+    <path d="M0 420l260-120 320 160 360-200 260 120" fill="none" />
+  </g>
+  <g fill="#ffffff" font-family="'Montserrat Alternates', 'Montserrat', 'Inter', sans-serif">
+    <text x="120" y="280" font-size="60" letter-spacing="0.3em" opacity="0.7">UNITEE SPACE</text>
+    <text x="120" y="360" font-size="120" font-weight="700" letter-spacing="0.02em">TELEGRAM MINI APPS</text>
+    <text x="120" y="440" font-size="40" letter-spacing="0.14em" fill="#00e0ff">NO-CODE • CRM • ANALYTICS</text>
+  </g>
+</svg>
