@@ -27,7 +27,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Montserrat', 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background: var(--bg-main);
   color: var(--text-primary);
   min-height: 100vh;
