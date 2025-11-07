@@ -1,288 +1,268 @@
 <!DOCTYPE html>
-<html lang="ru" class="scroll-smooth">
+<html lang="ru" class="no-js">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Telegram Mini Apps для бизнеса | mini-app.pro</title>
+    <title>Создание Telegram Mini Apps без кода — Unitee Space</title>
     <meta
       name="description"
-      content="Создаём и запускаем Telegram Mini Apps под ключ: стратегия, дизайн и разработка без кода для бизнеса любой сложности."
+      content="Создайте Telegram Mini App без программистов. Unitee Space — платформа №1 для Mini Apps: CRM, аналитика, автоматизация внутри Telegram."
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Создание Telegram Mini Apps без кода — Unitee Space" />
+    <meta
+      property="og:description"
+      content="Запускайте мини-приложения в Telegram с CRM, аналитикой и платежами. Unitee Space — платформа №1 для Mini Apps."
+    />
+    <meta property="og:url" content="https://mini-app.pro/" />
+    <meta property="og:image" content="https://mini-app.pro/assets/images/og-cover.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Создание Telegram Mini Apps без кода — Unitee Space" />
+    <meta
+      name="twitter:description"
+      content="Создавайте Telegram Mini Apps без кода. CRM, аналитика и автоматизация внутри Telegram."
+    />
+    <meta name="twitter:image" content="https://mini-app.pro/assets/images/og-cover.svg" />
     <link rel="alternate" hreflang="ru" href="https://mini-app.pro/" />
     <link rel="alternate" hreflang="en" href="https://mini-app.pro/en/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body class="bg-slate-950 text-slate-50 antialiased">
-    <div class="relative flex min-h-screen flex-col">
-      <header class="site-header sticky top-0 z-40">
-        <div class="site-header-inner">
-          <a href="#hero" class="site-brand" aria-label="mini-app.pro">
+  <body>
+    <div class="page">
+      <header class="site-header" id="top">
+        <div class="container header-inner">
+          <a class="brand" href="#hero" aria-label="mini-app.pro">
             <span class="brand-mark" aria-hidden="true">μ</span>
             <span class="brand-text">
-              <strong>mini-app.pro</strong>
-              <span>Telegram Mini Apps под ключ</span>
+              <span class="brand-title">mini-app.pro</span>
+              <span class="brand-tagline">Unitee Space</span>
             </span>
           </a>
-          <nav class="desktop-nav" aria-label="Основное меню">
-            <a href="#solutions">Решения</a>
-            <a href="#process">Процесс</a>
+          <nav class="desktop-nav" aria-label="Главное меню">
+            <a href="#mini-app">Mini App</a>
+            <a href="#benefits">Преимущества</a>
+            <a href="#workflow">Как работает</a>
             <a href="#cases">Кейсы</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">Контакты</a>
+            <a href="#why-us">Почему мы</a>
           </nav>
-          <div class="header-controls">
-            <a href="en/" class="language-toggle" aria-label="Переключить на английский">EN</a>
-            <button
-              type="button"
-              class="hamburger"
-              aria-label="Открыть меню"
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-              data-mobile-toggle
-            >
-              <span class="sr-only">Меню</span>
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewBox="0 0 24 24">
-                <path d="M4 7h16M4 12h16M10 17h10" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="mobile-menu-backdrop" data-mobile-overlay hidden></div>
-        <div class="mobile-menu-panel" id="mobile-menu" data-mobile-menu hidden>
-          <div class="mobile-menu-header">
-            <a href="#hero" class="menu-logo" aria-label="mini-app.pro">
-              <span>μ</span>
-            </a>
-            <button type="button" class="mobile-close" aria-label="Закрыть меню" data-mobile-close>✕</button>
-          </div>
-          <div class="mobile-menu-body">
-            <h2 class="mobile-menu-title">Создаём mini apps для Telegram</h2>
-            <p class="mobile-menu-text">
-              Подготовим стратегию, интерфейс и запустим мини-приложение без кода в сжатые сроки.
-            </p>
-            <nav class="mobile-nav" aria-label="Основные разделы">
-              <a href="#solutions" class="menu-link">Решения</a>
-              <a href="#process" class="menu-link">Процесс</a>
-              <a href="#cases" class="menu-link">Кейсы</a>
-              <a href="#faq" class="menu-link">FAQ</a>
-              <a href="#contact" class="menu-link">Контакты</a>
-            </nav>
-            <a href="https://unitee.space" target="_blank" rel="noopener" class="menu-link">Unitee.Space ↗</a>
-            <a href="mailto:hello@unitee.space" class="menu-link">hello@unitee.space</a>
-          </div>
-          <div class="mobile-menu-footer">
-            <a href="https://unitee.space" target="_blank" rel="noopener" class="cta-button w-full text-center">
-              Заказать консультацию
-            </a>
-          </div>
+          <a class="cta-button" href="https://unitee.space" target="_blank" rel="noopener">Создать приложение</a>
         </div>
       </header>
-      <main class="flex-1">
-        <section id="hero" class="hero-section" data-topic="overview">
-          <div class="hero-overlay" aria-hidden="true"></div>
-          <div class="relative z-10 mx-auto flex w-full max-w-3xl flex-col items-center text-center">
-            <span class="hero-mark">μ</span>
-            <h1 class="hero-title">
-              Создайте Telegram Mini Apps
-              <span class="text-sky-300">быстро, легко и без кода</span>
-            </h1>
-            <p class="hero-subtitle">
-              Помогаем бизнесу запускать сервисы внутри Telegram: от концепции и UI до интеграции с ботами и платежами.
+      <main>
+        <section class="hero" id="hero">
+          <div class="gradient-orbit" aria-hidden="true"></div>
+          <div class="container hero-content">
+            <div class="hero-badge">Telegram Mini Apps</div>
+            <h1>Создаём Telegram Mini Apps без кода</h1>
+            <p>
+              Запусти свой продукт прямо в Telegram — CRM, продажи, обучение и автоматизация в одном интерфейсе. Мини-приложение
+              запускается за дни, подключается к ботам и работает как нативный сервис.
             </p>
             <div class="hero-actions">
-              <a href="https://unitee.space" target="_blank" rel="noopener" class="cta-button">
-                Заказать консультацию
-              </a>
-              <a href="mailto:hello@unitee.space" class="secondary-link">hello@unitee.space</a>
+              <a class="cta-button primary" href="https://unitee.space" target="_blank" rel="noopener">Создать приложение</a>
+              <a class="ghost-link" href="#mini-app">Что внутри платформы</a>
             </div>
           </div>
         </section>
-        <section id="solutions" class="content-section" data-topic="benefits">
-          <div class="section-inner">
-            <div class="section-header">
-              <h2 class="section-title">Мини-приложения, которые решают задачи бизнеса</h2>
-              <p class="section-subtitle">
-                Telegram Mini Apps работают прямо в мессенджере и открывают доступ к сервису без скачивания приложений. Мы
-                проектируем и собираем их на веб-технологиях, чтобы пользователи быстро выполняли нужные действия: покупали,
-                записывались, оформляли заявки и платили.
+
+        <section class="section intro" id="mini-app">
+          <div class="container section-inner">
+            <header class="section-header">
+              <h2>Mini App — сервис внутри Telegram</h2>
+              <p>
+                Telegram Mini App — это веб-приложение, которое живёт внутри бота. Оно открывается мгновенно, использует знакомый
+                интерфейс мессенджера, автоматически авторизует пользователя и связывает его с вашим продуктом без App Store и
+                сложного онбординга.
               </p>
+            </header>
+            <div class="pill-grid" role="list">
+              <span class="pill" role="listitem">⚡ Быстро</span>
+              <span class="pill" role="listitem">🔒 Безопасно</span>
+              <span class="pill" role="listitem">🧩 Без кода</span>
+              <span class="pill" role="listitem">💬 Внутри Telegram</span>
             </div>
-            <div class="feature-grid">
-              <article class="feature-card">
-                <h3>Нативный UX внутри Telegram</h3>
-                <p>
-                  Интерфейсы адаптированы под привычный сценарий работы в чате: быстрые ответы, автозаполнение и поддержка темной
-                  темы. Пользователи не покидают диалог с ботом и не теряются между экранами.
-                </p>
+          </div>
+        </section>
+
+        <section class="section benefits" id="benefits">
+          <div class="container section-inner">
+            <header class="section-header">
+              <h2>Почему бренды выбирают Mini Apps</h2>
+            </header>
+            <div class="card-grid">
+              <article class="benefit-card">
+                <div class="icon" aria-hidden="true">🚫</div>
+                <h3>Без AppStore</h3>
+                <p>Публикуем сервис в Telegram — без модераций стора и потерь аудитории между платформами.</p>
               </article>
-              <article class="feature-card">
-                <h3>Интеграции без сложной разработки</h3>
-                <p>
-                  Подключаем CRM, платежные шлюзы, виджеты лояльности и кастомные API. Мини-приложения работают поверх Telegram Bot
-                  API и Web App, поэтому запуск возможен даже без собственной инфраструктуры.
-                </p>
+              <article class="benefit-card">
+                <div class="icon" aria-hidden="true">👩‍💻</div>
+                <h3>Без программистов</h3>
+                <p>Шаблоны и no-code инструменты позволяют собрать интерфейс и интеграции за считанные дни.</p>
               </article>
-              <article class="feature-card">
-                <h3>Аналитика и масштабирование</h3>
-                <p>
-                  Настраиваем события, метки и A/B-тесты, чтобы измерять воронку. Добавляем новые сценарии и языки без дорогостоящих
-                  релизов в сторах: достаточно обновить веб-страницу и бота.
-                </p>
+              <article class="benefit-card">
+                <div class="icon" aria-hidden="true">📇</div>
+                <h3>CRM внутри</h3>
+                <p>Встроенная CRM фиксирует заявки, сегментирует клиентов и запускает автоворонки.</p>
+              </article>
+              <article class="benefit-card">
+                <div class="icon" aria-hidden="true">📊</div>
+                <h3>Аналитика и монетизация</h3>
+                <p>Следим за событиями, платежами и конверсией в реальном времени, подключаем подписки и оплаты.</p>
               </article>
             </div>
           </div>
         </section>
-        <section id="process" class="content-section alt" data-topic="process">
-          <div class="section-inner">
-            <div class="section-header">
-              <h2 class="section-title">Как проходит запуск</h2>
-              <p class="section-subtitle">
-                Мы сопровождаем проект от гипотезы до первых платежей. Работаем спринтами, синхронизируемся в Telegram и делимся
-                прозрачными статусами на каждой итерации.
-              </p>
-            </div>
-            <ol class="process-timeline">
+
+        <section class="section workflow" id="workflow">
+          <div class="container section-inner">
+            <header class="section-header">
+              <h2>Как это работает</h2>
+              <p>Четыре шага от идеи до запуска Mini App в экосистеме Unitee Space.</p>
+            </header>
+            <ol class="workflow-steps">
               <li>
-                <span class="process-step">1</span>
-                <div>
-                  <h3>Аудит и постановка цели</h3>
-                  <p>
-                    Изучаем продукт, аудиторию и текущие воронки. Формируем метрики успеха и определяем MVP-объем, который принесет
-                    быстрые результаты.
-                  </p>
-                </div>
+                <div class="step-icon" aria-hidden="true">1</div>
+                <h3>Выбираем шаблон</h3>
+                <p>Подбираем сценарий под e-commerce, обучение или сообщество — всё готово к кастомизации.</p>
               </li>
               <li>
-                <span class="process-step">2</span>
-                <div>
-                  <h3>UX-концепция и дизайн</h3>
-                  <p>
-                    Прототипируем ключевые сценарии, собираем UI-кит, согласуем визуал с брендом. Готовим тексты и мультиязычную
-                    структуру.
-                  </p>
-                </div>
+                <div class="step-icon" aria-hidden="true">2</div>
+                <h3>Настраиваем дизайн</h3>
+                <p>Переключаем темы, типографику и блоки так, чтобы Mini App выглядел как ваш бренд.</p>
               </li>
               <li>
-                <span class="process-step">3</span>
-                <div>
-                  <h3>Сборка без кода и интеграции</h3>
-                  <p>
-                    Реализуем фронтенд, подключаем бота, CRM и платежи. Тестируем на разных устройствах и настраиваем аналитику
-                    событий.
-                  </p>
-                </div>
+                <div class="step-icon" aria-hidden="true">3</div>
+                <h3>Подключаем бота</h3>
+                <p>Интегрируем Telegram-бота, CRM, платежи и внешние сервисы без ручного кода.</p>
               </li>
               <li>
-                <span class="process-step">4</span>
-                <div>
-                  <h3>Запуск и сопровождение</h3>
-                  <p>
-                    Помогаем с релизом, обучаем команду и поддерживаем продукт: улучшаем сценарии, добавляем функции и растим конверсию
-                    по данным.
-                  </p>
-                </div>
+                <div class="step-icon" aria-hidden="true">4</div>
+                <h3>Запускаем</h3>
+                <p>Тестируем, выкатываем Mini App и передаём команде аналитику и сценарии роста.</p>
               </li>
             </ol>
           </div>
         </section>
-        <section id="cases" class="content-section" data-topic="cases">
-          <div class="section-inner">
-            <div class="section-header">
-              <h2 class="section-title">Готовые сценарии и кейсы</h2>
-              <p class="section-subtitle">
-                Создаем мини-приложения для электронной коммерции, EdTech, медиа, сервисов и финансов. Вот примеры решений, которые мы
-                внедряем чаще всего.
-              </p>
-            </div>
+
+        <section class="section cases" id="cases">
+          <div class="container section-inner">
+            <header class="section-header">
+              <h2>Кейсы платформы</h2>
+              <p>Unitee Space помогает запускать продукты для продаж, обучения и сообществ прямо в Telegram.</p>
+            </header>
             <div class="case-grid">
               <article class="case-card">
-                <h3>Онлайн-продажи и каталоги</h3>
-                <p>
-                  Каталоги товаров, корзина, оформление заказа, мгновенные платежи и выдача чеков. Интеграции с 1С, Shopify, Airtable или
-                  Notion в зависимости от инфраструктуры.
-                </p>
+                <img src="assets/images/case-ecommerce.svg" alt="E-commerce Mini App" />
+                <div class="case-body">
+                  <h3>E-commerce</h3>
+                  <p>Каталог, корзина, мгновенные платежи и CRM для повторных продаж. Конверсия до 35% в заказ из чата.</p>
+                  <a class="ghost-link" href="https://unitee.space" target="_blank" rel="noopener">Подробнее</a>
+                </div>
               </article>
               <article class="case-card">
-                <h3>Обучение и сообщества</h3>
-                <p>
-                  Курсы, тесты, доступ к урокам и подпискам в один клик. Настраиваем персональные кабинеты, прогресс прохождения и
-                  автоматические рассылки через бота.
-                </p>
+                <img src="assets/images/case-education.svg" alt="Обучающий Mini App" />
+                <div class="case-body">
+                  <h3>Обучение</h3>
+                  <p>Личный кабинет с уроками, прогрессом и рассылками. Геймификация и подписки в одном Mini App.</p>
+                  <a class="ghost-link" href="https://unitee.space" target="_blank" rel="noopener">Подробнее</a>
+                </div>
               </article>
               <article class="case-card">
-                <h3>Сервисы поддержки клиентов</h3>
-                <p>
-                  Формы заявки, бронирование, обращение в поддержку и сегментация пользователей. Подключаем Helpdesk, календарь и KPI,
-                  чтобы команда видела статус каждого обращения.
-                </p>
+                <img src="assets/images/case-community.svg" alt="Mini App для сообщества" />
+                <div class="case-body">
+                  <h3>Сообщества</h3>
+                  <p>Чаты, события и монетизация подписок. Управление доступами и биллингом прямо в Telegram.</p>
+                  <a class="ghost-link" href="https://unitee.space" target="_blank" rel="noopener">Подробнее</a>
+                </div>
               </article>
             </div>
           </div>
         </section>
-        <section id="faq" class="content-section alt" data-topic="faq">
-          <div class="section-inner">
-            <div class="section-header">
-              <h2 class="section-title">Частые вопросы</h2>
-              <p class="section-subtitle">
-                Отвечаем на типичные запросы, которые слышим на консультациях. Если остались дополнительные вопросы — напишите нам.
-              </p>
-            </div>
-            <div class="faq-list">
-              <article class="faq-item">
-                <h3>Сколько времени занимает запуск?</h3>
-                <p>
-                  От двух до шести недель в зависимости от сложности интеграций. Минимальный MVP с типовым сценарием можем показать уже на
-                  второй неделе работы.
-                </p>
-              </article>
-              <article class="faq-item">
-                <h3>Нужны ли разработчики со стороны клиента?</h3>
-                <p>
-                  Нет, все этапы выполняем самостоятельно: дизайн, сборка, интеграции и тестирование. Подключаем внутреннюю команду только
-                  если необходимо согласовать доступы или брендовые стандарты.
-                </p>
-              </article>
-              <article class="faq-item">
-                <h3>Можно ли обновлять мини-приложение после запуска?</h3>
-                <p>
-                  Да, расширяем функциональность без сложных релизов. Обновления вносятся в веб-интерфейс и автоматически доступны всем
-                  пользователям бота.
-                </p>
-              </article>
-              <article class="faq-item">
-                <h3>Как устроена поддержка?</h3>
-                <p>
-                  Предоставляем SLA и чат с командой, мониторим стабильность бота, подключаем уведомления о сбоях. Помогаем с аналитикой и
-                  развитием продукта после запуска.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-        <section id="contact" class="content-section final" data-topic="contact">
-          <div class="section-inner">
-            <div class="contact-card">
-              <h2>Расскажите о своей задаче</h2>
+
+        <section class="section why-us" id="why-us">
+          <div class="container section-inner">
+            <header class="section-header">
+              <h2>Платформа №1 в мире для Telegram Mini Apps</h2>
               <p>
-                Подготовим аудит, предложим MVP и покажем, как Telegram Mini App может повысить конверсию. Заполните форму на сайте
-                Unitee.Space или напишите нам напрямую.
+                700+ приложений на Unitee Space уже используют встроенные CRM, аналитику, оплату подписок и сценарии автоматизации.
+                500 000+ пользователей взаимодействуют с продуктами клиентов ежедневно.
               </p>
-              <div class="contact-actions">
-                <a href="https://unitee.space" target="_blank" rel="noopener" class="cta-button">Заказать консультацию</a>
-                <a href="mailto:hello@unitee.space" class="secondary-link">hello@unitee.space</a>
+            </header>
+            <div class="stats-strip">
+              <div class="stat">
+                <span class="stat-value">700+</span>
+                <span class="stat-label">Mini Apps запущено</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">500k+</span>
+                <span class="stat-label">Активных пользователей</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">24/7</span>
+                <span class="stat-label">Поддержка и мониторинг</span>
               </div>
             </div>
+            <div class="partner-logos" aria-label="Партнеры">
+              <span>Evera</span>
+              <span>Solo Labs</span>
+              <span>Unitee Space</span>
+              <span>mini-app.pro</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section cta" id="cta">
+          <div class="container cta-inner">
+            <h2>Запусти Mini App сегодня — без кода и программистов.</h2>
+            <p>Подключим платформу Unitee Space, адаптируем сценарий под ваш бизнес и покажем первые результаты.</p>
+            <a class="cta-button primary" href="https://unitee.space" target="_blank" rel="noopener">Создать в Unitee Space</a>
           </div>
         </section>
       </main>
+
+      <footer class="site-footer" id="footer">
+        <div class="container footer-inner">
+          <div class="footer-brand">
+            <span class="brand-mark" aria-hidden="true">μ</span>
+            <div>
+              <span class="brand-title">Unitee Space</span>
+              <span class="brand-tagline">Telegram Mini Apps</span>
+            </div>
+          </div>
+          <nav class="footer-links" aria-label="Ссылки">
+            <a href="https://unitee.space" target="_blank" rel="noopener">unitee.space</a>
+            <a href="https://t.me/sololabschannel" target="_blank" rel="noopener">sololabschannel</a>
+            <a href="https://evera.world" target="_blank" rel="noopener">Evera.world</a>
+            <a href="https://t.me/unitee_space_bot" target="_blank" rel="noopener">Telegram-бот</a>
+          </nav>
+        </div>
+      </footer>
+
+      <nav class="mobile-bottom-nav" aria-label="Навигация Mini App">
+        <a href="#hero" class="mobile-nav-link">
+          <span class="nav-icon" aria-hidden="true">🏠</span>
+          <span>Главная</span>
+        </a>
+        <a href="#mini-app" class="mobile-nav-link">
+          <span class="nav-icon" aria-hidden="true">ℹ️</span>
+          <span>Mini App</span>
+        </a>
+        <a href="#cases" class="mobile-nav-link">
+          <span class="nav-icon" aria-hidden="true">⭐</span>
+          <span>Кейсы</span>
+        </a>
+        <a href="#cta" class="mobile-nav-link">
+          <span class="nav-icon" aria-hidden="true">🚀</span>
+          <span>Старт</span>
+        </a>
+      </nav>
     </div>
-    <script src="assets/js/script.js" defer></script>
   </body>
 </html>
