@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e0ff" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#ff4d91" stop-opacity="0.8" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="#0b0f16" />
+  <g opacity="0.6">
+    <circle cx="180" cy="160" r="120" fill="url(#grad)" />
+    <circle cx="520" cy="120" r="140" fill="url(#grad)" fill-opacity="0.6" />
+    <circle cx="420" cy="360" r="160" fill="url(#grad)" fill-opacity="0.4" />
+  </g>
+  <g fill="none" stroke="#0b0f16" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M160 160h320l-36 160H196z" fill="#0b1624" opacity="0.72" />
+    <circle cx="240" cy="352" r="36" />
+    <circle cx="400" cy="352" r="36" />
+    <path d="M220 200h240l-16 72H236z" opacity="0.8" />
+    <path d="M240 120l24 40h152l24-40" />
+  </g>
+  <g fill="#ffffff" font-family="'Montserrat Alternates', 'Montserrat', sans-serif" font-size="48" font-weight="600">
+    <text x="60" y="440" fill-opacity="0.7">E-commerce</text>
+  </g>
+</svg>
