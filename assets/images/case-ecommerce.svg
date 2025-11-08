@@ -18,7 +18,7 @@
     <path d="M220 200h240l-16 72H236z" opacity="0.8" />
     <path d="M240 120l24 40h152l24-40" />
   </g>
-  <g fill="#ffffff" font-family="'Montserrat Alternates', 'Montserrat', sans-serif" font-size="48" font-weight="600">
+  <g fill="#ffffff" font-family="'Montserrat', 'Segoe UI', sans-serif" font-size="48" font-weight="600">
     <text x="60" y="440" fill-opacity="0.7">E-commerce</text>
   </g>
 </svg>
