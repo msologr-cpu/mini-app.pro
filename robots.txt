@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+Allow: /blog/
+Allow: /blog/telegram-mini-apps
+
 Sitemap: https://mini-app.pro/sitemap.xml
