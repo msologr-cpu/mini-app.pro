@@ -49,15 +49,23 @@
             <a href="#open-builder">Начать</a>
           </nav>
           <div class="header-controls">
-            <div class="language-switcher">
-              <a class="language-switcher__toggle" href="/" aria-label="English">
-                <span class="language-switcher__flag" aria-hidden="true">🇬🇧</span>
-                <span class="language-switcher__code">EN</span>
-              </a>
-              <a class="language-switcher__toggle" href="/ru/" aria-label="Русский" aria-current="page">
-                <span class="language-switcher__flag" aria-hidden="true">🇷🇺</span>
-                <span class="language-switcher__code">RU</span>
-              </a>
+            <div class="language-switcher" data-language-switcher>
+              <button
+                type="button"
+                class="language-switcher__toggle"
+                data-language-toggle
+                aria-haspopup="listbox"
+                aria-expanded="false"
+              >
+                <span class="language-switcher__flag" data-language-flag aria-hidden="true">🌐</span>
+                <span class="language-switcher__code" data-language-code>--</span>
+              </button>
+              <div
+                class="language-switcher__dropdown"
+                role="listbox"
+                data-language-options
+                hidden
+              ></div>
             </div>
             <a class="cta-button" href="#open-builder">Открыть конструктор</a>
           </div>
@@ -221,20 +229,31 @@
           </nav>
 
           <div class="footer-right">
-            <div id="language-switcher" class="language-switcher">
-              <a class="language-switcher__toggle" href="/" aria-label="English">
-                <span class="language-switcher__flag" aria-hidden="true">🇬🇧</span>
-                <span class="language-switcher__code">EN</span>
-              </a>
-              <a class="language-switcher__toggle" href="/ru/" aria-label="Русский" aria-current="page">
-                <span class="language-switcher__flag" aria-hidden="true">🇷🇺</span>
-                <span class="language-switcher__code">RU</span>
-              </a>
+            <div id="language-switcher" class="language-switcher" data-language-switcher>
+              <button
+                type="button"
+                class="language-switcher__toggle"
+                data-language-toggle
+                aria-haspopup="listbox"
+                aria-expanded="false"
+              >
+                <span class="language-switcher__flag" data-language-flag aria-hidden="true">🌐</span>
+                <span class="language-switcher__code" data-language-code>--</span>
+              </button>
+              <div
+                class="language-switcher__dropdown"
+                role="listbox"
+                data-language-options
+                hidden
+              ></div>
             </div>
             <a href="https://t.me/support_bot" class="support-link">Поддержка в Telegram</a>
           </div>
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@23.10.1/dist/umd/i18next.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.5.1/dist/umd/i18nextHttpBackend.min.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
   </body>
 </html>
