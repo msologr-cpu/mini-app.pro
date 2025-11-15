@@ -6,26 +6,7 @@
 
   const LANGUAGE_STORAGE_KEY = 'miniAppLanguage';
   const RTL_LANGUAGES = new Set(['ar', 'fa']);
-  const LANGUAGE_OPTIONS = [
-    { code: 'en', label: 'English', flag: '🇺🇸' },
-    { code: 'hi', label: 'हिन्दी · Hindi', flag: '🇮🇳' },
-    { code: 'es', label: 'Español', flag: '🇪🇸' },
-    { code: 'pt-BR', label: 'Português (Brasil)', flag: '🇧🇷' },
-    { code: 'ru', label: 'Русский', flag: '🇷🇺' },
-    { code: 'id', label: 'Bahasa Indonesia', flag: '🇮🇩' },
-    { code: 'tr', label: 'Türkçe', flag: '🇹🇷' },
-    { code: 'ar', label: 'العربية', flag: '🇸🇦' },
-    { code: 'fa', label: 'فارسی', flag: '🇮🇷' },
-    { code: 'vi', label: 'Tiếng Việt', flag: '🇻🇳' },
-    { code: 'bn', label: 'বাংলা', flag: '🇧🇩' },
-    { code: 'uk', label: 'Українська', flag: '🇺🇦' },
-    { code: 'kk', label: 'Қазақ тілі', flag: '🇰🇿' },
-    { code: 'hy', label: 'Հայերեն', flag: '🇦🇲' },
-    { code: 'ka', label: 'ქართული', flag: '🇬🇪' },
-    { code: 'uz', label: 'Oʻzbekcha', flag: '🇺🇿' },
-    { code: 'tg', label: 'Тоҷикӣ', flag: '🇹🇯' },
-    { code: 'ko', label: '한국어', flag: '🇰🇷' }
-  ];
+  const LANGUAGE_OPTIONS = [{ code: 'fr', label: 'Français', flag: '🇫🇷' }];
 
   const getLanguageConfig = (code) => {
     if (!code) {
@@ -40,7 +21,7 @@
   };
 
   const supportedLanguages = LANGUAGE_OPTIONS.map((option) => option.code);
-  const DEFAULT_LANGUAGE = getLanguageConfig(document.documentElement.lang)?.code || 'en';
+  const DEFAULT_LANGUAGE = getLanguageConfig(document.documentElement.lang)?.code || 'fr';
 
   const storage = {
     get(key) {
@@ -292,8 +273,8 @@
 
     try {
       await i18next.use(i18nextHttpBackend).init({
-        lng: 'en',
-        fallbackLng: ['en', 'ru'],
+        lng: 'fr',
+        fallbackLng: ['fr'],
         supportedLngs: supportedLanguages,
         backend: {
           loadPath: '/locales/{{lng}}/translation.json'
@@ -305,7 +286,7 @@
         }
       });
 
-      const targetLanguage = matchLanguage(initialLanguage) || 'en';
+      const targetLanguage = matchLanguage(initialLanguage) || 'fr';
       if (targetLanguage !== i18next.language) {
         await i18next.changeLanguage(targetLanguage);
       }
