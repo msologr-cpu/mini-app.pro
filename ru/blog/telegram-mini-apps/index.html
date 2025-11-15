@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="blogArticle.meta.title" data-i18n-mode="text">Что такое Telegram Mini App и как создать его без программирования | Unitee Space</title>
+    <meta
+      name="description"
+      content="Подробно о Telegram Mini Apps: как они работают, зачем бизнесу, и как создать мини-приложение без программистов с помощью платформы Unitee Space."
+      data-i18n="blogArticle.meta.description"
+      data-i18n-attr="content"
+    />
+      <link rel="canonical" href="https://mini-app.pro/ru/blog/telegram-mini-apps/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Что такое Telegram Mini App и как создать его без программирования | Unitee Space" data-i18n="blogArticle.meta.ogTitle" data-i18n-attr="content" />
+    <meta
+      property="og:description"
+      content="Мини-приложения в Telegram: примеры, преимущества и как создать без кода."
+      data-i18n="blogArticle.meta.ogDescription"
+      data-i18n-attr="content"
+    />
+      <meta property="og:image" content="/assets/og-miniapp.jpg" />
+      <meta property="article:published_time" content="2025-11-06" />
+      <meta property="article:author" content="Unitee Space" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <link rel="alternate" hreflang="en" href="https://mini-app.pro/blog/telegram-mini-apps/" />
+      <link rel="alternate" hreflang="ru" href="https://mini-app.pro/ru/blog/telegram-mini-apps/" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #fafafa;
+        color: #222222;
+        line-height: 1.7;
+      }
+
+      a {
+        color: #3a7afe;
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus {
+        text-decoration: underline;
+      }
+
+      main {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 64px 20px 120px;
+      }
+
+      nav.breadcrumbs {
+        font-size: 0.95rem;
+        margin-bottom: 32px;
+      }
+
+      nav.breadcrumbs ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        color: #6f7582;
+      }
+
+      nav.breadcrumbs li::after {
+        content: ">";
+        margin-left: 8px;
+        color: #c0c5d0;
+      }
+
+      nav.breadcrumbs li:last-child::after {
+        content: "";
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-weight: 600;
+        margin: 0 0 24px;
+        line-height: 1.3;
+        color: #111111;
+      }
+
+      h1 {
+        font-size: 2.6rem;
+      }
+
+      h2 {
+        font-size: 1.9rem;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+
+      p {
+        margin: 0 0 24px;
+      }
+
+      ul,
+      ol {
+        padding-left: 22px;
+        margin: 0 0 32px;
+      }
+
+      li {
+        margin-bottom: 12px;
+      }
+
+      .article-header {
+        margin-bottom: 48px;
+      }
+
+      .article-header p {
+        margin: 0;
+        color: #555b67;
+      }
+
+      .lead {
+        font-size: 1.1rem;
+        color: #33363f;
+      }
+
+      .section-block {
+        margin-top: 72px;
+      }
+
+      figure {
+        margin: 0 0 32px;
+        background: #ffffff;
+        border: 1px solid #e4e7ee;
+        border-radius: 24px;
+        padding: 16px;
+      }
+
+      figure img {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+      }
+
+      figure figcaption {
+        font-size: 0.95rem;
+        color: #6f7582;
+        margin-top: 12px;
+      }
+
+      .cta-block {
+        margin-top: 96px;
+        padding: 48px;
+        border-radius: 28px;
+        background: #ffffff;
+        border: 1px solid #e4e7ee;
+        text-align: center;
+        box-shadow: 0 18px 48px rgba(58, 122, 254, 0.12);
+      }
+
+      .cta-block h2 {
+        margin-bottom: 16px;
+        font-size: 2rem;
+      }
+
+      .cta-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 32px;
+        border-radius: 999px;
+        background: #3a7afe;
+        color: #ffffff;
+        font-weight: 600;
+        transition: background 160ms ease, box-shadow 160ms ease;
+      }
+
+      .cta-button:hover,
+      .cta-button:focus {
+        background: #2554d4;
+        box-shadow: 0 16px 36px rgba(58, 122, 254, 0.2);
+        text-decoration: none;
+      }
+
+      .author-block {
+        margin-top: 64px;
+        padding-top: 32px;
+        border-top: 1px solid #e4e7ee;
+        color: #555b67;
+      }
+
+      .author-block p {
+        margin-bottom: 8px;
+      }
+
+      .fade-in {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (max-width: 720px) {
+        main {
+          padding: 40px 16px 96px;
+        }
+
+        h1 {
+          font-size: 2.2rem;
+        }
+
+        h2 {
+          font-size: 1.7rem;
+        }
+
+        .section-block {
+          margin-top: 56px;
+        }
+
+        .cta-block {
+          padding: 36px 24px;
+        }
+      }
+    </style>
+    <script type="application/ld+json" data-i18n="blogArticle.structuredData" data-i18n-mode="text">
+{
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Что такое Telegram Mini App и как создать его без программирования",
+        "image": "https://images.surferseo.art/d2908d35-2dee-4734-b0cd-b2a429df33ea.jpeg",
+        "datePublished": "2025-11-06",
+        "dateModified": "2025-11-06",
+        "description": "Подробно о Telegram Mini Apps: как они работают, зачем бизнесу, и как создать мини-приложение без программистов с помощью платформы Unitee Space.",
+        "author": {
+          "@type": "Organization",
+          "name": "Unitee Space",
+          "url": "https://unitee.space"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Unitee Space",
+          "url": "https://unitee.space",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mini-app.pro/assets/og-miniapp.jpg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://mini-app.pro/ru/blog/telegram-mini-apps/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header" id="top">
+        <div class="container header-inner">
+          <a class="brand" href="/ru/#hero" aria-label="mini-app.pro">
+            <span class="brand-mark" aria-hidden="true">μ</span>
+            <span class="brand-text">
+              <span class="brand-title">mini-app.pro</span>
+              <span class="brand-tagline">Telegram Mini Apps Constructor</span>
+            </span>
+          </a>
+          <nav class="desktop-nav" aria-label="Главное меню">
+            <a href="/ru/#about-miniapps">Что это</a>
+            <a href="/ru/#features">Возможности</a>
+            <a href="/ru/#benefits">Преимущества</a>
+            <a href="/ru/#audience">Для кого</a>
+            <a href="/ru/#open-builder">Начать</a>
+          </nav>
+          <div class="header-controls">
+            <div class="language-switcher">
+              <a class="language-switcher__toggle" href="/blog/telegram-mini-apps/" aria-label="English">
+                <span class="language-switcher__flag" aria-hidden="true">🇬🇧</span>
+                <span class="language-switcher__code">EN</span>
+              </a>
+              <a class="language-switcher__toggle" href="/ru/blog/telegram-mini-apps/" aria-label="Русский" aria-current="page">
+                <span class="language-switcher__flag" aria-hidden="true">🇷🇺</span>
+                <span class="language-switcher__code">RU</span>
+              </a>
+            </div>
+            <a class="cta-button" href="/ru/#open-builder">Открыть конструктор</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+      <nav class="breadcrumbs" aria-label="Хлебные крошки" data-i18n-attrs="aria-label:blogArticle.meta.ariaBreadcrumbs">
+        <ol>
+          <li><a href="/ru/" data-i18n="blogArticle.breadcrumbs.home" data-i18n-mode="text">Главная</a></li>
+          <li><a href="/ru/blog/" data-i18n="blogArticle.breadcrumbs.blog" data-i18n-mode="text">Блог</a></li>
+          <li aria-current="page"><a href="https://unitee.space" data-i18n="blogArticle.breadcrumbs.current" data-i18n-mode="text">Telegram Mini Apps</a></li>
+        </ol>
+      </nav>
+      <article class="blog-article" itemscope itemtype="https://schema.org/BlogPosting">
+        <header class="article-header fade-in">
+          <meta itemprop="mainEntityOfPage" content="https://mini-app.pro/ru/blog/telegram-mini-apps/" />
+          <meta itemprop="datePublished" content="2025-11-06" />
+          <meta itemprop="dateModified" content="2025-11-06" />
+          <meta itemprop="author" content="Unitee Space" />
+          <meta itemprop="publisher" content="Unitee Space" />
+          <meta itemprop="image" content="https://images.surferseo.art/d2908d35-2dee-4734-b0cd-b2a429df33ea.jpeg" />
+          <h1 itemprop="headline" data-i18n="blogArticle.article.headline" data-i18n-mode="text">Что такое Telegram Mini App и как создать его без программирования</h1>
+          <p class="lead" itemprop="description" data-i18n="blogArticle.article.lead"><a href="https://unitee.space">Telegram Mini App</a> – это формат веб-сервисов внутри мессенджера, который открывает бизнесу быстрый и удобный доступ к аудитории. Разбираемся, как работают такие решения, где их применяют и как запустить собственный проект без кода вместе с платформой <a href="https://unitee.space" itemprop="brand">Unitee Space</a>.</p>
+        </header>
+        <div class="article-body" itemprop="articleBody">
+          <figure class="fade-in">
+            <img
+              src="https://images.surferseo.art/d2908d35-2dee-4734-b0cd-b2a429df33ea.jpeg"
+              alt="Телеграм миниап - это новая эра веб технологий"
+              loading="lazy"
+              data-i18n="blogArticle.article.figureIntro.alt"
+              data-i18n-attr="alt"
+            />
+            <figcaption data-i18n="blogArticle.article.figureIntro.caption">Телеграм миниап - это новая эра веб технологий</figcaption>
+          </figure>
+          <section class="section-block fade-in">
+            <p data-i18n="blogArticle.article.intro.0">Мини-приложения в Telegram – это небольшие, но функциональные веб-сервисы, которые запускаются прямо в самом мессенджере. Они позволяют пользователям взаимодействовать с сервисами без перехода на сайты или в отдельные приложения. Можно заказать еду, забронировать билет, пройти опрос или сыграть в игру – все внутри одного окна.</p>
+            <p data-i18n="blogArticle.article.intro.1">Главное отличие мини-приложений от традиционных мобильных решений заключается в том, что они не занимают места на устройстве и не требуют установки. Пользователь просто открывает <a href="https://unitee.space">Telegram Mini App</a>, авторизуется в пару кликов и получает доступ ко всем функциям. Для бизнеса это означает быстрый запуск, отсутствие сложной публикации в сторах и простую поддержку.</p>
+            <p data-i18n="blogArticle.article.intro.2">Создать мини-приложение сегодня можно даже без команды разработчиков: достаточно воспользоваться интуитивным <a href="https://unitee.space/features">конструктором</a>, который уже включает интеграции и готовые блоки. Именно такой подход развивает <a href="https://unitee.space">Unitee Space</a>, предоставляя бизнесу и сообществам визуальные инструменты для проектирования сценариев в Telegram.</p>
+          </section>
+          <section class="section-block fade-in">
+            <h2 data-i18n="blogArticle.article.sectionHowWorks.title" data-i18n-mode="text">Как работают мини-приложения в Telegram?</h2>
+            <p data-i18n="blogArticle.article.sectionHowWorks.paragraph">Мини-приложения запускаются в режиме <strong>Web App</strong> и работают на базе стандартных веб-технологий – <strong>HTML, CSS, JavaScript</strong>. Все взаимодействие идет через Telegram API, поэтому сервис корректно отображается на мобильных и десктопах, а авторизация, платежи и уведомления происходят внутри экосистемы.</p>
+            <h3 data-i18n="blogArticle.article.sectionHowWorks.constructor.title" data-i18n-mode="text">Конструкторы мини-приложений</h3>
+            <p data-i18n="blogArticle.article.sectionHowWorks.constructor.paragraph">Современные платформы предлагают готовые шаблоны и визуальные редакторы, поэтому достаточно подобрать структуру, загрузить контент и подключить бота. Такой <a href="https://unitee.space/features">конструктор</a> экономит время и позволяет сфокусироваться на пользовательском опыте.</p>
+            <figure class="fade-in">
+              <img
+                src="https://images.surferseo.art/0b8991f4-bad5-47a7-9e05-811bcb6dee07.jpeg"
+                alt="Админ панель Telegram Mini Apps на базе Юнити"
+                loading="lazy"
+                data-i18n="blogArticle.article.sectionHowWorks.adminFigure.alt"
+                data-i18n-attr="alt"
+              />
+              <figcaption data-i18n="blogArticle.article.sectionHowWorks.adminFigure.caption">Админ панель <a href="https://unitee.space">Telegram Mini Apps</a> на базе Юнити</figcaption>
+            </figure>
+            <h3 data-i18n="blogArticle.article.sectionHowWorks.api.title" data-i18n-mode="text">Взаимодействие с Telegram API</h3>
+            <p data-i18n="blogArticle.article.sectionHowWorks.api.paragraph">Через Telegram API <a href="https://unitee.space">Telegram Mini App</a> получает данные пользователя (с его разрешения), подключает платежи и интегрируется с внешними сервисами. Это позволяет выстраивать персональные сценарии и автоматизировать коммуникацию.</p>
+            <h3 data-i18n="blogArticle.article.sectionHowWorks.security.title" data-i18n-mode="text">Удобство и безопасность</h3>
+            <p data-i18n="blogArticle.article.sectionHowWorks.security.paragraph">Telegram Mini App работает внутри защищенной инфраструктуры Telegram: данные не покидают мессенджер, а вход выполняется через подтвержденный аккаунт. Пользователь доверяет привычной среде, а бизнес получает готовые механизмы авторизации и уведомлений.</p>
+          </section>
+          <section class="section-block fade-in">
+            <h2 data-i18n="blogArticle.article.sectionHowTo.title" data-i18n-mode="text">Как создать мини-приложение без программирования?</h2>
+            <p data-i18n="blogArticle.article.sectionHowTo.intro">Запустить проект можно по четкому плану: выбрать платформу, собрать интерфейс, подключить бота и протестировать сценарии. Рассмотрим ключевые этапы на примере работы с <a href="https://unitee.space">Unitee Space</a> и другими популярными решениями рынка.</p>
+            <h3 data-i18n="blogArticle.article.sectionHowTo.steps.step1.title" data-i18n-mode="text">Шаг 1. Выбор платформы</h3>
+            <p data-i18n="blogArticle.article.sectionHowTo.steps.step1.paragraph">На рынке есть решения вроде Tars, ManyChat, Chatfuel, Landbot. Они предлагают визуальные редакторы и готовые блоки. Однако бизнесам, которые хотят управлять продуктом самостоятельно, стоит обратить внимание на <a href="https://unitee.space">Unitee Space</a>: платформа сочетает мощный <a href="https://unitee.space/features">конструктор</a>, встроенную <a href="https://unitee.space/features">аналитику</a> и гибкую логику сценариев без кода.</p>
+            <figure class="fade-in">
+              <img
+                src="https://images.surferseo.art/fb4b2514-e9b4-44de-91b9-a252dba05f1d.webp"
+                alt="Делитесь мини приложениями в Телеграм и монетой ton"
+                loading="lazy"
+                data-i18n="blogArticle.article.sectionHowTo.steps.figure1.alt"
+                data-i18n-attr="alt"
+              />
+              <figcaption data-i18n="blogArticle.article.sectionHowTo.steps.figure1.caption">Делитесь мини приложениями в Телеграм и монетой ton</figcaption>
+            </figure>
+            <h3 data-i18n="blogArticle.article.sectionHowTo.steps.step2.title" data-i18n-mode="text">Шаг 2. Настройка интерфейса</h3>
+            <p data-i18n="blogArticle.article.sectionHowTo.steps.step2.paragraph">Визуальные элементы – кнопки, формы, карточки товаров – настраиваются через drag-and-drop. Важно продумать, какие действия должен совершить пользователь: зарегистрироваться, оставить заявку, оплатить заказ. В <a href="https://unitee.space/features">конструкторе</a> <a href="https://unitee.space">Unitee Space</a> все блоки адаптируются под мобильные экраны и подстраиваются под бренд.</p>
+            <h3 data-i18n="blogArticle.article.sectionHowTo.steps.step3.title" data-i18n-mode="text">Шаг 3. Интеграция с Telegram API</h3>
+            <p data-i18n="blogArticle.article.sectionHowTo.steps.step3.paragraph">Подключите бота, настроив его в BotFather, и свяжите сценарии с нужными вебхуками. В <a href="https://unitee.space">Telegram Mini App</a> можно добавить оплату, уведомления, персональные рекомендации. <a href="https://unitee.space">Unitee Space</a> автоматически формирует безопасные токены и подсказывает, как протестировать интеграцию.</p>
+            <figure class="fade-in">
+              <img
+                src="https://images.surferseo.art/5615a1df-0efc-414d-baa3-8914042453e2.jpeg"
+                alt="Telegram mini app - это веб приложения"
+                loading="lazy"
+                data-i18n="blogArticle.article.sectionHowTo.steps.figure2.alt"
+                data-i18n-attr="alt"
+              />
+              <figcaption data-i18n="blogArticle.article.sectionHowTo.steps.figure2.caption"><a href="https://unitee.space">Telegram Mini App</a> – это веб-приложения</figcaption>
+            </figure>
+            <h3 data-i18n="blogArticle.article.sectionHowTo.steps.step4.title" data-i18n-mode="text">Шаг 4. Тестирование и запуск</h3>
+            <p data-i18n="blogArticle.article.sectionHowTo.steps.step4.paragraph">Проверьте, как ведет себя сервис на разных устройствах и скоростях сети. Отлаженный <a href="https://unitee.space">Telegram Mini App</a> должен быстро загружаться, корректно отображать формы и мгновенно отправлять уведомления. В <a href="https://unitee.space">Unitee Space</a> есть тестовые окружения и чек-листы публикации.</p>
+            <h3 data-i18n="blogArticle.article.sectionHowTo.steps.step5.title" data-i18n-mode="text">Шаг 5. Привлечение пользователей</h3>
+            <p data-i18n="blogArticle.article.sectionHowTo.steps.step5.paragraph">После релиза запустите промо-кампании, подключите каталог мини-приложений, добавьте ярлык на рабочий стол смартфона. Используйте встроенную <a href="https://unitee.space/features">аналитику</a> и инструменты <a href="https://unitee.space/features">монетизации</a>, чтобы измерять конверсии и расширять продукт.</p>
+          </section>
+          <section class="section-block fade-in">
+            <h2 data-i18n="blogArticle.article.sectionBenefits.title">Преимущества и возможности <a href="https://unitee.space">Telegram Mini Apps</a></h2>
+            <figure class="fade-in">
+              <img
+                src="https://images.surferseo.art/0ff703a9-0a5c-443f-9f90-3f1abf53d535.webp"
+                alt="Платформа Телеграм - вершина веб технологий"
+                loading="lazy"
+                data-i18n="blogArticle.article.sectionBenefits.figure.alt"
+                data-i18n-attr="alt"
+              />
+              <figcaption data-i18n="blogArticle.article.sectionBenefits.figure.caption">Платформа Телеграм - вершина веб технологий</figcaption>
+            </figure>
+            <h3 data-i18n="blogArticle.article.sectionBenefits.business.title" data-i18n-mode="text">Как Mini App помогает бизнесу</h3>
+            <figure class="fade-in">
+              <img
+                src="https://images.surferseo.art/2b189389-fe2d-4170-8003-deffc1689f66.webp"
+                alt="После запуска Телеграм не останавливал свой рост ни разу"
+                loading="lazy"
+                data-i18n="blogArticle.article.sectionBenefits.business.figure.alt"
+                data-i18n-attr="alt"
+              />
+              <figcaption data-i18n="blogArticle.article.sectionBenefits.business.figure.caption">После запуска Телеграм не останавливал свой рост ни разу</figcaption>
+            </figure>
+            <p data-i18n="blogArticle.article.sectionBenefits.business.paragraph">Компании используют <a href="https://unitee.space">Telegram Mini App</a>, чтобы увеличить продажи, автоматизировать сервис и собирать данные. Встроенные возможности Telegram API позволяют продавать товары, проводить опросы, запускать программы лояльности и интегрироваться с <a href="https://unitee.space/features">CRM</a>.</p>
+            <ul>
+              <li data-i18n="blogArticle.article.sectionBenefits.business.list.0" data-i18n-mode="text">Продажи товаров и услуг прямо в мессенджере.</li>
+              <li data-i18n="blogArticle.article.sectionBenefits.business.list.1" data-i18n-mode="text">Автоматизация клиентского сервиса и обратной связи.</li>
+              <li data-i18n="blogArticle.article.sectionBenefits.business.list.2" data-i18n-mode="text">Проведение опросов и сбор заявок.</li>
+              <li data-i18n="blogArticle.article.sectionBenefits.business.list.3" data-i18n-mode="text">Организация бонусных программ и реферальных механик.</li>
+              <li data-i18n="blogArticle.article.sectionBenefits.business.list.4">Интеграция с <a href="https://unitee.space/features">CRM</a> для обработки заказов.</li>
+            </ul>
+            <h3 data-i18n="blogArticle.article.sectionBenefits.users.title" data-i18n-mode="text">Удобство для пользователей</h3>
+            <p data-i18n="blogArticle.article.sectionBenefits.users.paragraph">Пользователям не нужно скачивать приложения, обновления происходят автоматически, а интерфейс повторяет привычную структуру чатов. <a href="https://unitee.space">Telegram Mini App</a> запускается мгновенно и работает на любом устройстве, где установлен Telegram.</p>
+            <h3 data-i18n="blogArticle.article.sectionBenefits.integration.title" data-i18n-mode="text">Интеграция с ботами и внешними сервисами</h3>
+            <figure class="fade-in">
+              <img
+                src="https://images.surferseo.art/6b3412c1-29eb-49c5-8e39-30fbf133082a.png"
+                alt="Юнити - конструктр как для новичков, так и для опытных разработчиков"
+                loading="lazy"
+                data-i18n="blogArticle.article.sectionBenefits.integration.figure.alt"
+                data-i18n-attr="alt"
+              />
+              <figcaption data-i18n="blogArticle.article.sectionBenefits.integration.figure.caption">Юнити - <a href="https://unitee.space/features">конструктр</a> как для новичков, так и для опытных разработчиков</figcaption>
+            </figure>
+            <p data-i18n="blogArticle.article.sectionBenefits.integration.paragraph">Мини-приложения объединяются с ботами для приема заказов, напоминаний, поддержки клиентов и персональных рассылок. Дополнительно сервисы подключаются к внешним системам: <a href="https://unitee.space/features">CRM</a>, платежным провайдерам, облачным базам данных.</p>
+            <h3 data-i18n="blogArticle.article.sectionBenefits.economy.title" data-i18n-mode="text">Экономия на разработке и поддержке</h3>
+            <p data-i18n="blogArticle.article.sectionBenefits.economy.paragraph">Классическое мобильное приложение требует бюджета на публикацию и поддержку. <a href="https://unitee.space">Telegram Mini App</a> снижает расходы: с помощью визуального <a href="https://unitee.space/features">конструктора</a> команда быстро обновляет контент и расширяет функциональность, не привлекая разработчиков.</p>
+          </section>
+          <section class="section-block fade-in">
+            <h2 data-i18n="blogArticle.article.sectionExamples.title">Примеры успешных <a href="https://unitee.space">Telegram Mini Apps</a></h2>
+            <figure class="fade-in">
+              <img
+                src="https://images.surferseo.art/e4d06880-b392-4390-9eb0-7566f72dd9bf.jpeg"
+                alt="300000 пользователей уже в приложениях Юнити"
+                loading="lazy"
+                data-i18n="blogArticle.article.sectionExamples.figure.alt"
+                data-i18n-attr="alt"
+              />
+              <figcaption data-i18n="blogArticle.article.sectionExamples.figure.caption">300000 пользователей уже в приложениях Юнити</figcaption>
+            </figure>
+            <h3 data-i18n="blogArticle.article.sectionExamples.ecommerce.title" data-i18n-mode="text">Онлайн-магазины и e-commerce</h3>
+            <p data-i18n="blogArticle.article.sectionExamples.ecommerce.paragraph">Магазины собирают каталоги прямо в <a href="https://unitee.space">Telegram Mini App</a>, оформляют заказы и принимают оплату через встроенные платежные системы. Клиент не покидает диалог, а бизнес экономит на разработке отдельного приложения.</p>
+            <ul>
+              <li data-i18n="blogArticle.article.sectionExamples.ecommerce.list.0" data-i18n-mode="text">Удобство: покупка происходит в одном окне.</li>
+              <li data-i18n="blogArticle.article.sectionExamples.ecommerce.list.1" data-i18n-mode="text">Выгода: нет затрат на публикацию в сторах, поддержка проще.</li>
+            </ul>
+            <h3 data-i18n="blogArticle.article.sectionExamples.booking.title" data-i18n-mode="text">Сервисы бронирования и заказов</h3>
+            <p data-i18n="blogArticle.article.sectionExamples.booking.paragraph">Рестораны, салоны и отели автоматизируют записи, предоплаты и уведомления. Клиент выбирает услугу, оплачивает бронирование и получает напоминания – все в рамках <a href="https://unitee.space">Telegram Mini App</a>.</p>
+            <ul>
+              <li data-i18n="blogArticle.article.sectionExamples.booking.list.0" data-i18n-mode="text">Быстрая запись в пару кликов.</li>
+              <li data-i18n="blogArticle.article.sectionExamples.booking.list.1" data-i18n-mode="text">Оптимизация нагрузки на операторов.</li>
+            </ul>
+            <h3 data-i18n="blogArticle.article.sectionExamples.games.title" data-i18n-mode="text">Игры и развлекательные проекты</h3>
+            <p data-i18n="blogArticle.article.sectionExamples.games.paragraph">Бренды создают викторины, квесты и интерактивные конкурсы. Геймификация повышает вовлеченность и помогает запускать модели <a href="https://unitee.space/features">монетизации</a> – подписки, продажи внутриигровых бонусов, партнерские интеграции.</p>
+            <h3 data-i18n="blogArticle.article.sectionExamples.community.title" data-i18n-mode="text">Коворкинги и сообщества</h3>
+            <p data-i18n="blogArticle.article.sectionExamples.community.paragraph">Для рабочих пространств <a href="https://unitee.space">Telegram Mini App</a> становится центром коммуникации: бронирование переговорных, оплата услуг, программа лояльности и подключения к <a href="https://unitee.space/features">CRM</a>.</p>
+            <h3 data-i18n="blogArticle.article.sectionExamples.education.title" data-i18n-mode="text">Образование</h3>
+            <p data-i18n="blogArticle.article.sectionExamples.education.paragraph">Команды запускают онлайн-курсы, тесты и тренажеры. Контент адаптируется под уровень знания, а прогресс фиксируется в <a href="https://unitee.space/features">аналитике</a>. Преподаватели видят активность учеников и быстро обновляют материалы.</p>
+          </section>
+          <section class="section-block fade-in">
+            <h2 data-i18n="blogArticle.article.sectionFuture.title">Будущее <a href="https://unitee.space">Telegram Mini Apps</a></h2>
+            <figure class="fade-in">
+              <img
+                src="https://images.surferseo.art/cb4fea80-46b9-4c84-a90f-96d9f027cb59.jpeg"
+                alt="Создание приложений для любых операционных систем без разработчиков"
+                loading="lazy"
+                data-i18n="blogArticle.article.sectionFuture.figure.alt"
+                data-i18n-attr="alt"
+              />
+              <figcaption data-i18n="blogArticle.article.sectionFuture.figure.caption">Создание приложений для любых операционных систем без разработчиков</figcaption>
+            </figure>
+            <h3 data-i18n="blogArticle.article.sectionFuture.automation.title" data-i18n-mode="text">Автоматизация бизнес-процессов</h3>
+            <figure class="fade-in">
+              <img
+                src="https://images.surferseo.art/a22e41e1-fcd0-4769-832d-d263eb44d3a7.jpeg"
+                alt="Режим администрирования без кода - все как в обычной CRM"
+                loading="lazy"
+                data-i18n="blogArticle.article.sectionFuture.automation.figure.alt"
+                data-i18n-attr="alt"
+              />
+              <figcaption data-i18n="blogArticle.article.sectionFuture.automation.figure.caption">Режим администрирования без кода - все как в обычной <a href="https://unitee.space/features">CRM</a></figcaption>
+            </figure>
+            <p data-i18n="blogArticle.article.sectionFuture.automation.paragraph">Все больше компаний переводят заказ, поддержку и доставку в <a href="https://unitee.space">Telegram Mini App</a>. Готовые шаблоны <a href="https://unitee.space/features">конструктора</a> позволяют адаптировать сценарии под разные отрасли, а данные стекаются в <a href="https://unitee.space/features">CRM</a> и <a href="https://unitee.space/features">аналитику</a>.</p>
+            <h3 data-i18n="blogArticle.article.sectionFuture.smartCities.title" data-i18n-mode="text">Умные города</h3>
+            <figure class="fade-in">
+              <img
+                src="https://images.surferseo.art/af6b98da-ec30-40c8-b9f3-02582f7ab468.jpeg"
+                alt="Легко добавьте иконку на рабочий стол телефона"
+                loading="lazy"
+                data-i18n="blogArticle.article.sectionFuture.smartCities.figure.alt"
+                data-i18n-attr="alt"
+              />
+              <figcaption data-i18n="blogArticle.article.sectionFuture.smartCities.figure.caption">Легко добавьте иконку на рабочий стол телефона</figcaption>
+            </figure>
+            <p data-i18n="blogArticle.article.sectionFuture.smartCities.paragraph">Муниципальные сервисы переводят заявки, оплату парковок и информирование жителей в цифровые каналы. <a href="https://unitee.space">Telegram Mini App</a> становится точкой входа, где граждане отслеживают статусы обращений и получают индивидуальные рекомендации.</p>
+            <h3 data-i18n="blogArticle.article.sectionFuture.education.title" data-i18n-mode="text">Образовательные платформы</h3>
+            <figure class="fade-in">
+              <img
+                src="https://images.surferseo.art/dae5d512-cb85-4cb1-94cf-f33223b4543b.jpeg"
+                alt="В ТМА может обучаться ваша команда или ваша аудитория"
+                loading="lazy"
+                data-i18n="blogArticle.article.sectionFuture.education.figure.alt"
+                data-i18n-attr="alt"
+              />
+              <figcaption data-i18n="blogArticle.article.sectionFuture.education.figure.caption">В ТМА может обучаться ваша команда или ваша аудитория</figcaption>
+            </figure>
+            <p data-i18n="blogArticle.article.sectionFuture.education.paragraph">Мини-приложения помогают создавать персонализированные программы, проводить тесты и внедрять элементы геймификации. <a href="https://unitee.space">Unitee Space</a> поддерживает рассылки, адаптивные уроки и инструменты <a href="https://unitee.space/features">аналитики</a> для тьюторов.</p>
+            <h3 data-i18n="blogArticle.article.sectionFuture.gamification.title" data-i18n-mode="text">Геймификация и вовлечение</h3>
+            <figure class="fade-in">
+              <img
+                src="https://images.surferseo.art/274aeb72-a91f-457e-bb0e-0457298c95f0.jpeg"
+                alt="Геймификация в TG App"
+                loading="lazy"
+                data-i18n="blogArticle.article.sectionFuture.gamification.figure.alt"
+                data-i18n-attr="alt"
+              />
+              <figcaption data-i18n="blogArticle.article.sectionFuture.gamification.figure.caption">Геймификация в TG App</figcaption>
+            </figure>
+            <p data-i18n="blogArticle.article.sectionFuture.gamification.paragraph">Telegram активно развивает игровые механики, и бренды используют <a href="https://unitee.space">Telegram Mini App</a> для программ лояльности, соревнований и реферальных систем. Геймификация помогает удерживать аудиторию и открывает дополнительные каналы <a href="https://unitee.space/features">монетизации</a>.</p>
+          </section>
+          <section class="section-block fade-in">
+            <h2 data-i18n="blogArticle.article.sectionConclusion.title" data-i18n-mode="text">Выводы</h2>
+            <p data-i18n="blogArticle.article.sectionConclusion.paragraphs.0"><a href="https://unitee.space">Telegram Mini App</a> – это эффективный способ запустить цифровой сервис без разработки нативных приложений. Обновления применяются мгновенно, ярлык можно закрепить на рабочем столе смартфона, а все данные клиентов обрабатываются в защищенной среде.</p>
+            <p data-i18n="blogArticle.article.sectionConclusion.paragraphs.1">Благодаря платформе <a href="https://unitee.space">Unitee Space</a> бизнес получает полный набор инструментов: визуальный <a href="https://unitee.space/features">конструктор</a>, встроенную <a href="https://unitee.space/features">аналитику</a>, гибкие инструменты <a href="https://unitee.space/features">монетизации</a> и интеграции с <a href="https://unitee.space/features">CRM</a>. Это позволяет запускать проекты быстрее, контролировать эффективность и масштабировать экосистему в Telegram.</p>
+          </section>
+        </div>
+        <div class="cta-block fade-in">
+          <h2 data-i18n="blogArticle.article.cta.title">🚀 Попробуйте <a href="https://unitee.space">Unitee Space</a> – <a href="https://unitee.space/features">конструктор</a> №1 для <a href="https://unitee.space">Telegram Mini Apps</a></h2>
+          <p data-i18n="blogArticle.article.cta.description">Создавайте, тестируйте и масштабируйте мини-приложения без кода в привычном интерфейсе.</p>
+          <a class="cta-button" href="https://unitee.space" data-i18n="blogArticle.article.cta.button" data-i18n-mode="text">Перейти на unitee.space</a>
+        </div>
+        <div class="author-block fade-in" itemprop="author" itemscope itemtype="https://schema.org/Organization">
+          <p itemprop="name" data-i18n="blogArticle.article.author.name">Автор: команда <a href="https://unitee.space">Unitee Space</a></p>
+          <p itemprop="description" data-i18n="blogArticle.article.author.description">Платформа для создания <a href="https://unitee.space">Telegram Mini Apps</a> без кода.</p>
+        </div>
+      </article>
+      </main>
+    </div>
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.2,
+        }
+      );
+
+      document.querySelectorAll('.fade-in').forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@23.10.1/dist/umd/i18next.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.5.1/dist/umd/i18nextHttpBackend.min.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
+  </body>
+</html>
