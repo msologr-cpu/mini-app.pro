@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Telegram Mini Apps for business | mini-app.pro</title>
+    <title data-i18n="homeEn.meta.title" data-i18n-mode="text"></title>
     <meta
       name="description"
-      content="We design and launch Telegram Mini Apps end-to-end: product strategy, UI and no-code development for ambitious teams."
+      content=""
+      data-i18n="homeEn.meta.description"
+      data-i18n-attr="content"
     />
     <link rel="alternate" hreflang="en" href="https://mini-app.pro/en/" />
     <link rel="alternate" hreflang="ru" href="https://mini-app.pro/" />
@@ -23,20 +25,32 @@
           <a href="#hero" class="site-brand" aria-label="mini-app.pro">
             <span class="brand-mark" aria-hidden="true">μ</span>
             <span class="brand-text">
-              <strong>mini-app.pro</strong>
-              <span>Telegram Mini Apps studio</span>
+              <strong data-i18n="homeEn.header.brandTitle" data-i18n-mode="text"></strong>
+              <span data-i18n="homeEn.header.brandTagline" data-i18n-mode="text"></span>
             </span>
           </a>
-          <nav class="desktop-nav" aria-label="Primary menu">
-            <a href="#solutions">Solutions</a>
-            <a href="#process">Process</a>
-            <a href="#cases">Use cases</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">Contact</a>
-            <a href="/blog/">Blog</a>
+          <nav
+            class="desktop-nav"
+            aria-label="Primary menu"
+            data-i18n-attrs="aria-label:homeEn.header.navLabel"
+          >
+            <a href="#solutions" data-i18n="homeEn.header.links.solutions" data-i18n-mode="text"></a>
+            <a href="#process" data-i18n="homeEn.header.links.process" data-i18n-mode="text"></a>
+            <a href="#cases" data-i18n="homeEn.header.links.cases" data-i18n-mode="text"></a>
+            <a href="#faq" data-i18n="homeEn.header.links.faq" data-i18n-mode="text"></a>
+            <a href="#contact" data-i18n="homeEn.header.links.contact" data-i18n-mode="text"></a>
+            <a href="/blog/" data-i18n="homeEn.header.links.blog" data-i18n-mode="text"></a>
           </nav>
           <div class="header-controls">
-            <a href="../" class="language-toggle" aria-label="Switch to Russian">RU</a>
+            <a
+              href="../"
+              class="language-toggle"
+              aria-label="Switch to Russian"
+              data-i18n="homeEn.header.languageToggle"
+              data-i18n-attr="aria-label"
+            >
+              <span data-i18n="homeEn.header.languageToggleShort" data-i18n-mode="text"></span>
+            </a>
             <button
               type="button"
               class="hamburger"
@@ -44,8 +58,10 @@
               aria-expanded="false"
               aria-controls="mobile-menu"
               data-mobile-toggle
+              data-i18n="homeEn.header.openMenu"
+              data-i18n-attr="aria-label"
             >
-              <span class="sr-only">Menu</span>
+              <span class="sr-only" data-i18n="homeEn.header.menuLabel" data-i18n-mode="text"></span>
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" viewBox="0 0 24 24">
                 <path d="M4 7h16M4 12h16M10 17h10" />
               </svg>
@@ -58,28 +74,40 @@
             <a href="#hero" class="menu-logo" aria-label="mini-app.pro">
               <span>μ</span>
             </a>
-            <button type="button" class="mobile-close" aria-label="Close menu" data-mobile-close>✕</button>
+            <button
+              type="button"
+              class="mobile-close"
+              aria-label="Close menu"
+              data-mobile-close
+              data-i18n="homeEn.header.closeMenu"
+              data-i18n-attr="aria-label"
+            >
+              ✕
+            </button>
           </div>
           <div class="mobile-menu-body">
-            <h2 class="mobile-menu-title">Launch Telegram Mini Apps</h2>
-            <p class="mobile-menu-text">
-              We deliver concepts, UI and no-code builds to ship your service on Telegram fast.
-            </p>
-            <nav class="mobile-nav" aria-label="Sections">
-              <a href="#solutions" class="menu-link">Solutions</a>
-              <a href="#process" class="menu-link">Process</a>
-              <a href="#cases" class="menu-link">Use cases</a>
-              <a href="#faq" class="menu-link">FAQ</a>
-              <a href="#contact" class="menu-link">Contact</a>
-              <a href="/blog/" class="menu-link">Blog</a>
+            <h2 class="mobile-menu-title" data-i18n="homeEn.header.mobileTitle" data-i18n-mode="text"></h2>
+            <p class="mobile-menu-text" data-i18n="homeEn.header.mobileText"></p>
+            <nav class="mobile-nav" aria-label="Sections" data-i18n-attrs="aria-label:homeEn.header.mobileSections">
+              <a href="#solutions" class="menu-link" data-i18n="homeEn.header.links.solutions" data-i18n-mode="text"></a>
+              <a href="#process" class="menu-link" data-i18n="homeEn.header.links.process" data-i18n-mode="text"></a>
+              <a href="#cases" class="menu-link" data-i18n="homeEn.header.links.cases" data-i18n-mode="text"></a>
+              <a href="#faq" class="menu-link" data-i18n="homeEn.header.links.faq" data-i18n-mode="text"></a>
+              <a href="#contact" class="menu-link" data-i18n="homeEn.header.links.contact" data-i18n-mode="text"></a>
+              <a href="/blog/" class="menu-link" data-i18n="homeEn.header.links.blog" data-i18n-mode="text"></a>
             </nav>
-            <a href="https://unitee.space" target="_blank" rel="noopener" class="menu-link">Unitee.Space ↗</a>
-            <a href="mailto:hello@unitee.space" class="menu-link">hello@unitee.space</a>
+            <a href="https://unitee.space" target="_blank" rel="noopener" class="menu-link" data-i18n="homeEn.header.uniteeLink" data-i18n-mode="text"></a>
+            <a href="mailto:hello@unitee.space" class="menu-link" data-i18n="homeEn.header.email" data-i18n-mode="text"></a>
           </div>
           <div class="mobile-menu-footer">
-            <a href="https://unitee.space" target="_blank" rel="noopener" class="cta-button w-full text-center">
-              Book a consultation
-            </a>
+            <a
+              href="https://unitee.space"
+              target="_blank"
+              rel="noopener"
+              class="cta-button w-full text-center"
+              data-i18n="homeEn.header.book"
+              data-i18n-mode="text"
+            ></a>
           </div>
         </div>
       </header>
@@ -88,51 +116,32 @@
           <div class="hero-overlay" aria-hidden="true"></div>
           <div class="relative z-10 mx-auto flex w-full max-w-3xl flex-col items-center text-center">
             <span class="hero-mark">μ</span>
-            <h1 class="hero-title">
-              Launch Telegram Mini Apps
-              <span>fast, smooth and without code</span>
-            </h1>
-            <p class="hero-subtitle">
-              We help teams bring services to Telegram — from the first idea to production-ready bots, integrations and payments.
-            </p>
+            <h1 class="hero-title" data-i18n="homeEn.hero.title"></h1>
+            <p class="hero-subtitle" data-i18n="homeEn.hero.description"></p>
             <div class="hero-actions">
-              <a href="https://unitee.space" target="_blank" rel="noopener" class="cta-button">
-                Book a consultation
-              </a>
-              <a href="mailto:hello@unitee.space" class="secondary-link">hello@unitee.space</a>
+              <a href="https://unitee.space" target="_blank" rel="noopener" class="cta-button" data-i18n="homeEn.hero.primaryCta" data-i18n-mode="text"></a>
+              <a href="mailto:hello@unitee.space" class="secondary-link" data-i18n="homeEn.hero.secondary" data-i18n-mode="text"></a>
             </div>
           </div>
         </section>
         <section id="solutions" class="content-section" data-topic="benefits">
           <div class="section-inner">
             <div class="section-header">
-              <h2 class="section-title">Mini Apps that unlock measurable growth</h2>
-              <p class="section-subtitle">
-                Telegram Mini Apps deliver services inside the messenger — no installs or store approvals needed. We design and build them
-                with web technologies so customers can browse, sign up, purchase and pay in a familiar chat interface.
-              </p>
+              <h2 class="section-title" data-i18n="homeEn.solutions.title" data-i18n-mode="text"></h2>
+              <p class="section-subtitle" data-i18n="homeEn.solutions.description"></p>
             </div>
             <div class="feature-grid">
               <article class="feature-card">
-                <h3>Native UX inside Telegram</h3>
-                <p>
-                  We follow Telegram UI patterns with instant responses, autofill and dark-mode support. Users stay in the bot conversation
-                  and never lose context between steps.
-                </p>
+                <h3 data-i18n="homeEn.solutions.cards.ux.title" data-i18n-mode="text"></h3>
+                <p data-i18n="homeEn.solutions.cards.ux.description"></p>
               </article>
               <article class="feature-card">
-                <h3>Integrations without heavy code</h3>
-                <p>
-                  We connect CRMs, payment gateways, loyalty widgets and custom APIs. Mini Apps run on top of the Telegram Bot API and Web
-                  Apps, which means you can launch even without in-house infrastructure.
-                </p>
+                <h3 data-i18n="homeEn.solutions.cards.integrations.title" data-i18n-mode="text"></h3>
+                <p data-i18n="homeEn.solutions.cards.integrations.description"></p>
               </article>
               <article class="feature-card">
-                <h3>Analytics and iteration</h3>
-                <p>
-                  Events, UTM tracking and experiments help optimise the funnel. Add new flows or languages without app releases — updating
-                  the web interface instantly delivers features to every bot user.
-                </p>
+                <h3 data-i18n="homeEn.solutions.cards.analytics.title" data-i18n-mode="text"></h3>
+                <p data-i18n="homeEn.solutions.cards.analytics.description"></p>
               </article>
             </div>
           </div>
@@ -140,49 +149,36 @@
         <section id="process" class="content-section alt" data-topic="process">
           <div class="section-inner">
             <div class="section-header">
-              <h2 class="section-title">Our launch process</h2>
-              <p class="section-subtitle">
-                We partner from discovery to first revenue. Work in sprints, keep updates in Telegram and stay transparent about scope,
-                timelines and ownership.
-              </p>
+              <h2 class="section-title" data-i18n="homeEn.process.title" data-i18n-mode="text"></h2>
+              <p class="section-subtitle" data-i18n="homeEn.process.description"></p>
             </div>
             <ol class="process-timeline">
               <li>
                 <span class="process-step">1</span>
                 <div>
-                  <h3>Discovery and goal setting</h3>
-                  <p>
-                    Review your product, target audience and funnel. Define success metrics and scope the MVP that will deliver value fast.
-                  </p>
+                  <h3 data-i18n="homeEn.process.steps.one.title" data-i18n-mode="text"></h3>
+                  <p data-i18n="homeEn.process.steps.one.description"></p>
                 </div>
               </li>
               <li>
                 <span class="process-step">2</span>
                 <div>
-                  <h3>UX concept and interface</h3>
-                  <p>
-                    Prototype key flows, craft UI kit, align visuals with your brand and prepare multilingual copy for every screen.
-                  </p>
+                  <h3 data-i18n="homeEn.process.steps.two.title" data-i18n-mode="text"></h3>
+                  <p data-i18n="homeEn.process.steps.two.description"></p>
                 </div>
               </li>
               <li>
                 <span class="process-step">3</span>
                 <div>
-                  <h3>No-code build and integrations</h3>
-                  <p>
-                    Implement the frontend, connect the bot, CRM and payments. Test across devices and configure analytics events and
-                    dashboards.
-                  </p>
+                  <h3 data-i18n="homeEn.process.steps.three.title" data-i18n-mode="text"></h3>
+                  <p data-i18n="homeEn.process.steps.three.description"></p>
                 </div>
               </li>
               <li>
                 <span class="process-step">4</span>
                 <div>
-                  <h3>Launch and growth support</h3>
-                  <p>
-                    Assist with go-live, train the team and provide ongoing care: optimise flows, ship new features and improve conversion
-                    with data.
-                  </p>
+                  <h3 data-i18n="homeEn.process.steps.four.title" data-i18n-mode="text"></h3>
+                  <p data-i18n="homeEn.process.steps.four.description"></p>
                 </div>
               </li>
             </ol>
@@ -191,33 +187,21 @@
         <section id="cases" class="content-section" data-topic="cases">
           <div class="section-inner">
             <div class="section-header">
-              <h2 class="section-title">Solutions we ship most often</h2>
-              <p class="section-subtitle">
-                From eCommerce to education and financial services — our Mini Apps cover the full customer journey and integrate with your
-                existing tools.
-              </p>
+              <h2 class="section-title" data-i18n="homeEn.cases.title" data-i18n-mode="text"></h2>
+              <p class="section-subtitle" data-i18n="homeEn.cases.description"></p>
             </div>
             <div class="case-grid">
               <article class="case-card">
-                <h3>Commerce and catalogues</h3>
-                <p>
-                  Product feeds, carts, checkout and instant payments with receipt issuing. Integrations with 1C, Shopify, Airtable or
-                  Notion depending on your stack.
-                </p>
+                <h3 data-i18n="homeEn.cases.cards.commerce.title" data-i18n-mode="text"></h3>
+                <p data-i18n="homeEn.cases.cards.commerce.description"></p>
               </article>
               <article class="case-card">
-                <h3>Learning and communities</h3>
-                <p>
-                  Courses, quizzes, gated content and memberships in one tap. Personal dashboards, progress tracking and automated bot
-                  messaging keep students engaged.
-                </p>
+                <h3 data-i18n="homeEn.cases.cards.education.title" data-i18n-mode="text"></h3>
+                <p data-i18n="homeEn.cases.cards.education.description"></p>
               </article>
               <article class="case-card">
-                <h3>Customer service flows</h3>
-                <p>
-                  Intake forms, bookings, support requests and customer segmentation. We connect helpdesk tools, calendars and KPI dashboards
-                  so the team tracks every ticket.
-                </p>
+                <h3 data-i18n="homeEn.cases.cards.service.title" data-i18n-mode="text"></h3>
+                <p data-i18n="homeEn.cases.cards.service.description"></p>
               </article>
             </div>
           </div>
@@ -225,39 +209,25 @@
         <section id="faq" class="content-section alt" data-topic="faq">
           <div class="section-inner">
             <div class="section-header">
-              <h2 class="section-title">Frequently asked questions</h2>
-              <p class="section-subtitle">
-                We gathered the top questions from discovery calls. Drop us a line if you need more details about pricing or integrations.
-              </p>
+              <h2 class="section-title" data-i18n="homeEn.faq.title" data-i18n-mode="text"></h2>
+              <p class="section-subtitle" data-i18n="homeEn.faq.description"></p>
             </div>
             <div class="faq-list">
               <article class="faq-item">
-                <h3>How long does it take?</h3>
-                <p>
-                  Two to six weeks depending on integrations. A functional MVP with a typical flow is ready for review in the second week of
-                  the project.
-                </p>
+                <h3 data-i18n="homeEn.faq.items.timeline.question" data-i18n-mode="text"></h3>
+                <p data-i18n="homeEn.faq.items.timeline.answer"></p>
               </article>
               <article class="faq-item">
-                <h3>Do we need developers on our side?</h3>
-                <p>
-                  No, we cover UX, design, build, integrations and QA. Your team only joins to approve access and brand guidelines when
-                  needed.
-                </p>
+                <h3 data-i18n="homeEn.faq.items.developers.question" data-i18n-mode="text"></h3>
+                <p data-i18n="homeEn.faq.items.developers.answer"></p>
               </article>
               <article class="faq-item">
-                <h3>Can we iterate after launch?</h3>
-                <p>
-                  Absolutely — we extend functionality without App Store releases. Updating the web interface pushes changes to every bot
-                  user instantly.
-                </p>
+                <h3 data-i18n="homeEn.faq.items.iterate.question" data-i18n-mode="text"></h3>
+                <p data-i18n="homeEn.faq.items.iterate.answer"></p>
               </article>
               <article class="faq-item">
-                <h3>What about support?</h3>
-                <p>
-                  We provide SLA-backed support and a shared Telegram chat, monitor bot uptime, add incident alerts and help with analytics
-                  and roadmap decisions.
-                </p>
+                <h3 data-i18n="homeEn.faq.items.support.question" data-i18n-mode="text"></h3>
+                <p data-i18n="homeEn.faq.items.support.answer"></p>
               </article>
             </div>
           </div>
@@ -265,14 +235,18 @@
         <section id="contact" class="content-section final" data-topic="contact">
           <div class="section-inner">
             <div class="contact-card">
-              <h2>Tell us about your product</h2>
-              <p>
-                We will review the customer journey, suggest an MVP scope and show how a Telegram Mini App can boost conversion. Reach out via
-                Unitee.Space or email us directly.
-              </p>
+              <h2 data-i18n="homeEn.contact.title" data-i18n-mode="text"></h2>
+              <p data-i18n="homeEn.contact.description"></p>
               <div class="contact-actions">
-                <a href="https://unitee.space" target="_blank" rel="noopener" class="cta-button">Book a consultation</a>
-                <a href="mailto:hello@unitee.space" class="secondary-link">hello@unitee.space</a>
+                <a
+                  href="https://unitee.space"
+                  target="_blank"
+                  rel="noopener"
+                  class="cta-button"
+                  data-i18n="homeEn.contact.cta"
+                  data-i18n-mode="text"
+                ></a>
+                <a href="mailto:hello@unitee.space" class="secondary-link" data-i18n="homeEn.contact.secondary" data-i18n-mode="text"></a>
               </div>
             </div>
           </div>
@@ -280,5 +254,6 @@
       </main>
     </div>
     <script src="../assets/js/script.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
   </body>
 </html>
