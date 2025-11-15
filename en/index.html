@@ -42,15 +42,24 @@
             <a href="/blog/" data-i18n="homeEn.header.links.blog" data-i18n-mode="text"></a>
           </nav>
           <div class="header-controls">
-            <a
-              href="../"
-              class="language-toggle"
-              aria-label="Switch to Russian"
-              data-i18n="homeEn.header.languageToggle"
-              data-i18n-attr="aria-label"
-            >
-              <span data-i18n="homeEn.header.languageToggleShort" data-i18n-mode="text"></span>
-            </a>
+            <div class="language-switcher" data-language-switcher>
+              <button
+                type="button"
+                class="language-switcher__toggle"
+                data-language-toggle
+                aria-haspopup="listbox"
+                aria-expanded="false"
+              >
+                <span class="language-switcher__flag" data-language-flag aria-hidden="true">🌐</span>
+                <span class="language-switcher__code" data-language-code>--</span>
+              </button>
+              <div
+                class="language-switcher__dropdown"
+                role="listbox"
+                data-language-options
+                hidden
+              ></div>
+            </div>
             <button
               type="button"
               class="hamburger"
@@ -254,6 +263,8 @@
       </main>
     </div>
     <script src="../assets/js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@23.10.1/dist/umd/i18next.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.5.1/dist/umd/i18nextHttpBackend.min.js" defer></script>
     <script src="/assets/js/i18n.js" defer></script>
   </body>
 </html>

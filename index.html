@@ -54,14 +54,34 @@
             <a href="#why-us" data-i18n="home.header.links.whyUs" data-i18n-mode="text"></a>
             <a href="/blog/" data-i18n="home.header.links.blog" data-i18n-mode="text"></a>
           </nav>
-          <a
-            class="cta-button"
-            href="https://unitee.space"
-            target="_blank"
-            rel="noopener"
-            data-i18n="home.header.cta"
-            data-i18n-mode="text"
-          ></a>
+          <div class="header-controls">
+            <div class="language-switcher" data-language-switcher>
+              <button
+                type="button"
+                class="language-switcher__toggle"
+                data-language-toggle
+                aria-haspopup="listbox"
+                aria-expanded="false"
+              >
+                <span class="language-switcher__flag" data-language-flag aria-hidden="true">🌐</span>
+                <span class="language-switcher__code" data-language-code>--</span>
+              </button>
+              <div
+                class="language-switcher__dropdown"
+                role="listbox"
+                data-language-options
+                hidden
+              ></div>
+            </div>
+            <a
+              class="cta-button"
+              href="https://unitee.space"
+              target="_blank"
+              rel="noopener"
+              data-i18n="home.header.cta"
+              data-i18n-mode="text"
+            ></a>
+          </div>
         </div>
       </header>
       <main>
@@ -351,6 +371,8 @@
         </a>
       </nav>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@23.10.1/dist/umd/i18next.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@2.5.1/dist/umd/i18nextHttpBackend.min.js" defer></script>
     <script src="/assets/js/i18n.js" defer></script>
   </body>
 </html>
