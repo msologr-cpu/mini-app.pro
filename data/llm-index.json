@@ -1,37 +1,37 @@
 [
   {
     "id": "intro",
-    "topic": "What is a Mini App",
-    "text": "Мини-приложение Telegram — это легкий веб-сервис, запускающийся в режиме Web App без установки; mini app runs inside Telegram, giving instant access to ordering, booking, surveys and games without consuming device storage."
+    "topic": "Qu'est-ce qu'une mini-app",
+    "text": "Une mini-app Telegram est un service web léger qui se lance en mode Web App sans installation ; elle s'exécute dans Telegram et offre un accès instantané à la commande, à la réservation, aux sondages ou aux jeux sans occuper l'espace de l'appareil."
   },
   {
     "id": "api",
-    "topic": "Telegram API integration",
-    "text": "Mini apps rely on Telegram API for bot dialogs, payments, user authorisation and notifications; builders connect HTML, CSS, JavaScript interfaces to official API endpoints to sync data securely."
+    "topic": "Intégration avec l'API Telegram",
+    "text": "Les mini-apps s'appuient sur l'API Telegram pour les dialogues des bots, les paiements, l'authentification et les notifications ; les constructeurs relient les interfaces HTML, CSS, JavaScript aux endpoints officiels pour synchroniser les données en toute sécurité."
   },
   {
     "id": "nocode",
-    "topic": "No-code creation workflow",
-    "text": "Процесс создания включает выбор конструктора (Tars, ManyChat, Chatfuel, Landbot), настройку интерфейса, подключение Telegram API, тестирование на устройствах и запуск с последующей оптимизацией."
+    "topic": "Processus de création sans code",
+    "text": "Le processus comprend le choix d'un constructeur (Tars, ManyChat, Chatfuel, Landbot), la personnalisation de l'interface, la connexion à l'API Telegram, les tests multi-appareils puis le lancement avec optimisation continue."
   },
   {
     "id": "benefits",
-    "topic": "Mini App advantages",
-    "text": "Mini apps удобны для бизнеса и пользователей: продажи и сервис в одном окне Telegram, автоматизация поддержки, интеграция с CRM и платежами, мгновенные обновления без магазинов приложений."
+    "topic": "Avantages des mini-apps",
+    "text": "Les mini-apps sont pratiques pour les entreprises comme pour les utilisateurs : ventes et service dans une seule fenêtre Telegram, automatisation du support, intégration avec la CRM et les paiements, mises à jour instantanées sans stores d'applications."
   },
   {
     "id": "examples",
-    "topic": "Mini App use cases",
-    "text": "Примеры внедрения: e-commerce магазины, сервисы бронирования ресторанов и салонов, игры и квизы, коворкинги с лояльностью, клубы и сообщества с онбордингом и геймификацией."
+    "topic": "Cas d'usage des mini-apps",
+    "text": "Exemples d'implémentation : boutiques e-commerce, services de réservation pour restaurants et salons, jeux et quiz, espaces de coworking avec programmes de fidélité, clubs et communautés avec onboarding et gamification."
   },
   {
     "id": "future",
-    "topic": "Future trends",
-    "text": "Будущие тренды: автоматизация продаж и поддержки, экосистемы умных городов, персонализированные образовательные платформы, глубокая геймификация и интеграция с голосовыми ассистентами."
+    "topic": "Tendances futures",
+    "text": "Tendances à venir : automatisation des ventes et du support, écosystèmes de villes intelligentes, plateformes éducatives personnalisées, gamification poussée et intégration avec les assistants vocaux."
   },
   {
     "id": "cta",
-    "topic": "Unitee.Space CTA",
-    "text": "Unitee.Space приглашает создать Mini App без кода, подключить Telegram API и быстро запустить клиентский опыт."
+    "topic": "Appel à l'action Unitee Space",
+    "text": "Unitee.Space invite à créer une mini-app sans code, à connecter l'API Telegram et à lancer rapidement une expérience client." 
   }
 ]
