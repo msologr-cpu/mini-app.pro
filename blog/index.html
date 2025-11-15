@@ -67,12 +67,17 @@
 
       .post-card {
         display: block;
+        margin-bottom: 32px;
         padding: 32px;
         border-radius: 24px;
         background: #ffffff;
         border: 1px solid #e4e7ee;
         box-shadow: 0 16px 40px rgba(58, 122, 254, 0.12);
         transition: transform 160ms ease, box-shadow 160ms ease;
+      }
+
+      .post-card:last-child {
+        margin-bottom: 0;
       }
 
       .post-card:hover,
@@ -85,13 +90,14 @@
       .post-card h2 {
         font-size: 1.8rem;
         font-weight: 600;
-        margin: 0 0 12px;
+        margin: 0 0 16px;
         color: #111111;
       }
 
-      .post-card p {
-        margin: 0 0 16px;
-        color: #555b67;
+      .post-lead {
+        margin: 0 0 20px;
+        color: #33363f;
+        font-size: 1.05rem;
       }
 
       .post-meta {
@@ -107,6 +113,10 @@
         .post-card {
           padding: 24px;
         }
+
+        .post-lead {
+          font-size: 1rem;
+        }
       }
     </style>
   </head>
@@ -115,8 +125,15 @@
       <h1 data-i18n="blogIndex.heading"></h1>
       <p class="intro" data-i18n="blogIndex.intro"></p>
       <a class="post-card" href="/blog/telegram-mini-apps/">
-        <h2 data-i18n="blogIndex.card.title" data-i18n-mode="text"></h2>
-        <p data-i18n="blogIndex.card.description"></p>
+        <h2 data-i18n="blogArticle.article.headline" data-i18n-mode="text">
+          Что такое Telegram Mini App и как создать его без программирования
+        </h2>
+        <p class="post-lead" data-i18n="blogArticle.article.lead">
+          <a href="https://unitee.space">Telegram Mini App</a> – это формат веб-сервисов внутри
+          мессенджера, который открывает бизнесу быстрый и удобный доступ к аудитории. Разбираемся,
+          как работают такие решения, где их применяют и как запустить собственный проект без кода
+          вместе с платформой <a href="https://unitee.space" itemprop="brand">Unitee Space</a>.
+        </p>
         <div class="post-meta" data-i18n="blogIndex.card.meta" data-i18n-mode="text"></div>
       </a>
     </main>
