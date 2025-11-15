@@ -159,9 +159,14 @@
   };
 
   const updateSwitcherSelection = (switcher, language) => {
+    const toggle = switcher.querySelector('[data-language-toggle]');
     const flagTarget = switcher.querySelector('[data-language-flag]');
     const codeTarget = switcher.querySelector('[data-language-code]');
     const config = getLanguageConfig(language) || getLanguageConfig(DEFAULT_LANGUAGE);
+    if (toggle) {
+      toggle.setAttribute('aria-label', config?.label || 'Language');
+      toggle.setAttribute('title', config?.label || '');
+    }
     if (flagTarget) {
       flagTarget.textContent = config?.flag || '🌐';
     }

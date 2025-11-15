@@ -288,20 +288,23 @@
             </span>
           </a>
           <div class="header-controls">
-            <div class="language-switcher">
-              <a class="language-switcher__toggle" href="/blog/telegram-mini-apps/" aria-label="English">
-                <span class="language-switcher__flag" aria-hidden="true">🇬🇧</span>
-                <span class="language-switcher__code">EN</span>
-              </a>
-              <a
+            <div class="language-switcher" data-language-switcher>
+              <button
+                type="button"
                 class="language-switcher__toggle"
-                href="/ru/blog/telegram-mini-apps/"
-                aria-label="Русский"
-                aria-current="page"
+                data-language-toggle
+                aria-haspopup="listbox"
+                aria-expanded="false"
               >
-                <span class="language-switcher__flag" aria-hidden="true">🇷🇺</span>
-                <span class="language-switcher__code">RU</span>
-              </a>
+                <span class="language-switcher__flag" data-language-flag aria-hidden="true">🌐</span>
+                <span class="language-switcher__code" data-language-code>--</span>
+              </button>
+              <div
+                class="language-switcher__dropdown"
+                role="listbox"
+                data-language-options
+                hidden
+              ></div>
             </div>
           </div>
         </div>
