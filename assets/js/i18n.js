@@ -287,8 +287,8 @@
 
     try {
       await i18next.use(i18nextHttpBackend).init({
-        lng: initialLanguage,
-        fallbackLng: DEFAULT_LANGUAGE,
+        lng: 'en',
+        fallbackLng: ['en', 'ru'],
         supportedLngs: supportedLanguages,
         backend: {
           loadPath: '/locales/{{lng}}/translation.json'
@@ -299,6 +299,11 @@
           escapeValue: false
         }
       });
+
+      const targetLanguage = matchLanguage(initialLanguage) || 'en';
+      if (targetLanguage !== i18next.language) {
+        await i18next.changeLanguage(targetLanguage);
+      }
     } catch (error) {
       console.error('Failed to initialise i18next', error);
       return;
