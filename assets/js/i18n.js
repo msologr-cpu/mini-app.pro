@@ -6,7 +6,11 @@
 
   const LANGUAGE_STORAGE_KEY = 'miniAppLanguage';
   const RTL_LANGUAGES = new Set(['ar', 'fa']);
-  const LANGUAGE_OPTIONS = [{ code: 'fr', label: 'Français', flag: '🇫🇷' }];
+  const LANGUAGE_OPTIONS = [
+    { code: 'en', label: 'English', flag: '🇬🇧' },
+    { code: 'ru', label: 'Русский', flag: '🇷🇺' },
+    { code: 'fr', label: 'Français', flag: '🇫🇷' }
+  ];
 
   const getLanguageConfig = (code) => {
     if (!code) {
@@ -21,7 +25,8 @@
   };
 
   const supportedLanguages = LANGUAGE_OPTIONS.map((option) => option.code);
-  const DEFAULT_LANGUAGE = getLanguageConfig(document.documentElement.lang)?.code || 'fr';
+  const DOCUMENT_LANGUAGE = getLanguageConfig(document.documentElement.lang)?.code || null;
+  const DEFAULT_LANGUAGE = 'en';
 
   const storage = {
     get(key) {
@@ -53,14 +58,21 @@
       return matchLanguage(telegramLanguage);
     }
 
-    const documentLanguage = document.documentElement.lang;
-    if (matchLanguage(documentLanguage)) {
-      return matchLanguage(documentLanguage);
+    const browserLanguages = Array.isArray(navigator.languages) ? navigator.languages : [];
+    for (const browserLanguage of browserLanguages) {
+      const matchedBrowserLanguage = matchLanguage(browserLanguage);
+      if (matchedBrowserLanguage) {
+        return matchedBrowserLanguage;
+      }
     }
 
     const navigatorLanguage = navigator.language || navigator.userLanguage;
     if (matchLanguage(navigatorLanguage)) {
       return matchLanguage(navigatorLanguage);
+    }
+
+    if (matchLanguage(DOCUMENT_LANGUAGE)) {
+      return matchLanguage(DOCUMENT_LANGUAGE);
     }
 
     return DEFAULT_LANGUAGE;
@@ -273,8 +285,8 @@
 
     try {
       await i18next.use(i18nextHttpBackend).init({
-        lng: 'fr',
-        fallbackLng: ['fr'],
+        lng: DEFAULT_LANGUAGE,
+        fallbackLng: [DEFAULT_LANGUAGE],
         supportedLngs: supportedLanguages,
         backend: {
           loadPath: '/locales/{{lng}}/translation.json'
@@ -286,7 +298,7 @@
         }
       });
 
-      const targetLanguage = matchLanguage(initialLanguage) || 'fr';
+      const targetLanguage = matchLanguage(initialLanguage) || DEFAULT_LANGUAGE;
       if (targetLanguage !== i18next.language) {
         await i18next.changeLanguage(targetLanguage);
       }
