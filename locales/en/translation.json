@@ -1,1 +1,113 @@
-{}
+{
+  "meta": {
+    "title": "mini-app.pro — Telegram mini-app builder without code",
+    "description": "Design full Telegram experiences with CRM, payments, content and automation — no developers required.",
+    "ogTitle": "Telegram mini-app builder without code",
+    "ogDescription": "Create complete Telegram applications with CRM, payments, content and automation. Fast, practical and developer-free.",
+    "twitterTitle": "Telegram mini-app builder without code",
+    "twitterDescription": "Create complete Telegram applications — with CRM, payments, content and automation."
+  },
+  "header": {
+    "brand": {
+      "tagline": "Telegram mini-app builder"
+    },
+    "cta": "Open the builder"
+  },
+  "nav": {
+    "about": "What it is",
+    "features": "Features",
+    "benefits": "Benefits",
+    "audience": "Who it's for",
+    "start": "Start"
+  },
+  "hero": {
+    "title": "Build Telegram mini-apps without code",
+    "description": "Create complete Telegram experiences with CRM, payments, content and automation. Fast, convenient and without developers.",
+    "primaryCta": "Open the builder",
+    "secondaryCta": "View examples"
+  },
+  "examples": {
+    "title": "Telegram mini-app examples",
+    "moreLink": "See all apps in the Appss aggregator",
+    "cards": [
+      {
+        "title": "Evera | Library of Eternals | Digital immortality",
+        "description": "Create digital models of people, keep memories across generations and chat with historical figures.",
+        "button": "Open the app",
+        "imageAlt": "Evera | Library of Eternals | Digital immortality"
+      },
+      {
+        "title": "Tamara Kartasheva App — online school",
+        "description": "A full education product in Telegram: lessons, levels, blog, homework and premium access.",
+        "button": "Open the app",
+        "imageAlt": "Tamara Kartasheva App — online school"
+      },
+      {
+        "title": "NotSpy — restore deleted media in Telegram",
+        "description": "The bot reports edited messages, restores deleted images or voice notes and keeps ephemeral photos.",
+        "button": "Open the app",
+        "imageAlt": "NotSpy — restore deleted media in Telegram"
+      }
+    ]
+  },
+  "blog": {
+    "eyebrow": "mini-app.pro blog",
+    "title": "Latest insights on Telegram mini-apps",
+    "description": "Explore case studies, launch tips and step-by-step guides for no-code mini-apps. Visit the blog to adopt best practices quickly.",
+    "cta": "Go to the blog"
+  },
+  "about": {
+    "title": "What is a Telegram mini-app?",
+    "description": "Telegram mini-apps are web applications that launch directly in Telegram. They open instantly, require no installation and work on any device — a convenient way to combine sales, education, support and content in a single interface.",
+    "imageAlt": "Telegram mini-app interface"
+  },
+  "features": {
+    "title": "What you can build inside a mini-app",
+    "items": [
+      "User accounts",
+      "CRM with segmentation and tags",
+      "Service and product catalogs",
+      "Courses and lessons",
+      "Subscriptions and monetisation",
+      "Referral programs",
+      "Forms, surveys and quizzes",
+      "Message automation",
+      "Analytics and statistics",
+      "Chat and operator support"
+    ]
+  },
+  "benefits": {
+    "title": "Benefits of mini-apps",
+    "description": "Mini-apps work everywhere Telegram is available. No need to download an app, set up hosting, buy a domain or hire developers. All features live inside the bot and updates deploy automatically.",
+    "imageAlt": "Benefits of Telegram mini-apps"
+  },
+  "audience": {
+    "title": "Who mini-apps are for",
+    "items": [
+      "Online schools and education projects",
+      "Expert and creator products",
+      "Companies and brands",
+      "Local and service businesses",
+      "Agencies and marketers",
+      "Communities and clubs",
+      "Bloggers and media"
+    ]
+  },
+  "cta": {
+    "title": "Launch your mini-app in 10 minutes",
+    "description": "Open the builder and assemble your application with ready-made blocks and integrations.",
+    "primaryCta": "Open the builder",
+    "secondaryLink": "See Telegram mini-app examples"
+  },
+  "footer": {
+    "copyright": "© 2025 mini-app.pro",
+    "tagline": "Telegram mini-app builder",
+    "links": {
+      "docs": "Documentation",
+      "blog": "Blog",
+      "contact": "Contact",
+      "privacy": "Privacy policy"
+    },
+    "support": "Support on Telegram"
+  }
+}

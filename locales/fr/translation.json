@@ -1,1 +1,113 @@
-{}
+{
+  "meta": {
+    "title": "mini-app.pro — Créateur de mini-apps Telegram sans code",
+    "description": "Créez des expériences Telegram complètes avec CRM, paiements, contenu et automatisation — sans développeurs.",
+    "ogTitle": "Créateur de mini-apps Telegram sans code",
+    "ogDescription": "Créez des applications complètes dans Telegram avec CRM, paiements, contenu et automatisation. Rapide, pratique et sans développeurs.",
+    "twitterTitle": "Créateur de mini-apps Telegram sans code",
+    "twitterDescription": "Créez des applications complètes dans Telegram — avec CRM, paiements, contenu et automatisation."
+  },
+  "header": {
+    "brand": {
+      "tagline": "Créateur de mini-apps Telegram"
+    },
+    "cta": "Ouvrir le créateur"
+  },
+  "nav": {
+    "about": "Qu'est-ce que c'est",
+    "features": "Fonctionnalités",
+    "benefits": "Avantages",
+    "audience": "Pour qui",
+    "start": "Commencer"
+  },
+  "hero": {
+    "title": "Créateur de mini-apps Telegram sans code",
+    "description": "Créez des expériences complètes dans Telegram avec CRM, paiements, contenu et automatisation. Rapide, pratique et sans développeurs.",
+    "primaryCta": "Ouvrir le créateur",
+    "secondaryCta": "Voir les exemples"
+  },
+  "examples": {
+    "title": "Exemples de mini-apps",
+    "moreLink": "Voir toutes les applications dans l'agrégateur Appss",
+    "cards": [
+      {
+        "title": "Evera | Bibliothèque des Éternels | Immortalité numérique",
+        "description": "Créez des modèles numériques de personnes, conservez les souvenirs entre générations et discutez avec des figures historiques.",
+        "button": "Ouvrir l'application",
+        "imageAlt": "Evera | Bibliothèque des Éternels | Immortalité numérique"
+      },
+      {
+        "title": "Tamara Kartasheva App — école en ligne",
+        "description": "Un produit pédagogique complet dans Telegram : leçons, niveaux, blog, devoirs et accès premium.",
+        "button": "Ouvrir l'application",
+        "imageAlt": "Tamara Kartasheva App — école en ligne"
+      },
+      {
+        "title": "NotSpy — restaurer les médias supprimés dans Telegram",
+        "description": "Ce bot signale les messages modifiés, restaure les images ou notes vocales supprimées et conserve les photos éphémères.",
+        "button": "Ouvrir l'application",
+        "imageAlt": "NotSpy — restaurer les médias supprimés dans Telegram"
+      }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Blog mini-app.pro",
+    "title": "Les derniers insights sur les mini-apps Telegram",
+    "description": "Découvrez études de cas, conseils de lancement et guides pas à pas pour créer des mini-apps sans code. Visitez le blog pour adopter rapidement les meilleures pratiques.",
+    "cta": "Aller au blog"
+  },
+  "about": {
+    "title": "Qu'est-ce qu'une mini-app Telegram ?",
+    "description": "Les mini-apps Telegram sont des applications web qui se lancent directement dans Telegram. Elles s'ouvrent instantanément, ne nécessitent aucune installation et fonctionnent sur tout appareil. Une façon pratique de réunir ventes, formation, support et contenu en un seul lieu.",
+    "imageAlt": "Interface de mini-app Telegram"
+  },
+  "features": {
+    "title": "Ce que vous pouvez créer dans une mini-app",
+    "items": [
+      "Comptes utilisateurs",
+      "CRM avec segmentation et tags",
+      "Catalogues de services et de produits",
+      "Cours et leçons",
+      "Abonnements et monétisation",
+      "Programmes de parrainage",
+      "Formulaires, sondages et quiz",
+      "Automatisation des messages",
+      "Analyses et statistiques",
+      "Support par chat et opérateurs"
+    ]
+  },
+  "benefits": {
+    "title": "Avantages des mini-apps",
+    "description": "Les mini-apps fonctionnent partout où Telegram est disponible. Pas besoin de télécharger d'application, de configurer un hébergement, d'acheter un domaine ou d'embaucher des développeurs. Toutes les fonctionnalités vivent dans le bot et les mises à jour se déploient automatiquement.",
+    "imageAlt": "Avantages des mini-apps dans Telegram"
+  },
+  "audience": {
+    "title": "À qui s'adressent les mini-apps",
+    "items": [
+      "Écoles et projets éducatifs en ligne",
+      "Produits d'experts et de créateurs",
+      "Entreprises et marques",
+      "Entreprises locales et de services",
+      "Agences et marketeurs",
+      "Communautés et clubs",
+      "Blogueurs et médias"
+    ]
+  },
+  "cta": {
+    "title": "Lancez votre mini-app en 10 minutes",
+    "description": "Ouvrez le créateur et assemblez votre application avec des blocs et intégrations prêts à l'emploi.",
+    "primaryCta": "Ouvrir le créateur",
+    "secondaryLink": "Voir des exemples de mini-apps"
+  },
+  "footer": {
+    "copyright": "© 2025 mini-app.pro",
+    "tagline": "Créateur de mini-apps Telegram",
+    "links": {
+      "docs": "Documentation",
+      "blog": "Blog",
+      "contact": "Contact",
+      "privacy": "Politique de confidentialité"
+    },
+    "support": "Support sur Telegram"
+  }
+}

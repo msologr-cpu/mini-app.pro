@@ -1,9 +1,4 @@
 (() => {
-  if (typeof i18next === 'undefined' || typeof i18nextHttpBackend === 'undefined') {
-    console.error('i18next dependencies are missing.');
-    return;
-  }
-
   const LANGUAGE_STORAGE_KEY = 'miniAppLanguage';
   const RTL_LANGUAGES = new Set(['ar', 'fa']);
   const LANGUAGE_OPTIONS = [
@@ -11,21 +6,6 @@
     { code: 'ru', label: 'Русский', flag: '🇷🇺' },
     { code: 'fr', label: 'Français', flag: '🇫🇷' }
   ];
-
-  const getLanguageConfig = (code) => {
-    if (!code) {
-      return null;
-    }
-    const normalized = code.toLowerCase();
-    return (
-      LANGUAGE_OPTIONS.find((option) => option.code.toLowerCase() === normalized) ||
-      LANGUAGE_OPTIONS.find((option) => option.code.toLowerCase().split('-')[0] === normalized.split('-')[0]) ||
-      null
-    );
-  };
-
-  const supportedLanguages = LANGUAGE_OPTIONS.map((option) => option.code);
-  const DOCUMENT_LANGUAGE = getLanguageConfig(document.documentElement.lang)?.code || null;
   const DEFAULT_LANGUAGE = 'en';
 
   const storage = {
@@ -40,9 +20,21 @@
       try {
         window.localStorage?.setItem(key, value);
       } catch (error) {
-        // ignore storage errors (Safari private mode, Telegram WebView, etc.)
+        // ignore storage errors
       }
     }
+  };
+
+  const getLanguageConfig = (code) => {
+    if (!code) {
+      return null;
+    }
+    const normalized = code.toLowerCase();
+    return (
+      LANGUAGE_OPTIONS.find((option) => option.code.toLowerCase() === normalized) ||
+      LANGUAGE_OPTIONS.find((option) => option.code.toLowerCase().split('-')[0] === normalized.split('-')[0]) ||
+      null
+    );
   };
 
   const matchLanguage = (code) => getLanguageConfig(code)?.code || null;
@@ -71,14 +63,51 @@
       return matchLanguage(navigatorLanguage);
     }
 
-    if (matchLanguage(DOCUMENT_LANGUAGE)) {
-      return matchLanguage(DOCUMENT_LANGUAGE);
+    const documentLanguage = matchLanguage(document.documentElement.lang);
+    if (documentLanguage) {
+      return documentLanguage;
     }
 
     return DEFAULT_LANGUAGE;
   };
 
-  const getValue = (key) => (key && i18next.exists(key) ? i18next.t(key) : undefined);
+  const translationsCache = new Map();
+
+  const loadTranslations = async (language) => {
+    const target = matchLanguage(language) || DEFAULT_LANGUAGE;
+    if (translationsCache.has(target)) {
+      return translationsCache.get(target);
+    }
+
+    const loadPromise = fetch(`/locales/${target}/translation.json`, {
+      headers: { Accept: 'application/json' },
+      cache: 'no-cache'
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Unable to load translations for ${target}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        translationsCache.set(target, data);
+        return data;
+      })
+      .catch((error) => {
+        translationsCache.delete(target);
+        throw error;
+      });
+
+    translationsCache.set(target, loadPromise);
+    return loadPromise;
+  };
+
+  const resolveValue = (translations, key) => {
+    if (!translations || !key) {
+      return undefined;
+    }
+    return key.split('.').reduce((acc, part) => (acc == null ? undefined : acc[part]), translations);
+  };
 
   const applyContent = (element, value) => {
     if (typeof value === 'undefined') {
@@ -88,7 +117,7 @@
     if (mode === 'text') {
       element.textContent = value;
     } else if (mode === 'attribute') {
-      // attribute values handled separately
+      // handled separately
     } else {
       element.innerHTML = value;
     }
@@ -101,15 +130,15 @@
     element.setAttribute(attrName, value);
   };
 
-  const translateElement = (element) => {
+  const translateElement = (element, translations) => {
     const key = element.dataset.i18n;
     if (key) {
-      applyContent(element, getValue(key));
+      applyContent(element, resolveValue(translations, key));
     }
 
     const singleAttr = element.dataset.i18nAttr;
     if (singleAttr && key) {
-      applyAttributes(element, singleAttr, getValue(key));
+      applyAttributes(element, singleAttr, resolveValue(translations, key));
     }
 
     const multiple = element.dataset.i18nAttrs;
@@ -119,13 +148,18 @@
         if (!attr || !attrKey) {
           return;
         }
-        applyAttributes(element, attr, getValue(attrKey));
+        applyAttributes(element, attr, resolveValue(translations, attrKey));
       });
     }
   };
 
-  const translateDocument = () => {
-    document.querySelectorAll('[data-i18n], [data-i18n-attr], [data-i18n-attrs]').forEach(translateElement);
+  const translateDocument = (translations) => {
+    if (!translations) {
+      return;
+    }
+    document.querySelectorAll('[data-i18n], [data-i18n-attr], [data-i18n-attrs]').forEach((element) => {
+      translateElement(element, translations);
+    });
   };
 
   const updateDocumentLanguage = (language) => {
@@ -171,7 +205,7 @@
     });
   };
 
-  const initSwitcher = (switcher) => {
+  const initSwitcher = (switcher, onSelect) => {
     const toggle = switcher.querySelector('[data-language-toggle]');
     const optionsContainer = switcher.querySelector('[data-language-options]');
     if (!toggle || !optionsContainer) {
@@ -190,12 +224,9 @@
         <span class="language-switcher__label">${option.label}</span>
         <span class="language-switcher__code">${option.code.toUpperCase()}</span>
       `;
-      button.addEventListener('click', () => {
-        const targetLanguage = matchLanguage(option.code) || DEFAULT_LANGUAGE;
-        if (targetLanguage !== i18next.language) {
-          i18next.changeLanguage(targetLanguage);
-        }
+      button.addEventListener('click', async () => {
         closeSwitcher(switcher);
+        await onSelect(option.code);
       });
       optionsContainer.appendChild(button);
     });
@@ -265,10 +296,48 @@
     });
   };
 
+  const state = {
+    language: DEFAULT_LANGUAGE,
+    translations: null
+  };
+
+  const updateSwitchers = () => {
+    document.querySelectorAll('[data-language-switcher]').forEach((switcher) => {
+      updateSwitcherSelection(switcher, state.language);
+    });
+  };
+
+  const render = () => {
+    translateDocument(state.translations);
+    updateSwitchers();
+  };
+
+  const changeLanguage = async (language) => {
+    const target = matchLanguage(language) || DEFAULT_LANGUAGE;
+    if (target === state.language && state.translations) {
+      updateDocumentLanguage(target);
+      render();
+      return;
+    }
+
+    try {
+      const translations = await loadTranslations(target);
+      state.language = target;
+      state.translations = translations;
+      updateDocumentLanguage(target);
+      render();
+    } catch (error) {
+      console.error(error);
+      if (target !== DEFAULT_LANGUAGE) {
+        await changeLanguage(DEFAULT_LANGUAGE);
+      }
+    }
+  };
+
   const initLanguageSwitchers = () => {
     document.querySelectorAll('[data-language-switcher]').forEach((switcher) => {
-      initSwitcher(switcher);
-      updateSwitcherSelection(switcher, i18next.language);
+      initSwitcher(switcher, changeLanguage);
+      updateSwitcherSelection(switcher, state.language);
     });
 
     document.addEventListener('click', (event) => {
@@ -282,42 +351,8 @@
 
   const bootstrap = async () => {
     const initialLanguage = detectInitialLanguage();
-
-    try {
-      await i18next.use(i18nextHttpBackend).init({
-        lng: DEFAULT_LANGUAGE,
-        fallbackLng: [DEFAULT_LANGUAGE],
-        supportedLngs: supportedLanguages,
-        backend: {
-          loadPath: '/locales/{{lng}}/translation.json'
-        },
-        load: 'currentOnly',
-        returnEmptyString: false,
-        interpolation: {
-          escapeValue: false
-        }
-      });
-
-      const targetLanguage = matchLanguage(initialLanguage) || DEFAULT_LANGUAGE;
-      if (targetLanguage !== i18next.language) {
-        await i18next.changeLanguage(targetLanguage);
-      }
-    } catch (error) {
-      console.error('Failed to initialise i18next', error);
-      return;
-    }
-
-    updateDocumentLanguage(i18next.language);
-    translateDocument();
+    await changeLanguage(initialLanguage);
     initLanguageSwitchers();
-
-    i18next.on('languageChanged', (language) => {
-      updateDocumentLanguage(language);
-      translateDocument();
-      document.querySelectorAll('[data-language-switcher]').forEach((switcher) => {
-        updateSwitcherSelection(switcher, language);
-      });
-    });
   };
 
   if (document.readyState === 'loading') {
