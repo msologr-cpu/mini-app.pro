@@ -6,7 +6,8 @@
     { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
     { code: 'ru', label: 'Русский', flag: '🇷🇺' },
     { code: 'fr', label: 'Français', flag: '🇫🇷' },
-    { code: 'hi', label: 'हिन्दी', flag: '🇮🇳' }
+    { code: 'hi', label: 'हिन्दी', flag: '🇮🇳' },
+    { code: 'kk', label: 'Қазақша', flag: '🇰🇿' }
   ];
   const DEFAULT_LANGUAGE = 'en';
 
