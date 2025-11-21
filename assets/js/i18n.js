@@ -3,6 +3,7 @@
   const RTL_LANGUAGES = new Set(['ar', 'fa']);
   const LANGUAGE_OPTIONS = [
     { code: 'en', label: 'English', flag: '🇬🇧' },
+    { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
     { code: 'ru', label: 'Русский', flag: '🇷🇺' },
     { code: 'fr', label: 'Français', flag: '🇫🇷' }
   ];
