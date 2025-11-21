@@ -1,29 +1,43 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>mini-app.pro — Créateur de mini-apps Telegram sans code</title>
+    <title>mini-app.pro — Конструктор мини-приложений Telegram без кода</title>
     <meta
       name="description"
-      content="Créateur de mini-apps Telegram sans coder. Concevez des expériences dans Telegram avec CRM, paiements, contenu et automatisation."
+      content="Создавайте полноценные Telegram-сервисы с CRM, оплатами, контентом и автоматизацией — без разработчиков."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Créateur de mini-apps Telegram sans code" />
+    <meta
+      property="og:title"
+      content="Конструктор мини-приложений Telegram без кода"
+    />
     <meta
       property="og:description"
-      content="Créez des applications complètes dans Telegram — avec CRM, paiements, contenu et automatisation. Rapide, pratique et sans développeurs."
+      content="Собирайте приложения в Telegram с CRM, оплатами, контентом и автоматизацией. Быстро, удобно и без программистов."
     />
     <meta property="og:url" content="https://mini-app.pro/ru/" />
+    <meta property="og:locale" content="ru_RU" />
     <meta property="og:image" content="https://mini-app.pro/assets/images/og-cover.svg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Créateur de mini-apps Telegram sans code" />
+    <meta
+      name="twitter:title"
+      content="Конструктор мини-приложений Telegram без кода"
+    />
     <meta
       name="twitter:description"
-      content="Créez des applications complètes dans Telegram — avec CRM, paiements, contenu et automatisation."
+      content="Создавайте готовые Telegram-приложения — с CRM, оплатами, контентом и автоматизацией."
     />
     <meta name="twitter:image" content="https://mini-app.pro/assets/images/og-cover.svg" />
-    <link rel="alternate" hreflang="fr" href="https://mini-app.pro/ru/" />
+
+    <link rel="alternate" href="https://mini-app.pro/en" hreflang="en" />
+    <link rel="alternate" href="https://mini-app.pro/de" hreflang="de" />
+    <link rel="alternate" href="https://mini-app.pro/ru" hreflang="ru" />
+    <link rel="alternate" href="https://mini-app.pro/fr" hreflang="fr" />
+    <link rel="alternate" href="https://mini-app.pro/hi" hreflang="hi" />
+    <link rel="alternate" href="https://mini-app.pro/kk" hreflang="kk" />
+    <link rel="alternate" href="https://mini-app.pro/" hreflang="x-default" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -37,15 +51,15 @@
             <span class="brand-mark" aria-hidden="true">μ</span>
             <span class="brand-text">
               <span class="brand-title">mini-app.pro</span>
-              <span class="brand-tagline">Créateur de mini-apps Telegram</span>
+              <span class="brand-tagline" data-i18n="header.brand.tagline">Telegram mini-app builder</span>
             </span>
           </a>
-          <nav class="desktop-nav" aria-label="Menu principal">
-            <a href="#about-miniapps">Qu'est-ce que c'est</a>
-            <a href="#features">Fonctionnalités</a>
-            <a href="#benefits">Avantages</a>
-            <a href="#audience">Pour qui</a>
-            <a href="#open-builder">Commencer</a>
+          <nav class="desktop-nav" aria-label="Main menu">
+            <a href="#about-miniapps" data-i18n="nav.about">What it is</a>
+            <a href="#features" data-i18n="nav.features">Features</a>
+            <a href="#benefits" data-i18n="nav.benefits">Benefits</a>
+            <a href="#audience" data-i18n="nav.audience">Who it's for</a>
+            <a href="#open-builder" data-i18n="nav.start">Start</a>
           </nav>
           <div class="header-controls">
             <div class="language-switcher" data-language-switcher>
@@ -66,21 +80,21 @@
                 hidden
               ></div>
             </div>
-            <a class="cta-button" href="#open-builder">Ouvrir le créateur</a>
+            <a class="cta-button" href="#open-builder" data-i18n="header.cta">Open the builder</a>
           </div>
         </div>
       </header>
       <main>
         <section class="hero" id="hero">
           <div class="container hero-content">
-            <h1>Créateur de mini-apps Telegram sans code</h1>
-            <p>
-              Créez des applications complètes dans Telegram avec CRM, paiements, contenu et automatisation. Rapide, pratique et
-              sans développeurs.
+            <h1 data-i18n="hero.title">Build Telegram mini-apps without code</h1>
+            <p data-i18n="hero.description">
+              Create complete Telegram experiences with CRM, payments, content and automation. Fast, convenient and without
+              developers.
             </p>
             <div class="hero-actions">
-              <a class="cta-button primary" href="#open-builder">Ouvrir le créateur</a>
-              <a class="ghost-link" href="#examples">Voir les exemples</a>
+              <a class="cta-button primary" href="#open-builder" data-i18n="hero.primaryCta">Open the builder</a>
+              <a class="ghost-link" href="#examples" data-i18n="hero.secondaryCta">View examples</a>
             </div>
           </div>
         </section>
@@ -88,49 +102,92 @@
         <section class="content-section examples" id="examples">
           <div class="container section-inner">
             <div class="section-header">
-              <h2>Exemples de mini-apps</h2>
+              <h2 data-i18n="examples.title">Telegram mini-app examples</h2>
             </div>
             <div class="card-grid">
               <article class="feature-card">
                 <figure style="margin: 0; border-radius: var(--radius-small); overflow: hidden;">
-                  <img src="https://via.placeholder.com/640x360?text=Mini+App" alt="Evera | Bibliothèque des Éternels | Immortalité numérique" />
+                  <img
+                    src="https://via.placeholder.com/640x360?text=Mini+App"
+                    alt="Evera | Library of Eternals | Digital immortality"
+                    data-i18n="examples.cards.0.imageAlt"
+                    data-i18n-attr="alt"
+                    data-i18n-mode="attribute"
+                  />
                 </figure>
-                <h3>Evera | Bibliothèque des Éternels | Immortalité numérique</h3>
-                <p>Créez des modèles numériques de personnes, conservez les souvenirs entre générations et discutez avec des figures historiques.</p>
-                <a class="cta-button primary" href="https://t.me/Everaworld_bot/app" target="_blank" rel="noopener">Ouvrir l'application</a>
+                <h3 data-i18n="examples.cards.0.title">Evera | Library of Eternals | Digital immortality</h3>
+                <p data-i18n="examples.cards.0.description">
+                  Create digital models of people, keep memories across generations and chat with historical figures.
+                </p>
+                <a class="cta-button primary" href="https://t.me/Everaworld_bot/app" target="_blank" rel="noopener" data-i18n="examples.cards.0.button">Open the app</a>
               </article>
               <article class="feature-card">
                 <figure style="margin: 0; border-radius: var(--radius-small); overflow: hidden;">
-                  <img src="https://via.placeholder.com/640x360?text=Mini+App" alt="Tamara Kartasheva App — école en ligne" />
+                  <img
+                    src="https://via.placeholder.com/640x360?text=Mini+App"
+                    alt="Tamara Kartasheva App — online school"
+                    data-i18n="examples.cards.1.imageAlt"
+                    data-i18n-attr="alt"
+                    data-i18n-mode="attribute"
+                  />
                 </figure>
-                <h3>Tamara Kartasheva App — école en ligne</h3>
-                <p>Un produit pédagogique complet dans Telegram : leçons, niveaux, blog, devoirs et accès premium.</p>
-                <a class="cta-button primary" href="https://t.me/appss/store?startapp=MjIyMjR8NzQxMjM2MzMw" target="_blank" rel="noopener">Ouvrir l'application</a>
+                <h3 data-i18n="examples.cards.1.title">Tamara Kartasheva App — online school</h3>
+                <p data-i18n="examples.cards.1.description">
+                  A full education product in Telegram: lessons, levels, blog, homework and premium access.
+                </p>
+                <a
+                  class="cta-button primary"
+                  href="https://t.me/appss/store?startapp=MjIyMjR8NzQxMjM2MzMw"
+                  target="_blank"
+                  rel="noopener"
+                  data-i18n="examples.cards.1.button"
+                >Open the app</a>
               </article>
               <article class="feature-card">
                 <figure style="margin: 0; border-radius: var(--radius-small); overflow: hidden;">
-                  <img src="https://via.placeholder.com/640x360?text=Mini+App" alt="NotSpy — restaurer les médias supprimés dans Telegram" />
+                  <img
+                    src="https://via.placeholder.com/640x360?text=Mini+App"
+                    alt="NotSpy — restore deleted media in Telegram"
+                    data-i18n="examples.cards.2.imageAlt"
+                    data-i18n-attr="alt"
+                    data-i18n-mode="attribute"
+                  />
                 </figure>
-                <h3>NotSpy — restaurer les médias supprimés dans Telegram</h3>
-                <p>Ce bot signale les messages modifiés, restaure les images ou notes vocales supprimées et conserve les photos éphémères.</p>
-                <a class="cta-button primary" href="https://t.me/appss/store?startapp=MjE3MzF8NzQxMjM2MzMw" target="_blank" rel="noopener">Ouvrir l'application</a>
+                <h3 data-i18n="examples.cards.2.title">NotSpy — restore deleted media in Telegram</h3>
+                <p data-i18n="examples.cards.2.description">
+                  The bot reports edited messages, restores deleted images or voice notes and keeps ephemeral photos.
+                </p>
+                <a
+                  class="cta-button primary"
+                  href="https://t.me/appss/store?startapp=MjE3MzF8NzQxMjM2MzMw"
+                  target="_blank"
+                  rel="noopener"
+                  data-i18n="examples.cards.2.button"
+                >Open the app</a>
               </article>
             </div>
-            <a class="secondary-link" href="https://t.me/appss/store?startapp=Y3QtMTg0fDc0MTIzNjMzMA==" target="_blank" rel="noopener">Voir toutes les applications dans l'agrégateur Appss</a>
+            <a
+              class="secondary-link"
+              href="https://t.me/appss/store?startapp=Y3QtMTg0fDc0MTIzNjMzMA=="
+              target="_blank"
+              rel="noopener"
+              data-i18n="examples.moreLink"
+            >See all apps in the Appss aggregator</a>
           </div>
         </section>
 
         <section class="content-section blog-widget" id="blog">
           <div class="container blog-widget__inner">
             <div class="blog-widget__content">
-              <p class="blog-widget__eyebrow">Blog mini-app.pro</p>
-              <h2>Les derniers insights sur les mini-apps Telegram</h2>
-              <p>
-                Découvrez études de cas, conseils de lancement et guides pas à pas pour créer des mini-apps sans code. Visitez le blog pour adopter rapidement les meilleures pratiques.
+              <p class="blog-widget__eyebrow" data-i18n="blog.eyebrow">mini-app.pro blog</p>
+              <h2 data-i18n="blog.title">Latest insights on Telegram mini-apps</h2>
+              <p data-i18n="blog.description">
+                Explore case studies, launch tips and step-by-step guides for no-code mini-apps. Visit the blog to adopt best
+                practices quickly.
               </p>
             </div>
             <a class="cta-button primary blog-widget__link" href="/blog/">
-              <span>Aller au blog</span>
+              <span data-i18n="blog.cta">Go to the blog</span>
               <span aria-hidden="true">→</span>
             </a>
           </div>
@@ -139,31 +196,39 @@
         <section class="content-section about-miniapps" id="about-miniapps">
           <div class="container section-grid">
             <div>
-              <h2>Qu'est-ce qu'une mini-app Telegram ?</h2>
-              <p>
-                Les mini-apps Telegram sont des applications web qui se lancent directement dans Telegram. Elles s'ouvrent instantanément, ne nécessitent aucune installation et fonctionnent sur tout appareil. Une façon pratique de réunir ventes, formation, support et contenu en un seul lieu.
+              <h2 data-i18n="about.title">What is a Telegram mini-app?</h2>
+              <p data-i18n="about.description">
+                Telegram mini-apps are web applications that launch directly in Telegram. They open instantly, require no
+                installation and work on any device — a convenient way to combine sales, education, support and content in a single
+                interface.
               </p>
             </div>
             <div class="section-illustration">
-              <img src="/assets/images/hero-illustration.svg" alt="Interface de mini-app Telegram" />
+              <img
+                src="/assets/images/hero-illustration.svg"
+                alt="Telegram mini-app interface"
+                data-i18n="about.imageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"
+              />
             </div>
           </div>
         </section>
 
         <section class="content-section features" id="features">
           <div class="container">
-            <h2>Ce que vous pouvez créer dans une mini-app</h2>
+            <h2 data-i18n="features.title">What you can build inside a mini-app</h2>
             <ul class="feature-list">
-              <li>Comptes utilisateurs</li>
-              <li>CRM avec segmentation et tags</li>
-              <li>Catalogues de services et de produits</li>
-              <li>Cours et leçons</li>
-              <li>Abonnements et monétisation</li>
-              <li>Programmes de parrainage</li>
-              <li>Formulaires, sondages et quiz</li>
-              <li>Automatisation des messages</li>
-              <li>Analyses et statistiques</li>
-              <li>Support par chat et opérateurs</li>
+              <li data-i18n="features.items.0">User accounts</li>
+              <li data-i18n="features.items.1">CRM with segmentation and tags</li>
+              <li data-i18n="features.items.2">Service and product catalogs</li>
+              <li data-i18n="features.items.3">Courses and lessons</li>
+              <li data-i18n="features.items.4">Subscriptions and monetisation</li>
+              <li data-i18n="features.items.5">Referral programs</li>
+              <li data-i18n="features.items.6">Forms, surveys and quizzes</li>
+              <li data-i18n="features.items.7">Message automation</li>
+              <li data-i18n="features.items.8">Analytics and statistics</li>
+              <li data-i18n="features.items.9">Chat and operator support</li>
             </ul>
           </div>
         </section>
@@ -171,38 +236,45 @@
         <section class="content-section alt benefits" id="benefits">
           <div class="container section-grid">
             <div>
-              <h2>Avantages des mini-apps</h2>
-              <p>
-                Les mini-apps fonctionnent partout où Telegram est disponible. Pas besoin de télécharger d'application, de configurer un hébergement, d'acheter un domaine ou d'embaucher des développeurs. Toutes les fonctionnalités vivent dans le bot et les mises à jour se déploient automatiquement.
+              <h2 data-i18n="benefits.title">Benefits of mini-apps</h2>
+              <p data-i18n="benefits.description">
+                Mini-apps work everywhere Telegram is available. No need to download an app, set up hosting, buy a domain or hire
+                developers. All features live inside the bot and updates deploy automatically.
               </p>
             </div>
             <div class="section-illustration">
-              <img src="/assets/images/benefits-overview.svg" alt="Avantages des mini-apps dans Telegram" />
+              <img
+                src="/assets/images/benefits-overview.svg"
+                alt="Benefits of Telegram mini-apps"
+                data-i18n="benefits.imageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"
+              />
             </div>
           </div>
         </section>
 
         <section class="content-section audience" id="audience">
           <div class="container">
-            <h2>À qui s'adressent les mini-apps</h2>
+            <h2 data-i18n="audience.title">Who mini-apps are for</h2>
             <ul class="audience-list">
-              <li>Écoles et projets éducatifs en ligne</li>
-              <li>Produits d'experts et de créateurs</li>
-              <li>Entreprises et marques</li>
-              <li>Entreprises locales et de services</li>
-              <li>Agences et marketeurs</li>
-              <li>Communautés et clubs</li>
-              <li>Blogueurs et médias</li>
+              <li data-i18n="audience.items.0">Online schools and education projects</li>
+              <li data-i18n="audience.items.1">Expert and creator products</li>
+              <li data-i18n="audience.items.2">Companies and brands</li>
+              <li data-i18n="audience.items.3">Local and service businesses</li>
+              <li data-i18n="audience.items.4">Agencies and marketers</li>
+              <li data-i18n="audience.items.5">Communities and clubs</li>
+              <li data-i18n="audience.items.6">Bloggers and media</li>
             </ul>
           </div>
         </section>
 
         <section class="content-section cta" id="open-builder">
           <div class="container cta-inner">
-            <h2>Lancez votre mini-app en 10 minutes</h2>
-            <p>Ouvrez le créateur et assemblez votre application avec des blocs et intégrations prêts à l'emploi.</p>
-            <a class="cta-button primary" href="#open-builder">Ouvrir le créateur</a>
-            <p class="secondary-link"><a href="#examples">Voir des exemples de mini-apps</a></p>
+            <h2 data-i18n="cta.title">Launch your mini-app in 10 minutes</h2>
+            <p data-i18n="cta.description">Open the builder and assemble your application with ready-made blocks and integrations.</p>
+            <a class="cta-button primary" href="#open-builder" data-i18n="cta.primaryCta">Open the builder</a>
+            <p class="secondary-link"><a href="#examples" data-i18n="cta.secondaryLink">See Telegram mini-app examples</a></p>
           </div>
         </section>
 
@@ -212,15 +284,15 @@
       <footer class="site-footer">
         <div class="container footer-inner">
           <div class="footer-left">
-            <p>© 2025 mini-app.pro</p>
-            <p>Créateur de mini-apps Telegram</p>
+            <p data-i18n="footer.copyright">© 2025 mini-app.pro</p>
+            <p data-i18n="footer.tagline">Telegram mini-app builder</p>
           </div>
 
           <nav class="footer-nav">
-            <a href="/docs">Documentation</a>
-            <a href="/blog">Blog</a>
-            <a href="/contact">Contact</a>
-            <a href="/privacy-policy">Politique de confidentialité</a>
+            <a href="/docs" data-i18n="footer.links.docs">Documentation</a>
+            <a href="/blog" data-i18n="footer.links.blog">Blog</a>
+            <a href="/contact" data-i18n="footer.links.contact">Contact</a>
+            <a href="/privacy-policy" data-i18n="footer.links.privacy">Privacy policy</a>
           </nav>
 
           <div class="footer-right">
@@ -242,7 +314,7 @@
                 hidden
               ></div>
             </div>
-            <a href="https://t.me/support_bot" class="support-link">Support sur Telegram</a>
+            <a href="https://t.me/support_bot" class="support-link" data-i18n="footer.support">Support on Telegram</a>
           </div>
         </div>
       </footer>
