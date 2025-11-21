@@ -42,7 +42,17 @@
 
   const matchLanguage = (code) => getLanguageConfig(code)?.code || null;
 
+  const getLanguageFromPath = () => {
+    const pathSegment = window.location.pathname.split('/').filter(Boolean)[0];
+    return matchLanguage(pathSegment);
+  };
+
   const detectInitialLanguage = () => {
+    const pathLanguage = getLanguageFromPath();
+    if (pathLanguage) {
+      return pathLanguage;
+    }
+
     const stored = storage.get(LANGUAGE_STORAGE_KEY);
     if (matchLanguage(stored)) {
       return matchLanguage(stored);
@@ -304,6 +314,11 @@
     translations: null
   };
 
+  const buildLanguageUrl = (language) => {
+    const target = matchLanguage(language) || DEFAULT_LANGUAGE;
+    return `/${target}/`;
+  };
+
   const updateSwitchers = () => {
     document.querySelectorAll('[data-language-switcher]').forEach((switcher) => {
       updateSwitcherSelection(switcher, state.language);
@@ -315,8 +330,18 @@
     updateSwitchers();
   };
 
-  const changeLanguage = async (language) => {
+  const changeLanguage = async (language, { redirect = false } = {}) => {
     const target = matchLanguage(language) || DEFAULT_LANGUAGE;
+    if (redirect) {
+      storage.set(LANGUAGE_STORAGE_KEY, target);
+      const currentPathLanguage = getLanguageFromPath();
+      const targetUrl = buildLanguageUrl(target);
+      if (currentPathLanguage !== target || !window.location.pathname.startsWith(targetUrl)) {
+        window.location.href = targetUrl;
+      }
+      return;
+    }
+
     if (target === state.language && state.translations) {
       updateDocumentLanguage(target);
       render();
@@ -339,7 +364,7 @@
 
   const initLanguageSwitchers = () => {
     document.querySelectorAll('[data-language-switcher]').forEach((switcher) => {
-      initSwitcher(switcher, changeLanguage);
+      initSwitcher(switcher, (language) => changeLanguage(language, { redirect: true }));
       updateSwitcherSelection(switcher, state.language);
     });
 
