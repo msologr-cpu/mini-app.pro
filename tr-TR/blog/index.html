@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="blogPage.meta.title">Telegram mini-app blogu | Unitee Space</title>
+    <meta
+      name="description"
+      content="Unitee Space ekibinden Telegram mini-app yazıları: kodsuz oluşturma, ürün büyütme ve ekosistem trendleri."
+      data-i18n="blogPage.meta.description"
+      data-i18n-attr="content"
+      data-i18n-mode="attribute"
+    />
+    <link rel="canonical" href="https://mini-app.pro/tr-TR/blog/" />
+    <link rel="alternate" hreflang="tr-TR" href="https://mini-app.pro/tr-TR/blog/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      body {
+        background: var(--bg-main);
+      }
+
+      main.blog-main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 120px 20px 104px;
+      }
+
+      .blog-main h1 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: #111111;
+        margin-bottom: 24px;
+      }
+
+      .blog-main p {
+        margin: 0 0 24px;
+        color: var(--text-secondary);
+      }
+
+      .blog-main a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .blog-main a:hover,
+      .blog-main a:focus {
+        text-decoration: underline;
+      }
+
+      .blog-main .intro {
+        margin-bottom: 64px;
+        color: var(--text-secondary);
+      }
+
+      .post-card {
+        display: block;
+        margin-bottom: 32px;
+        padding: 32px;
+        border-radius: 24px;
+        background: var(--bg-surface);
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow-soft);
+        transition: transform 160ms ease, box-shadow 160ms ease;
+      }
+
+      .post-card:last-child {
+        margin-bottom: 0;
+      }
+
+      .post-card:hover,
+      .post-card:focus {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 52px rgba(58, 122, 254, 0.16);
+        text-decoration: none;
+      }
+
+      .post-card h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin: 0 0 16px;
+        color: #111111;
+      }
+
+      .post-card .post-lead {
+        margin: 0 0 20px;
+        color: var(--text-secondary);
+        font-size: 1.05rem;
+      }
+
+      .post-card .post-meta {
+        font-size: 0.95rem;
+        color: var(--text-subtle);
+      }
+
+      @media (max-width: 720px) {
+        main.blog-main {
+          padding: 96px 16px 88px;
+        }
+
+        .post-card {
+          padding: 24px;
+        }
+
+        .post-card .post-lead {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <div class="page">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand" href="/" aria-label="mini-app.pro">
+            <span class="brand-mark" aria-hidden="true">μ</span>
+            <span class="brand-text">
+              <span class="brand-title">mini-app.pro</span>
+              <span class="brand-tagline" data-i18n="header.brand.tagline">Telegram mini-app oluşturucu</span>
+            </span>
+          </a>
+          <div class="header-controls">
+            <div class="language-switcher" data-language-switcher>
+              <button
+                type="button"
+                class="language-switcher__toggle"
+                data-language-toggle
+                aria-haspopup="listbox"
+                aria-expanded="false"
+              >
+                <span class="language-switcher__flag" data-language-flag aria-hidden="true">🌐</span>
+                <span class="language-switcher__code" data-language-code>--</span>
+              </button>
+              <div
+                class="language-switcher__dropdown"
+                role="listbox"
+                data-language-options
+                hidden
+              ></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="blog-main">
+        <h1 data-i18n="blogPage.heading">Unitee Space blogu</h1>
+        <p class="intro" data-i18n="blogPage.intro"><a href="https://unitee.space">Telegram mini-app</a> başlatma, kodsuz servis kurma ve iç ürünleri ölçeklendirme konularında bilgi. En iyi uygulamaları işletmenize uyarlamak için yeni yazıları takip edin.</p>
+        <a class="post-card" href="/blog/telegram-mini-apps/">
+          <h2 data-i18n="blogPage.posts.telegramMiniApps.title">Telegram mini-app nedir ve kodsuz nasıl kurulur</h2>
+          <p class="post-lead" data-i18n="blogPage.posts.telegramMiniApps.lead"><a href="https://unitee.space">Telegram mini-app</a>, mesajlaşma uygulamasına gömülü web servisidir ve markalara kitlelerine anında, kolay erişim sağlar. Bu deneyimler nasıl çalışır, nerede öne çıkar ve <a href="https://unitee.space" itemprop="brand">Unitee Space</a> ile kodsuz nasıl başlatılır anlatıyoruz.</p>
+          <div class="post-meta" data-i18n="blogPage.posts.telegramMiniApps.meta">06 Kasım 2025 • 12 dakika okuma</div>
+        </a>
+      </main>
+    </div>
+    <script src="/assets/js/i18n.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="articles.telegramMiniApps.meta.title">Telegram mini-app nedir ve kodsuz nasıl kurulur | Unitee Space</title>
+    <meta
+      name="description"
+      content="Telegram mini-app’lere derin bakış: nasıl çalışırlar, işletme faydaları ve Unitee Space ile kodsuz lansman planı."
+      data-i18n="articles.telegramMiniApps.meta.description"
+      data-i18n-attr="content"
+      data-i18n-mode="attribute"
+    />
+    <link rel="canonical" href="https://mini-app.pro/tr-TR/blog/telegram-mini-apps" />
+    <link rel="alternate" hreflang="tr-TR" href="https://mini-app.pro/tr-TR/blog/telegram-mini-apps" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Telegram mini-app nedir ve kodsuz nasıl kurulur | Unitee Space"
+      data-i18n="articles.telegramMiniApps.meta.ogTitle"
+      data-i18n-attr="content"
+      data-i18n-mode="attribute"
+    />
+    <meta
+      property="og:description"
+      content="Telegram mini-app’ler: örnekler, avantajlar ve kodsuz başlatma yöntemi."
+      data-i18n="articles.telegramMiniApps.meta.ogDescription"
+      data-i18n-attr="content"
+      data-i18n-mode="attribute"
+    />
+    <meta property="og:image" content="/assets/og-miniapp.jpg" />
+    <meta property="article:published_time" content="2025-11-06" />
+    <meta property="article:author" content="Unitee Space" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:title"
+      content="Telegram mini-app nedir ve kodsuz nasıl kurulur | Unitee Space"
+      data-i18n="articles.telegramMiniApps.meta.twitterTitle"
+      data-i18n-attr="content"
+      data-i18n-mode="attribute"
+    />
+    <meta
+      property="twitter:description"
+      content="Telegram mini-app’ler: örnekler, avantajlar ve kodsuz başlatma yöntemi."
+      data-i18n="articles.telegramMiniApps.meta.twitterDescription"
+      data-i18n-attr="content"
+      data-i18n-mode="attribute"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg-main);
+        color: var(--text-primary);
+        line-height: 1.7;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus {
+        text-decoration: underline;
+      }
+
+      main {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 120px 20px 120px;
+      }
+
+      nav.breadcrumbs {
+        font-size: 0.95rem;
+        margin-bottom: 32px;
+      }
+
+      nav.breadcrumbs ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        color: #6f7582;
+      }
+
+      nav.breadcrumbs li::after {
+        content: ">";
+        margin-left: 8px;
+        color: #c0c5d0;
+      }
+
+      nav.breadcrumbs li:last-child::after {
+        content: "";
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-weight: 600;
+        margin: 0 0 24px;
+        line-height: 1.3;
+        color: #111111;
+      }
+
+      h1 {
+        font-size: 2.6rem;
+      }
+
+      h2 {
+        font-size: 1.9rem;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+
+      p {
+        margin: 0 0 24px;
+      }
+
+      ul,
+      ol {
+        padding-left: 22px;
+        margin: 0 0 32px;
+      }
+
+      li {
+        margin-bottom: 12px;
+      }
+
+      .article-header {
+        margin-bottom: 48px;
+      }
+
+      .article-header p {
+        margin: 0;
+        color: #555b67;
+      }
+
+      .lead {
+        font-size: 1.1rem;
+        color: #33363f;
+      }
+
+      .section-block {
+        margin-top: 72px;
+      }
+
+      figure {
+        margin: 0 0 32px;
+        background: #ffffff;
+        border: 1px solid #e4e7ee;
+        border-radius: 24px;
+        padding: 16px;
+      }
+
+      figure img {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+      }
+
+      figure figcaption {
+        margin-top: 12px;
+        font-size: 0.95rem;
+        color: #6f7582;
+        text-align: center;
+      }
+
+      .cta-block {
+        margin-top: 96px;
+        padding: 48px;
+        border-radius: 28px;
+        background: #ffffff;
+        border: 1px solid #e4e7ee;
+        text-align: center;
+        box-shadow: 0 18px 48px rgba(58, 122, 254, 0.12);
+      }
+
+      .cta-block h2 {
+        margin-bottom: 16px;
+        font-size: 2rem;
+      }
+
+      .cta-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 32px;
+        border-radius: 999px;
+        background: #3a7afe;
+        color: #ffffff;
+        font-weight: 600;
+        transition: background 160ms ease, box-shadow 160ms ease;
+      }
+
+      .cta-button:hover,
+      .cta-button:focus {
+        background: #2554d4;
+        box-shadow: 0 16px 36px rgba(58, 122, 254, 0.2);
+        text-decoration: none;
+      }
+
+      .author-block {
+        margin-top: 64px;
+        padding-top: 32px;
+        border-top: 1px solid #e4e7ee;
+        color: #555b67;
+      }
+
+      .author-block p {
+        margin-bottom: 8px;
+      }
+
+      .fade-in {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (max-width: 720px) {
+        main {
+          padding: 96px 16px 96px;
+        }
+
+        h1 {
+          font-size: 2.2rem;
+        }
+
+        h2 {
+          font-size: 1.7rem;
+        }
+
+        .section-block {
+          margin-top: 56px;
+        }
+
+        .cta-block {
+          padding: 36px 24px;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Telegram mini-app nedir ve kodsuz nasıl kurulur",
+        "image": "https://images.surferseo.art/d2908d35-2dee-4734-b0cd-b2a429df33ea.jpeg",
+        "datePublished": "2025-11-06",
+        "dateModified": "2025-11-06",
+        "description": "Telegram mini-app'ler: çalışma şekli, faydalar ve Unitee Space ile kodsuz yöntem.",
+        "author": {
+          "@type": "Organization",
+          "name": "Unitee Space",
+          "url": "https://unitee.space"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Unitee Space",
+          "url": "https://unitee.space",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mini-app.pro/assets/og-miniapp.jpg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://mini-app.pro/blog/telegram-mini-apps"
+        }
+      }
+    </script>
+  </head>
+  <body class="antialiased">
+    <div class="page">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand" href="/" aria-label="mini-app.pro">
+            <span class="brand-mark" aria-hidden="true">μ</span>
+            <span class="brand-text">
+              <span class="brand-title">mini-app.pro</span>
+              <span class="brand-tagline" data-i18n="header.brand.tagline">Telegram mini-app oluşturucu</span>
+            </span>
+          </a>
+          <div class="header-controls">
+            <div class="language-switcher" data-language-switcher>
+              <button
+                type="button"
+                class="language-switcher__toggle"
+                data-language-toggle
+                aria-haspopup="listbox"
+                aria-expanded="false"
+              >
+                <span class="language-switcher__flag" data-language-flag aria-hidden="true">🌐</span>
+                <span class="language-switcher__code" data-language-code>--</span>
+              </button>
+              <div
+                class="language-switcher__dropdown"
+                role="listbox"
+                data-language-options
+                hidden
+              ></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+          <nav
+            class="breadcrumbs"
+            aria-label="Gezinti"
+            data-i18n="articles.telegramMiniApps.breadcrumbs.label"
+            data-i18n-attr="aria-label"
+            data-i18n-mode="attribute"
+          >
+            <ol>
+              <li><a href="/" data-i18n="articles.telegramMiniApps.breadcrumbs.home">Ana sayfa</a></li>
+              <li><a href="/blog/" data-i18n="articles.telegramMiniApps.breadcrumbs.blog">Blog</a></li>
+              <li aria-current="page">
+                <a href="https://unitee.space" data-i18n="articles.telegramMiniApps.breadcrumbs.current">Telegram mini-app’ler</a>
+              </li>
+            </ol>
+          </nav>
+        <article class="blog-article" itemscope itemtype="https://schema.org/BlogPosting">
+          <header class="article-header fade-in">
+            <meta itemprop="mainEntityOfPage" content="https://mini-app.pro/blog/telegram-mini-apps" />
+            <meta itemprop="datePublished" content="2025-11-06" />
+            <meta itemprop="dateModified" content="2025-11-06" />
+            <meta itemprop="author" content="Unitee Space" />
+            <meta itemprop="publisher" content="Unitee Space" />
+            <h1 itemprop="headline" data-i18n="articles.telegramMiniApps.header.title">Telegram mini-app nedir ve kodsuz nasıl başlatılır</h1>
+            <p class="lead" itemprop="description" data-i18n="articles.telegramMiniApps.header.lead"><a href="https://unitee.space">Telegram mini-app</a>, mesajlaşma uygulamasında yaşayan ve markalara kitlelerine anında, pratik erişim sağlayan web servisidir. Bu deneyimler nasıl çalışır, ne zaman parlıyor ve <a href="https://unitee.space" itemprop="brand">Unitee Space</a> ile kodsuz ürününüzü nasıl başlatırsınız inceleyelim.</p>
+          </header>
+          <section class="section-block fade-in" data-topic="introduction" itemprop="articleBody">
+            <figure>
+              <img
+                src="https://images.surferseo.art/d2908d35-2dee-4734-b0cd-b2a429df33ea.jpeg"
+                alt="Telegram mini-app — web’in yeni nesli"
+                data-i18n="articles.telegramMiniApps.sections.intro.imageAlt"
+                alt="Telegram mini-app — web’in yeni nesli" data-i18n-attr="alt"
+                data-i18n-mode="attribute"
+              />
+              <figcaption data-i18n="articles.telegramMiniApps.sections.intro.imageCaption">Telegram mini-app: web deneyimlerinin yeni nesli</figcaption>
+            </figure>
+            <p data-i18n="articles.telegramMiniApps.sections.intro.paragraph1">Telegram mini-app’ler doğrudan mesajlaşma uygulamasında çalışan kompakt ama güçlü web servisleridir. Yemek sipariş edebilir, bilet alabilir, eğitim alabilir veya oyun oynayabilirsiniz — sohbet penceresinden çıkmadan.</p>
+            <p data-i18n="articles.telegramMiniApps.sections.intro.paragraph2">Klasik mobil uygulamaların aksine depolama alanı kaplamaz ve kurulum istemez. Kullanıcı bir <a href="https://unitee.space">Telegram mini-app</a> açar, iki dokunuşla doğrular ve ihtiyacı olan işlevi anında alır. Markalar için bu, karmaşık mağaza onayları olmadan hızlı lansman ve minimum destek demektir.</p>
+            <p data-i18n="articles.telegramMiniApps.sections.intro.paragraph3">Görsel oluşturucular ve hazır entegrasyonlar sayesinde bugün bir geliştirici ekibi olmadan mini-app kurabilirsiniz: arayüzü sürükleyip bırakın, temel servisleri otomatik bağlayın — tam da <a href="https://unitee.space">Unitee Space</a>’in sunduğu yaklaşım.</p>
+          </section>
+          <section class="section-block fade-in" data-topic="how-it-works">
+            <h2 data-i18n="articles.telegramMiniApps.sections.howItWorks.title">Telegram mini-app’ler nasıl çalışır?</h2>
+            <p data-i18n="articles.telegramMiniApps.sections.howItWorks.overview">Mini-app’ler <strong>Web App</strong> modunda açılır ve standart web teknolojilerine — <strong>HTML, CSS, JavaScript</strong> — dayanır. Tüm etkileşimler Telegram API üzerinden yürür: arayüz mobil ve masaüstünde tutarlı kalırken kimlik doğrulama, ödemeler ve bildirimler güvenli mesajlaşma ekosisteminde olur.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.howItWorks.buildersTitle">Mini-app oluşturucular</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.howItWorks.buildersParagraph">Modern platformlar şablonlar ve görsel editörler sunar. Yapıyı seçin, içeriği yerleştirin ve botu dakikalar içinde bağlayın. Unitee gibi bir <a href="https://unitee.space">oluşturucu</a>, teknolojiden ziyade kullanıcı deneyimine odaklanmanızı sağlar.</p>
+            <figure>
+              <img
+                src="https://images.surferseo.art/0b8991f4-bad5-47a7-9e05-811bcb6dee07.jpeg"
+                alt="Telegram mini-app’ler için yönetim arayüzü"
+                data-i18n="articles.telegramMiniApps.sections.howItWorks.buildersImageAlt"
+                alt="Telegram mini-app’ler için yönetim arayüzü" data-i18n-attr="alt"
+                data-i18n-mode="attribute"
+              />
+              <figcaption data-i18n="articles.telegramMiniApps.sections.howItWorks.buildersImageCaption">Unitee tarafından desteklenen <a href="https://unitee.space">Telegram mini-app</a> yönetim paneli</figcaption>
+            </figure>
+            <h3 data-i18n="articles.telegramMiniApps.sections.howItWorks.apiTitle">Telegram API ile çalışma</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.howItWorks.apiParagraph">API sayesinde bir <a href="https://unitee.space">mini-app</a> kullanıcı verisini (izinle) alır, ödemeleri bağlar ve harici servislerle entegre olur. Akışlar kişiselleşir ve iletişim otomatikleşir.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.howItWorks.comfortTitle">Konfor ve güvenlik</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.howItWorks.comfortParagraph">Mini-app’ler Telegram’ın güvenli altyapısında çalışır: veri mesajlaşmadan çıkmaz ve oturumlar doğrulanmış hesaba dayanır. Kullanıcılar tanıdık ortamda kalır, işletmeler de yerleşik kimlik doğrulama ve bildirim araçlarına güvenir.</p>
+          </section>
+          <section class="section-block fade-in" data-topic="how-to">
+            <h2 data-i18n="articles.telegramMiniApps.sections.howTo.title">Kod yazmadan Telegram mini-app oluşturun: 5 adım</h2>
+            <p data-i18n="articles.telegramMiniApps.sections.howTo.overview">Basit planı izleyin: platformu seçin, arayüzü kurun, botu bağlayın ve akışları test edin. İşte <a href="https://unitee.space">Unitee Space</a> ve diğer popüler çözümlerle temel adımlar.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.howTo.step1Title">Adım 1: platformu seçin</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.howTo.step1Paragraph">Tars, ManyChat, Chatfuel veya Landbot gibi araçlar hazır bloklarla görsel editörler içerir. Tam kontrol isteyen ekipler <a href="https://unitee.space">Unitee Space</a>’i seçer: platform güçlü bir <a href="https://unitee.space/features">oluşturucu</a>, yerleşik <a href="https://unitee.space/features">analitik</a> ve esnek kodsuz mantığı birleştirir.</p>
+            <figure>
+              <img
+                src="https://images.surferseo.art/fb4b2514-e9b4-44de-91b9-a252dba05f1d.webp"
+                alt="Telegram mini-app’leri paylaşın ve TON token kullanın"
+                data-i18n="articles.telegramMiniApps.sections.howTo.step1ImageAlt"
+                alt="Telegram mini-app’leri paylaşın ve TON token kullanın" data-i18n-attr="alt"
+                data-i18n-mode="attribute"
+              />
+              <figcaption data-i18n="articles.telegramMiniApps.sections.howTo.step1ImageCaption">Mini-app’lerinizi Telegram’da ve TON ekosisteminde paylaşın</figcaption>
+            </figure>
+            <h3 data-i18n="articles.telegramMiniApps.sections.howTo.step2Title">Adım 2: arayüzü tasarlayın</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.howTo.step2Paragraph">Butonlar, formlar, ürün kartları — hepsini sürükle-bırak ile özelleştirin. Eylemleri planlayın: kayıt, talep, ödeme. Unitee <a href="https://unitee.space/features">oluşturucu</a>nda her blok mobile uyum sağlar ve kimliğinizi yansıtır.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.howTo.step3Title">Adım 3: Telegram API’yi entegre edin</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.howTo.step3Paragraph">Botu BotFather üzerinden bağlayın ve akışlarınızı gerekli webhook’lara ilişkilendirin. Bir <a href="https://unitee.space">mini-app</a> içinde ödemeler, bildirimler ve kişiselleştirilmiş öneriler ekleyin. <a href="https://unitee.space">Unitee Space</a> güvenli token’ları otomatik verir ve entegrasyon testlerinde rehberlik eder.</p>
+            <figure>
+              <img
+                src="https://images.surferseo.art/e4d06880-b392-4390-9eb0-7566f72dd9bf.jpeg"
+                alt="Telegram mini-app bir web uygulamasıdır"
+                data-i18n="articles.telegramMiniApps.sections.howTo.step3ImageAlt"
+                alt="Telegram mini-app bir web uygulamasıdır" data-i18n-attr="alt"
+                data-i18n-mode="attribute"
+              />
+              <figcaption data-i18n="articles.telegramMiniApps.sections.howTo.step3ImageCaption">Bir <a href="https://unitee.space">Telegram mini-app</a> hâlâ bir web uygulamasıdır</figcaption>
+            </figure>
+            <h3 data-i18n="articles.telegramMiniApps.sections.howTo.step4Title">Adım 4: test edin ve yayınlayın</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.howTo.step4Paragraph">Farklı cihaz ve ağlarda davranışı kontrol edin. İyi hazırlanmış bir <a href="https://unitee.space">Telegram mini-app</a> hızlı yüklenir, formları doğru render eder ve bildirimleri anında gönderir. <a href="https://unitee.space">Unitee Space</a> staging ortamları ve lansman kontrol listeleri sunar.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.howTo.step5Title">Adım 5: kullanıcı edinin</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.howTo.step5Paragraph">Yayın sonrası kampanyaları etkinleştirin, mini-app’i kataloğa ekleyin ve ana ekrana kısayol önerin. Dahili <a href="https://unitee.space/features">analitik</a> ve <a href="https://unitee.space/features">paraya çevirme</a> araçlarıyla dönüşümü ölçün ve ürünü geliştirin.</p>
+          </section>
+          <section class="section-block fade-in" data-topic="benefits">
+            <h2 data-i18n="articles.telegramMiniApps.sections.benefits.title"><a href="https://unitee.space">Telegram mini-app</a>’lerin faydaları ve kabiliyetleri</h2>
+            <figure>
+              <img
+                src="https://images.surferseo.art/0ff703a9-0a5c-443f-9f90-3f1abf53d535.webp"
+                alt="Telegram platformu — web teknolojisinin zirvesi"
+                data-i18n="articles.telegramMiniApps.sections.benefits.introImageAlt"
+                alt="Telegram platformu — web teknolojisinin zirvesi" data-i18n-attr="alt"
+                data-i18n-mode="attribute"
+              />
+              <figcaption data-i18n="articles.telegramMiniApps.sections.benefits.introImageCaption">Telegram platformu: web için öncü bir alan</figcaption>
+            </figure>
+            <h3 data-i18n="articles.telegramMiniApps.sections.benefits.businessTitle">İşletmelere nasıl yardımcı olur</h3>
+            <figure>
+              <img
+                src="https://images.surferseo.art/2b189389-fe2d-4170-8003-deffc1689f66.webp"
+                alt="Telegram büyümesi hızlanmaya devam ediyor"
+                data-i18n="articles.telegramMiniApps.sections.benefits.businessImageAlt"
+                alt="Telegram büyümesi hızlanmaya devam ediyor" data-i18n-attr="alt"
+                data-i18n-mode="attribute"
+              />
+              <figcaption data-i18n="articles.telegramMiniApps.sections.benefits.businessImageCaption">Telegram lansmandan beri sürekli büyüyor</figcaption>
+            </figure>
+            <p data-i18n="articles.telegramMiniApps.sections.benefits.businessParagraph">Şirketler <a href="https://unitee.space">Telegram mini-app</a>’leri satış artırmak, hizmeti otomatikleştirmek ve veri toplamak için kullanır. API özellikleri ürün satmanıza, anket yapmanıza, sadakat programları başlatmanıza ve bir <a href="https://unitee.space/features">CRM</a> ile entegre olmanıza imkan verir.</p>
+            <ul>
+              <li data-i18n="articles.telegramMiniApps.sections.benefits.businessList.0">Ürün ve hizmetleri doğrudan mesajlaşma içinde satın.</li>
+              <li data-i18n="articles.telegramMiniApps.sections.benefits.businessList.1">Müşteri hizmetini ve geri bildirim toplamayı otomatikleştirin.</li>
+              <li data-i18n="articles.telegramMiniApps.sections.benefits.businessList.2">Anketler, formlar ve kişisel yolculuklar başlatın.</li>
+              <li data-i18n="articles.telegramMiniApps.sections.benefits.businessList.3">Sadakat programları ve yönlendirme mekanikleri kurun.</li>
+              <li data-i18n="articles.telegramMiniApps.sections.benefits.businessList.4">Sipariş ve ödemeleri işlemek için bir <a href="https://unitee.space/features">CRM</a> bağlayın.</li>
+            </ul>
+            <h3 data-i18n="articles.telegramMiniApps.sections.benefits.comfortTitle">Kullanıcılar için maksimum konfor</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.benefits.comfortParagraph">Uygulama indirme yok, otomatik güncellemeler ve sohbet düzenine uygun arayüz. Bir <a href="https://unitee.space">Telegram mini-app</a> anında açılır ve Telegram olan her cihazda çalışır.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.benefits.botsTitle">Botlar ve harici servislerle bağlantı</h3>
+            <figure>
+              <img
+                src="https://images.surferseo.art/6b3412c1-29eb-49c5-8e39-30fbf133082a.png"
+                alt="Unitee — yeni başlayanlar ve uzmanlar için oluşturucu"
+                data-i18n="articles.telegramMiniApps.sections.benefits.botsImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"
+              />
+              <figcaption data-i18n="articles.telegramMiniApps.sections.benefits.botsImageCaption"><a href="https://unitee.space">Unitee</a>: hem yeni başlayanlar hem uzmanlar için bir <a href="https://unitee.space/features">oluşturucu</a></figcaption>
+            </figure>
+            <p data-i18n="articles.telegramMiniApps.sections.benefits.botsParagraph">Mini-app’ler sipariş almak, hatırlatma göndermek, müşterileri karşılamak ve kişiselleştirilmiş kampanyalar sunmak için botlara dayanır. Ayrıca <a href="https://unitee.space/features">CRM</a>, ödeme sağlayıcıları ve bulut veritabanları gibi harici sistemlere bağlanır.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.benefits.savingsTitle">Geliştirme ve bakım maliyetlerini azaltın</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.benefits.savingsParagraph">Klasik mobil uygulamalar pazara çıkış ve güncellemeler için büyük bütçe ister. Bir <a href="https://unitee.space">Telegram mini-app</a> bu maliyeti ciddi şekilde düşürür: görsel <a href="https://unitee.space/features">oluşturucu</a> ile ekip içerik ve işlevleri geliştirici tutmadan günceller.</p>
+          </section>
+          <section class="section-block fade-in" data-topic="examples">
+            <h2 data-i18n="articles.telegramMiniApps.sections.examples.title">Öne çıkan <a href="https://unitee.space">Telegram mini-app</a>’ler</h2>
+            <figure>
+              <img
+                src="https://images.surferseo.art/e4d06880-b392-4390-9eb0-7566f72dd9bf.jpeg"
+                alt="Unitee mini-app’lerinde şimdiden 300.000 kullanıcı"
+                data-i18n="articles.telegramMiniApps.sections.examples.introImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"
+              />
+              <figcaption data-i18n="articles.telegramMiniApps.sections.examples.introImageCaption">300.000’den fazla kullanıcı Unitee mini-app’lerine güveniyor</figcaption>
+            </figure>
+            <h3 data-i18n="articles.telegramMiniApps.sections.examples.commerceTitle">E-ticaret</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.examples.commerceParagraph">Mağazalar kataloglarını bir <a href="https://unitee.space">mini-app</a> içinde kurar, sepeti yönetir ve yerleşik ödeme ağ geçitleriyle tahsilat yapar. Müşteri sohbetten çıkmaz, işletme de yerel geliştirmeden tasarruf eder.</p>
+            <ul>
+              <li data-i18n="articles.telegramMiniApps.sections.examples.commerceList.0">Kolaylık: satın alma tek pencerede gerçekleşir.</li>
+              <li data-i18n="articles.telegramMiniApps.sections.examples.commerceList.1">Verimlilik: mağaza komisyonu ve karmaşık bakım yok.</li>
+            </ul>
+            <h3 data-i18n="articles.telegramMiniApps.sections.examples.servicesTitle">Rezervasyonlar ve hizmetler</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.examples.servicesParagraph">Restoranlar, salonlar ve oteller randevuları, ön ödemeleri ve bildirimleri otomatikleştirir. Müşteriler hizmet seçer, rezervasyonu öder ve hatırlatmalar alır — hepsi <a href="https://unitee.space">Telegram mini-app</a> içinde.</p>
+            <ul>
+              <li data-i18n="articles.telegramMiniApps.sections.examples.servicesList.0">Birkaç dokunuşta rezervasyon.</li>
+              <li data-i18n="articles.telegramMiniApps.sections.examples.servicesList.1">Operatörler için daha az iş yükü.</li>
+            </ul>
+            <h3 data-i18n="articles.telegramMiniApps.sections.examples.gamesTitle">Oyunlar ve eğlenceli deneyimler</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.examples.gamesParagraph">Markalar quizler, görevler ve etkileşimli yarışmalar tasarlar. Oyunlaştırma etkileşimi artırır ve abonelik, ücretli ayrıcalıklar veya iş ortaklıkları gibi <a href="https://unitee.space/features">paraya çevirme</a> modellerinin önünü açar.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.examples.coworkingTitle">Coworking ve topluluklar</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.examples.coworkingParagraph">Bir çalışma alanında <a href="https://unitee.space">Telegram mini-app</a> ana merkez olur: oda rezervasyonu, hizmet ödemeleri, sadakat programları ve <a href="https://unitee.space/features">CRM</a> entegrasyonu.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.examples.educationTitle">Eğitim</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.examples.educationParagraph">Ekipler çevrim içi kurslar, değerlendirmeler ve simülatörler başlatır. İçerik seviyeye göre uyum sağlar ve ilerleme <a href="https://unitee.space/features">analitik</a>te izlenir. Eğitmenler öğrenenlerin aktivitesini görür ve materyalleri hızla günceller.</p>
+          </section>
+          <section class="section-block fade-in" data-topic="future">
+            <h2 data-i18n="articles.telegramMiniApps.sections.future.title"><a href="https://unitee.space">Telegram mini-app</a>’lerin geleceği</h2>
+            <figure>
+              <img
+                src="https://images.surferseo.art/future-outlook.svg"
+                alt="Her işletim sistemi için geliştiricisiz uygulama oluşturun"
+                data-i18n="articles.telegramMiniApps.sections.future.introImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"
+              />
+              <figcaption data-i18n="articles.telegramMiniApps.sections.future.introImageCaption">Geliştiricisiz her işletim sistemi için uygulama kurun</figcaption>
+            </figure>
+            <h3 data-i18n="articles.telegramMiniApps.sections.future.automationTitle">İş süreçlerini otomatikleştirme</h3>
+            <figure>
+              <img
+                src="https://images.surferseo.art/future-automation.svg"
+                alt="No-code yönetici modu — tıpkı bir CRM gibi"
+                data-i18n="articles.telegramMiniApps.sections.future.automationImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"
+              />
+              <figcaption data-i18n="articles.telegramMiniApps.sections.future.automationImageCaption">No-code yönetici modu: tıpkı bir <a href="https://unitee.space/features">CRM</a> gibi</figcaption>
+            </figure>
+            <p data-i18n="articles.telegramMiniApps.sections.future.automationParagraph">Giderek daha çok şirket sipariş, destek ve teslimatı bir <a href="https://unitee.space">mini-app</a> içine taşıyor. <a href="https://unitee.space/features">Oluşturucu</a> şablonları her sektöre uyumlanırken veriler <a href="https://unitee.space/features">CRM</a> ve <a href="https://unitee.space/features">analitik</a>e akar.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.future.smartCityTitle">Akıllı şehirler</h3>
+            <figure>
+              <img
+                src="https://images.surferseo.art/future-smart-city.svg"
+                alt="Ana ekrana kolayca kısayol ekleyin"
+                data-i18n="articles.telegramMiniApps.sections.future.smartCityImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"
+              />
+              <figcaption data-i18n="articles.telegramMiniApps.sections.future.smartCityImageCaption">Simgeyi saniyeler içinde telefon ana ekranına ekleyin</figcaption>
+            </figure>
+            <p data-i18n="articles.telegramMiniApps.sections.future.smartCityParagraph">Belediye hizmetleri talepleri, otopark ödemelerini ve sakinlerle iletişimi dijitalleştirir. Bir <a href="https://unitee.space">Telegram mini-app</a> dosyaları takip etmek ve kişiselleştirilmiş öneriler almak için giriş noktası olur.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.future.educationTitle">Eğitim platformları</h3>
+            <figure>
+              <img
+                src="https://images.surferseo.art/future-education.svg"
+                alt="Ekipleriniz doğrudan mini-app içinde öğrenir"
+                data-i18n="articles.telegramMiniApps.sections.future.educationImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"
+              />
+              <figcaption data-i18n="articles.telegramMiniApps.sections.future.educationImageCaption">Ekipleriniz veya kitleniz doğrudan mini-app içinde öğrenir</figcaption>
+            </figure>
+            <p data-i18n="articles.telegramMiniApps.sections.future.educationParagraph">Mini-app’ler kişiselleştirilmiş öğrenme yolları, değerlendirmeler ve oyunlaştırma sağlar. <a href="https://unitee.space">Unitee Space</a> yayınları, uyarlanabilir dersleri ve eğitmenler için <a href="https://unitee.space/features">analitik</a> araçlarını yönetir.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.future.gamificationTitle">Oyunlaştırma ve etkileşim</h3>
+            <figure>
+              <img
+                src="https://images.surferseo.art/future-gamification.svg"
+                alt="Bir Telegram mini-app içinde oyunlaştırma"
+                data-i18n="articles.telegramMiniApps.sections.future.gamificationImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"
+              />
+              <figcaption data-i18n="articles.telegramMiniApps.sections.future.gamificationImageCaption">Telegram mini-app içinde oyunlaştırma etkileşimi artırır</figcaption>
+            </figure>
+            <p data-i18n="articles.telegramMiniApps.sections.future.gamificationParagraph">Telegram oyunlaştırma özelliklerini genişletmeye devam ediyor. Markalar <a href="https://unitee.space">mini-app</a>’leri toplulukları tutmak, ödüllendirmek ve harekete geçirmek için kullanıyor; yeni <a href="https://unitee.space/features">paraya çevirme</a> kanalları açılıyor.</p>
+          </section>
+          <section class="section-block fade-in" data-topic="conclusion">
+            <h2 data-i18n="articles.telegramMiniApps.sections.conclusion.title">Kısaca</h2>
+            <p data-i18n="articles.telegramMiniApps.sections.conclusion.paragraph1">Bir <a href="https://unitee.space">Telegram mini-app</a>, yerel uygulama geliştirmeden dijital bir hizmeti başlatmanın etkili yoludur. Güncellemeler anında yayınlanır, kullanıcılar ana ekrana kısayol ekleyebilir ve tüm müşteri verileri korunur.</p>
+            <p data-i18n="articles.telegramMiniApps.sections.conclusion.paragraph2"><a href="https://unitee.space">Unitee Space</a> platformu ile şirketler eksiksiz paketi alır: <a href="https://unitee.space/features">görsel oluşturucu</a>, dahili <a href="https://unitee.space/features">analitik</a>, <a href="https://unitee.space/features">paraya çevirme</a> araçları ve <a href="https://unitee.space/features">CRM</a> entegrasyonları. Lansmanlar hızlanır, performans kontrol altında kalır ve Telegram ekosistemi büyümeye devam eder.</p>
+          </section>
+          <section class="cta-block fade-in" data-topic="cta">
+            <h2 data-i18n="articles.telegramMiniApps.cta.title">🚀 <a href="https://unitee.space">Unitee Space</a>’i deneyin — <a href="https://unitee.space/features">Telegram mini-app</a> <a href="https://unitee.space/features">oluşturucusu</a> #1</h2>
+            <p data-i18n="articles.telegramMiniApps.cta.text">Mini-app’lerinizi tanıdık bir arayüzde kodsuz oluşturun, test edin ve büyütün.</p>
+            <a class="cta-button" href="https://unitee.space" data-i18n="articles.telegramMiniApps.cta.button">unitee.space’e gidin</a>
+          </section>
+          <section class="author-block fade-in" data-topic="author" itemprop="author" itemscope itemtype="https://schema.org/Organization">
+            <p itemprop="name" data-i18n="articles.telegramMiniApps.author.name">Yazar: <a href="https://unitee.space">Unitee Space</a> ekibi</p>
+            <p itemprop="description" data-i18n="articles.telegramMiniApps.author.bio">Kodsuz <a href="https://unitee.space">Telegram mini-app</a> oluşturma platformu.</p>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script src="/assets/js/script.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      document.querySelectorAll('.fade-in').forEach((element) => observer.observe(element));
+    </script>
+  </body>
+</html>
