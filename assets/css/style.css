@@ -1419,6 +1419,7 @@ main {
 
   .header-controls .language-switcher {
     flex-shrink: 0;
+    margin-inline-start: auto;
   }
 
   .site-header .cta-button {
