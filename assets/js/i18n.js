@@ -16,6 +16,7 @@
     { code: 'id-ID', label: 'Bahasa Indonesia', flag: '🇮🇩' },
     { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
     { code: 'es', label: 'Español', flag: '🇪🇸' },
+    { code: 'UA', label: 'Українська', flag: '🇺🇦', aliases: ['uk', 'uk-UA'] },
     { code: 'pl', label: 'Polski', flag: '🇵🇱' },
     { code: 'pt-BR', label: 'Português (Brasil)', flag: '🇧🇷' },
     { code: 'ru', label: 'Русский', flag: '🇷🇺' },
