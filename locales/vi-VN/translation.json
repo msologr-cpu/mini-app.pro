@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "title": "mini-app.pro — Trình tạo mini-app Telegram không cần code",
+    "description": "Thiết kế trải nghiệm Telegram đầy đủ với CRM, thanh toán, nội dung và tự động hóa — không cần lập trình viên.",
+    "ogTitle": "Trình tạo mini-app Telegram không cần code",
+    "ogDescription": "Tạo ứng dụng Telegram hoàn chỉnh với CRM, thanh toán, nội dung và tự động hóa. Nhanh, tiện lợi và không cần developer.",
+    "twitterTitle": "Trình tạo mini-app Telegram không cần code",
+    "twitterDescription": "Tạo ứng dụng Telegram hoàn chỉnh — kèm CRM, thanh toán, nội dung và tự động hóa."
+  },
+  "header": {
+    "brand": {
+      "tagline": "Trình tạo mini-app Telegram"
+    },
+    "cta": "Mở trình tạo"
+  },
+  "nav": {
+    "about": "Mini-app là gì",
+    "features": "Tính năng",
+    "benefits": "Lợi ích",
+    "audience": "Dành cho ai",
+    "start": "Bắt đầu"
+  },
+  "hero": {
+    "title": "Xây mini-app Telegram không cần viết code",
+    "description": "Tạo trải nghiệm Telegram đầy đủ với CRM, thanh toán, nội dung và tự động hóa. Nhanh, tiện và không cần developer.",
+    "primaryCta": "Mở trình tạo",
+    "secondaryCta": "Xem ví dụ"
+  },
+  "examples": {
+    "title": "Ví dụ về mini-app Telegram",
+    "moreLink": "Xem tất cả ứng dụng trong bộ tổng hợp Appss",
+    "cards": [
+      {
+        "title": "Evera | Thư viện Vĩnh Cửu | Bất tử số",
+        "description": "Tạo mô hình số của con người, lưu giữ ký ức qua nhiều thế hệ và trò chuyện với các nhân vật lịch sử.",
+        "button": "Mở ứng dụng",
+        "imageAlt": "Evera | Thư viện Vĩnh Cửu | Bất tử số"
+      },
+      {
+        "title": "Tamara Kartasheva App — trường học trực tuyến",
+        "description": "Sản phẩm giáo dục đầy đủ trong Telegram: bài học, cấp độ, blog, bài tập và truy cập cao cấp.",
+        "button": "Mở ứng dụng",
+        "imageAlt": "Tamara Kartasheva App — trường học trực tuyến"
+      },
+      {
+        "title": "NotSpy — khôi phục media đã xóa trong Telegram",
+        "description": "Bot thông báo tin nhắn đã chỉnh sửa, khôi phục hình ảnh hay voice đã xóa và lưu ảnh tạm thời.",
+        "button": "Mở ứng dụng",
+        "imageAlt": "NotSpy — khôi phục media đã xóa trong Telegram"
+      }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Blog mini-app.pro",
+    "title": "Thông tin mới nhất về mini-app Telegram",
+    "description": "Khám phá case study, mẹo launch và hướng dẫn từng bước cho mini-app no-code. Truy cập blog để áp dụng nhanh best practice.",
+    "cta": "Tới blog"
+  },
+  "about": {
+    "title": "Mini-app Telegram là gì?",
+    "description": "Mini-app Telegram là ứng dụng web mở trực tiếp trong Telegram. Chúng khởi chạy tức thì, không cần cài đặt và hoạt động trên mọi thiết bị — cách tiện lợi để kết hợp bán hàng, giáo dục, hỗ trợ và nội dung trong một giao diện.",
+    "imageAlt": "Giao diện mini-app Telegram"
+  },
+  "features": {
+    "title": "Bạn có thể xây gì trong mini-app",
+    "items": [
+      "Tài khoản người dùng",
+      "CRM với phân khúc và thẻ",
+      "Catalog dịch vụ và sản phẩm",
+      "Khóa học và bài học",
+      "Gói đăng ký và kiếm tiền",
+      "Chương trình giới thiệu",
+      "Form, khảo sát và quiz",
+      "Tự động hóa tin nhắn",
+      "Phân tích và thống kê",
+      "Chat và hỗ trợ operator"
+    ]
+  },
+  "benefits": {
+    "title": "Lợi ích của mini-app",
+    "description": "Mini-app hoạt động ở mọi nơi có Telegram. Không cần tải app, cấu hình hosting, mua domain hay thuê developer. Tất cả tính năng nằm trong bot và cập nhật được triển khai tự động.",
+    "imageAlt": "Lợi ích của mini-app Telegram"
+  },
+  "audience": {
+    "title": "Mini-app phù hợp với ai",
+    "items": [
+      "Trường online và dự án giáo dục",
+      "Sản phẩm của chuyên gia và creator",
+      "Doanh nghiệp và thương hiệu",
+      "Doanh nghiệp dịch vụ địa phương",
+      "Agency và marketer",
+      "Cộng đồng và câu lạc bộ",
+      "Blogger và media"
+    ]
+  },
+  "cta": {
+    "title": "Ra mắt mini-app trong 10 phút",
+    "description": "Mở trình tạo và lắp ráp ứng dụng với các block và tích hợp sẵn.",
+    "primaryCta": "Mở trình tạo",
+    "secondaryLink": "Xem ví dụ mini-app Telegram"
+  },
+  "footer": {
+    "copyright": "© 2025 mini-app.pro",
+    "tagline": "Trình tạo mini-app Telegram",
+    "links": {
+      "docs": "Tài liệu",
+      "blog": "Blog",
+      "contact": "Liên hệ",
+      "privacy": "Chính sách bảo mật"
+    },
+    "support": "Hỗ trợ trên Telegram"
+  },
+  "blogPage": {
+    "meta": {
+      "title": "Blog mini-app Telegram | Unitee Space",
+      "description": "Bài viết mới nhất về mini-app Telegram từ đội ngũ Unitee Space: xây dựng no-code, tăng trưởng sản phẩm và xu hướng hệ sinh thái."
+    },
+    "title": "Blog mini-app Telegram",
+    "description": "Kinh nghiệm thực tế để ra mắt, tối ưu và phát triển mini-app của bạn trong Telegram.",
+    "articles": [
+      {
+        "title": "Mini-app Telegram: cách tạo không cần code",
+        "description": "Mini-app Telegram là ứng dụng web nằm ngay trong messenger. Chúng giúp doanh nghiệp bán hàng, tự động hóa chăm sóc và ra mắt sản phẩm mà không cần ứng dụng native.",
+        "date": "10.02.2025",
+        "category": "Telegram mini-apps",
+        "readTime": "Đọc trong 9 phút",
+        "linkText": "Đọc bài viết",
+        "url": "/vi-VN/blog/telegram-mini-apps/"
+      }
+    ],
+    "openBlog": "Mở toàn bộ blog"
+  },
+  "articles": {
+    "telegramMiniApps": {
+      "meta": {
+        "title": "Mini-apps Telegram: ví dụ, lợi ích và cách launch không cần code | Unitee Space",
+        "description": "Mini-apps Telegram: ví dụ, lợi ích và phương pháp no-code để ra mắt dịch vụ của bạn.",
+        "ogTitle": "Mini-apps Telegram: ví dụ, lợi ích và cách launch không cần code | Unitee Space",
+        "ogDescription": "Mini-apps Telegram: ví dụ, lợi ích và phương pháp no-code để ra mắt dịch vụ của bạn.",
+        "twitterTitle": "Mini-apps Telegram: ví dụ, lợi ích và cách launch không cần code | Unitee Space",
+        "twitterDescription": "Mini-apps Telegram: ví dụ, lợi ích và phương pháp no-code để ra mắt dịch vụ của bạn."
+      },
+      "breadcrumbs": {
+        "label": "Breadcrumbs",
+        "home": "Trang chủ",
+        "blog": "Blog",
+        "current": "Mini-apps Telegram"
+      },
+      "header": {
+        "title": "Mini-app Telegram là gì và cách tạo không cần code",
+        "lead": "Mini-apps Telegram là dịch vụ web tích hợp ngay trong messenger, mang đến trải nghiệm tiện lợi nhất cho doanh nghiệp và khách hàng. Chúng tôi giải thích cách hoạt động, nơi ứng dụng và cách ra mắt sản phẩm no-code với nền tảng <a href=\"https://unitee.space\" itemprop=\"brand\">Unitee Space</a>."
+      },
+      "sections": {
+        "intro": {
+          "imageAlt": "Mini-app Telegram — thế hệ web mới",
+          "imageCaption": "Mini-app Telegram: thế hệ trải nghiệm web mới",
+          "paragraph1": "Mini-apps Telegram là dịch vụ web gọn nhưng mạnh chạy trực tiếp trong messenger. Bạn có thể đặt món, mua vé, tham gia khóa học hoặc chơi game — tất cả mà không cần rời cửa sổ chat.",
+          "paragraph2": "Không giống app di động truyền thống, chúng không chiếm dung lượng và không cần cài đặt. Người dùng mở <a href=\"https://unitee.space\">mini-app Telegram</a>, xác thực vài thao tác và lập tức có chức năng cần. Với thương hiệu, điều này nghĩa là launch nhanh, không phải duyệt store phức tạp và cần ít hỗ trợ.",
+          "paragraph3": "Nhờ các builder trực quan và tích hợp sẵn, bạn có thể tạo mini-app ngay hôm nay mà không cần đội dev: kéo thả giao diện và kết nối dịch vụ tự động — đúng cách <a href=\"https://unitee.space\">Unitee Space</a> cung cấp."
+        },
+        "howItWorks": {
+          "title": "Mini-apps Telegram hoạt động thế nào?",
+          "overview": "Mini-apps mở ở chế độ <strong>Web App</strong> và dùng công nghệ web chuẩn — <strong>HTML, CSS, JavaScript</strong>. Mọi tương tác đi qua API Telegram: giao diện thống nhất trên mobile và desktop, còn xác thực, thanh toán và thông báo diễn ra trong hệ sinh thái bảo mật của messenger.",
+          "buildersTitle": "Trình tạo mini-app",
+          "buildersParagraph": "Các nền tảng hiện đại cung cấp template và trình chỉnh sửa trực quan. Chọn cấu trúc, thả nội dung và kết nối bot trong vài phút. Một <a href=\"https://unitee.space/features\">builder</a> như Unitee giúp bạn tập trung vào trải nghiệm người dùng thay vì kỹ thuật.",
+          "buildersImageAlt": "Giao diện quản trị mini-app Telegram",
+          "buildersImageCaption": "Bảng điều khiển cho <a href=\"https://unitee.space\">mini-app Telegram</a> được vận hành bởi Unitee",
+          "apiTitle": "Làm việc với API Telegram",
+          "apiParagraph": "Qua API, một <a href=\"https://unitee.space\">mini-app</a> nhận dữ liệu người dùng (khi được cho phép), kết nối thanh toán và tích hợp dịch vụ ngoài. Luồng được cá nhân hóa và liên lạc được tự động hóa.",
+          "comfortTitle": "Tiện lợi và bảo mật",
+          "comfortParagraph": "Mini-app chạy trong hạ tầng an toàn của Telegram: dữ liệu không rời messenger và phiên dùng tài khoản đã xác minh. Người dùng ở trong môi trường quen thuộc, doanh nghiệp tận dụng sẵn xác thực và thông báo."
+        },
+        "howTo": {
+          "title": "Cách tạo mini-app không cần code",
+          "overview": "Bạn có thể tạo mini-app bằng code hoặc không. Với no-code, hãy chọn trình tạo như <a href=\"https://unitee.space\">Unitee Space</a> để có block sẵn, thanh toán tích hợp và phân tích realtime.",
+      "step1Title": "Bước 1: chọn builder",
+      "step1Paragraph": "Các công cụ như Tars, ManyChat, Chatfuel hoặc Landbot cung cấp trình chỉnh sửa trực quan với block sẵn. Nếu cần kiểm soát đầy đủ, hãy dùng <a href=\"https://unitee.space\">Unitee Space</a>: nền tảng kết hợp <a href=\"https://unitee.space/features\">builder</a> mạnh, <a href=\"https://unitee.space/features\">analytics</a> tích hợp và logic no-code linh hoạt.",
+      "step1ImageAlt": "Chia sẻ mini-app Telegram và token TON",
+      "step1ImageCaption": "Chia sẻ mini-apps trong Telegram và hệ sinh thái TON",
+      "step2Title": "Bước 2: thiết kế giao diện",
+      "step2Paragraph": "Chọn template, kéo thả nội dung và kết nối bot trong vài phút. Một <a href=\"https://unitee.space\">mini-app</a> cần menu rõ ràng, nút hành động và luồng thanh toán/đăng ký dễ hiểu.",
+      "step3Title": "Bước 3: kết nối bot và tích hợp",
+      "step3Paragraph": "Kết nối bot qua BotFather và nối luồng với webhook cần thiết. Trong <a href=\"https://unitee.space\">mini-app</a> bạn thêm thanh toán, thông báo và gợi ý cá nhân hóa. <a href=\"https://unitee.space\">Unitee Space</a> tự động tạo token bảo mật và hướng dẫn kiểm thử tích hợp.",
+      "step3ImageAlt": "Một mini-app Telegram vẫn là ứng dụng web",
+      "step3ImageCaption": "Một <a href=\"https://unitee.space\">mini-app Telegram</a> vẫn là ứng dụng web",
+      "step4Title": "Bước 4: kiểm thử và launch",
+          "step4Paragraph": "Kiểm tra hành vi trên nhiều thiết bị và mạng. Một <a href=\"https://unitee.space\">mini-app Telegram</a> hoàn thiện tải nhanh, hiển thị form đúng và gửi thông báo tức thì. <a href=\"https://unitee.space\">Unitee Space</a> cung cấp môi trường staging và checklist launch.",
+          "step5Title": "Bước 5: thu hút người dùng",
+          "step5Paragraph": "Sau khi launch, kích hoạt chiến dịch, thêm mini-app vào catalog và gợi ý thêm shortcut màn hình chính. Dùng <a href=\"https://unitee.space/features\">analytics</a> và công cụ <a href=\"https://unitee.space/features\">monetisation</a> tích hợp để đo chuyển đổi và phát triển sản phẩm."
+        },
+        "benefits": {
+          "title": "Lợi ích và khả năng của <a href=\"https://unitee.space\">mini-app Telegram</a>",
+          "introImageAlt": "Nền tảng Telegram — đỉnh cao công nghệ web",
+          "introImageCaption": "Nền tảng Telegram: sân chơi web hiện đại",
+          "businessTitle": "Chúng giúp doanh nghiệp thế nào",
+          "businessImageAlt": "Tăng trưởng Telegram không ngừng",
+          "businessImageCaption": "Telegram liên tục tăng trưởng từ khi ra mắt",
+          "businessParagraph": "Doanh nghiệp dùng <a href=\"https://unitee.space\">mini-app Telegram</a> để thúc đẩy doanh số, tự động hóa dịch vụ và thu thập dữ liệu. API cho phép bán sản phẩm, chạy khảo sát, khởi tạo loyalty và tích hợp với <a href=\"https://unitee.space/features\">CRM</a>.",
+          "businessList": [
+            "Bán sản phẩm và dịch vụ ngay trong messenger.",
+            "Tự động hóa CSKH và thu thập phản hồi.",
+            "Khởi chạy khảo sát, form và hành trình cá nhân hóa.",
+            "Tạo chương trình khách hàng thân thiết và giới thiệu.",
+            "Kết nối <a href=\"https://unitee.space/features\">CRM</a> để xử lý đơn và thanh toán."
+          ],
+          "comfortTitle": "Trải nghiệm tối ưu cho người dùng",
+          "comfortParagraph": "Không cần tải app, cập nhật tự động và giao diện quen thuộc như chat. Một <a href=\"https://unitee.space\">mini-app Telegram</a> mở tức thì và hoạt động trên mọi thiết bị có Telegram.",
+          "botsTitle": "Kết nối bot và dịch vụ bên ngoài",
+          "botsImageAlt": "Unitee — trình tạo cho người mới và chuyên gia",
+          "botsImageCaption": "<a href=\"https://unitee.space\">Unitee</a>: <a href=\"https://unitee.space/features\">trình tạo</a> cho cả người mới và chuyên gia",
+          "botsParagraph": "Mini-app dựa vào bot để nhận đơn, gửi nhắc, onboarding khách và triển khai chiến dịch cá nhân hóa. Chúng cũng kết nối với hệ thống bên ngoài: <a href=\"https://unitee.space/features\">CRM</a>, cổng thanh toán và cơ sở dữ liệu đám mây.",
+          "savingsTitle": "Giảm chi phí xây dựng và vận hành",
+          "savingsParagraph": "Ứng dụng di động truyền thống đòi hỏi ngân sách lớn để ra mắt và cập nhật liên tục. Một <a href=\"https://unitee.space\">mini-app Telegram</a> cắt giảm đáng kể chi phí: <a href=\"https://unitee.space/features\">builder</a> trực quan cho phép đội ngũ cập nhật nội dung, tính năng mà không cần thuê developer."
+        },
+        "examples": {
+          "title": "Những <a href=\"https://unitee.space\">mini-app Telegram</a> hoạt động hiệu quả",
+          "introImageAlt": "Đã có 300.000 người dùng trong mini-app của Unitee",
+          "introImageCaption": "Hơn 300.000 người dùng đã tin cậy mini-app của Unitee",
+          "commerceTitle": "Thương mại điện tử",
+          "commerceParagraph": "Cửa hàng xây catalog trong <a href=\"https://unitee.space\">mini-app</a>, quản lý giỏ hàng và nhận thanh toán qua cổng tích hợp. Khách ở lại trong chat và doanh nghiệp tránh được phát triển native.",
+          "commerceList": [
+            "Tiện lợi: giao dịch diễn ra trong một cửa sổ.",
+            "Hiệu quả: không phí store, không bảo trì phức tạp."
+          ],
+          "servicesTitle": "Đặt chỗ và dịch vụ",
+          "servicesParagraph": "Nhà hàng, salon và khách sạn tự động hóa đặt chỗ, đặt cọc và thông báo. Khách chọn dịch vụ, trả tiền giữ chỗ và nhận nhắc — tất cả trong <a href=\"https://unitee.space\">mini-app Telegram</a>.",
+          "servicesList": [
+            "Đặt chỗ trong vài thao tác.",
+            "Giảm tải cho nhân viên hỗ trợ."
+          ],
+          "gamesTitle": "Game và trải nghiệm tương tác",
+          "gamesParagraph": "Thương hiệu thiết kế quiz, quest và cuộc thi tương tác. Gamification tăng engagement và mở ra mô hình <a href=\"https://unitee.space/features\">monetisation</a> như subscription, perk trả phí hoặc hợp tác.",
+          "coworkingTitle": "Coworking và cộng đồng",
+          "coworkingParagraph": "Trong workspace, <a href=\"https://unitee.space\">mini-app Telegram</a> trở thành hub chính: đặt phòng, thanh toán dịch vụ, loyalty và kết nối với <a href=\"https://unitee.space/features\">CRM</a>.",
+          "educationTitle": "Giáo dục",
+          "educationParagraph": "Các đội ngũ ra mắt khóa học online, bài kiểm tra và mô phỏng. Nội dung thích ứng theo cấp độ và tiến trình được theo dõi trong <a href=\"https://unitee.space/features\">analytics</a>. Giảng viên theo dõi hoạt động học viên và cập nhật tài liệu nhanh chóng."
+        },
+        "future": {
+          "title": "Tương lai của <a href=\"https://unitee.space\">mini-app Telegram</a>",
+          "introImageAlt": "Tạo app cho mọi hệ điều hành mà không cần developer",
+          "introImageCaption": "Xây app cho mọi hệ điều hành mà không cần developer",
+          "automationTitle": "Tự động hóa quy trình doanh nghiệp",
+          "automationImageAlt": "Chế độ quản trị no-code — giống CRM",
+          "automationImageCaption": "Chế độ admin no-code: giống như trong <a href=\"https://unitee.space/features\">CRM</a>",
+          "automationParagraph": "Ngày càng nhiều doanh nghiệp đưa đặt hàng, hỗ trợ và giao nhận vào <a href=\"https://unitee.space\">mini-app</a>. Mẫu <a href=\"https://unitee.space/features\">builder</a> thích ứng với mọi ngành và dữ liệu được chuyển tới <a href=\"https://unitee.space/features\">CRM</a> và <a href=\"https://unitee.space/features\">analytics</a>.",
+          "smartCityTitle": "Thành phố thông minh",
+          "smartCityImageAlt": "Thêm shortcut vào màn hình chính dễ dàng",
+          "smartCityImageCaption": "Thêm biểu tượng vào màn hình chính điện thoại trong vài giây",
+          "smartCityParagraph": "Dịch vụ đô thị số hóa yêu cầu, thanh toán đỗ xe và giao tiếp với cư dân. <a href=\"https://unitee.space\">Mini-app Telegram</a> trở thành điểm vào để theo dõi hồ sơ và nhận gợi ý cá nhân hóa.",
+          "educationTitle": "Nền tảng giáo dục",
+          "educationImageAlt": "Đội ngũ của bạn học ngay trong mini-app",
+          "educationImageCaption": "Đội ngũ hoặc khán giả học trực tiếp trong mini-app",
+          "educationParagraph": "Mini-app cho phép lộ trình học cá nhân hóa, đánh giá và gamification. <a href=\"https://unitee.space\">Unitee Space</a> xử lý broadcast, bài học thích ứng và <a href=\"https://unitee.space/features\">analytics</a> cho giảng viên.",
+          "gamificationTitle": "Gamification và tăng tương tác",
+          "gamificationImageAlt": "Gamification trong mini-app Telegram",
+          "gamificationImageCaption": "Gamification tăng tương tác trong mini-app Telegram",
+          "gamificationParagraph": "Telegram liên tục mở rộng cơ chế giải trí. Thương hiệu dùng <a href=\"https://unitee.space\">mini-app</a> để giữ chân, thưởng và kích hoạt cộng đồng đồng thời mở kênh <a href=\"https://unitee.space/features\">monetisation</a> mới."
+        },
+        "conclusion": {
+          "title": "Tóm tắt",
+          "paragraph1": "<a href=\"https://unitee.space\">Mini-app Telegram</a> là cách hiệu quả để ra mắt dịch vụ số mà không cần ứng dụng native. Cập nhật triển khai tức thì, người dùng có thể ghim shortcut lên màn hình chính và dữ liệu khách hàng luôn được bảo vệ.",
+          "paragraph2": "Với nền tảng <a href=\"https://unitee.space\">Unitee Space</a>, doanh nghiệp nhận đủ công cụ: <a href=\"https://unitee.space/features\">builder trực quan</a>, <a href=\"https://unitee.space/features\">analytics</a> tích hợp, công cụ <a href=\"https://unitee.space/features\">kiếm tiền</a> và tích hợp <a href=\"https://unitee.space/features\">CRM</a>. Việc launch nhanh hơn, hiệu suất được kiểm soát và hệ sinh thái Telegram tiếp tục mở rộng."
+        }
+      },
+      "cta": {
+        "title": "🚀 Thử <a href=\"https://unitee.space\">Unitee Space</a> — <a href=\"https://unitee.space/features\">trình tạo</a> #1 cho <a href=\"https://unitee.space\">mini-app Telegram</a>",
+        "text": "Tạo, kiểm thử và phát triển mini-app của bạn không cần code trong giao diện quen thuộc.",
+        "button": "Tới unitee.space"
+      },
+      "author": {
+        "name": "Tác giả: đội ngũ <a href=\"https://unitee.space\">Unitee Space</a>",
+        "bio": "Nền tảng xây dựng <a href=\"https://unitee.space\">mini-app Telegram</a> không cần code."
+      },
+      "title": "Mini-apps Telegram là gì và cách tạo không cần code",
+      "description": "Mini-apps Telegram là dịch vụ web tích hợp ngay trong messenger, mang đến trải nghiệm tiện lợi nhất cho doanh nghiệp và khách hàng. Chúng tôi giải thích cách hoạt động, nơi ứng dụng và cách ra mắt sản phẩm no-code với nền tảng <a href=\"https://unitee.space\" itemprop=\"brand\">Unitee Space</a>."
+    }
+  }
+}
