@@ -175,6 +175,28 @@ p {
   transform: scaleX(1);
 }
 
+[dir="rtl"] body {
+  direction: rtl;
+}
+
+[dir="rtl"] .header-inner,
+[dir="rtl"] .hero,
+[dir="rtl"] .content-section,
+[dir="rtl"] .cta-block,
+[dir="rtl"] .footer-grid {
+  text-align: right;
+}
+
+[dir="rtl"] .header-controls,
+[dir="rtl"] .hero-actions,
+[dir="rtl"] .desktop-nav {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .desktop-nav a::after {
+  transform-origin: right;
+}
+
 .cta-button {
   display: inline-flex;
   align-items: center;
@@ -339,6 +361,11 @@ p {
   text-align: left;
   cursor: pointer;
   transition: color 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+[dir="rtl"] .language-switcher__option {
+  flex-direction: row-reverse;
+  text-align: right;
 }
 
 .language-switcher__option:hover,

@@ -1,7 +1,15 @@
 (() => {
   const LANGUAGE_STORAGE_KEY = 'miniAppLanguage';
   const RTL_LANGUAGES = new Set(['ar', 'fa']);
+  const isRtlLanguage = (language) => {
+    if (!language) {
+      return false;
+    }
+    const normalized = language.toLowerCase();
+    return Array.from(RTL_LANGUAGES).some((rtl) => normalized === rtl || normalized.startsWith(`${rtl}-`));
+  };
   const LANGUAGE_OPTIONS = [
+    { code: 'ar-XXX', label: 'العربية', flag: '🇸🇦' },
     { code: 'en', label: 'English', flag: '🇬🇧' },
     { code: 'id-ID', label: 'Bahasa Indonesia', flag: '🇮🇩' },
     { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
@@ -181,7 +189,7 @@
   const updateDocumentLanguage = (language) => {
     const target = matchLanguage(language) || DEFAULT_LANGUAGE;
     document.documentElement.lang = target;
-    document.documentElement.dir = RTL_LANGUAGES.has(target) ? 'rtl' : 'ltr';
+    document.documentElement.dir = isRtlLanguage(target) ? 'rtl' : 'ltr';
     storage.set(LANGUAGE_STORAGE_KEY, target);
   };
 
