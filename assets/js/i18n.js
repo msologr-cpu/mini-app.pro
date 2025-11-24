@@ -339,9 +339,9 @@
     translations: null
   };
 
-  const buildLanguageUrl = (language) => {
+  const buildLanguageUrl = (language, { absolute = false, includeQuery = true } = {}) => {
     const target = matchLanguage(language) || DEFAULT_LANGUAGE;
-    const { pathname, search, hash } = window.location;
+    const { pathname, search, hash, origin } = window.location;
     const segments = pathname.split('/').filter(Boolean);
     const hasTrailingSlash = pathname.endsWith('/');
 
@@ -355,7 +355,47 @@
       nextPath += '/';
     }
 
-    return `${nextPath}${search || ''}${hash || ''}`;
+    const query = includeQuery ? search || '' : '';
+    const anchor = includeQuery ? hash || '' : '';
+    const fullPath = `${nextPath}${query}${anchor}`;
+
+    return absolute ? `${origin}${fullPath}` : fullPath;
+  };
+
+  const updateSeoLinks = () => {
+    const canonicalLink = document.querySelector('link[rel="canonical"]') || (() => {
+      const link = document.createElement('link');
+      link.rel = 'canonical';
+      document.head.appendChild(link);
+      return link;
+    })();
+
+    const canonicalUrl = buildLanguageUrl(state.language, { absolute: true, includeQuery: false });
+    canonicalLink.setAttribute('href', canonicalUrl);
+
+    const ogUrlMeta = document.querySelector('meta[property="og:url"]') || (() => {
+      const meta = document.createElement('meta');
+      meta.setAttribute('property', 'og:url');
+      document.head.appendChild(meta);
+      return meta;
+    })();
+    ogUrlMeta.setAttribute('content', canonicalUrl);
+
+    document.querySelectorAll('link[rel="alternate"]').forEach((link) => link.remove());
+
+    const xDefault = document.createElement('link');
+    xDefault.rel = 'alternate';
+    xDefault.hreflang = 'x-default';
+    xDefault.href = buildLanguageUrl(DEFAULT_LANGUAGE, { absolute: true, includeQuery: false });
+    document.head.appendChild(xDefault);
+
+    LANGUAGE_OPTIONS.forEach((option) => {
+      const link = document.createElement('link');
+      link.rel = 'alternate';
+      link.hreflang = option.code;
+      link.href = buildLanguageUrl(option.code, { absolute: true, includeQuery: false });
+      document.head.appendChild(link);
+    });
   };
 
   const updateSwitchers = () => {
@@ -367,6 +407,7 @@
   const render = () => {
     translateDocument(state.translations);
     updateSwitchers();
+    updateSeoLinks();
   };
 
   const changeLanguage = async (language, { redirect = false } = {}) => {
