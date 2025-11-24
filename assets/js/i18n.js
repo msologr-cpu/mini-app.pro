@@ -341,7 +341,21 @@
 
   const buildLanguageUrl = (language) => {
     const target = matchLanguage(language) || DEFAULT_LANGUAGE;
-    return `/${target}/`;
+    const { pathname, search, hash } = window.location;
+    const segments = pathname.split('/').filter(Boolean);
+    const hasTrailingSlash = pathname.endsWith('/');
+
+    if (segments.length && matchLanguage(segments[0])) {
+      segments.shift();
+    }
+
+    const nextSegments = [target, ...segments];
+    let nextPath = `/${nextSegments.join('/')}`;
+    if (hasTrailingSlash || segments.length === 0) {
+      nextPath += '/';
+    }
+
+    return `${nextPath}${search || ''}${hash || ''}`;
   };
 
   const updateSwitchers = () => {
