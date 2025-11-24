@@ -13,6 +13,10 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://mini-app.pro/pt-BR/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://mini-app.pro/ru/</loc>
     <priority>0.8</priority>
   </url>
@@ -30,6 +34,14 @@
   </url>
   <url>
     <loc>https://mini-app.pro/es/blog/telegram-mini-apps</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mini-app.pro/pt-BR/blog/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mini-app.pro/pt-BR/blog/telegram-mini-apps</loc>
     <priority>0.7</priority>
   </url>
   <url>
