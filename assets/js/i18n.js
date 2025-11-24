@@ -9,6 +9,7 @@
     return Array.from(RTL_LANGUAGES).some((rtl) => normalized === rtl || normalized.startsWith(`${rtl}-`));
   };
   const LANGUAGE_OPTIONS = [
+    { code: 'JP', label: '日本語', flag: '🇯🇵', aliases: ['ja', 'ja-JP'] },
     { code: 'ar-XXX', label: 'العربية', flag: '🇸🇦' },
     { code: 'en', label: 'English', flag: '🇬🇧' },
     { code: 'vi-VN', label: 'Tiếng Việt', flag: '🇻🇳' },
@@ -48,11 +49,19 @@
       return null;
     }
     const normalized = code.toLowerCase();
-    return (
-      LANGUAGE_OPTIONS.find((option) => option.code.toLowerCase() === normalized) ||
-      LANGUAGE_OPTIONS.find((option) => option.code.toLowerCase().split('-')[0] === normalized.split('-')[0]) ||
-      null
-    );
+
+    const matches = (option) => {
+      const optionCode = option.code.toLowerCase();
+      const aliases = Array.isArray(option.aliases) ? option.aliases.map((alias) => alias.toLowerCase()) : [];
+
+      return (
+        optionCode === normalized ||
+        optionCode.split('-')[0] === normalized.split('-')[0] ||
+        aliases.some((alias) => alias === normalized || alias.split('-')[0] === normalized.split('-')[0])
+      );
+    };
+
+    return LANGUAGE_OPTIONS.find((option) => matches(option)) || null;
   };
 
   const matchLanguage = (code) => getLanguageConfig(code)?.code || null;
