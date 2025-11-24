@@ -20,6 +20,7 @@
     { code: 'ru', label: 'Русский', flag: '🇷🇺' },
     { code: 'fr', label: 'Français', flag: '🇫🇷' },
     { code: 'hi', label: 'हिन्दी', flag: '🇮🇳' },
+    { code: 'th', label: 'ไทย', flag: '🇹🇭' },
     { code: 'kk', label: 'Қазақша', flag: '🇰🇿' },
     { code: 'tr-TR', label: 'Türkçe', flag: '🇹🇷' }
   ];
