@@ -9,22 +9,22 @@
     return Array.from(RTL_LANGUAGES).some((rtl) => normalized === rtl || normalized.startsWith(`${rtl}-`));
   };
   const LANGUAGE_OPTIONS = [
-    { code: 'JP', label: '日本語', flag: '🇯🇵', aliases: ['ja', 'ja-JP'] },
-    { code: 'ar-XXX', label: 'العربية', flag: '🇸🇦' },
     { code: 'en', label: 'English', flag: '🇬🇧' },
-    { code: 'vi-VN', label: 'Tiếng Việt', flag: '🇻🇳' },
-    { code: 'id-ID', label: 'Bahasa Indonesia', flag: '🇮🇩' },
-    { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
+    { code: 'ru', label: 'Русский', flag: '🇷🇺' },
     { code: 'es', label: 'Español', flag: '🇪🇸' },
+    { code: 'pt-BR', label: 'Português (Brasil)', flag: '🇧🇷' },
+    { code: 'fr', label: 'Français', flag: '🇫🇷' },
+    { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
+    { code: 'tr-TR', label: 'Türkçe', flag: '🇹🇷' },
     { code: 'UA', label: 'Українська', flag: '🇺🇦', aliases: ['uk', 'uk-UA'] },
     { code: 'pl', label: 'Polski', flag: '🇵🇱' },
-    { code: 'pt-BR', label: 'Português (Brasil)', flag: '🇧🇷' },
-    { code: 'ru', label: 'Русский', flag: '🇷🇺' },
-    { code: 'fr', label: 'Français', flag: '🇫🇷' },
     { code: 'hi', label: 'हिन्दी', flag: '🇮🇳' },
+    { code: 'id-ID', label: 'Bahasa Indonesia', flag: '🇮🇩' },
+    { code: 'vi-VN', label: 'Tiếng Việt', flag: '🇻🇳' },
+    { code: 'JP', label: '日本語', flag: '🇯🇵', aliases: ['ja', 'ja-JP'] },
     { code: 'th', label: 'ไทย', flag: '🇹🇭' },
     { code: 'kk', label: 'Қазақша', flag: '🇰🇿' },
-    { code: 'tr-TR', label: 'Türkçe', flag: '🇹🇷' }
+    { code: 'ar-XXX', label: 'العربية', flag: '🇸🇦' }
   ];
   const DEFAULT_LANGUAGE = 'en';
 
