@@ -148,11 +148,11 @@
       "description": "Unitee SpaceチームによるTelegramミニアプリの記事。ノーコード開発、グロース、エコシステム最新情報をお届け。"
     },
     "heading": "Unitee Space ブログ",
-    "intro": "<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Telegramミニアプリ</a>の立ち上げ、ノーコードサービス構築、社内プロダクト拡大の知見を紹介。最新記事をフォローして、ビジネスに活かしてください。",
+    "intro": "<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Telegramミニアプリ</a>の立ち上げ、ノーコードサービス構築、社内プロダクト拡大の知見を紹介。最新記事をフォローして、ビジネスに活かしてください。",
     "posts": {
       "telegramMiniApps": {
         "title": "Telegramミニアプリとは？コード不要の作り方",
-        "lead": "<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Telegramミニアプリ</a>はメッセンジャーに埋め込まれたWebサービス。ユーザーに素早くリーチする方法や活用シーン、<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp" itemprop=\"brand\">Unitee Space</a>でノーコード構築する手順を解説します。",
+        "lead": "<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Telegramミニアプリ</a>はメッセンジャーに埋め込まれたWebサービス。ユーザーに素早くリーチする方法や活用シーン、<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\" itemprop=\"brand\">Unitee Space</a>でノーコード構築する手順を解説します。",
         "meta": "2025年11月6日 • 読了12分"
       }
     }
@@ -175,76 +175,76 @@
       },
       "header": {
         "title": "Telegramミニアプリとは？コードを書かずに始める方法",
-        "lead": "<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Telegramミニアプリ</a>はメッセンジャー内で動作するWebサービス。ユーザーに素早くリーチし、便利な体験を提供します。仕組みと強みを解説し、<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp" itemprop=\"brand\">Unitee Space</a>でノーコード構築するステップを紹介。"
+        "lead": "<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Telegramミニアプリ</a>はメッセンジャー内で動作するWebサービス。ユーザーに素早くリーチし、便利な体験を提供します。仕組みと強みを解説し、<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\" itemprop=\"brand\">Unitee Space</a>でノーコード構築するステップを紹介。"
       },
       "sections": {
         "intro": {
           "imageAlt": "Telegramミニアプリ — 新世代のWeb",
           "imageCaption": "Telegramミニアプリ：新しいWeb体験",
           "paragraph1": "Telegramミニアプリは、メッセンジャー内で直接動くコンパクトなWebサービスです。食品の注文、チケット購入、学習、ゲームなどをチャットから離れずに完結できます。",
-          "paragraph2": "従来のモバイルアプリと違い、ストレージを消費せずインストールも不要。<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Telegramミニアプリ</a>を開くと2タップで認証し、必要な機能をすぐに提供します。ブランドにとっては、ストア審査なしで迅速に公開し、運用負担を最小化できます。",
-          "paragraph3": "ビジュアルビルダーと既成の連携により、開発チームなしで今日からミニアプリを構築可能。ドラッグ＆ドロップでUIを作り、主要サービスを自動で接続できます。<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Unitee Space</a>が提供するアプローチです。"
+          "paragraph2": "従来のモバイルアプリと違い、ストレージを消費せずインストールも不要。<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Telegramミニアプリ</a>を開くと2タップで認証し、必要な機能をすぐに提供します。ブランドにとっては、ストア審査なしで迅速に公開し、運用負担を最小化できます。",
+          "paragraph3": "ビジュアルビルダーと既成の連携により、開発チームなしで今日からミニアプリを構築可能。ドラッグ＆ドロップでUIを作り、主要サービスを自動で接続できます。<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Unitee Space</a>が提供するアプローチです。"
         },
         "howItWorks": {
           "title": "Telegramミニアプリの仕組み",
           "overview": "ミニアプリは<strong>Web App</strong>モードで開き、<strong>HTML・CSS・JavaScript</strong>など標準Web技術で動作します。すべての操作はTelegram API経由で行われ、モバイルとデスクトップで一貫したUIを保ちながら、認証や決済、通知を安全に処理します。",
           "buildersTitle": "ミニアプリビルダー",
-          "buildersParagraph": "最新のプラットフォームはテンプレートとビジュアルエディタを備えています。構造を選び、コンテンツを配置し、数分でボットを接続できます。<a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Unitee</a>のような<a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">ビルダー</a>なら、技術より体験設計に集中できます。",
+          "buildersParagraph": "最新のプラットフォームはテンプレートとビジュアルエディタを備えています。構造を選び、コンテンツを配置し、数分でボットを接続できます。<a href=\"https://unitee.space/features?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Unitee</a>のような<a href=\"https://unitee.space/features?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">ビルダー</a>なら、技術より体験設計に集中できます。",
           "buildersImageAlt": "Telegramミニアプリの管理画面",
-          "buildersImageCaption": "<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Unitee</a>が提供するTelegramミニアプリ管理画面",
+          "buildersImageCaption": "<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Unitee</a>が提供するTelegramミニアプリ管理画面",
           "apiTitle": "Telegram APIとの連携",
-          "apiParagraph": "APIを通じて<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">ミニアプリ</a>はユーザーデータ（同意の上）を受け取り、決済や外部サービスと連携します。フローをパーソナライズし、コミュニケーションを自動化できます。",
+          "apiParagraph": "APIを通じて<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">ミニアプリ</a>はユーザーデータ（同意の上）を受け取り、決済や外部サービスと連携します。フローをパーソナライズし、コミュニケーションを自動化できます。",
           "comfortTitle": "使いやすさと安全性",
           "comfortParagraph": "ミニアプリはTelegramの安全なインフラ上で動作し、データはメッセンジャー外に出ません。認証済みアカウントでセッションが維持され、ユーザーは慣れた環境のまま。ビジネスは組み込みの認証・通知機能を活用できます。"
         },
         "howTo": {
           "title": "コード不要でTelegramミニアプリを作る5ステップ",
-          "overview": "シンプルな手順に従いましょう。プラットフォームを選び、インターフェースを組み、ボットを接続してテストするだけ。ここでは<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Unitee Space</a>など主要ソリューションでの流れをまとめます。",
+          "overview": "シンプルな手順に従いましょう。プラットフォームを選び、インターフェースを組み、ボットを接続してテストするだけ。ここでは<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Unitee Space</a>など主要ソリューションでの流れをまとめます。",
           "step1Title": "ステップ1：プラットフォームを選ぶ",
-          "step1Paragraph": "Tars、ManyChat、Chatfuel、Landbotのようなツールはビジュアルエディタとブロックを備えています。より柔軟にコントロールしたいチームには<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Unitee Space</a>がおすすめ。強力な<a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">ビルダー</a>、内蔵<a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">分析</a>、ノーコードロジックを一体化。",
+          "step1Paragraph": "Tars、ManyChat、Chatfuel、Landbotのようなツールはビジュアルエディタとブロックを備えています。より柔軟にコントロールしたいチームには<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Unitee Space</a>がおすすめ。強力な<a href=\"https://unitee.space/features?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">ビルダー</a>、内蔵<a href=\"https://unitee.space/features?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">分析</a>、ノーコードロジックを一体化。",
           "step1ImageAlt": "TelegramミニアプリとTONトークンを共有",
           "step1ImageCaption": "TelegramやTONエコシステムでミニアプリを共有",
           "step2Title": "ステップ2：インターフェースを設計",
-          "step2Paragraph": "ボタン、フォーム、商品カードなどをドラッグ＆ドロップで配置。サインアップ、問い合わせ、決済などのアクションを設計します。Uniteeの<a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">ビルダー</a>ではすべてのブロックがモバイル対応で、ブランド表現を保ちます。",
+          "step2Paragraph": "ボタン、フォーム、商品カードなどをドラッグ＆ドロップで配置。サインアップ、問い合わせ、決済などのアクションを設計します。Uniteeの<a href=\"https://unitee.space/features?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">ビルダー</a>ではすべてのブロックがモバイル対応で、ブランド表現を保ちます。",
           "step3Title": "ステップ3：Telegram APIを統合",
-          "step3Paragraph": "BotFatherでボットを接続し、必要なWebhookにフローを紐付けます。<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">ミニアプリ</a>では決済、通知、パーソナライズされたレコメンドを追加できます。<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Unitee Space</a>は安全なトークンを自動発行し、テストをガイドします。",
+          "step3Paragraph": "BotFatherでボットを接続し、必要なWebhookにフローを紐付けます。<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">ミニアプリ</a>では決済、通知、パーソナライズされたレコメンドを追加できます。<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Unitee Space</a>は安全なトークンを自動発行し、テストをガイドします。",
           "step3ImageAlt": "TelegramミニアプリはWebアプリケーション",
-          "step3ImageCaption": "<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Telegramミニアプリ</a>はWebアプリそのもの",
+          "step3ImageCaption": "<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Telegramミニアプリ</a>はWebアプリそのもの",
           "step4Title": "ステップ4：テストして公開",
-          "step4Paragraph": "さまざまなデバイスと回線で動作を確認しましょう。仕上がった<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Telegramミニアプリ</a>は高速に読み込み、フォームを正しく描画し、通知を即時に送ります。<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Unitee Space</a>はステージング環境とチェックリストを提供。",
+          "step4Paragraph": "さまざまなデバイスと回線で動作を確認しましょう。仕上がった<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Telegramミニアプリ</a>は高速に読み込み、フォームを正しく描画し、通知を即時に送ります。<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Unitee Space</a>はステージング環境とチェックリストを提供。",
           "step5Title": "ステップ5：ユーザー獲得",
-          "step5Paragraph": "公開後はキャンペーンを走らせ、カタログに掲載し、ホーム画面ショートカットも案内しましょう。内蔵の<a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">分析</a>と<a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">収益化</a>ツールでコンバージョンを計測し、プロダクトを改善できます。"
+          "step5Paragraph": "公開後はキャンペーンを走らせ、カタログに掲載し、ホーム画面ショートカットも案内しましょう。内蔵の<a href=\"https://unitee.space/features?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">分析</a>と<a href=\"https://unitee.space/features?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">収益化</a>ツールでコンバージョンを計測し、プロダクトを改善できます。"
         },
         "benefits": {
-          "title": "<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Telegramミニアプリ</a>の強み",
+          "title": "<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Telegramミニアプリ</a>の強み",
           "introImageAlt": "TelegramプラットフォームはWeb技術の最前線",
           "introImageCaption": "Telegramプラットフォーム：先進的なWebの遊び場",
           "businessTitle": "ビジネスへの貢献",
           "businessImageAlt": "Telegramの成長は加速し続けている",
           "businessImageCaption": "Telegramはローンチ以来、成長を続けています",
-          "businessParagraph": "企業は<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Telegramミニアプリ</a>で売上を伸ばし、サービスを自動化し、データを取得します。API機能により、商品販売、アンケート、ロイヤルティ、<a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">CRM</a>統合を実現。",
+          "businessParagraph": "企業は<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Telegramミニアプリ</a>で売上を伸ばし、サービスを自動化し、データを取得します。API機能により、商品販売、アンケート、ロイヤルティ、<a href=\"https://unitee.space/features?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">CRM</a>統合を実現。",
           "businessList": [
             "メッセンジャー内で直接商品・サービスを販売。",
             "カスタマーサポートとフィードバック収集を自動化。",
             "調査、フォーム、パーソナライズされた導線を展開。",
             "ロイヤルティプログラムや紹介施策を構築。",
-            "注文と決済を処理する<a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">CRM</a>を連携。"
+            "注文と決済を処理する<a href=\"https://unitee.space/features?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">CRM</a>を連携。"
           ],
           "comfortTitle": "ユーザーにとっての快適さ",
-          "comfortParagraph": "ダウンロード不要、自動更新、チャットに沿ったUI。<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Telegramミニアプリ</a>は即座に起動し、Telegramがあればどのデバイスでも利用できます。",
+          "comfortParagraph": "ダウンロード不要、自動更新、チャットに沿ったUI。<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Telegramミニアプリ</a>は即座に起動し、Telegramがあればどのデバイスでも利用できます。",
           "botsTitle": "ボットと外部サービスの連携",
           "botsImageAlt": "Unitee — 初心者と上級者のためのビルダー",
-          "botsImageCaption": "<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Unitee</a>：初心者もプロも使える<a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">ビルダー</a>",
-          "botsParagraph": "ミニアプリはボットを活用して注文受付、リマインダー送信、オンボーディング、パーソナライズ配信を実施。<a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">CRM</a>、決済、クラウドDBなど外部システムともつながります。",
+          "botsImageCaption": "<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Unitee</a>：初心者もプロも使える<a href=\"https://unitee.space/features?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">ビルダー</a>",
+          "botsParagraph": "ミニアプリはボットを活用して注文受付、リマインダー送信、オンボーディング、パーソナライズ配信を実施。<a href=\"https://unitee.space/features?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">CRM</a>、決済、クラウドDBなど外部システムともつながります。",
           "savingsTitle": "開発・運用コストの削減",
-          "savingsParagraph": "従来のモバイルアプリは多額の予算と継続的な更新が必要でした。<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Telegramミニアプリ</a>なら大幅にコスト削減。ビジュアル<a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">ビルダー</a>で、開発者を増やさずに機能やコンテンツを更新できます。"
+          "savingsParagraph": "従来のモバイルアプリは多額の予算と継続的な更新が必要でした。<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Telegramミニアプリ</a>なら大幅にコスト削減。ビジュアル<a href=\"https://unitee.space/features?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">ビルダー</a>で、開発者を増やさずに機能やコンテンツを更新できます。"
         },
         "examples": {
-          "title": "成果を上げる<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Telegramミニアプリ</a>",
+          "title": "成果を上げる<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Telegramミニアプリ</a>",
           "introImageAlt": "Uniteeのミニアプリにはすでに30万人が参加",
           "introImageCaption": "30万人以上がUniteeのミニアプリを利用中",
           "commerceTitle": "Eコマース",
-          "commerceParagraph": "ストアは<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">ミニアプリ</a>でカタログを作成し、カートを管理し、内蔵ゲートウェイで決済します。顧客はチャット内で完結し、ビジネスはネイティブ開発を省略できます。",
+          "commerceParagraph": "ストアは<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">ミニアプリ</a>でカタログを作成し、カートを管理し、内蔵ゲートウェイで決済します。顧客はチャット内で完結し、ビジネスはネイティブ開発を省略できます。",
           "commerceList": [
             "利便性：1つの画面で購入が完結。",
             "効率：ストア手数料や複雑な保守が不要。"
@@ -286,7 +286,7 @@
         "conclusion": {
           "title": "まとめ",
           "paragraph1": "Telegramミニアプリは、メッセンジャー内で完結する新しいWeb体験です。インストール不要で、ユーザーが慣れたチャネルのままサービスを受けられます。",
-          "paragraph2": "ビジュアルビルダーと豊富な連携を使えば、開発者なしで今日から立ち上げ可能。<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp">Unitee Space</a>は設計から運用、自動化までサポートします。"
+          "paragraph2": "ビジュアルビルダーと豊富な連携を使えば、開発者なしで今日から立ち上げ可能。<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=jp\">Unitee Space</a>は設計から運用、自動化までサポートします。"
         },
         "cta": {
           "title": "ミニアプリを今すぐ構築",
