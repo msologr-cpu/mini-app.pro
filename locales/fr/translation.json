@@ -116,11 +116,11 @@
       "description": "Derniers articles de l'équipe Unitee Space : mini-apps Telegram, création sans code et croissance des produits numériques."
     },
     "heading": "Blog Unitee Space",
-    "intro": "Expertise sur le lancement de <a href=\"https://unitee.space\">mini-apps Telegram</a>, la création de services sans code et le développement de produits internes. Suivez les nouveaux articles pour appliquer les meilleures pratiques à votre activité.",
+    "intro": "Expertise sur le lancement de <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-apps Telegram</a>, la création de services sans code et le développement de produits internes. Suivez les nouveaux articles pour appliquer les meilleures pratiques à votre activité.",
     "posts": {
       "telegramMiniApps": {
         "title": "Qu'est-ce qu'une mini-app Telegram et comment la créer sans coder",
-        "lead": "Une <a href=\"https://unitee.space\">mini-app Telegram</a> est un service web au cœur du messager qui offre aux entreprises un accès rapide et pratique à leur audience. Nous expliquons comment ces solutions fonctionnent, où elles sont utilisées et comment lancer votre propre projet no-code avec la plateforme <a href=\"https://unitee.space\" itemprop=\"brand\">Unitee Space</a>.",
+        "lead": "Une <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-app Telegram</a> est un service web au cœur du messager qui offre aux entreprises un accès rapide et pratique à leur audience. Nous expliquons comment ces solutions fonctionnent, où elles sont utilisées et comment lancer votre propre projet no-code avec la plateforme <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr" itemprop=\"brand\">Unitee Space</a>.",
         "meta": "06 novembre 2025 • 12 min de lecture"
       }
     }
@@ -143,128 +143,128 @@
       },
       "header": {
         "title": "Qu'est-ce qu'une mini-app Telegram et comment la lancer sans coder",
-        "lead": "Une <a href=\"https://unitee.space\">mini-app Telegram</a> est un service web intégré au messager qui donne aux entreprises un accès instantané et pratique à leur audience. Découvrons comment ces expériences fonctionnent, dans quels cas elles brillent et comment lancer votre propre produit sans code avec la plateforme <a href=\"https://unitee.space\" itemprop=\"brand\">Unitee Space</a>."
+        "lead": "Une <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-app Telegram</a> est un service web intégré au messager qui donne aux entreprises un accès instantané et pratique à leur audience. Découvrons comment ces expériences fonctionnent, dans quels cas elles brillent et comment lancer votre propre produit sans code avec la plateforme <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr" itemprop=\"brand\">Unitee Space</a>."
       },
       "sections": {
         "intro": {
           "imageAlt": "Mini-app Telegram – nouvelle génération du web",
           "imageCaption": "Mini-app Telegram : une nouvelle génération d'expériences web",
           "paragraph1": "Les mini-apps Telegram sont des services web compacts mais puissants qui s'exécutent directement dans le messager. Elles permettent de commander un repas, réserver un billet, suivre un cours ou jouer — le tout sans quitter la fenêtre de discussion.",
-          "paragraph2": "Contrairement aux applications mobiles classiques, elles ne prennent pas de place sur l'appareil et ne demandent aucune installation. L'utilisateur ouvre une <a href=\"https://unitee.space\">mini-app Telegram</a>, s'authentifie en deux clics et accède immédiatement aux fonctionnalités. Pour les marques, cela signifie un lancement rapide, sans publication complexe sur les stores et avec un support minimal.",
-          "paragraph3": "Grâce aux constructeurs visuels et aux intégrations prêtes à l'emploi, vous pouvez créer une mini-app aujourd'hui sans équipe de développement : l'interface se construit en glisser-déposer et les connexions aux services clés sont automatiques — exactement l'approche proposée par <a href=\"https://unitee.space\">Unitee Space</a>."
+          "paragraph2": "Contrairement aux applications mobiles classiques, elles ne prennent pas de place sur l'appareil et ne demandent aucune installation. L'utilisateur ouvre une <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-app Telegram</a>, s'authentifie en deux clics et accède immédiatement aux fonctionnalités. Pour les marques, cela signifie un lancement rapide, sans publication complexe sur les stores et avec un support minimal.",
+          "paragraph3": "Grâce aux constructeurs visuels et aux intégrations prêtes à l'emploi, vous pouvez créer une mini-app aujourd'hui sans équipe de développement : l'interface se construit en glisser-déposer et les connexions aux services clés sont automatiques — exactement l'approche proposée par <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">Unitee Space</a>."
         },
         "howItWorks": {
           "title": "Comment fonctionnent les mini-apps dans Telegram ?",
           "overview": "Les mini-apps s'ouvrent en mode <strong>Web App</strong> et reposent sur les technologies web standards — <strong>HTML, CSS, JavaScript</strong>. Toutes les interactions passent par l'API Telegram : l'interface reste homogène sur mobile et desktop, tandis que l'authentification, les paiements et les notifications restent dans l'écosystème sécurisée du messager.",
           "buildersTitle": "Constructeurs de mini-apps",
-          "buildersParagraph": "Les plateformes modernes proposent des modèles prêts à l'emploi et des éditeurs visuels. Choisissez une structure, déposez votre contenu et connectez un bot en quelques minutes. Un <a href=\"https://unitee.space/features\">constructeur</a> comme Unitee vous permet de vous concentrer sur l'expérience utilisateur plutôt que sur la technique.",
+          "buildersParagraph": "Les plateformes modernes proposent des modèles prêts à l'emploi et des éditeurs visuels. Choisissez une structure, déposez votre contenu et connectez un bot en quelques minutes. Un <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">constructeur</a> comme Unitee vous permet de vous concentrer sur l'expérience utilisateur plutôt que sur la technique.",
           "buildersImageAlt": "Interface d'administration des mini-apps Telegram",
-          "buildersImageCaption": "Panneau d'administration pour <a href=\"https://unitee.space\">mini-apps Telegram</a> propulsé par Unitee",
+          "buildersImageCaption": "Panneau d'administration pour <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-apps Telegram</a> propulsé par Unitee",
           "apiTitle": "Travailler avec l'API Telegram",
-          "apiParagraph": "Via l'API, une <a href=\"https://unitee.space\">mini-app</a> reçoit les données utilisateur (avec consentement), connecte les paiements et s'intègre à des services externes. Les flux se personnalisent et la communication s'automatise.",
+          "apiParagraph": "Via l'API, une <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-app</a> reçoit les données utilisateur (avec consentement), connecte les paiements et s'intègre à des services externes. Les flux se personnalisent et la communication s'automatise.",
           "comfortTitle": "Confort et sécurité",
           "comfortParagraph": "Les mini-apps fonctionnent dans l'infrastructure sécurisée de Telegram : les données ne sortent pas du messager et la connexion utilise un compte vérifié. Les utilisateurs retrouvent un environnement familier, et les entreprises s'appuient sur des outils d'authentification et de notification prêts à l'emploi."
         },
         "howTo": {
           "title": "Créer une mini-app Telegram sans coder : la méthode en 5 étapes",
-          "overview": "Suivez un plan simple : choisissez une plateforme, assemblez l'interface, connectez le bot puis testez vos parcours. Voici les étapes essentielles avec <a href=\"https://unitee.space\">Unitee Space</a> et d'autres solutions populaires.",
+          "overview": "Suivez un plan simple : choisissez une plateforme, assemblez l'interface, connectez le bot puis testez vos parcours. Voici les étapes essentielles avec <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">Unitee Space</a> et d'autres solutions populaires.",
           "step1Title": "Étape 1 : choisir la plateforme",
-          "step1Paragraph": "Des outils comme Tars, ManyChat, Chatfuel ou Landbot offrent des éditeurs visuels avec blocs prêts à l'emploi. Les équipes qui veulent un contrôle complet privilégient <a href=\"https://unitee.space\">Unitee Space</a> : la plateforme combine un puissant <a href=\"https://unitee.space/features\">constructeur</a>, une <a href=\"https://unitee.space/features\">analytique</a> intégrée et une logique no-code flexible.",
+          "step1Paragraph": "Des outils comme Tars, ManyChat, Chatfuel ou Landbot offrent des éditeurs visuels avec blocs prêts à l'emploi. Les équipes qui veulent un contrôle complet privilégient <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">Unitee Space</a> : la plateforme combine un puissant <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">constructeur</a>, une <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">analytique</a> intégrée et une logique no-code flexible.",
           "step1ImageAlt": "Partager des mini-apps Telegram et le jeton TON",
           "step1ImageCaption": "Partagez vos mini-apps dans Telegram et dans l'écosystème TON",
           "step2Title": "Étape 2 : configurer l'interface",
-          "step2Paragraph": "Boutons, formulaires, cartes produit — tout se personnalise en glisser-déposer. Planifiez les actions : inscription, demande, paiement. Dans le <a href=\"https://unitee.space/features\">constructeur</a> Unitee, chaque bloc s'adapte au mobile et reflète votre identité.",
+          "step2Paragraph": "Boutons, formulaires, cartes produit — tout se personnalise en glisser-déposer. Planifiez les actions : inscription, demande, paiement. Dans le <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">constructeur</a> Unitee, chaque bloc s'adapte au mobile et reflète votre identité.",
           "step3Title": "Étape 3 : intégrer l'API Telegram",
-          "step3Paragraph": "Connectez le bot via BotFather et reliez vos flux aux webhooks nécessaires. Dans une <a href=\"https://unitee.space\">mini-app</a> vous ajoutez paiements, notifications et recommandations personnalisées. <a href=\"https://unitee.space\">Unitee Space</a> génère automatiquement des tokens sécurisés et guide vos tests d'intégration.",
+          "step3Paragraph": "Connectez le bot via BotFather et reliez vos flux aux webhooks nécessaires. Dans une <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-app</a> vous ajoutez paiements, notifications et recommandations personnalisées. <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">Unitee Space</a> génère automatiquement des tokens sécurisés et guide vos tests d'intégration.",
           "step3ImageAlt": "Une mini-app Telegram est une application web",
-          "step3ImageCaption": "Une <a href=\"https://unitee.space\">mini-app Telegram</a> reste une application web",
+          "step3ImageCaption": "Une <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-app Telegram</a> reste une application web",
           "step4Title": "Étape 4 : tests et lancement",
-          "step4Paragraph": "Vérifiez le comportement sur différents appareils et réseaux. Une <a href=\"https://unitee.space\">mini-app Telegram</a> aboutie charge rapidement, rend les formulaires correctement et envoie des notifications instantanément. <a href=\"https://unitee.space\">Unitee Space</a> fournit des environnements de préproduction et des check-lists de lancement.",
+          "step4Paragraph": "Vérifiez le comportement sur différents appareils et réseaux. Une <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-app Telegram</a> aboutie charge rapidement, rend les formulaires correctement et envoie des notifications instantanément. <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">Unitee Space</a> fournit des environnements de préproduction et des check-lists de lancement.",
           "step5Title": "Étape 5 : acquérir vos utilisateurs",
-          "step5Paragraph": "Après le lancement, activez vos campagnes, ajoutez la mini-app au catalogue et proposez un raccourci sur l'écran d'accueil. Utilisez l'<a href=\"https://unitee.space/features\">analytique</a> intégrée et les outils de <a href=\"https://unitee.space/features\">monétisation</a> pour mesurer la conversion et faire évoluer le produit."
+          "step5Paragraph": "Après le lancement, activez vos campagnes, ajoutez la mini-app au catalogue et proposez un raccourci sur l'écran d'accueil. Utilisez l'<a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">analytique</a> intégrée et les outils de <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">monétisation</a> pour mesurer la conversion et faire évoluer le produit."
         },
         "benefits": {
-          "title": "Avantages et capacités des <a href=\"https://unitee.space\">mini-apps Telegram</a>",
+          "title": "Avantages et capacités des <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-apps Telegram</a>",
           "introImageAlt": "Plateforme Telegram – apogée de la technologie web",
           "introImageCaption": "La plateforme Telegram : un terrain de jeu de pointe pour le web",
           "businessTitle": "Comment elles aident les entreprises",
           "businessImageAlt": "Croissance continue de Telegram",
           "businessImageCaption": "Depuis son lancement, Telegram continue de croître sans interruption",
-          "businessParagraph": "Les entreprises utilisent les <a href=\"https://unitee.space\">mini-apps Telegram</a> pour booster leurs ventes, automatiser le service et collecter des données. Les fonctionnalités de l'API permettent de vendre des produits, mener des enquêtes, lancer des programmes de fidélité et s'intégrer à une <a href=\"https://unitee.space/features\">CRM</a>.",
+          "businessParagraph": "Les entreprises utilisent les <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-apps Telegram</a> pour booster leurs ventes, automatiser le service et collecter des données. Les fonctionnalités de l'API permettent de vendre des produits, mener des enquêtes, lancer des programmes de fidélité et s'intégrer à une <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">CRM</a>.",
           "businessList": [
             "Vendre produits et services directement dans le messager.",
             "Automatiser le service client et la collecte de feedback.",
             "Lancer enquêtes, formulaires et parcours personnalisés.",
             "Créer des programmes de fidélité et des mécaniques de parrainage.",
-            "Intégrer la <a href=\"https://unitee.space/features\">CRM</a> pour traiter commandes et paiements."
+            "Intégrer la <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">CRM</a> pour traiter commandes et paiements."
           ],
           "comfortTitle": "Un confort maximal pour les utilisateurs",
-          "comfortParagraph": "Pas d'application à télécharger, des mises à jour automatiques et une interface qui reprend les codes du chat. Une <a href=\"https://unitee.space\">mini-app Telegram</a> se lance instantanément et fonctionne sur tout appareil doté de Telegram.",
+          "comfortParagraph": "Pas d'application à télécharger, des mises à jour automatiques et une interface qui reprend les codes du chat. Une <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-app Telegram</a> se lance instantanément et fonctionne sur tout appareil doté de Telegram.",
           "botsTitle": "Connexion aux bots et services externes",
           "botsImageAlt": "Unitee – un constructeur pour débutants et experts",
-          "botsImageCaption": "<a href=\"https://unitee.space\">Unitee</a> : un <a href=\"https://unitee.space/features\">constructeur</a> aussi bien pour les débutants que pour les experts",
-          "botsParagraph": "Les mini-apps s'appuient sur les bots pour prendre des commandes, envoyer des rappels, accompagner vos clients et diffuser des campagnes personnalisées. Elles se connectent aussi à des systèmes externes : <a href=\"https://unitee.space/features\">CRM</a>, prestataires de paiement, bases de données cloud.",
+          "botsImageCaption": "<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">Unitee</a> : un <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">constructeur</a> aussi bien pour les débutants que pour les experts",
+          "botsParagraph": "Les mini-apps s'appuient sur les bots pour prendre des commandes, envoyer des rappels, accompagner vos clients et diffuser des campagnes personnalisées. Elles se connectent aussi à des systèmes externes : <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">CRM</a>, prestataires de paiement, bases de données cloud.",
           "savingsTitle": "Économies sur le développement et la maintenance",
-          "savingsParagraph": "Une application mobile traditionnelle exige un budget conséquent pour la mise sur le marché puis pour les mises à jour. Une <a href=\"https://unitee.space\">mini-app Telegram</a> réduit drastiquement ces coûts : via le <a href=\"https://unitee.space/features\">constructeur</a> visuel, l'équipe met à jour le contenu et les fonctionnalités sans recruter de développeurs."
+          "savingsParagraph": "Une application mobile traditionnelle exige un budget conséquent pour la mise sur le marché puis pour les mises à jour. Une <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-app Telegram</a> réduit drastiquement ces coûts : via le <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">constructeur</a> visuel, l'équipe met à jour le contenu et les fonctionnalités sans recruter de développeurs."
         },
         "examples": {
-          "title": "Des <a href=\"https://unitee.space\">mini-apps Telegram</a> performantes",
+          "title": "Des <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-apps Telegram</a> performantes",
           "introImageAlt": "Déjà 300 000 utilisateurs dans les mini-apps Unitee",
           "introImageCaption": "Déjà plus de 300 000 utilisateurs dans les mini-apps Unitee",
           "commerceTitle": "Commerce en ligne",
-          "commerceParagraph": "Les boutiques créent leurs catalogues dans une <a href=\"https://unitee.space\">mini-app</a>, gèrent le panier et acceptent les paiements via des passerelles intégrées. Les clients restent dans le chat et l'entreprise économise un développement natif.",
+          "commerceParagraph": "Les boutiques créent leurs catalogues dans une <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-app</a>, gèrent le panier et acceptent les paiements via des passerelles intégrées. Les clients restent dans le chat et l'entreprise économise un développement natif.",
           "commerceList": [
             "Confort : l'achat se déroule dans une seule fenêtre.",
             "Efficacité : pas de frais de stores ni de maintenance complexe."
           ],
           "servicesTitle": "Réservations et services",
-          "servicesParagraph": "Restaurants, salons et hôtels automatisent la prise de rendez-vous, les acomptes et les notifications. Les clients choisissent une prestation, payent la réservation et reçoivent des rappels — tout se passe dans la <a href=\"https://unitee.space\">mini-app Telegram</a>.",
+          "servicesParagraph": "Restaurants, salons et hôtels automatisent la prise de rendez-vous, les acomptes et les notifications. Les clients choisissent une prestation, payent la réservation et reçoivent des rappels — tout se passe dans la <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-app Telegram</a>.",
           "servicesList": [
             "Réservation en quelques touches.",
             "Charge réduite pour les opérateurs."
           ],
           "gamesTitle": "Jeux et expériences ludiques",
-          "gamesParagraph": "Les marques conçoivent quiz, quêtes et concours interactifs. La gamification renforce l'engagement et ouvre des modèles de <a href=\"https://unitee.space/features\">monétisation</a> : abonnements, ventes d'avantages ou partenariats.",
+          "gamesParagraph": "Les marques conçoivent quiz, quêtes et concours interactifs. La gamification renforce l'engagement et ouvre des modèles de <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">monétisation</a> : abonnements, ventes d'avantages ou partenariats.",
           "coworkingTitle": "Espaces de coworking et communautés",
-          "coworkingParagraph": "Dans un workspace, une <a href=\"https://unitee.space\">mini-app Telegram</a> devient le hub principal : réservation de salles, paiement des services, programme de fidélité et connexion avec la <a href=\"https://unitee.space/features\">CRM</a>.",
+          "coworkingParagraph": "Dans un workspace, une <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-app Telegram</a> devient le hub principal : réservation de salles, paiement des services, programme de fidélité et connexion avec la <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">CRM</a>.",
           "educationTitle": "Éducation",
-          "educationParagraph": "Les équipes lancent cours en ligne, évaluations et simulateurs. Le contenu s'adapte au niveau et la progression est suivie dans l'<a href=\"https://unitee.space/features\">analytique</a>. Les formateurs voient l'activité des apprenants et mettent à jour les supports rapidement."
+          "educationParagraph": "Les équipes lancent cours en ligne, évaluations et simulateurs. Le contenu s'adapte au niveau et la progression est suivie dans l'<a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">analytique</a>. Les formateurs voient l'activité des apprenants et mettent à jour les supports rapidement."
         },
         "future": {
-          "title": "L'avenir des <a href=\"https://unitee.space\">mini-apps Telegram</a>",
+          "title": "L'avenir des <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-apps Telegram</a>",
           "introImageAlt": "Créer des apps pour tout OS sans développeurs",
           "introImageCaption": "Créez des apps pour n'importe quel OS sans développeurs",
           "automationTitle": "Automatisation des processus métiers",
           "automationImageAlt": "Mode administrateur no-code — tout comme dans une CRM",
-          "automationImageCaption": "Mode administrateur no-code : tout comme dans une <a href=\"https://unitee.space/features\">CRM</a>",
-          "automationParagraph": "De plus en plus d'entreprises déplacent commande, support et livraison dans une <a href=\"https://unitee.space\">mini-app</a>. Les modèles du <a href=\"https://unitee.space/features\">constructeur</a> s'adaptent à chaque secteur tandis que les données alimentent <a href=\"https://unitee.space/features\">CRM</a> et <a href=\"https://unitee.space/features\">analytique</a>.",
+          "automationImageCaption": "Mode administrateur no-code : tout comme dans une <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">CRM</a>",
+          "automationParagraph": "De plus en plus d'entreprises déplacent commande, support et livraison dans une <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-app</a>. Les modèles du <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">constructeur</a> s'adaptent à chaque secteur tandis que les données alimentent <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">CRM</a> et <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">analytique</a>.",
           "smartCityTitle": "Villes intelligentes",
           "smartCityImageAlt": "Ajouter facilement une icône sur l'écran d'accueil",
           "smartCityImageCaption": "Ajoutez facilement l'icône sur l'écran d'accueil du smartphone",
-          "smartCityParagraph": "Les services municipaux digitalisent demandes, paiements de stationnement et communication avec les habitants. Une <a href=\"https://unitee.space\">mini-app Telegram</a> devient le point d'entrée où suivre ses dossiers et recevoir des recommandations personnalisées.",
+          "smartCityParagraph": "Les services municipaux digitalisent demandes, paiements de stationnement et communication avec les habitants. Une <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-app Telegram</a> devient le point d'entrée où suivre ses dossiers et recevoir des recommandations personnalisées.",
           "educationTitle": "Plateformes éducatives",
           "educationImageAlt": "Vos équipes apprennent directement dans une mini-app",
           "educationImageCaption": "Vos équipes ou votre audience apprennent directement dans une mini-app",
-          "educationParagraph": "Les mini-apps permettent de créer des parcours personnalisés, d'organiser évaluations et gamification. <a href=\"https://unitee.space\">Unitee Space</a> gère diffusions, leçons adaptatives et outils d'<a href=\"https://unitee.space/features\">analytique</a> pour les tuteurs.",
+          "educationParagraph": "Les mini-apps permettent de créer des parcours personnalisés, d'organiser évaluations et gamification. <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">Unitee Space</a> gère diffusions, leçons adaptatives et outils d'<a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">analytique</a> pour les tuteurs.",
           "gamificationTitle": "Gamification et engagement",
           "gamificationImageAlt": "Gamification dans une mini-app Telegram",
           "gamificationImageCaption": "La gamification booste l'engagement dans une mini-app Telegram",
-          "gamificationParagraph": "Telegram continue de développer ses mécaniques ludiques. Les marques exploitent les <a href=\"https://unitee.space\">mini-apps</a> pour fidéliser, récompenser et animer leurs communautés tout en ouvrant de nouveaux canaux de <a href=\"https://unitee.space/features\">monétisation</a>."
+          "gamificationParagraph": "Telegram continue de développer ses mécaniques ludiques. Les marques exploitent les <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-apps</a> pour fidéliser, récompenser et animer leurs communautés tout en ouvrant de nouveaux canaux de <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">monétisation</a>."
         },
         "conclusion": {
           "title": "En résumé",
-          "paragraph1": "Une <a href=\"https://unitee.space\">mini-app Telegram</a> est un moyen efficace de lancer un service numérique sans développer d'applications natives. Les mises à jour se déploient instantanément, un raccourci peut être épinglé sur l'écran d'accueil du smartphone et toutes les données clients restent protégées.",
-          "paragraph2": "Avec la plateforme <a href=\"https://unitee.space\">Unitee Space</a>, les entreprises disposent d'un ensemble complet : <a href=\"https://unitee.space/features\">constructeur visuel</a>, <a href=\"https://unitee.space/features\">analytique</a> intégrée, outils de <a href=\"https://unitee.space/features\">monétisation</a> et intégrations <a href=\"https://unitee.space/features\">CRM</a>. Les lancements s'accélèrent, la performance reste sous contrôle et l'écosystème Telegram s'étend."
+          "paragraph1": "Une <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-app Telegram</a> est un moyen efficace de lancer un service numérique sans développer d'applications natives. Les mises à jour se déploient instantanément, un raccourci peut être épinglé sur l'écran d'accueil du smartphone et toutes les données clients restent protégées.",
+          "paragraph2": "Avec la plateforme <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">Unitee Space</a>, les entreprises disposent d'un ensemble complet : <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">constructeur visuel</a>, <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">analytique</a> intégrée, outils de <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">monétisation</a> et intégrations <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">CRM</a>. Les lancements s'accélèrent, la performance reste sous contrôle et l'écosystème Telegram s'étend."
         }
       },
       "cta": {
-        "title": "🚀 Testez <a href=\"https://unitee.space\">Unitee Space</a> – le <a href=\"https://unitee.space/features\">constructeur</a> n°1 pour les <a href=\"https://unitee.space\">mini-apps Telegram</a>",
+        "title": "🚀 Testez <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">Unitee Space</a> – le <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">constructeur</a> n°1 pour les <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-apps Telegram</a>",
         "text": "Créez, testez et faites évoluer vos mini-apps sans code dans une interface familière.",
         "button": "Aller sur unitee.space"
       },
       "author": {
-        "name": "Auteur : l'équipe <a href=\"https://unitee.space\">Unitee Space</a>",
-        "bio": "La plateforme pour créer des <a href=\"https://unitee.space\">mini-apps Telegram</a> sans code."
+        "name": "Auteur : l'équipe <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">Unitee Space</a>",
+        "bio": "La plateforme pour créer des <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=fr">mini-apps Telegram</a> sans code."
       }
     }
   }
