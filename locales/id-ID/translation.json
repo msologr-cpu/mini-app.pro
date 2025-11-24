@@ -125,7 +125,7 @@
         "posts": {
             "telegramMiniApps": {
                 "title": "Apa itu mini-app Telegram dan cara membuatnya tanpa kode",
-                "lead": "Panduan lengkap: manfaat bisnis, contoh siap pakai, dan langkah detail untuk membuat mini-app dengan <a href=\"https://unitee.space\">Unitee Space</a>.",
+                "lead": "Panduan lengkap: manfaat bisnis, contoh siap pakai, dan langkah detail untuk membuat mini-app dengan <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Unitee Space</a>.",
                 "meta": "06 November 2025 \u2022 12 menit baca"
             }
         },
@@ -149,27 +149,27 @@
             "article": {
                 "eyebrow": "Telegram mini-app",
                 "title": "Apa itu mini-app Telegram dan cara membuatnya tanpa kode",
-                "lead": "Mini-app Telegram adalah aplikasi web ringan yang berjalan langsung di dalam bot. Aplikasi ini memadukan kekuatan bot (otomatisasi, pembayaran, CRM) dengan UI web penuh. Artikel ini menjelaskan cara kerja mini-app, manfaat bagi bisnis, dan bagaimana meluncurkannya tanpa developer menggunakan <a href=\"https://unitee.space\">Unitee Space</a>.",
+                "lead": "Mini-app Telegram adalah aplikasi web ringan yang berjalan langsung di dalam bot. Aplikasi ini memadukan kekuatan bot (otomatisasi, pembayaran, CRM) dengan UI web penuh. Artikel ini menjelaskan cara kerja mini-app, manfaat bagi bisnis, dan bagaimana meluncurkannya tanpa developer menggunakan <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Unitee Space</a>.",
                 "summary": {
                     "title": "Anda akan belajar",
                     "items": [
                         "Cara mini-app bekerja di Telegram",
                         "Seberapa cepat pengguna membuka dan menggunakan mini-app",
                         "Bagaimana bisnis memanfaatkan mini-app",
-                        "Bagaimana <a href=\"https://unitee.space\">Unitee Space</a> membantu membangun dan menskalakan produk"
+                        "Bagaimana <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Unitee Space</a> membantu membangun dan menskalakan produk"
                     ]
                 },
                 "telegramWorks": {
-                    "title": "Bagaimana <a href=\"https://unitee.space\">mini-app Telegram</a> bekerja",
+                    "title": "Bagaimana <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">mini-app Telegram</a> bekerja",
                     "introImageAlt": "Antarmuka mini-app terasa alami di Telegram",
                     "introImageCaption": "Antarmuka mini-app terasa alami di Telegram",
                     "paragraph1": "Mini-app ada di cloud. Saat pengguna mengetuk tautan, aplikasi langsung terbuka di Telegram (web view). Tidak perlu unduhan atau instalasi.",
                     "paragraph2": "Tampilan mini-app menyesuaikan tema dan font Telegram, sehingga terasa bawaan. Pengembang dapat menyesuaikan UI agar cocok dengan merek dan tugas bisnis.",
-                    "paragraph3": "Berbeda dengan bot biasa, mini-app memberikan antarmuka visual penuh: formulir, katalog produk, layar checkout, bahkan permainan. Data pengguna disimpan dalam basis data dan dianalisis di <a href=\"https://unitee.space/features\">CRM</a>.",
-                    "paragraph4": "Kesimpulan: <a href=\"https://unitee.space\">mini-app Telegram</a> menyatukan kekuatan bot (pesan, otomatisasi, pembayaran) dengan fleksibilitas aplikasi web."
+                    "paragraph3": "Berbeda dengan bot biasa, mini-app memberikan antarmuka visual penuh: formulir, katalog produk, layar checkout, bahkan permainan. Data pengguna disimpan dalam basis data dan dianalisis di <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">CRM</a>.",
+                    "paragraph4": "Kesimpulan: <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">mini-app Telegram</a> menyatukan kekuatan bot (pesan, otomatisasi, pembayaran) dengan fleksibilitas aplikasi web."
                 },
                 "technology": {
-                    "title": "Teknologi utama <a href=\"https://unitee.space\">mini-app Telegram</a>",
+                    "title": "Teknologi utama <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">mini-app Telegram</a>",
                     "introImageAlt": "Semua fitur bot bekerja dengan mini-app",
                     "introImageCaption": "Bot memperluas mini-app dengan fitur tambahan",
                     "title1": "1. Web view Telegram",
@@ -180,101 +180,101 @@
                     "paragraph3": "Bot menangani otorisasi, transaksi, dan notifikasi. Pesan dari bot membawa pengguna kembali ke mini-app untuk menyelesaikan tindakan."
                 },
                 "creationSteps": {
-                    "title": "Cara membuat <a href=\"https://unitee.space\">mini-app Telegram</a>",
-                    "intro": "Mini-app dibangun dengan bahasa web (JS, CSS, HTML) atau tanpa kode menggunakan builder. Telegram menyediakan integrasi akun aman dan dukungan pembayaran. <a href=\"https://unitee.space\">Unitee Space</a> menyatukan semuanya dalam antarmuka visual.",
+                    "title": "Cara membuat <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">mini-app Telegram</a>",
+                    "intro": "Mini-app dibangun dengan bahasa web (JS, CSS, HTML) atau tanpa kode menggunakan builder. Telegram menyediakan integrasi akun aman dan dukungan pembayaran. <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Unitee Space</a> menyatukan semuanya dalam antarmuka visual.",
                     "step1Title": "Langkah 1: Tentukan kasus penggunaan",
                     "step1Paragraph": "Pilih tujuan utama: toko, sekolah online, sistem pemesanan, katalog layanan, atau game. Ini menentukan struktur halaman dan integrasi yang diperlukan.",
                     "step2Title": "Langkah 2: Hubungkan bot",
-                    "step2Paragraph": "Buat bot dengan <a href=\"https://t.me/botfather\">@BotFather</a> dan hubungkan ke <a href=\"https://unitee.space\">Unitee Space</a>. Bot digunakan untuk login, pembayaran, dan pengiriman notifikasi.",
+                    "step2Paragraph": "Buat bot dengan <a href=\"https://t.me/botfather\">@BotFather</a> dan hubungkan ke <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Unitee Space</a>. Bot digunakan untuk login, pembayaran, dan pengiriman notifikasi.",
                     "step3Title": "Langkah 3: Rancang antarmuka",
-                    "step3Paragraph": "Gunakan editor visual <a href=\"https://unitee.space\">Unitee Space</a> untuk menambahkan halaman, formulir, katalog, dan logika. Semua elemen mengikuti pedoman Telegram sehingga terasa native.",
+                    "step3Paragraph": "Gunakan editor visual <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Unitee Space</a> untuk menambahkan halaman, formulir, katalog, dan logika. Semua elemen mengikuti pedoman Telegram sehingga terasa native.",
                     "step4Title": "Langkah 4: uji dan luncurkan",
-                    "step4Paragraph": "Periksa perilaku di berbagai perangkat dan jaringan. <a href=\"https://unitee.space\">Mini-app Telegram</a> yang rapi memuat cepat, menampilkan formulir dengan benar, dan mengirim notifikasi seketika. <a href=\"https://unitee.space\">Unitee Space</a> menyediakan lingkungan staging dan checklist peluncuran.",
+                    "step4Paragraph": "Periksa perilaku di berbagai perangkat dan jaringan. <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Mini-app Telegram</a> yang rapi memuat cepat, menampilkan formulir dengan benar, dan mengirim notifikasi seketika. <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Unitee Space</a> menyediakan lingkungan staging dan checklist peluncuran.",
                     "step5Title": "Langkah 5: akuisisi pengguna",
-                    "step5Paragraph": "Setelah live, aktifkan kampanye, tambahkan mini-app ke katalog, dan tawarkan pintasan layar utama. Gunakan <a href=\"https://unitee.space/features\">analitik</a> dan alat <a href=\"https://unitee.space/features\">monetisasi</a> bawaan untuk mengukur konversi dan mengembangkan produk."
+                    "step5Paragraph": "Setelah live, aktifkan kampanye, tambahkan mini-app ke katalog, dan tawarkan pintasan layar utama. Gunakan <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">analitik</a> dan alat <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">monetisasi</a> bawaan untuk mengukur konversi dan mengembangkan produk."
                 },
                 "benefits": {
-                    "title": "Keunggulan dan kapabilitas <a href=\"https://unitee.space\">mini-app Telegram</a>",
+                    "title": "Keunggulan dan kapabilitas <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">mini-app Telegram</a>",
                     "introImageAlt": "Platform Telegram \u2014 puncak teknologi web",
                     "introImageCaption": "Platform Telegram: playground web yang canggih",
                     "businessTitle": "Bagaimana membantu bisnis",
                     "businessImageAlt": "Pertumbuhan Telegram terus melaju",
                     "businessImageCaption": "Telegram tumbuh terus sejak diluncurkan",
-                    "businessParagraph": "Perusahaan menggunakan <a href=\"https://unitee.space\">mini-app Telegram</a> untuk meningkatkan penjualan, mengotomatiskan layanan, dan mengumpulkan data. API memungkinkan Anda menjual produk, menjalankan survei, meluncurkan program loyalitas, dan terhubung dengan <a href=\"https://unitee.space/features\">CRM</a>.",
+                    "businessParagraph": "Perusahaan menggunakan <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">mini-app Telegram</a> untuk meningkatkan penjualan, mengotomatiskan layanan, dan mengumpulkan data. API memungkinkan Anda menjual produk, menjalankan survei, meluncurkan program loyalitas, dan terhubung dengan <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">CRM</a>.",
                     "businessList": [
                         "Jual produk dan layanan langsung di messenger.",
                         "Otomatiskan layanan pelanggan dan pengumpulan feedback.",
                         "Luncurkan survei, formulir, dan perjalanan personal.",
                         "Buat program loyalitas dan mekanik referral.",
-                        "Hubungkan <a href=\"https://unitee.space/features\">CRM</a> untuk memproses pesanan dan pembayaran."
+                        "Hubungkan <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">CRM</a> untuk memproses pesanan dan pembayaran."
                     ],
                     "comfortTitle": "Kenyamanan maksimal bagi pengguna",
-                    "comfortParagraph": "Tidak perlu mengunduh aplikasi, pembaruan otomatis, dan antarmuka yang mengikuti pola chat. <a href=\"https://unitee.space\">Mini-app Telegram</a> terbuka instan dan bekerja di perangkat apa pun yang memiliki Telegram.",
+                    "comfortParagraph": "Tidak perlu mengunduh aplikasi, pembaruan otomatis, dan antarmuka yang mengikuti pola chat. <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Mini-app Telegram</a> terbuka instan dan bekerja di perangkat apa pun yang memiliki Telegram.",
                     "botsTitle": "Menghubungkan bot dan layanan eksternal",
                     "botsImageAlt": "Unitee \u2014 builder untuk pemula dan ahli",
-                    "botsImageCaption": "<a href=\"https://unitee.space\">Unitee</a>: <a href=\"https://unitee.space/features\">builder</a> untuk pemula dan ahli",
-                    "botsParagraph": "Mini-app bergantung pada bot untuk menerima pesanan, mengirim pengingat, onboarding klien, dan kampanye personal. Mini-app juga terhubung ke sistem eksternal: <a href=\"https://unitee.space/features\">CRM</a>, penyedia pembayaran, dan basis data cloud.",
+                    "botsImageCaption": "<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Unitee</a>: <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">builder</a> untuk pemula dan ahli",
+                    "botsParagraph": "Mini-app bergantung pada bot untuk menerima pesanan, mengirim pengingat, onboarding klien, dan kampanye personal. Mini-app juga terhubung ke sistem eksternal: <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">CRM</a>, penyedia pembayaran, dan basis data cloud.",
                     "savingsTitle": "Biaya pembangunan dan pemeliharaan lebih rendah",
-                    "savingsParagraph": "Aplikasi mobile tradisional membutuhkan anggaran besar dan update rutin. <a href=\"https://unitee.space\">Mini-app Telegram</a> memangkas biaya: <a href=\"https://unitee.space/features\">builder</a> visual memungkinkan tim memperbarui konten dan fitur tanpa menyewa developer."
+                    "savingsParagraph": "Aplikasi mobile tradisional membutuhkan anggaran besar dan update rutin. <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Mini-app Telegram</a> memangkas biaya: <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">builder</a> visual memungkinkan tim memperbarui konten dan fitur tanpa menyewa developer."
                 },
                 "examples": {
-                    "title": "<a href=\"https://unitee.space\">Mini-app Telegram</a> berkinerja tinggi",
+                    "title": "<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Mini-app Telegram</a> berkinerja tinggi",
                     "introImageAlt": "Sudah 300.000 pengguna di mini-app Unitee",
                     "introImageCaption": "Lebih dari 300.000 pengguna mengandalkan mini-app Unitee",
                     "commerceTitle": "E-commerce",
-                    "commerceParagraph": "Toko membangun katalog di <a href=\"https://unitee.space\">mini-app</a>, mengelola keranjang, dan menerima pembayaran melalui gateway bawaan. Pelanggan tetap di chat dan bisnis tidak perlu pengembangan native.",
+                    "commerceParagraph": "Toko membangun katalog di <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">mini-app</a>, mengelola keranjang, dan menerima pembayaran melalui gateway bawaan. Pelanggan tetap di chat dan bisnis tidak perlu pengembangan native.",
                     "commerceList": [
                         "Praktis: pembelian terjadi di satu jendela.",
                         "Efisien: tanpa biaya toko atau pemeliharaan rumit."
                     ],
                     "servicesTitle": "Booking dan layanan",
-                    "servicesParagraph": "Restoran, salon, dan hotel mengotomatiskan pemesanan, uang muka, dan notifikasi. Pelanggan memilih layanan, membayar reservasi, dan menerima pengingat \u2014 semua di dalam <a href=\"https://unitee.space\">mini-app Telegram</a>.",
+                    "servicesParagraph": "Restoran, salon, dan hotel mengotomatiskan pemesanan, uang muka, dan notifikasi. Pelanggan memilih layanan, membayar reservasi, dan menerima pengingat \u2014 semua di dalam <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">mini-app Telegram</a>.",
                     "servicesList": [
                         "Booking hanya beberapa ketukan.",
                         "Beban kerja operator lebih ringan."
                     ],
                     "gamesTitle": "Gim dan pengalaman interaktif",
-                    "gamesParagraph": "Brand merancang kuis, quest, dan kontes interaktif. Gamifikasi meningkatkan keterlibatan dan membuka model <a href=\"https://unitee.space/features\">monetisasi</a> seperti langganan, fitur berbayar, atau kolaborasi.",
+                    "gamesParagraph": "Brand merancang kuis, quest, dan kontes interaktif. Gamifikasi meningkatkan keterlibatan dan membuka model <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">monetisasi</a> seperti langganan, fitur berbayar, atau kolaborasi.",
                     "coworkingTitle": "Coworking dan komunitas",
-                    "coworkingParagraph": "Di dalam ruang kerja, <a href=\"https://unitee.space\">mini-app Telegram</a> menjadi hub utama: pemesanan ruangan, pembayaran layanan, program loyalitas, dan integrasi dengan <a href=\"https://unitee.space/features\">CRM</a>.",
+                    "coworkingParagraph": "Di dalam ruang kerja, <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">mini-app Telegram</a> menjadi hub utama: pemesanan ruangan, pembayaran layanan, program loyalitas, dan integrasi dengan <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">CRM</a>.",
                     "educationTitle": "Edukasi",
-                    "educationParagraph": "Tim meluncurkan kursus online, asesmen, dan simulator. Konten beradaptasi dengan level tiap pengguna dan progres dilacak di <a href=\"https://unitee.space/features\">analitik</a>. Tutor memantau aktivitas dan memperbarui materi dengan cepat."
+                    "educationParagraph": "Tim meluncurkan kursus online, asesmen, dan simulator. Konten beradaptasi dengan level tiap pengguna dan progres dilacak di <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">analitik</a>. Tutor memantau aktivitas dan memperbarui materi dengan cepat."
                 },
                 "future": {
-                    "title": "Masa depan <a href=\"https://unitee.space\">mini-app Telegram</a>",
+                    "title": "Masa depan <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">mini-app Telegram</a>",
                     "introImageAlt": "Buat aplikasi untuk OS apa pun tanpa developer",
                     "introImageCaption": "Bangun aplikasi untuk OS apa pun tanpa developer",
                     "automationTitle": "Otomatisasi proses bisnis",
                     "automationImageAlt": "Mode admin no-code \u2014 seperti CRM",
-                    "automationImageCaption": "Mode admin no-code: layaknya <a href=\"https://unitee.space/features\">CRM</a>",
-                    "automationParagraph": "Semakin banyak perusahaan memindahkan pemesanan, dukungan, dan pengiriman ke dalam <a href=\"https://unitee.space\">mini-app</a>. Template <a href=\"https://unitee.space/features\">builder</a> menyesuaikan setiap industri, sementara data mengalir ke <a href=\"https://unitee.space/features\">CRM</a> dan <a href=\"https://unitee.space/features\">analitik</a>.",
+                    "automationImageCaption": "Mode admin no-code: layaknya <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">CRM</a>",
+                    "automationParagraph": "Semakin banyak perusahaan memindahkan pemesanan, dukungan, dan pengiriman ke dalam <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">mini-app</a>. Template <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">builder</a> menyesuaikan setiap industri, sementara data mengalir ke <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">CRM</a> dan <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">analitik</a>.",
                     "smartCityTitle": "Smart city",
                     "smartCityImageAlt": "Tambahkan pintasan ke layar utama dengan mudah",
                     "smartCityImageCaption": "Tambahkan ikon ke layar utama ponsel dalam hitungan detik",
-                    "smartCityParagraph": "Layanan kota mendigitalisasi permintaan, pembayaran parkir, dan komunikasi dengan warga. <a href=\"https://unitee.space\">Mini-app Telegram</a> menjadi titik masuk untuk menelusuri kasus dan menerima rekomendasi personal.",
+                    "smartCityParagraph": "Layanan kota mendigitalisasi permintaan, pembayaran parkir, dan komunikasi dengan warga. <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Mini-app Telegram</a> menjadi titik masuk untuk menelusuri kasus dan menerima rekomendasi personal.",
                     "educationTitle": "Platform edukasi",
                     "educationImageAlt": "Tim Anda belajar langsung di mini-app",
                     "educationImageCaption": "Tim atau audiens Anda belajar langsung di dalam mini-app",
-                    "educationParagraph": "Mini-app memungkinkan jalur belajar personal, asesmen, dan gamifikasi. <a href=\"https://unitee.space\">Unitee Space</a> menangani siaran, pelajaran adaptif, dan <a href=\"https://unitee.space/features\">analitik</a> untuk tutor.",
+                    "educationParagraph": "Mini-app memungkinkan jalur belajar personal, asesmen, dan gamifikasi. <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Unitee Space</a> menangani siaran, pelajaran adaptif, dan <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">analitik</a> untuk tutor.",
                     "gamificationTitle": "Gamifikasi dan engagement",
                     "gamificationImageAlt": "Gamifikasi di dalam mini-app Telegram",
                     "gamificationImageCaption": "Gamifikasi meningkatkan engagement di mini-app Telegram",
-                    "gamificationParagraph": "Telegram terus memperluas mekanik interaktif. Brand memakai <a href=\"https://unitee.space\">mini-app</a> untuk mempertahankan, memberi reward, dan mengaktifkan komunitas sembari membuka kanal <a href=\"https://unitee.space/features\">monetisasi</a> baru."
+                    "gamificationParagraph": "Telegram terus memperluas mekanik interaktif. Brand memakai <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">mini-app</a> untuk mempertahankan, memberi reward, dan mengaktifkan komunitas sembari membuka kanal <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">monetisasi</a> baru."
                 },
                 "conclusion": {
                     "title": "Singkatnya",
-                    "paragraph1": "<a href=\"https://unitee.space\">Mini-app Telegram</a> adalah cara efektif meluncurkan layanan digital tanpa membuat aplikasi native. Pembaruan tayang instan, pengguna bisa menyematkan pintasan di layar utama, dan data pelanggan tetap terlindungi.",
-                    "paragraph2": "Dengan platform <a href=\"https://unitee.space\">Unitee Space</a>, perusahaan mendapatkan seluruh alat: <a href=\"https://unitee.space/features\">builder visual</a>, <a href=\"https://unitee.space/features\">analitik</a> tersemat, alat <a href=\"https://unitee.space/features\">monetisasi</a>, dan integrasi <a href=\"https://unitee.space/features\">CRM</a>. Peluncuran lebih cepat, performa terkontrol, dan ekosistem Telegram terus tumbuh."
+                    "paragraph1": "<a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Mini-app Telegram</a> adalah cara efektif meluncurkan layanan digital tanpa membuat aplikasi native. Pembaruan tayang instan, pengguna bisa menyematkan pintasan di layar utama, dan data pelanggan tetap terlindungi.",
+                    "paragraph2": "Dengan platform <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Unitee Space</a>, perusahaan mendapatkan seluruh alat: <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">builder visual</a>, <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">analitik</a> tersemat, alat <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">monetisasi</a>, dan integrasi <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">CRM</a>. Peluncuran lebih cepat, performa terkontrol, dan ekosistem Telegram terus tumbuh."
                 }
             },
             "cta": {
-                "title": "\ud83d\ude80 Coba <a href=\"https://unitee.space\">Unitee Space</a> \u2014 <a href=\"https://unitee.space/features\">builder</a> #1 untuk <a href=\"https://unitee.space\">mini-app Telegram</a>",
+                "title": "\ud83d\ude80 Coba <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Unitee Space</a> \u2014 <a href=\"https://unitee.space/features\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">builder</a> #1 untuk <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">mini-app Telegram</a>",
                 "text": "Buat, uji, dan kembangkan mini-app tanpa kode dalam antarmuka yang familiar.",
                 "button": "Ke unitee.space"
             },
             "author": {
-                "name": "Penulis: tim <a href=\"https://unitee.space\">Unitee Space</a>",
-                "bio": "Platform untuk membangun <a href=\"https://unitee.space\">mini-app Telegram</a> tanpa kode."
+                "name": "Penulis: tim <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">Unitee Space</a>",
+                "bio": "Platform untuk membangun <a href=\"https://unitee.space\?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=id-id">mini-app Telegram</a> tanpa kode."
             }
         }
     }

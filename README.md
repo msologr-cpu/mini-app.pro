@@ -22,7 +22,7 @@ mini-app.pro/
 - TailwindCSS layout with Apple × Unitee.Space inspired UI, parallax hero and soft hover states.
 - Semantic `<section data-topic="…">` blocks for LLM-friendly indexing and knowledge extraction.
 - Sticky navigation with anchors, language toggle and responsive mobile menu.
-- CTA banner that links to [Unitee.Space](https://unitee.space) for no-code Mini App creation.
+- CTA banner that links to [Unitee.Space](https://unitee.space/?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=en) for no-code Mini App creation.
 - OpenGraph, Twitter Card and Schema.org metadata in both languages plus hreflang alternates.
 - JSON knowledge base with bilingual summaries to support search and embeddings.
 
