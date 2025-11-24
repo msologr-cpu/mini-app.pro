@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="articles.telegramMiniApps.meta.title">Mini-apps Telegram: ví dụ, lợi ích và cách launch không cần code | Unitee Space</title>
+    <meta
+      name="description"
+      content="Mini-apps Telegram: ví dụ, lợi ích và phương pháp no-code để ra mắt dịch vụ của bạn."
+      data-i18n="articles.telegramMiniApps.meta.description"
+      data-i18n-attr="content"
+      data-i18n-mode="attribute"/>
+    <link rel="canonical" href="https://mini-app.pro/vi-VN/blog/telegram-mini-apps" />
+    <link rel="alternate" hreflang="vi-VN" href="https://mini-app.pro/vi-VN/blog/telegram-mini-apps" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Mini-apps Telegram: ví dụ, lợi ích và cách launch không cần code | Unitee Space"
+      data-i18n="articles.telegramMiniApps.meta.ogTitle"
+      data-i18n-attr="content"
+      data-i18n-mode="attribute"/>
+    <meta
+      property="og:description"
+      content="Mini-apps Telegram: ví dụ, lợi ích và phương pháp no-code để ra mắt dịch vụ của bạn."
+      data-i18n="articles.telegramMiniApps.meta.ogDescription"
+      data-i18n-attr="content"
+      data-i18n-mode="attribute"/>
+    <meta property="og:image" content="/assets/og-miniapp.jpg" />
+    <meta property="article:published_time" content="2025-11-06" />
+    <meta property="article:author" content="Unitee Space" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:title"
+      content="Mini-apps Telegram: ví dụ, lợi ích và cách launch không cần code | Unitee Space"
+      data-i18n="articles.telegramMiniApps.meta.twitterTitle"
+      data-i18n-attr="content"
+      data-i18n-mode="attribute"/>
+    <meta
+      property="twitter:description"
+      content="Mini-apps Telegram: ví dụ, lợi ích và phương pháp no-code để ra mắt dịch vụ của bạn."
+      data-i18n="articles.telegramMiniApps.meta.twitterDescription"
+      data-i18n-attr="content"
+      data-i18n-mode="attribute"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg-main);
+        color: var(--text-primary);
+        line-height: 1.7;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus {
+        text-decoration: underline;
+      }
+
+      main {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 120px 20px 120px;
+      }
+
+      nav.breadcrumbs {
+        font-size: 0.95rem;
+        margin-bottom: 32px;
+      }
+
+      nav.breadcrumbs ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        color: #6f7582;
+      }
+
+      nav.breadcrumbs li::after {
+        content: ">";
+        margin-left: 8px;
+        color: #c0c5d0;
+      }
+
+      nav.breadcrumbs li:last-child::after {
+        content: "";
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-weight: 600;
+        margin: 0 0 24px;
+        line-height: 1.3;
+        color: #111111;
+      }
+
+      h1 {
+        font-size: 2.6rem;
+      }
+
+      h2 {
+        font-size: 1.9rem;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+
+      p {
+        margin: 0 0 24px;
+      }
+
+      ul,
+      ol {
+        padding-left: 22px;
+        margin: 0 0 32px;
+      }
+
+      li {
+        margin-bottom: 12px;
+      }
+
+      .article-header {
+        margin-bottom: 48px;
+      }
+
+      .article-header p {
+        margin: 0;
+        color: #555b67;
+      }
+
+      .lead {
+        font-size: 1.1rem;
+        color: #33363f;
+      }
+
+      .section-block {
+        margin-top: 72px;
+      }
+
+      figure {
+        margin: 0 0 32px;
+        background: #ffffff;
+        border: 1px solid #e4e7ee;
+        border-radius: 24px;
+        padding: 16px;
+      }
+
+      figure img {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+      }
+
+      figure figcaption {
+        margin-top: 12px;
+        font-size: 0.95rem;
+        color: #6f7582;
+        text-align: center;
+      }
+
+      .cta-block {
+        margin-top: 96px;
+        padding: 48px;
+        border-radius: 28px;
+        background: #ffffff;
+        border: 1px solid #e4e7ee;
+        text-align: center;
+        box-shadow: 0 18px 48px rgba(58, 122, 254, 0.12);
+      }
+
+      .cta-block h2 {
+        margin-bottom: 16px;
+        font-size: 2rem;
+      }
+
+      .cta-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 32px;
+        border-radius: 999px;
+        background: #3a7afe;
+        color: #ffffff;
+        font-weight: 600;
+        transition: background 160ms ease, box-shadow 160ms ease;
+      }
+
+      .cta-button:hover,
+      .cta-button:focus {
+        background: #2554d4;
+        box-shadow: 0 16px 36px rgba(58, 122, 254, 0.2);
+        text-decoration: none;
+      }
+
+      .author-block {
+        margin-top: 64px;
+        padding-top: 32px;
+        border-top: 1px solid #e4e7ee;
+        color: #555b67;
+      }
+
+      .author-block p {
+        margin-bottom: 8px;
+      }
+
+      .fade-in {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (max-width: 720px) {
+        main {
+          padding: 96px 16px 96px;
+        }
+
+        h1 {
+          font-size: 2.2rem;
+        }
+
+        h2 {
+          font-size: 1.7rem;
+        }
+
+        .section-block {
+          margin-top: 56px;
+        }
+
+        .cta-block {
+          padding: 36px 24px;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Mini-app Telegram là gì và cách tạo không cần code",
+        "image": "https://images.surferseo.art/d2908d35-2dee-4734-b0cd-b2a429df33ea.jpeg",
+        "datePublished": "2025-11-06",
+        "dateModified": "2025-11-06",
+        "description": "Mini-apps Telegram: ví dụ, lợi ích và phương pháp no-code để ra mắt dịch vụ với Unitee Space.",
+        "author": {
+          "@type": "Organization",
+          "name": "Unitee Space",
+          "url": "https://unitee.space"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Unitee Space",
+          "url": "https://unitee.space",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://mini-app.pro/assets/og-miniapp.jpg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://mini-app.pro/blog/telegram-mini-apps"
+        }
+      }
+    </script>
+  </head>
+  <body class="antialiased">
+    <div class="page">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand" href="/" aria-label="mini-app.pro">
+            <span class="brand-mark" aria-hidden="true">μ</span>
+            <span class="brand-text">
+              <span class="brand-title">mini-app.pro</span>
+              <span class="brand-tagline" data-i18n="header.brand.tagline">Trình tạo mini-app Telegram</span>
+            </span>
+          </a>
+          <div class="header-controls">
+            <div class="language-switcher" data-language-switcher>
+              <button
+                type="button"
+                class="language-switcher__toggle"
+                data-language-toggle
+                aria-haspopup="listbox"
+                aria-expanded="false"
+              >
+                <span class="language-switcher__flag" data-language-flag aria-hidden="true">🌐</span>
+                <span class="language-switcher__code" data-language-code>--</span>
+              </button>
+              <div
+                class="language-switcher__dropdown"
+                role="listbox"
+                data-language-options
+                hidden
+              ></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <nav
+          class="breadcrumbs"
+          aria-label="Breadcrumbs"
+          data-i18n="articles.telegramMiniApps.breadcrumbs.label"
+          data-i18n-attr="aria-label"
+          data-i18n-mode="attribute">
+          <ol>
+            <li><a href="/" data-i18n="articles.telegramMiniApps.breadcrumbs.home">Trang chủ</a></li>
+            <li><a href="/blog/" data-i18n="articles.telegramMiniApps.breadcrumbs.blog">Blog</a></li>
+            <li aria-current="page">
+              <a href="https://unitee.space" data-i18n="articles.telegramMiniApps.breadcrumbs.current">Mini-apps Telegram</a>
+            </li>
+          </ol>
+        </nav>
+        <article class="blog-article" itemscope itemtype="https://schema.org/BlogPosting">
+          <header class="article-header fade-in">
+            <meta itemprop="mainEntityOfPage" content="https://mini-app.pro/blog/telegram-mini-apps" />
+            <meta itemprop="datePublished" content="2025-11-06" />
+            <meta itemprop="dateModified" content="2025-11-06" />
+            <meta itemprop="author" content="Unitee Space" />
+            <meta itemprop="publisher" content="Unitee Space" />
+            <h1 itemprop="headline" data-i18n="articles.telegramMiniApps.header.title">Mini-app Telegram là gì và cách tạo không cần code</h1>
+            <p class="lead" itemprop="description" data-i18n="articles.telegramMiniApps.header.lead">Mini-apps Telegram là dịch vụ web tích hợp ngay trong messenger, mang đến trải nghiệm tiện lợi nhất cho doanh nghiệp và khách hàng. Chúng tôi giải thích cách hoạt động, nơi ứng dụng và cách ra mắt sản phẩm no-code với nền tảng <a href="https://unitee.space" itemprop="brand">Unitee Space</a>.</p>
+          </header>
+          <section class="section-block fade-in" data-topic="introduction" itemprop="articleBody">
+            <figure>
+              <img
+                src="https://images.surferseo.art/d2908d35-2dee-4734-b0cd-b2a429df33ea.jpeg"
+                alt="Mini-app Telegram — thế hệ web mới"
+                data-i18n="articles.telegramMiniApps.sections.intro.imageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"/>
+              <figcaption data-i18n="articles.telegramMiniApps.sections.intro.imageCaption">Mini-app Telegram: thế hệ trải nghiệm web mới</figcaption>
+            </figure>
+            <p data-i18n="articles.telegramMiniApps.sections.intro.paragraph1">Mini-apps Telegram là dịch vụ web gọn nhưng mạnh chạy trực tiếp trong messenger. Bạn có thể đặt món, mua vé, tham gia khóa học hoặc chơi game — tất cả mà không cần rời cửa sổ chat.</p>
+            <p data-i18n="articles.telegramMiniApps.sections.intro.paragraph2">Không giống app di động truyền thống, chúng không chiếm dung lượng và không cần cài đặt. Người dùng mở <a href="https://unitee.space">mini-app Telegram</a>, xác thực vài thao tác và lập tức có chức năng cần. Với thương hiệu, điều này nghĩa là launch nhanh, không phải duyệt store phức tạp và cần ít hỗ trợ.</p>
+            <p data-i18n="articles.telegramMiniApps.sections.intro.paragraph3">Nhờ các builder trực quan và tích hợp sẵn, bạn có thể tạo mini-app ngay hôm nay mà không cần đội dev: kéo thả giao diện và kết nối dịch vụ tự động — đúng cách <a href="https://unitee.space">Unitee Space</a> cung cấp.</p>
+          </section>
+          <section class="section-block fade-in" data-topic="how-it-works">
+            <h2 data-i18n="articles.telegramMiniApps.sections.howItWorks.title">Mini-apps Telegram hoạt động thế nào?</h2>
+            <p data-i18n="articles.telegramMiniApps.sections.howItWorks.overview">Mini-apps mở ở chế độ <strong>Web App</strong> và dùng công nghệ web chuẩn — <strong>HTML, CSS, JavaScript</strong>. Mọi tương tác đi qua API Telegram: giao diện thống nhất trên mobile và desktop, còn xác thực, thanh toán và thông báo diễn ra trong hệ sinh thái bảo mật của messenger.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.howItWorks.buildersTitle">Trình tạo mini-app</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.howItWorks.buildersParagraph">Các nền tảng hiện đại cung cấp template và trình chỉnh sửa trực quan. Chọn cấu trúc, thả nội dung và kết nối bot trong vài phút. Một <a href="https://unitee.space/features">builder</a> như Unitee giúp bạn tập trung vào trải nghiệm người dùng thay vì kỹ thuật.</p>
+            <figure>
+              <img
+                src="https://images.surferseo.art/0b8991f4-bad5-47a7-9e05-811bcb6dee07.jpeg"
+                alt="Giao diện quản trị mini-app Telegram"
+                data-i18n="articles.telegramMiniApps.sections.howItWorks.buildersImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"/>
+              <figcaption data-i18n="articles.telegramMiniApps.sections.howItWorks.buildersImageCaption">Bảng điều khiển cho <a href="https://unitee.space">mini-app Telegram</a> được vận hành bởi Unitee</figcaption>
+            </figure>
+            <h3 data-i18n="articles.telegramMiniApps.sections.howItWorks.apiTitle">Làm việc với API Telegram</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.howItWorks.apiParagraph">Qua API, một <a href="https://unitee.space">mini-app</a> nhận dữ liệu người dùng (khi được cho phép), kết nối thanh toán và tích hợp dịch vụ ngoài. Luồng được cá nhân hóa và liên lạc được tự động hóa.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.howItWorks.comfortTitle">Tiện lợi và bảo mật</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.howItWorks.comfortParagraph">Mini-app chạy trong hạ tầng an toàn của Telegram: dữ liệu không rời messenger và phiên dùng tài khoản đã xác minh. Người dùng ở trong môi trường quen thuộc, doanh nghiệp tận dụng sẵn xác thực và thông báo.</p>
+          </section>
+          <section class="section-block fade-in" data-topic="how-to">
+            <h2 data-i18n="articles.telegramMiniApps.sections.howTo.title">Cách tạo mini-app không cần code</h2>
+            <p data-i18n="articles.telegramMiniApps.sections.howTo.overview">Bạn có thể tạo mini-app bằng code hoặc không. Với no-code, hãy chọn trình tạo như <a href="https://unitee.space">Unitee Space</a> để có block sẵn, thanh toán tích hợp và phân tích realtime.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.howTo.step1Title">Bước 1: chọn builder</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.howTo.step1Paragraph">Các công cụ như Tars, ManyChat, Chatfuel hoặc Landbot cung cấp trình chỉnh sửa trực quan với block sẵn. Nếu cần kiểm soát đầy đủ, hãy dùng <a href="https://unitee.space">Unitee Space</a>: nền tảng kết hợp <a href="https://unitee.space/features">builder</a> mạnh, <a href="https://unitee.space/features">analytics</a> tích hợp và logic no-code linh hoạt.</p>
+            <figure>
+              <img
+                src="https://images.surferseo.art/fb4b2514-e9b4-44de-91b9-a252dba05f1d.webp"
+                alt="Chia sẻ mini-app Telegram và token TON"
+                data-i18n="articles.telegramMiniApps.sections.howTo.step1ImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"/>
+              <figcaption data-i18n="articles.telegramMiniApps.sections.howTo.step1ImageCaption">Chia sẻ mini-apps trong Telegram và hệ sinh thái TON</figcaption>
+            </figure>
+            <h3 data-i18n="articles.telegramMiniApps.sections.howTo.step2Title">Bước 2: thiết kế giao diện</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.howTo.step2Paragraph">Chọn template, kéo thả nội dung và kết nối bot trong vài phút. Một <a href="https://unitee.space">mini-app</a> cần menu rõ ràng, nút hành động và luồng thanh toán/đăng ký dễ hiểu.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.howTo.step3Title">Bước 3: kết nối bot và tích hợp</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.howTo.step3Paragraph">Kết nối bot qua BotFather và nối luồng với webhook cần thiết. Trong <a href="https://unitee.space">mini-app</a> bạn thêm thanh toán, thông báo và gợi ý cá nhân hóa. <a href="https://unitee.space">Unitee Space</a> tự động tạo token bảo mật và hướng dẫn kiểm thử tích hợp.</p>
+            <figure>
+              <img
+                src="https://images.surferseo.art/e4d06880-b392-4390-9eb0-7566f72dd9bf.jpeg"
+                alt="Một mini-app Telegram vẫn là ứng dụng web"
+                data-i18n="articles.telegramMiniApps.sections.howTo.step3ImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"/>
+              <figcaption data-i18n="articles.telegramMiniApps.sections.howTo.step3ImageCaption">Một <a href="https://unitee.space">mini-app Telegram</a> vẫn là ứng dụng web</figcaption>
+            </figure>
+            <h3 data-i18n="articles.telegramMiniApps.sections.howTo.step4Title">Bước 4: kiểm thử và launch</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.howTo.step4Paragraph">Kiểm tra hành vi trên nhiều thiết bị và mạng. Một <a href="https://unitee.space">mini-app Telegram</a> hoàn thiện tải nhanh, hiển thị form đúng và gửi thông báo tức thì. <a href="https://unitee.space">Unitee Space</a> cung cấp môi trường staging và checklist launch.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.howTo.step5Title">Bước 5: thu hút người dùng</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.howTo.step5Paragraph">Sau khi launch, kích hoạt chiến dịch, thêm mini-app vào catalog và gợi ý thêm shortcut màn hình chính. Dùng <a href="https://unitee.space/features">analytics</a> và công cụ <a href="https://unitee.space/features">monetisation</a> tích hợp để đo chuyển đổi và phát triển sản phẩm.</p>
+          </section>
+          <section class="section-block fade-in" data-topic="benefits">
+            <h2 data-i18n="articles.telegramMiniApps.sections.benefits.title">Lợi ích và khả năng của <a href="https://unitee.space">mini-app Telegram</a></h2>
+            <figure>
+              <img
+                src="https://images.surferseo.art/0ff703a9-0a5c-443f-9f90-3f1abf53d535.webp"
+                alt="Nền tảng Telegram — đỉnh cao công nghệ web"
+                data-i18n="articles.telegramMiniApps.sections.benefits.introImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"/>
+              <figcaption data-i18n="articles.telegramMiniApps.sections.benefits.introImageCaption">Nền tảng Telegram: sân chơi web hiện đại</figcaption>
+            </figure>
+            <h3 data-i18n="articles.telegramMiniApps.sections.benefits.businessTitle">Chúng giúp doanh nghiệp thế nào</h3>
+            <figure>
+              <img
+                src="https://images.surferseo.art/2b189389-fe2d-4170-8003-deffc1689f66.webp"
+                alt="Tăng trưởng Telegram không ngừng"
+                data-i18n="articles.telegramMiniApps.sections.benefits.businessImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"/>
+              <figcaption data-i18n="articles.telegramMiniApps.sections.benefits.businessImageCaption">Telegram liên tục tăng trưởng từ khi ra mắt</figcaption>
+            </figure>
+            <p data-i18n="articles.telegramMiniApps.sections.benefits.businessParagraph">Doanh nghiệp dùng <a href="https://unitee.space">mini-app Telegram</a> để thúc đẩy doanh số, tự động hóa dịch vụ và thu thập dữ liệu. API cho phép bán sản phẩm, chạy khảo sát, khởi tạo loyalty và tích hợp với <a href="https://unitee.space/features">CRM</a>.</p>
+            <ul>
+              <li data-i18n="articles.telegramMiniApps.sections.benefits.businessList.0">Bán sản phẩm và dịch vụ ngay trong messenger.</li>
+              <li data-i18n="articles.telegramMiniApps.sections.benefits.businessList.1">Tự động hóa CSKH và thu thập phản hồi.</li>
+              <li data-i18n="articles.telegramMiniApps.sections.benefits.businessList.2">Khởi chạy khảo sát, form và hành trình cá nhân hóa.</li>
+              <li data-i18n="articles.telegramMiniApps.sections.benefits.businessList.3">Tạo chương trình khách hàng thân thiết và giới thiệu.</li>
+              <li data-i18n="articles.telegramMiniApps.sections.benefits.businessList.4">Kết nối <a href="https://unitee.space/features">CRM</a> để xử lý đơn và thanh toán.</li>
+            </ul>
+            <h3 data-i18n="articles.telegramMiniApps.sections.benefits.comfortTitle">Trải nghiệm tối ưu cho người dùng</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.benefits.comfortParagraph">Không cần tải app, cập nhật tự động và giao diện quen thuộc như chat. Một <a href="https://unitee.space">mini-app Telegram</a> mở tức thì và hoạt động trên mọi thiết bị có Telegram.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.benefits.botsTitle">Kết nối bot và dịch vụ bên ngoài</h3>
+            <figure>
+              <img
+                src="https://images.surferseo.art/6b3412c1-29eb-49c5-8e39-30fbf133082a.png"
+                alt="Unitee — trình tạo cho người mới và chuyên gia"
+                data-i18n="articles.telegramMiniApps.sections.benefits.botsImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"/>
+              <figcaption data-i18n="articles.telegramMiniApps.sections.benefits.botsImageCaption"><a href="https://unitee.space">Unitee</a>: <a href="https://unitee.space/features">trình tạo</a> cho cả người mới và chuyên gia</figcaption>
+            </figure>
+            <p data-i18n="articles.telegramMiniApps.sections.benefits.botsParagraph">Mini-app dựa vào bot để nhận đơn, gửi nhắc, onboarding khách và triển khai chiến dịch cá nhân hóa. Chúng cũng kết nối với hệ thống bên ngoài: <a href="https://unitee.space/features">CRM</a>, cổng thanh toán và cơ sở dữ liệu đám mây.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.benefits.savingsTitle">Giảm chi phí xây dựng và vận hành</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.benefits.savingsParagraph">Ứng dụng di động truyền thống đòi hỏi ngân sách lớn để ra mắt và cập nhật liên tục. Một <a href="https://unitee.space">mini-app Telegram</a> cắt giảm đáng kể chi phí: <a href="https://unitee.space/features">builder</a> trực quan cho phép đội ngũ cập nhật nội dung, tính năng mà không cần thuê developer.</p>
+          </section>
+          <section class="section-block fade-in" data-topic="examples">
+            <h2 data-i18n="articles.telegramMiniApps.sections.examples.title">Những <a href="https://unitee.space">mini-app Telegram</a> hoạt động hiệu quả</h2>
+            <figure>
+              <img
+                src="https://images.surferseo.art/e4d06880-b392-4390-9eb0-7566f72dd9bf.jpeg"
+                alt="Đã có 300.000 người dùng trong mini-app của Unitee"
+                data-i18n="articles.telegramMiniApps.sections.examples.introImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"/>
+              <figcaption data-i18n="articles.telegramMiniApps.sections.examples.introImageCaption">Hơn 300.000 người dùng đã tin cậy mini-app của Unitee</figcaption>
+            </figure>
+            <h3 data-i18n="articles.telegramMiniApps.sections.examples.commerceTitle">Thương mại điện tử</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.examples.commerceParagraph">Cửa hàng xây catalog trong <a href="https://unitee.space">mini-app</a>, quản lý giỏ hàng và nhận thanh toán qua cổng tích hợp. Khách ở lại trong chat và doanh nghiệp tránh được phát triển native.</p>
+            <ul>
+              <li data-i18n="articles.telegramMiniApps.sections.examples.commerceList.0">Tiện lợi: giao dịch diễn ra trong một cửa sổ.</li>
+              <li data-i18n="articles.telegramMiniApps.sections.examples.commerceList.1">Hiệu quả: không phí store, không bảo trì phức tạp.</li>
+            </ul>
+            <h3 data-i18n="articles.telegramMiniApps.sections.examples.servicesTitle">Đặt chỗ và dịch vụ</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.examples.servicesParagraph">Nhà hàng, salon và khách sạn tự động hóa đặt chỗ, đặt cọc và thông báo. Khách chọn dịch vụ, trả tiền giữ chỗ và nhận nhắc — tất cả trong <a href="https://unitee.space">mini-app Telegram</a>.</p>
+            <ul>
+              <li data-i18n="articles.telegramMiniApps.sections.examples.servicesList.0">Đặt chỗ trong vài thao tác.</li>
+              <li data-i18n="articles.telegramMiniApps.sections.examples.servicesList.1">Giảm tải cho nhân viên hỗ trợ.</li>
+            </ul>
+            <h3 data-i18n="articles.telegramMiniApps.sections.examples.gamesTitle">Game và trải nghiệm tương tác</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.examples.gamesParagraph">Thương hiệu thiết kế quiz, quest và cuộc thi tương tác. Gamification tăng engagement và mở ra mô hình <a href="https://unitee.space/features">monetisation</a> như subscription, perk trả phí hoặc hợp tác.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.examples.coworkingTitle">Coworking và cộng đồng</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.examples.coworkingParagraph">Trong workspace, <a href="https://unitee.space">mini-app Telegram</a> trở thành hub chính: đặt phòng, thanh toán dịch vụ, loyalty và kết nối với <a href="https://unitee.space/features">CRM</a>.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.examples.educationTitle">Giáo dục</h3>
+            <p data-i18n="articles.telegramMiniApps.sections.examples.educationParagraph">Các đội ngũ ra mắt khóa học online, bài kiểm tra và mô phỏng. Nội dung thích ứng theo cấp độ và tiến trình được theo dõi trong <a href="https://unitee.space/features">analytics</a>. Giảng viên theo dõi hoạt động học viên và cập nhật tài liệu nhanh chóng.</p>
+          </section>
+          <section class="section-block fade-in" data-topic="future">
+            <h2 data-i18n="articles.telegramMiniApps.sections.future.title">Tương lai của <a href="https://unitee.space">mini-app Telegram</a></h2>
+            <figure>
+              <img
+                src="https://images.surferseo.art/future-outlook.svg"
+                alt="Tạo app cho mọi hệ điều hành mà không cần developer"
+                data-i18n="articles.telegramMiniApps.sections.future.introImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"/>
+              <figcaption data-i18n="articles.telegramMiniApps.sections.future.introImageCaption">Xây app cho mọi hệ điều hành mà không cần developer</figcaption>
+            </figure>
+            <h3 data-i18n="articles.telegramMiniApps.sections.future.automationTitle">Tự động hóa quy trình doanh nghiệp</h3>
+            <figure>
+              <img
+                src="https://images.surferseo.art/future-automation.svg"
+                alt="Chế độ quản trị no-code — giống CRM"
+                data-i18n="articles.telegramMiniApps.sections.future.automationImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"/>
+              <figcaption data-i18n="articles.telegramMiniApps.sections.future.automationImageCaption">Chế độ admin no-code: giống như trong <a href="https://unitee.space/features">CRM</a></figcaption>
+            </figure>
+            <p data-i18n="articles.telegramMiniApps.sections.future.automationParagraph">Ngày càng nhiều doanh nghiệp đưa đặt hàng, hỗ trợ và giao nhận vào <a href="https://unitee.space">mini-app</a>. Mẫu <a href="https://unitee.space/features">builder</a> thích ứng với mọi ngành và dữ liệu được chuyển tới <a href="https://unitee.space/features">CRM</a> và <a href="https://unitee.space/features">analytics</a>.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.future.smartCityTitle">Thành phố thông minh</h3>
+            <figure>
+              <img
+                src="https://images.surferseo.art/future-smart-city.svg"
+                alt="Thêm shortcut vào màn hình chính dễ dàng"
+                data-i18n="articles.telegramMiniApps.sections.future.smartCityImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"/>
+              <figcaption data-i18n="articles.telegramMiniApps.sections.future.smartCityImageCaption">Thêm biểu tượng vào màn hình chính điện thoại trong vài giây</figcaption>
+            </figure>
+            <p data-i18n="articles.telegramMiniApps.sections.future.smartCityParagraph">Dịch vụ đô thị số hóa yêu cầu, thanh toán đỗ xe và giao tiếp với cư dân. <a href="https://unitee.space">Mini-app Telegram</a> trở thành điểm vào để theo dõi hồ sơ và nhận gợi ý cá nhân hóa.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.future.educationTitle">Nền tảng giáo dục</h3>
+            <figure>
+              <img
+                src="https://images.surferseo.art/future-education.svg"
+                alt="Đội ngũ của bạn học ngay trong mini-app"
+                data-i18n="articles.telegramMiniApps.sections.future.educationImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"/>
+              <figcaption data-i18n="articles.telegramMiniApps.sections.future.educationImageCaption">Đội ngũ hoặc khán giả học trực tiếp trong mini-app</figcaption>
+            </figure>
+            <p data-i18n="articles.telegramMiniApps.sections.future.educationParagraph">Mini-app cho phép lộ trình học cá nhân hóa, đánh giá và gamification. <a href="https://unitee.space">Unitee Space</a> xử lý broadcast, bài học thích ứng và <a href="https://unitee.space/features">analytics</a> cho giảng viên.</p>
+            <h3 data-i18n="articles.telegramMiniApps.sections.future.gamificationTitle">Gamification và tăng tương tác</h3>
+            <figure>
+              <img
+                src="https://images.surferseo.art/future-gamification.svg"
+                alt="Gamification trong mini-app Telegram"
+                data-i18n="articles.telegramMiniApps.sections.future.gamificationImageAlt"
+                data-i18n-attr="alt"
+                data-i18n-mode="attribute"/>
+              <figcaption data-i18n="articles.telegramMiniApps.sections.future.gamificationImageCaption">Gamification tăng tương tác trong mini-app Telegram</figcaption>
+            </figure>
+            <p data-i18n="articles.telegramMiniApps.sections.future.gamificationParagraph">Telegram liên tục mở rộng cơ chế giải trí. Thương hiệu dùng <a href="https://unitee.space">mini-app</a> để giữ chân, thưởng và kích hoạt cộng đồng đồng thời mở kênh <a href="https://unitee.space/features">monetisation</a> mới.</p>
+          </section>
+          <section class="section-block fade-in" data-topic="conclusion">
+            <h2 data-i18n="articles.telegramMiniApps.sections.conclusion.title">Tóm tắt</h2>
+            <p data-i18n="articles.telegramMiniApps.sections.conclusion.paragraph1"><a href="https://unitee.space">Mini-app Telegram</a> là cách hiệu quả để ra mắt dịch vụ số mà không cần ứng dụng native. Cập nhật triển khai tức thì, người dùng có thể ghim shortcut lên màn hình chính và dữ liệu khách hàng luôn được bảo vệ.</p>
+            <p data-i18n="articles.telegramMiniApps.sections.conclusion.paragraph2">Với nền tảng <a href="https://unitee.space">Unitee Space</a>, doanh nghiệp nhận đủ công cụ: <a href="https://unitee.space/features">builder trực quan</a>, <a href="https://unitee.space/features">analytics</a> tích hợp, công cụ <a href="https://unitee.space/features">kiếm tiền</a> và tích hợp <a href="https://unitee.space/features">CRM</a>. Việc launch nhanh hơn, hiệu suất được kiểm soát và hệ sinh thái Telegram tiếp tục mở rộng.</p>
+          </section>
+          <section class="cta-block fade-in" data-topic="cta">
+            <h2 data-i18n="articles.telegramMiniApps.cta.title">🚀 Thử <a href="https://unitee.space">Unitee Space</a> — <a href="https://unitee.space/features">trình tạo</a> #1 cho <a href="https://unitee.space">mini-app Telegram</a></h2>
+            <p data-i18n="articles.telegramMiniApps.cta.text">Tạo, kiểm thử và phát triển mini-app của bạn không cần code trong giao diện quen thuộc.</p>
+            <a class="cta-button" href="https://unitee.space" data-i18n="articles.telegramMiniApps.cta.button">Tới unitee.space</a>
+          </section>
+          <section class="author-block fade-in" data-topic="author" itemprop="author" itemscope itemtype="https://schema.org/Organization">
+            <p itemprop="name" data-i18n="articles.telegramMiniApps.author.name">Tác giả: đội ngũ <a href="https://unitee.space">Unitee Space</a></p>
+            <p itemprop="description" data-i18n="articles.telegramMiniApps.author.bio">Nền tảng xây dựng <a href="https://unitee.space">mini-app Telegram</a> không cần code.</p>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script src="/assets/js/script.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      document.querySelectorAll('.fade-in').forEach((element) => observer.observe(element));
+    </script>
+  </body>
+</html>

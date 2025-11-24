@@ -11,6 +11,7 @@
   const LANGUAGE_OPTIONS = [
     { code: 'ar-XXX', label: 'العربية', flag: '🇸🇦' },
     { code: 'en', label: 'English', flag: '🇬🇧' },
+    { code: 'vi-VN', label: 'Tiếng Việt', flag: '🇻🇳' },
     { code: 'id-ID', label: 'Bahasa Indonesia', flag: '🇮🇩' },
     { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
     { code: 'es', label: 'Español', flag: '🇪🇸' },

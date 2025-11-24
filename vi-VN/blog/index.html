@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="blogPage.meta.title">Blog mini-app Telegram | Unitee Space</title>
+    <meta
+      name="description"
+      content="Bài viết mới nhất về mini-app Telegram từ đội ngũ Unitee Space: xây dựng no-code, tăng trưởng sản phẩm và xu hướng hệ sinh thái."
+      data-i18n="blogPage.meta.description"
+      data-i18n-attr="content"
+      data-i18n-mode="attribute"
+    />
+    <link rel="canonical" href="https://mini-app.pro/vi-VN/blog/" />
+    <link rel="alternate" hreflang="vi-VN" href="https://mini-app.pro/vi-VN/blog/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      body {
+        background: var(--bg-main);
+      }
+
+      main.blog-main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 120px 20px 104px;
+      }
+
+      .blog-main h1 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: #111111;
+        margin-bottom: 24px;
+      }
+
+      .blog-main p {
+        margin: 0 0 24px;
+        color: var(--text-secondary);
+      }
+
+      .blog-main a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .blog-main a:hover,
+      .blog-main a:focus {
+        text-decoration: underline;
+      }
+
+      .blog-main .intro {
+        margin-bottom: 64px;
+        color: var(--text-secondary);
+      }
+
+      .post-card {
+        display: block;
+        margin-bottom: 32px;
+        padding: 32px;
+        border-radius: 24px;
+        background: var(--bg-surface);
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow-soft);
+        transition: transform 160ms ease, box-shadow 160ms ease;
+      }
+
+      .post-card:last-child {
+        margin-bottom: 0;
+      }
+
+      .post-card:hover,
+      .post-card:focus {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 52px rgba(58, 122, 254, 0.16);
+        text-decoration: none;
+      }
+
+      .post-card h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin: 0 0 16px;
+        color: #111111;
+      }
+
+      .post-card .post-lead {
+        margin: 0 0 20px;
+        color: var(--text-secondary);
+        font-size: 1.05rem;
+      }
+
+      .post-card .post-meta {
+        font-size: 0.95rem;
+        color: var(--text-subtle);
+      }
+
+      @media (max-width: 720px) {
+        main.blog-main {
+          padding: 96px 16px 88px;
+        }
+
+        .post-card {
+          padding: 24px;
+        }
+
+        .post-card .post-lead {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <div class="page">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand" href="/" aria-label="mini-app.pro">
+            <span class="brand-mark" aria-hidden="true">μ</span>
+            <span class="brand-text">
+              <span class="brand-title">mini-app.pro</span>
+              <span class="brand-tagline" data-i18n="header.brand.tagline">Trình tạo mini-app Telegram</span>
+            </span>
+          </a>
+          <div class="header-controls">
+            <div class="language-switcher" data-language-switcher>
+              <button
+                type="button"
+                class="language-switcher__toggle"
+                data-language-toggle
+                aria-haspopup="listbox"
+                aria-expanded="false"
+              >
+                <span class="language-switcher__flag" data-language-flag aria-hidden="true">🌐</span>
+                <span class="language-switcher__code" data-language-code>--</span>
+              </button>
+              <div
+                class="language-switcher__dropdown"
+                role="listbox"
+                data-language-options
+                hidden
+              ></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="blog-main">
+        <h1 data-i18n="blogPage.heading">Blog Unitee Space</h1>
+        <p class="intro" data-i18n="blogPage.intro">
+          Kinh nghiệm triển khai <a href="https://unitee.space">mini-app Telegram</a>, xây dịch vụ no-code và phát triển sản phẩm nội bộ. Theo dõi bài viết mới để áp dụng best practice cho hoạt động của bạn.
+        </p>
+        <a class="post-card" href="/vi-VN/blog/telegram-mini-apps/">
+          <h2 data-i18n="blogPage.posts.telegramMiniApps.title">
+            Mini-app Telegram là gì và tạo không cần code
+          </h2>
+          <p class="post-lead" data-i18n="blogPage.posts.telegramMiniApps.lead">
+            <a href="https://unitee.space">Mini-app Telegram</a> là dịch vụ web ngay trong messenger, cho doanh nghiệp kết nối nhanh với khách hàng. Chúng tôi giải thích cách hoạt động, ứng dụng và cách launch dự án no-code với nền tảng <a href="https://unitee.space" itemprop="brand">Unitee Space</a>.
+          </p>
+          <div class="post-meta" data-i18n="blogPage.posts.telegramMiniApps.meta">10.02.2025 • Đọc trong 9 phút</div>
+        </a>
+      </main>
+    </div>
+    <script src="/assets/js/i18n.js" defer></script>
+  </body>
+</html>
