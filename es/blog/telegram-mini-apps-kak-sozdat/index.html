@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini-apps de Telegram: cómo crear o encargar una web app | Unitee Space</title>
+    <meta
+      name="description"
+      content="Mini-apps de Telegram: qué son, dónde ayudan a las empresas, opciones de desarrollo y una checklist para preparar el brief y elegir proveedor."
+    />
+    <link rel="canonical" href="https://mini-app.pro/es/blog/telegram-mini-apps-kak-sozdat/" />
+    <meta property="og:url" content="https://mini-app.pro/es/blog/telegram-mini-apps-kak-sozdat/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Mini-apps de Telegram: cómo crear o encargar una web app | Unitee Space" />
+    <meta
+      property="og:description"
+      content="Mini-apps de Telegram: por qué son importantes para el negocio, cómo desarrollarlas u externalizarlas, qué APIs hay disponibles y cómo controlar la calidad."
+    />
+    <meta property="og:image" content="https://images.surferseo.art/04a4671e-4fc3-4f19-811c-953e3adc871d.webp" />
+    <meta property="article:published_time" content="2025-11-25" />
+    <meta property="article:author" content="Unitee Space" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mini-apps de Telegram: cómo crear o encargar una web app | Unitee Space" />
+    <meta
+      name="twitter:description"
+      content="Mini-apps de Telegram: ventajas, casos de uso, escenarios de desarrollo y cómo gestionar la calidad."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg-main);
+        color: var(--text-primary);
+        line-height: 1.7;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus {
+        text-decoration: underline;
+      }
+
+      main {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 120px 20px 120px;
+      }
+
+      nav.breadcrumbs {
+        font-size: 0.95rem;
+        margin-bottom: 32px;
+      }
+
+      nav.breadcrumbs ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        color: #6f7582;
+      }
+
+      nav.breadcrumbs li::after {
+        content: ">";
+        margin-left: 8px;
+        color: #c0c5d0;
+      }
+
+      nav.breadcrumbs li:last-child::after {
+        content: "";
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-weight: 600;
+        margin: 0 0 24px;
+        line-height: 1.3;
+        color: #111111;
+      }
+
+      h1 {
+        font-size: 2.6rem;
+      }
+
+      h2 {
+        font-size: 1.9rem;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      p {
+        margin: 0 0 20px;
+        color: var(--text-secondary);
+      }
+
+      ul,
+      ol {
+        margin: 0 0 24px 20px;
+        color: var(--text-secondary);
+        padding-left: 16px;
+      }
+
+      li {
+        margin-bottom: 12px;
+      }
+
+      strong {
+        color: #0e1015;
+      }
+
+      img {
+        max-width: 100%;
+        border-radius: 20px;
+        margin: 0 0 28px;
+        display: block;
+      }
+
+      .page {
+        background: var(--bg-surface);
+        min-height: 100vh;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(12px);
+        background: color-mix(in srgb, var(--bg-surface), transparent 12%);
+      }
+
+      header .header-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        padding: 18px 20px;
+      }
+
+      header .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--text-primary);
+      }
+
+      header .brand-mark {
+        width: 32px;
+        height: 32px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background: linear-gradient(120deg, #3a7afe, #6c5bff);
+        color: white;
+        font-weight: 700;
+      }
+
+      header .brand-title {
+        font-weight: 600;
+        font-size: 1.05rem;
+      }
+
+      header .brand-tagline {
+        display: block;
+        font-size: 0.95rem;
+        color: #6f7582;
+      }
+
+      header .language-switcher {
+        margin-left: auto;
+      }
+
+      @media (max-width: 720px) {
+        main {
+          padding: 96px 16px 96px;
+        }
+
+        header .brand-title {
+          font-size: 1rem;
+        }
+
+        header .brand-tagline {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <div class="page">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand" href="/es/" aria-label="mini-app.pro">
+            <span class="brand-mark" aria-hidden="true">μ</span>
+            <span class="brand-text">
+              <span class="brand-title">mini-app.pro</span>
+              <span class="brand-tagline">Creador de mini-apps de Telegram</span>
+            </span>
+          </a>
+          <div class="header-controls">
+            <div class="language-switcher" data-language-switcher>
+              <button
+                type="button"
+                class="language-switcher__toggle"
+                data-language-toggle
+                aria-haspopup="listbox"
+                aria-expanded="false"
+              >
+                <span class="language-switcher__flag" data-language-flag aria-hidden="true">🌐</span>
+                <span class="language-switcher__code" data-language-code>--</span>
+              </button>
+              <div
+                class="language-switcher__dropdown"
+                role="listbox"
+                data-language-options
+                hidden
+              ></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <nav class="breadcrumbs" aria-label="breadcrumbs">
+          <ol>
+            <li><a href="/es/">Inicio</a></li>
+            <li><a href="/es/blog/">Blog</a></li>
+            <li>Mini-apps de Telegram: cómo crear o encargar una web app</li>
+          </ol>
+        </nav>
+        <article>
+          <header>
+            <h1>Mini-apps de Telegram: cómo crear o encargar una web app</h1>
+            <p>25 de noviembre de 2025 · 18 min de lectura · Equipo de Unitee Space</p>
+          </header>
+          <section>
+            <p><strong>Las mini-apps de Telegram</strong> son servicios web que se ejecutan dentro del mensajero sin instalar nada. Permiten lanzar ventas, atención al cliente o productos internos en un canal que millones de personas ya usan.</p>
+            <p>Para aprovecharlas, es importante preparar correctamente el <strong>brief de desarrollo</strong>, elegir las herramientas y organizar el proceso.</p>
+            <p>En esta guía explicamos qué son las mini-apps, dónde aportan valor y cómo construirlas o encargarlas con control de calidad.</p>
+            <img src="https://images.surferseo.art/460746c9-8f6d-4fae-9d34-9f932c798af2.webp" alt="Qué es un mini-app de Telegram" />
+            <h2>
+              <strong>Qué es una mini-app de Telegram</strong>
+            </h2>
+            <p>Las <strong>mini aplicaciones</strong> son sitios web ligeros que se abren dentro de Telegram a través de un <strong>bot</strong> o del nuevo menú <strong>Calls</strong>.</p>
+            <p>Funcionan como <strong>servidores</strong> y <strong>clientes</strong> clásicos: el back-end ejecuta la lógica, guarda datos y se conecta con el exterior, mientras la interfaz se adapta a móvil y escritorio.</p>
+            <p>El usuario no instala nada: la mini-app se abre al instante y puede guardar progreso, carrito o estado de sesión.</p>
+            <h3>
+              <strong>Ventajas clave</strong>
+            </h3>
+            <ul>
+              <li><strong>Sin instalación</strong>: el usuario entra desde un botón o enlace del <strong>bot</strong>.</li>
+              <li><strong>Rápido</strong>: Telegram ofrece APIs y almacenamiento para <strong>datos</strong> y medios.</li>
+              <li><strong>Pagos</strong>: integración con pasarelas a través del <strong>bot</strong>.</li>
+              <li><strong>UI familiar</strong>: controles nativos de Telegram y <strong>tema</strong> del usuario.</li>
+              <li><strong>Compatible</strong>: funciona en <strong>iOS</strong>, <strong>Android</strong> y Telegram Web.</li>
+            </ul>
+            <img src="https://images.surferseo.art/6ee87454-d05c-4285-82c3-f09bb82e3b9e.webp" alt="Interfaz y elementos de una mini-app" />
+            <h2>
+              <strong>Cómo funcionan</strong>
+            </h2>
+            <p>Una mini-app combina tres bloques:</p>
+            <ol>
+              <li>
+                <p><strong>Bot</strong>: abre la web, autentica al usuario y recibe comandos.</p>
+              </li>
+              <li>
+                <p><strong>Interfaz</strong>: pantallas y formularios dentro de Telegram.</p>
+              </li>
+              <li>
+                <p><strong>Servidor</strong>: APIs, base de datos y conexión con sistemas externos.</p>
+              </li>
+            </ol>
+            <p>El usuario pulsa un botón del bot, se abre la mini-app, se muestran <strong>acciones</strong> y <strong>formularios</strong>, y los datos se envían al servidor a través de la API.</p>
+            <img src="https://images.surferseo.art/6ec8d0b9-5182-4ffe-8b72-7d87e963bbbf.webp" alt="Interacciones clave dentro de la mini-app" />
+            <h2>
+              <strong>Por qué son útiles para las empresas</strong>
+            </h2>
+            <p>Las empresas usan mini-apps para vender, automatizar y lanzar MVPs sin obligar a los clientes a instalar apps.</p>
+            <ol>
+              <li>
+                <p><strong>Automatización de ventas</strong>: catálogos, checkout, notificaciones y soporte en el mismo chat.</p>
+              </li>
+              <li>
+                <p><strong>Interacciones rápidas</strong>: el usuario abre la mini-app desde el bot y realiza la acción en segundos.</p>
+              </li>
+              <li>
+                <p><strong>Proceso controlado</strong>: toda la comunicación pasa por el bot y el back-end.</p>
+              </li>
+            </ol>
+            <img src="https://images.surferseo.art/c8ac6979-5adb-4f99-b1c0-36ac18867eaf.webp" alt="El bot abre la mini-app dentro de Telegram" />
+            <h2>
+              <strong>Dónde se usan las mini-apps de Telegram</strong>
+            </h2>
+            <p>Se aplican en muchas industrias:</p>
+            <ul>
+              <li><strong>Tiendas online</strong>: catálogo, carrito y pago rápido.</li>
+              <li><strong>Servicios financieros</strong>: pagos, monedero y verificación.</li>
+              <li><strong>Customer support</strong>: tickets y base de conocimiento.</li>
+              <li><strong>Formación y eventos</strong>: inscripción, agenda y recordatorios.</li>
+              <li><strong>Programas de fidelidad</strong>: cupones, puntos y recompensas.</li>
+              <li><strong>Back-office</strong>: dashboards internos, aprobación de solicitudes.</li>
+            </ul>
+            <img src="https://images.surferseo.art/e3ca8c0f-b696-4652-813f-38e7513ed808.webp" alt="Ejemplos de mini-apps" />
+            <h2>
+              <strong>Qué APIs están disponibles</strong>
+            </h2>
+            <p>Telegram ofrece varias APIs para crear mini-apps:</p>
+            <ul>
+              <li><strong>Bot API</strong> para comandos, botones y envío de mensajes.</li>
+              <li><strong>Web Apps API</strong> para integrar la interfaz y controlar ventanas, temas y <strong>autorización</strong>.</li>
+              <li><strong>Payments API</strong> para cobros mediante proveedores compatibles.</li>
+              <li><strong>JavaScript</strong> API que conecta la UI con el <strong>bot</strong> y el servidor.</li>
+            </ul>
+            <p>La combinación de estas APIs permite construir experiencias completas sin salir de Telegram.</p>
+            <img src="https://images.surferseo.art/e116ca17-103c-4fd1-ae04-7de60c5fb4cb.webp" alt="Botones e interacciones en una mini-app" />
+            <h2>
+              <strong>Cómo lanzar una mini-app de Telegram</strong>
+            </h2>
+            <p>Hay dos caminos principales:</p>
+            <ol>
+              <li>
+                <p><strong>Constructor</strong> – usar una plataforma como <a href="https://unitee.space/?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=es">Unitee Space</a> para montar el producto sin código.</p>
+              </li>
+              <li>
+                <p><strong>Desarrollo a medida</strong> – programar la interfaz y el servidor con un equipo propio o proveedor.</p>
+              </li>
+            </ol>
+            <p>Ambas opciones requieren un <strong>brief claro</strong>, roles definidos y pruebas en dispositivos reales.</p>
+            <h3>
+              <strong>Cómo elegir el enfoque</strong>
+            </h3>
+            <p>Usa un <strong>constructor</strong> si necesitas rapidez, plantillas y poco soporte de IT. El desarrollo <strong>a medida</strong> es mejor cuando requieres integraciones profundas y un diseño único.</p>
+            <img src="https://images.surferseo.art/6c325bcd-ffba-4483-8c55-d04a7e4ca2e6.webp" alt="Lanzar desde el bot" />
+            <h2>
+              <strong>Interfaz y usuario de la mini-app</strong>
+            </h2>
+            <p>La mini-app debe ser clara en pantallas pequeñas y coherente con el <strong>tema</strong> del usuario.</p>
+            <ul>
+              <li><strong>Navegación simple</strong> con botones visibles.</li>
+              <li><strong>Autorización</strong> inmediata a través del <strong>bot</strong>.</li>
+              <li><strong>Pagos</strong> integrados sin salir de Telegram.</li>
+              <li><strong>Estados guardados</strong> para carritos, formularios o progreso.</li>
+            </ul>
+            <p>Diseña bloques compactos, mensajes claros y botones grandes para reducir fricción.</p>
+            <img src="https://images.surferseo.art/09ef88d7-a23c-46c1-95e2-eeb2445c79ba.webp" alt="Diseño de mini-app en Telegram" />
+            <h2>
+              <strong>Checklist del brief</strong>
+            </h2>
+            <p>Prepara un brief con:</p>
+            <ol>
+              <li><strong>Objetivo y métricas</strong>: qué problema resuelve y cómo medirás el éxito.</li>
+              <li><strong>Escenarios</strong>: pasos clave del usuario dentro de la mini-app.</li>
+              <li><strong>Integraciones</strong>: CRM, pasarelas de pago, sistemas internos.</li>
+              <li><strong>UI y contenido</strong>: textos, imágenes y tono de voz.</li>
+              <li><strong>Seguridad</strong>: requisitos de datos, autenticación y cumplimiento.</li>
+            </ol>
+            <p>Un brief sólido reduce riesgos, acelera el desarrollo y facilita probar la mini-app antes del lanzamiento.</p>
+            <img src="https://images.surferseo.art/8f958026-51c5-439e-9623-4424f4b6816f.webp" alt="El bot abre la aplicación dentro del mensajero" />
+            <h2>
+              <strong>Qué debe tener el brief para mini-apps</strong>
+            </h2>
+            <ol>
+              <li>
+                <p><strong>Roles y acceso</strong> – quién gestiona el bot, la analítica y los entornos.</p>
+              </li>
+              <li>
+                <p><strong>Contenido</strong> – textos, imágenes, tonos y mensajes del bot.</p>
+              </li>
+              <li>
+                <p><strong>Integraciones</strong> – APIs externas, webhooks, pagos.</p>
+              </li>
+              <li>
+                <p><strong>Diseño</strong> – guías de UI, tema claro/oscuro y componentes.</p>
+              </li>
+              <li>
+                <p><strong>QA</strong> – dispositivos, navegadores y casos de prueba.</p>
+              </li>
+            </ol>
+            <p>Documenta cada decisión y comparte ejemplos visuales para acelerar los sprint de desarrollo.</p>
+            <img src="https://images.surferseo.art/9d43a23d-0ed0-499e-bd9c-f9fcf1af1b26.webp" alt="Interfaz de una mini-app" />
+            <h2>
+              <strong>Dónde pedir el desarrollo de mini-apps</strong>
+            </h2>
+            <p>Elige entre tres opciones:</p>
+            <ol>
+              <li><strong>Proveedores especializados</strong> en Telegram con portfolio relevante.</li>
+              <li><strong>Equipo interno</strong> si tienes desarrolladores que conozcan bots y APIs.</li>
+              <li><strong>Constructores</strong> que permiten lanzar sin código y con soporte.</li>
+            </ol>
+            <p>Evalúa <strong>experiencia</strong>, velocidad de soporte y costo total de propiedad.</p>
+            <img src="https://images.surferseo.art/665b10cc-6ec5-4a2a-af47-0e88f60c2aa7.webp" alt="Elementos y gestión de una mini-app" />
+            <h2>
+              <strong>Costos de desarrollo</strong>
+            </h2>
+            <p>El presupuesto depende de la complejidad, integraciones y número de pantallas.</p>
+            <p>Para un MVP simple, un <strong>constructor</strong> reduce costos. Para flujos complejos, el <strong>desarrollo a medida</strong> ofrece más control y escalabilidad.</p>
+            <img src="https://images.surferseo.art/1788967c-ec70-4e0c-ad7d-aedc1754bd14.webp" alt="Interfaz y back-end conectados a Telegram" />
+            <h2>
+              <strong>Checklist para contratar un proveedor</strong>
+            </h2>
+            <ol>
+              <li><strong>Portafolio</strong>: ejemplos de mini-apps lanzadas y bots.</li>
+              <li><strong>Equipo</strong>: roles claros, PM, diseñador, QA y desarrolladores.</li>
+              <li><strong>Proceso</strong>: metodologías, demos parciales y comunicación.</li>
+              <li><strong>Seguridad</strong>: manejo de datos, hosting y acceso.</li>
+              <li><strong>Soporte</strong>: mantenimiento después del lanzamiento.</li>
+            </ol>
+            <p>Solicita estimaciones por fases y un roadmap de entregas para controlar plazos.</p>
+            <img src="https://images.surferseo.art/ce2162a7-7a6a-4102-bc25-a6b617bcae11.webp" alt="Flujo del bot hacia la mini-app" />
+            <h3>
+              <strong>Qué preguntar al proveedor</strong>
+            </h3>
+            <ol>
+              <li><strong>Stack y APIs</strong> que usa para mini-apps.</li>
+              <li><strong>Casos similares</strong> en tiendas, pagos o back-office.</li>
+              <li><strong>Entrega</strong>: cómo muestran prototipos y versiones.</li>
+              <li><strong>Garantías</strong> y soporte tras la publicación.</li>
+            </ol>
+            <p>Un proveedor sólido mostrará demos, criterios de aceptación y ejemplos de <strong>mini-apps</strong> en producción.</p>
+            <img src="https://images.surferseo.art/227ec419-b61c-4d30-a5d3-f541d0b5dcfe.webp" alt="La mini-app se despliega a través del bot" />
+            <h3>
+              <strong>Controlar las etapas de desarrollo</strong>
+            </h3>
+            <p>Asegura visibilidad en cada fase:</p>
+            <ol>
+              <li><strong>Diseño</strong>: contenido, flujos y prototipos.</li>
+              <li><strong>Desarrollo</strong>: acciones, APIs, <strong>bot</strong> y datos.</li>
+              <li><strong>Testing</strong>: bugs, cobertura de dispositivos y rendimiento.</li>
+              <li><strong>Lanzamiento</strong>: analítica, pulido de UI y monitoreo.</li>
+            </ol>
+            <h3>
+              <strong>Por qué es importante</strong>
+            </h3>
+            <p>Las revisiones frecuentes permiten detectar desviaciones respecto al brief y mejorar la <strong>aplicación</strong> antes de publicarla.</p>
+            <h2>
+              <strong>Ejemplos de mini-apps</strong>
+            </h2>
+            <p>Las mini-apps de Telegram ya funcionan en e-commerce, servicios financieros, educación y más.</p>
+            <img src="https://images.surferseo.art/2bef40a9-f534-4379-b0f3-c56e6b492e39.webp" alt="El mensajero conecta a empresas y usuarios" />
+            <img src="https://images.surferseo.art/dbee6420-412d-4628-a34b-ee058455c9de.webp" alt="Ejemplo del proyecto Club100" />
+            <p>Un desarrollo bien ejecutado ofrece <strong>mini aplicaciones</strong> convenientes y funcionales que resuelven tareas del negocio.</p>
+            <h2>
+              <strong>Conclusión</strong>
+            </h2>
+            <p>Las <strong>mini-apps de Telegram</strong> simplifican la automatización, el soporte y los pagos sin obligar a descargar apps.</p>
+            <p>Gracias a la <strong>API de Telegram</strong>, los <strong>bots</strong> y una interfaz intuitiva, las <strong>mini aplicaciones</strong> son cada vez más populares.</p>
+            <p>Elige el enfoque de <strong>desarrollo</strong> que encaje con tus integraciones, prepara un <strong>brief</strong> claro y planifica QA. Así podrás añadir funciones y mejorar la interfaz rápidamente.</p>
+            <p>Con una configuración cuidada, tu empresa podrá atraer usuarios, lanzar campañas y ofrecer una mejor experiencia directamente en el mensajero.</p>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script src="/assets/js/structured-data.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
+  </body>
+</html>
