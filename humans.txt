@@ -1,0 +1,5 @@
+Project: MiniApp Pro
+Owner: Unitee Space
+Team: Product, Engineering, Design, Growth
+GitHub: https://github.com/msologr-cpu/mini-app.pro
+Date: 2025-11-25
