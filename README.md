@@ -25,6 +25,19 @@ mini-app.pro/
 - CTA banner that links to [Unitee.Space](https://unitee.space/?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=en) for no-code Mini App creation.
 - OpenGraph, Twitter Card and Schema.org metadata in both languages plus hreflang alternates.
 - JSON knowledge base with bilingual summaries to support search and embeddings.
+- Multilingual sitemap index, robots policy and machine-readable manifests for AI/LLM crawlers.
+
+## Localizations
+
+Supported language folders: `en`, `ru`, `uk (UA)`, `es`, `pt-BR`, `hi`, `id-ID`, `vi-VN`, `ar`, `tr-TR`, `pl-PL`, `th-TH`, `ja-JP`, `de-DE`. Each landing page exposes canonical links, hreflang alternates, OpenGraph/Twitter metadata and JSON-LD structured data.
+
+## Adding a new language
+
+1. Duplicate an existing localized folder (for example `en/`) and translate the text.
+2. Set `<html lang="xx">`, `<title>`, `<meta name="description">`, canonical URL and localized OpenGraph/Twitter tags.
+3. Update `assets/js/structured-data.js` if you want non-English FAQ questions translated (look for `[Please localize]`).
+4. Append the new language code and URLs to `llm-manifest.json`, `.well-known/meta.json`, `robots.txt` (if needed), and regenerate sitemap files to include `sitemap-<lang>.xml` plus the sitemap index.
+5. Run `git add .` and commit your changes.
 
 ## Local preview
 

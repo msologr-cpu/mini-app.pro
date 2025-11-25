@@ -1,0 +1,24 @@
+{
+  "site": "https://mini-app.pro",
+  "description": "MiniApp Pro by Unitee Space provides a multilingual, no-code builder for Telegram mini apps.",
+  "languages": [
+    "en",
+    "ru",
+    "uk",
+    "es",
+    "pt-BR",
+    "hi",
+    "id-ID",
+    "vi-VN",
+    "ar",
+    "tr-TR",
+    "pl-PL",
+    "th-TH",
+    "ja-JP",
+    "de-DE"
+  ],
+  "owner": "Unitee Space",
+  "organization": "Unitee Space",
+  "created": "2023-11-01",
+  "updated": "2025-11-25"
+}
