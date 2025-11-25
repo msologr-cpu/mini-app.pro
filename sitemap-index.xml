@@ -56,4 +56,8 @@
     <loc>https://mini-app.pro/sitemap-de-DE.xml</loc>
     <lastmod>2025-11-25</lastmod>
   </sitemap>
+  <sitemap>
+    <loc>https://mini-app.pro/sitemap-kk.xml</loc>
+    <lastmod>2025-11-25</lastmod>
+  </sitemap>
 </sitemapindex>

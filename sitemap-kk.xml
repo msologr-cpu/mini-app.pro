@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mini-app.pro/de/</loc>
+    <loc>https://mini-app.pro/kk/</loc>
     <lastmod>2025-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -21,9 +21,10 @@
     <xhtml:link rel="alternate" hreflang="th-TH" href="https://mini-app.pro/TH/" />
     <xhtml:link rel="alternate" hreflang="ja-JP" href="https://mini-app.pro/JP/" />
     <xhtml:link rel="alternate" hreflang="de-DE" href="https://mini-app.pro/de/" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://mini-app.pro/kk/" />
   </url>
   <url>
-    <loc>https://mini-app.pro/de/blog/telegram-mini-apps/</loc>
+    <loc>https://mini-app.pro/kk/blog/telegram-mini-apps/</loc>
     <lastmod>2025-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -42,9 +43,10 @@
     <xhtml:link rel="alternate" hreflang="th-TH" href="https://mini-app.pro/TH/" />
     <xhtml:link rel="alternate" hreflang="ja-JP" href="https://mini-app.pro/JP/" />
     <xhtml:link rel="alternate" hreflang="de-DE" href="https://mini-app.pro/de/" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://mini-app.pro/kk/" />
   </url>
   <url>
-    <loc>https://mini-app.pro/de/blog/telegram-mini-apps-kak-sozdat/</loc>
+    <loc>https://mini-app.pro/kk/blog/telegram-mini-apps-kak-sozdat/</loc>
     <lastmod>2025-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -63,5 +65,6 @@
     <xhtml:link rel="alternate" hreflang="th-TH" href="https://mini-app.pro/TH/" />
     <xhtml:link rel="alternate" hreflang="ja-JP" href="https://mini-app.pro/JP/" />
     <xhtml:link rel="alternate" hreflang="de-DE" href="https://mini-app.pro/de/" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://mini-app.pro/kk/" />
   </url>
 </urlset>
