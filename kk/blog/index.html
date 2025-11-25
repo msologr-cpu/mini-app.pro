@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html lang="pl" class="scroll-smooth">
+<html lang="kk" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-i18n="blogPage.meta.title">Blog mini-aplikacji Telegram | Unitee Space</title>
+    <title>Telegram mini app блогы | Unitee Space</title>
     <meta
       name="description"
-      content="Najnowsze artykuły zespołu Unitee Space o mini-aplikacjach Telegram: tworzenie no-code, rozwój produktu i trendy w ekosystemie."
-      data-i18n="blogPage.meta.description"
-      data-i18n-attr="content"
-      data-i18n-mode="attribute"
+      content="Unitee Space командасынан Telegram mini app-тері туралы мақалалар: кейстер, no-code гидтер және цифрлық өнімдерді дамыту кеңестері."
     />
-    <link rel="canonical" href="https://mini-app.pro/pl/blog/" />
-    <link rel="alternate" hreflang="pl" href="https://mini-app.pro/pl/blog/" />
+    <link rel="canonical" href="https://mini-app.pro/kk/blog/" />
+    <link rel="alternate" hreflang="kk" href="https://mini-app.pro/kk/blog/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -41,7 +38,7 @@
       }
 
       .blog-main a {
-        color: var(--accent);
+        color: var(--text-primary);
         text-decoration: none;
       }
 
@@ -50,68 +47,41 @@
         text-decoration: underline;
       }
 
-      .blog-main .intro {
-        margin-bottom: 64px;
-        color: var(--text-secondary);
-      }
-
       .post-card {
         display: block;
-        margin-bottom: 32px;
-        padding: 32px;
-        border-radius: 24px;
+        padding: 24px;
+        margin-bottom: 20px;
         background: var(--bg-surface);
+        border-radius: 18px;
         border: 1px solid var(--border);
         box-shadow: var(--shadow-soft);
-        transition: transform 160ms ease, box-shadow 160ms ease;
-      }
-
-      .post-card:last-child {
-        margin-bottom: 0;
-      }
-
-      .post-card:hover,
-      .post-card:focus {
-        transform: translateY(-4px);
-        box-shadow: 0 20px 52px rgba(58, 122, 254, 0.16);
-        text-decoration: none;
       }
 
       .post-card h2 {
-        font-size: 1.8rem;
-        font-weight: 600;
-        margin: 0 0 16px;
-        color: #111111;
+        margin: 0 0 12px;
+        color: #0e1015;
+        font-size: 1.35rem;
+        line-height: 1.4;
       }
 
       .post-card .post-lead {
-        margin: 0 0 20px;
         color: var(--text-secondary);
-        font-size: 1.05rem;
+        margin-bottom: 14px;
       }
 
       .post-card .post-meta {
+        color: #6f7582;
         font-size: 0.95rem;
-        color: var(--text-subtle);
       }
 
       @media (max-width: 720px) {
         main.blog-main {
           padding: 96px 16px 88px;
         }
-
-        .post-card {
-          padding: 24px;
-        }
-
-        .post-card .post-lead {
-          font-size: 1rem;
-        }
       }
     </style>
   </head>
   <body class="antialiased">
-    
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function(m,e,t,r,i,k,a){
@@ -120,7 +90,7 @@
             for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
             k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
         })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105474325', 'ym');
-    
+
         ym(105474325, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/105474325" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
@@ -128,11 +98,11 @@
     <div class="page">
       <header class="site-header">
         <div class="container header-inner">
-          <a class="brand" href="/pl/" aria-label="mini-app.pro">
+          <a class="brand" href="/kk/" aria-label="mini-app.pro">
             <span class="brand-mark" aria-hidden="true">μ</span>
             <span class="brand-text">
               <span class="brand-title">mini-app.pro</span>
-              <span class="brand-tagline" data-i18n="header.brand.tagline">Kreator mini-aplikacji Telegram</span>
+              <span class="brand-tagline">Telegram mini app құрастырушысы</span>
             </span>
           </a>
           <div class="header-controls">
@@ -158,21 +128,25 @@
         </div>
       </header>
       <main class="blog-main">
-        <h1 data-i18n="blogPage.heading">Blog Unitee Space</h1>
-        <p class="intro" data-i18n="blogPage.intro">Wiedza o uruchamianiu <a href="https://unitee.space/?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=pl">mini-aplikacji Telegram</a>, budowaniu usług no-code i skalowaniu produktów. Śledź nowe artykuły, aby wdrażać najlepsze praktyki w swoim biznesie.</p>
-        <a class="post-card" href="/pl/blog/telegram-mini-apps-kak-sozdat/">
+        <h1>Unitee Space блогы</h1>
+        <p class="intro">Telegram-дағы <a href="https://unitee.space/?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=kk">mini app</a> іске қосу, no-code сервистер құру және цифрлық өнімдерді өсіру бойынша тәжірибе. Бизнесіңізде үздік тәжірибені қолдану үшін жаңа материалдарды қадағалаңыз.</p>
+        <a class="post-card" href="/kk/blog/telegram-mini-apps-kak-sozdat/">
           <h2>
-            Mini-aplikacje Telegram — jak stworzyć lub zamówić aplikację webową?
+            Telegram mini app-тері — веб-қосымшаны қалай жасауға немесе тапсырыс беруге болады?
           </h2>
           <p class="post-lead">
-            Czym są mini-aplikacje, jakie korzyści dają, jak różnią się od klasycznych aplikacji oraz jak prowadzić development — od briefu po wybór wykonawcy.
+            Mini app-тердің мәні, бизнеске беретін пайдасы, классикалық қосымшалардан айырмасы және brief-тен орындаушыны таңдауға дейінгі development-қадамдар.
           </p>
-          <div class="post-meta">25 listopada 2025 • 18 min czytania</div>
+          <div class="post-meta">25 қараша 2025 • 18 мин оқу</div>
         </a>
-        <a class="post-card" href="/pl/blog/telegram-mini-apps/">
-          <h2 data-i18n="blogPage.posts.telegramMiniApps.title">Czym jest mini-aplikacja Telegram i jak ją zbudować bez kodu</h2>
-          <p class="post-lead" data-i18n="blogPage.posts.telegramMiniApps.lead"><a href="https://unitee.space/?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=pl">Mini-aplikacja Telegram</a> to usługa webowa osadzona w komunikatorze, która daje firmom natychmiastowy i wygodny dostęp do odbiorców. Wyjaśniamy, jak działają te doświadczenia, gdzie są najskuteczniejsze i jak uruchomić własny projekt no-code na platformie <a href="https://unitee.space/?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=pl" itemprop="brand">Unitee Space</a>.</p>
-          <div class="post-meta" data-i18n="blogPage.posts.telegramMiniApps.meta">6 listopada 2025 • 12 min czytania</div>
+        <a class="post-card" href="/kk/blog/telegram-mini-apps/">
+          <h2>
+            Telegram mini app деген не және оны кодсыз қалай іске қосуға болады
+          </h2>
+          <p class="post-lead">
+            <a href="https://unitee.space/?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=kk">Telegram mini app</a> — мессенджер ішіндегі веб-сервис, ол бизнеске аудиторияға жедел қол жеткізуді береді. Бұл шешімдердің қалай жұмыс істейтінін, олар қайда тиімді екенін және <a href="https://unitee.space/?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=kk" itemprop="brand">Unitee Space</a> платформасында no-code жобаны қалай іске қосуға болатынын түсіндіреміз.
+          </p>
+          <div class="post-meta">06 қараша 2025 • 12 мин оқу</div>
         </a>
       </main>
     </div>
