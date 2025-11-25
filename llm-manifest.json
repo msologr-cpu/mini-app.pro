@@ -1,0 +1,41 @@
+{
+  "name": "MiniApp Pro",
+  "type": "website",
+  "description": "Multilingual no-code builder by Unitee Space for creating and launching Telegram mini apps with CRM, payments, content and automation.",
+  "categories": ["no-code", "telegram", "mini-apps", "saas", "builder"],
+  "main_pages": [
+    "https://mini-app.pro/",
+    "https://mini-app.pro/en/",
+    "https://mini-app.pro/ru/",
+    "https://mini-app.pro/es/",
+    "https://mini-app.pro/blog/telegram-mini-apps/"
+  ],
+  "faq": [
+    {
+      "q": "What is MiniApp Pro?",
+      "a": "A no-code builder from Unitee Space to design and ship Telegram mini apps with built-in CRM, payments and automation."
+    },
+    {
+      "q": "Which languages are supported?",
+      "a": "English, Russian, Ukrainian, Spanish, Portuguese (Brazil), Hindi, Indonesian, Vietnamese, Arabic, Turkish, Polish, Thai, Japanese and German."
+    }
+  ],
+  "contact": "https://unitee.space/?utm_source=mini-app.pro&utm_medium=llm",
+  "languages": [
+    "en",
+    "ru",
+    "uk",
+    "es",
+    "pt-BR",
+    "hi",
+    "id-ID",
+    "vi-VN",
+    "ar",
+    "tr-TR",
+    "pl-PL",
+    "th-TH",
+    "ja-JP",
+    "de-DE"
+  ],
+  "version": "1.0.0"
+}
