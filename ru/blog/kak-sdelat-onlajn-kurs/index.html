@@ -98,7 +98,26 @@
               <span class="brand-tagline">Конструктор мини-приложений Telegram</span>
             </span>
           </a>
-          <div class="header-controls"></div>
+          <div class="header-controls">
+            <div class="language-switcher" data-language-switcher>
+              <button
+                type="button"
+                class="language-switcher__toggle"
+                data-language-toggle
+                aria-haspopup="listbox"
+                aria-expanded="false"
+              >
+                <span class="language-switcher__flag" data-language-flag aria-hidden="true">🌐</span>
+                <span class="language-switcher__code" data-language-code>RU</span>
+              </button>
+              <div
+                class="language-switcher__dropdown"
+                role="listbox"
+                data-language-options
+                hidden
+              ></div>
+            </div>
+          </div>
         </div>
       </header>
       <main class="article-main">
@@ -117,7 +136,12 @@
             <meta itemprop="author" content="Unitee Space" />
           </header>
           <figure>
-            <img src="/assets/images/blog-miniapp-preview.svg" alt="Дизайн мини-приложения для онлайн-курса в Telegram" loading="lazy" />
+            <img
+              src="/assets/images/kak-sdelat-onlajn-kurs/online-course-hero.svg"
+              alt="Интерфейс мини-приложения с модулями курса, оплатой и прогрессом"
+              loading="lazy"
+            />
+            <figcaption>Онбординг, оплата и уроки — всё внутри мини-приложения Telegram.</figcaption>
           </figure>
           <p>В последние годы GetCourse стал синонимом онлайн-школы. Тысячи экспертов, коучей и образовательных проектов настроили на нём продажи курсов и автоматизацию воронок. Но даже проверенная платформа не обязана быть единственной: рынок и технологии меняются.</p>
           <p>Сегодня появились Mini Apps — мини-приложения внутри Telegram. То, что недавно казалось экспериментом, стало зрелой моделью. Если нужно быстро запускать курсы, собирать лиды, устраивать марафоны или строить онлайн-школу, Unitee Space даёт альтернативу без кода и сложной инфраструктуры, где запуск занимает дни, а не месяцы.</p>
@@ -158,6 +182,97 @@
           </p>
           <p><strong>На что обратить внимание.</strong> Не копируйте LMS-структуру один в один и не перегружайте интерфейс.</p>
           <p><strong>Глубокая аналитика.</strong> Гибкие триггеры и микросегменты помогают развивать курс.</p>
+
+          <figure>
+            <img
+              src="/blog/%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B8%CC%86%D0%BD%20%D0%BA%D1%83%D1%80%D1%81%20%C2%B7%20Content%20Editor%20%C2%B7%20Surfer_files/453c4a68-ed0b-48ad-9291-0d66351c2ab3.png"
+              alt="Три экрана мини-приложения BIOMACHINE с онбордингом, обучающими материалами и тестами"
+              loading="lazy"
+            />
+            <figcaption>Модульная структура курса, уроки и тесты запускаются прямо в Telegram Mini App.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="/blog/%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B8%CC%86%D0%BD%20%D0%BA%D1%83%D1%80%D1%81%20%C2%B7%20Content%20Editor%20%C2%B7%20Surfer_files/311c9a37-06b9-416c-b333-553900d569f5.png"
+              alt="Фильтры и карточки нетворкинга в разделе бизнес-связей Club 100"
+              loading="lazy"
+            />
+            <figcaption>Нетворкинг и подбор партнёров: фильтры по отрасли, карточки участников и быстрый контакт.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="/blog/%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B8%CC%86%D0%BD%20%D0%BA%D1%83%D1%80%D1%81%20%C2%B7%20Content%20Editor%20%C2%B7%20Surfer_files/172bb353-1cdc-4f91-8d1e-796b1953b3da.jpeg"
+              alt="Игровые аватары и трекинг прогресса Think Body внутри мини-приложения"
+              loading="lazy"
+            />
+            <figcaption>Геймификация в обучении: аватары, уровни, рейтинги и прогресс курса в одном интерфейсе.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="/blog/%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B8%CC%86%D0%BD%20%D0%BA%D1%83%D1%80%D1%81%20%C2%B7%20Content%20Editor%20%C2%B7%20Surfer_files/cce7b438-0d2c-4e96-9941-4a8c548f647b.png"
+              alt="Единая система наград и история начислений в мини-приложении"
+              loading="lazy"
+            />
+            <figcaption>Единая геймификация без костылей: награды, история начислений и действия в одном месте.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="/blog/%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B8%CC%86%D0%BD%20%D0%BA%D1%83%D1%80%D1%81%20%C2%B7%20Content%20Editor%20%C2%B7%20Surfer_files/0d9b4b22-28e5-4482-a66f-edfe992965ad.jpeg"
+              alt="Навигация, прогресс и списки чатов Unite Community внутри Telegram"
+              loading="lazy"
+            />
+            <figcaption>Сообщество и обучение соединены: навигация по урокам, достижения и общие чаты в одном приложении.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="/blog/%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B8%CC%86%D0%BD%20%D0%BA%D1%83%D1%80%D1%81%20%C2%B7%20Content%20Editor%20%C2%B7%20Surfer_files/e6fc2502-6489-4cea-9fb9-ccec8b0501cf.png"
+              alt="Иллюстрация UI и UX элементов мини-приложений с чатом и видео"
+              loading="lazy"
+            />
+            <figcaption>Мини приложение — это не только уроки, но и весь UX-вовлечения: видео, чат, задания и микроанимации.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="/blog/%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B8%CC%86%D0%BD%20%D0%BA%D1%83%D1%80%D1%81%20%C2%B7%20Content%20Editor%20%C2%B7%20Surfer_files/3b094252-461c-4343-9ae1-3955ba49c2b2.jpeg"
+              alt="Карточки LMS с прогрессом и готовыми шаблонами навигации в Unite"
+              loading="lazy"
+            />
+            <figcaption>Шаблоны LMS и готовые навигации: запускайте курс и бизнес-логику под бренд без кода.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="/blog/%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B8%CC%86%D0%BD%20%D0%BA%D1%83%D1%80%D1%81%20%C2%B7%20Content%20Editor%20%C2%B7%20Surfer_files/8de76221-a8e2-47c2-85c0-9a1d113a0fdc.png"
+              alt="Цитата о Mini App и акцент на мессенджер вместо сайта"
+              loading="lazy"
+            />
+            <figcaption>Мини приложение заменяет сайт: запуск и вовлечение происходят прямо в мессенджере.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="/blog/%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B8%CC%86%D0%BD%20%D0%BA%D1%83%D1%80%D1%81%20%C2%B7%20Content%20Editor%20%C2%B7%20Surfer_files/95dc553c-8717-48e4-884c-b160e6b71d73.png"
+              alt="Варианты лендингов, интернет-магазина и комьюнити-чата в мини-приложениях"
+              loading="lazy"
+            />
+            <figcaption>Лендинги, e-commerce и комьюнити — разные сценарии в одном приложении с адаптацией под нишу.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="/blog/%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%BE%D0%BD%D0%BB%D0%B0%D0%B8%CC%86%D0%BD%20%D0%BA%D1%83%D1%80%D1%81%20%C2%B7%20Content%20Editor%20%C2%B7%20Surfer_files/e4d38695-9d5f-4a97-bb66-1afee6da2f55.jpeg"
+              alt="Блок с преимуществами Unitee: CRM, платежи, международные карты и методы"
+              loading="lazy"
+            />
+            <figcaption>Продажи и приём платежей: карты, Apple Pay, Google Pay, криптовалюта и международные методы в одном LTV-цикле.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="/assets/images/kak-sdelat-onlajn-kurs/mini-app-flow.svg"
+              alt="Путь пользователя от Telegram-бота к оплате, урокам и аналитике"
+              loading="lazy"
+            />
+            <figcaption>Типовой сценарий: приветствие в боте → оплата → уроки → геймификация → аналитика.</figcaption>
+          </figure>
 
           <h2>Возможности Telegram Mini Apps: чем они лучше веб-технологий?</h2>
           <p>Mini Apps избавляют от серверов, доменов и сложной адаптации. Telegram уже установлен, поэтому взаимодействие начинается мгновенно.</p>
@@ -200,5 +315,6 @@
       </main>
     </div>
     <script src="/assets/js/structured-data.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
   </body>
 </html>

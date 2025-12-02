@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">User journey inside a Telegram mini-app course</title>
+  <desc id="desc">Flow from bot greeting to payment, learning, gamification and analytics.</desc>
+  <defs>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3A7AFE" />
+      <stop offset="100%" stop-color="#22D3EE" />
+    </linearGradient>
+    <filter id="card" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+  </defs>
+  <rect width="1200" height="560" rx="30" fill="#F8FAFC" />
+  <g filter="url(#card)">
+    <rect x="120" y="80" width="240" height="130" rx="20" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="150" y="130" font-family="Inter,Arial,sans-serif" font-size="20" fill="#0F172A" font-weight="700">Bot entry</text>
+    <text x="150" y="160" font-family="Inter,Arial,sans-serif" font-size="15" fill="#475569">Greeting, tariff choice</text>
+    <circle cx="340" cy="120" r="18" fill="#22C55E" />
+  </g>
+  <g filter="url(#card)">
+    <rect x="480" y="80" width="240" height="130" rx="20" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="510" y="130" font-family="Inter,Arial,sans-serif" font-size="20" fill="#0F172A" font-weight="700">In-app payment</text>
+    <text x="510" y="160" font-family="Inter,Arial,sans-serif" font-size="15" fill="#475569">Telegram Pay or subscription</text>
+    <rect x="510" y="176" width="120" height="10" rx="5" fill="#E2E8F0" />
+  </g>
+  <g filter="url(#card)">
+    <rect x="840" y="80" width="240" height="130" rx="20" fill="#0F172A" stroke="#1E293B" />
+    <text x="870" y="120" font-family="Inter,Arial,sans-serif" font-size="20" fill="#E2E8F0" font-weight="700">Lessons & guides</text>
+    <text x="870" y="150" font-family="Inter,Arial,sans-serif" font-size="15" fill="#94A3B8">Modules, tests, quizzes</text>
+    <rect x="870" y="172" width="160" height="12" rx="6" fill="#111827" />
+  </g>
+  <g filter="url(#card)">
+    <rect x="220" y="320" width="240" height="140" rx="20" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="250" y="370" font-family="Inter,Arial,sans-serif" font-size="20" fill="#0F172A" font-weight="700">Gamification</text>
+    <text x="250" y="400" font-family="Inter,Arial,sans-serif" font-size="15" fill="#475569">Badges, levels, challenges</text>
+    <rect x="250" y="418" width="150" height="12" rx="6" fill="#E2E8F0" />
+  </g>
+  <g filter="url(#card)">
+    <rect x="620" y="320" width="260" height="140" rx="20" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="650" y="370" font-family="Inter,Arial,sans-serif" font-size="20" fill="#0F172A" font-weight="700">Analytics</text>
+    <text x="650" y="400" font-family="Inter,Arial,sans-serif" font-size="15" fill="#475569">Activity, segments, triggers</text>
+    <rect x="650" y="418" width="140" height="12" rx="6" fill="#E2E8F0" />
+  </g>
+  <path d="M360 130 H480" stroke="url(#flow)" stroke-width="8" stroke-linecap="round" />
+  <path d="M720 130 H840" stroke="url(#flow)" stroke-width="8" stroke-linecap="round" />
+  <path d="M600 210 C620 260 520 320 460 330" stroke="#0EA5E9" stroke-width="6" fill="none" stroke-dasharray="14 10" />
+  <path d="M820 210 C850 270 880 310 820 340" stroke="#22C55E" stroke-width="6" fill="none" />
+  <path d="M500 430 H620" stroke="#F97316" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 8" />
+  <circle cx="600" cy="130" r="12" fill="#3B82F6" />
+  <circle cx="720" cy="130" r="12" fill="#3B82F6" />
+  <circle cx="500" cy="430" r="10" fill="#F97316" />
+  <circle cx="820" cy="340" r="10" fill="#22C55E" />
+  <circle cx="460" cy="330" r="10" fill="#0EA5E9" />
+</svg>
