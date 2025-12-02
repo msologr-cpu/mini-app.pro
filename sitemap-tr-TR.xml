@@ -43,4 +43,25 @@
     <xhtml:link rel="alternate" hreflang="ja-JP" href="https://mini-app.pro/JP/" />
     <xhtml:link rel="alternate" hreflang="de-DE" href="https://mini-app.pro/de/" />
   </url>
+  <url>
+    <loc>https://mini-app.pro/tr-TR/blog/telegram-mini-apps-kak-sozdat/</loc>
+    <lastmod>2025-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mini-app.pro/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mini-app.pro/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mini-app.pro/ru/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://mini-app.pro/UA/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://mini-app.pro/es/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://mini-app.pro/pt-BR/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mini-app.pro/hi/" />
+    <xhtml:link rel="alternate" hreflang="id-ID" href="https://mini-app.pro/id-ID/" />
+    <xhtml:link rel="alternate" hreflang="vi-VN" href="https://mini-app.pro/vi-VN/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mini-app.pro/ar-XXX/" />
+    <xhtml:link rel="alternate" hreflang="tr-TR" href="https://mini-app.pro/tr-TR/" />
+    <xhtml:link rel="alternate" hreflang="pl-PL" href="https://mini-app.pro/pl/" />
+    <xhtml:link rel="alternate" hreflang="th-TH" href="https://mini-app.pro/TH/" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://mini-app.pro/JP/" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://mini-app.pro/de/" />
+  </url>
 </urlset>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ar" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تطبيقات تيليغرام المصغّرة — كيف تطوّر أو تطلب تطبيق ويب؟ | Unitee Space</title>
+    <meta
+      name="description"
+      content="شرح تطبيقات تيليغرام المصغّرة، فوائدها للأعمال، خيارات التطوير (فريق داخلي أو مزود خارجي) وقائمة تدقيق لكتابة موجز واضح."
+    />
+    <link rel="canonical" href="https://mini-app.pro/ar-XXX/blog/telegram-mini-apps-kak-sozdat/" />
+    <meta property="og:url" content="https://mini-app.pro/ar-XXX/blog/telegram-mini-apps-kak-sozdat/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="تطبيقات تيليغرام المصغّرة — كيف تطوّر أو تطلب تطبيق ويب؟ | Unitee Space" />
+    <meta
+      property="og:description"
+      content="ما هي Mini Apps في تيليغرام، ما الـ API المطلوبة، متى نختار البناء الداخلي أو التعاقد الخارجي، وكيف نختبر الجودة قبل الإطلاق."
+    />
+    <meta property="og:image" content="https://images.surferseo.art/04a4671e-4fc3-4f19-811c-953e3adc871d.webp" />
+    <meta property="article:published_time" content="2025-11-25" />
+    <meta property="article:author" content="Unitee Space" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="تطبيقات تيليغرام المصغّرة — كيف تطوّر أو تطلب تطبيق ويب؟ | Unitee Space" />
+    <meta
+      name="twitter:description"
+      content="دليل مبسّط: كيف تعمل تطبيقات تيليغرام المصغّرة، أي واجهات برمجة تستخدم، وما أفضل طرق التطوير والتسليم."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg-main);
+        color: var(--text-primary);
+        line-height: 1.7;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus {
+        text-decoration: underline;
+      }
+
+      main {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 120px 20px 120px;
+      }
+
+      nav.breadcrumbs {
+        font-size: 0.95rem;
+        margin-bottom: 32px;
+      }
+
+      nav.breadcrumbs ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        color: #6f7582;
+      }
+
+      nav.breadcrumbs li::after {
+        content: ">";
+        margin-left: 8px;
+        color: #c0c5d0;
+      }
+
+      nav.breadcrumbs li:last-child::after {
+        content: "";
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-weight: 600;
+        margin: 0 0 24px;
+        line-height: 1.3;
+        color: #111111;
+      }
+
+      h1 {
+        font-size: 2.6rem;
+      }
+
+      h2 {
+        font-size: 1.9rem;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      p {
+        margin: 0 0 24px;
+        color: var(--text-secondary);
+      }
+
+      ul,
+      ol {
+        margin: 0 0 24px 20px;
+        color: var(--text-secondary);
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      .lead {
+        font-size: 1.1rem;
+        color: #2f3340;
+      }
+
+      .tip {
+        background: #eef4ff;
+        border-left: 4px solid var(--accent);
+        padding: 16px;
+        border-radius: 12px;
+        margin: 24px 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+      }
+
+      .card {
+        background: var(--bg-surface);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 16px 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-header">
+        <div class="container header-inner">
+          <a class="brand" href="/ar-XXX/" aria-label="mini-app.pro">
+            <span class="brand-mark" aria-hidden="true">μ</span>
+            <span class="brand-text">
+              <span class="brand-title">mini-app.pro</span>
+              <span class="brand-tagline">منصة تطبيقات تيليغرام</span>
+            </span>
+          </a>
+          <div class="header-controls">
+            <div class="language-switcher" data-language-switcher>
+              <button
+                type="button"
+                class="language-switcher__toggle"
+                data-language-toggle
+                aria-haspopup="listbox"
+                aria-expanded="false"
+              >
+                <span class="language-switcher__flag" data-language-flag aria-hidden="true">🌐</span>
+                <span class="language-switcher__code" data-language-code>ar</span>
+              </button>
+              <div class="language-switcher__dropdown" role="listbox" data-language-options hidden></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/ar-XXX/">الرئيسية</a></li>
+            <li><a href="/ar-XXX/blog/">المدونة</a></li>
+            <li>تطبيقات تيليغرام المصغّرة — كيف تطوّر أو تطلب تطبيق ويب؟</li>
+          </ol>
+        </nav>
+
+        <article>
+          <header>
+            <p class="eyebrow">دليل</p>
+            <h1>تطبيقات تيليغرام المصغّرة — كيف تطوّر أو تطلب تطبيق ويب؟</h1>
+            <p class="lead">
+              Mini Apps هي مواقع ويب خفيفة تعمل داخل تيليغرام. تعطيك نفس إمكانات التطبيق: واجهات تفاعلية، مدفوعات، تسجيل دخول،
+              ولوحات تحكم دون مغادرة المحادثة.
+            </p>
+            <p class="meta">25/11/2025 • 18 دقيقة قراءة</p>
+          </header>
+
+          <section>
+            <h2>ما هي Mini App</h2>
+            <p>
+              تُفتح Mini App عبر زر <strong>Mini Apps</strong> أو زر مضمّن داخل البوت. يبقى المستخدم داخل تيليغرام لكنه يحصل على تجربة
+              ويب كاملة: تصفح المنتجات، الدفع، التحقق من الهوية أو تعبئة النماذج.
+            </p>
+            <p>
+              مقارنة بالبوت النصي، تسمح Mini App بواجهات غنية، سحب وإفلات، رسوم بيانية وتكامل عميق مع الأنظمة الخلفية بفضل WebView
+              التي تعيد استخدام كود الويب الحالي.
+            </p>
+          </section>
+
+          <section>
+            <h2>حالات الاستخدام للأعمال</h2>
+            <ul>
+              <li><strong>تجارة إلكترونية:</strong> كتالوج، سلة، دفع وتتبع الطلبات.</li>
+              <li><strong>خدمات:</strong> حجز مواعيد، دعم عملاء، برامج ولاء.</li>
+              <li><strong>منتجات رقمية:</strong> دورات، ندوات، بوتات ذكاء اصطناعي، أدوات مجتمع.</li>
+              <li><strong>عمليات داخلية:</strong> CRM خفيف، موافقات مستندات، تقارير ميدانية.</li>
+            </ul>
+            <p>
+              مع <strong>Telegram Login</strong> و<strong>Wallet Pay</strong> يمكن بدء التجربة فوراً بلا تثبيت تطبيق جديد أو إدخال بيانات متكررة.
+            </p>
+          </section>
+
+          <section>
+            <h2>واجهات برمجة مهمة</h2>
+            <div class="grid">
+              <div class="card">
+                <h3>Bot API</h3>
+                <p>لإنشاء البوت، استقبال التحديثات وإرسال أزرار تفتح الـ Mini App من داخل الدردشة.</p>
+              </div>
+              <div class="card">
+                <h3>Web Apps API</h3>
+                <p>للتحكم بالثيم، حجم الـ WebView، تمرير بيانات المستخدم والتعامل مع أزرار الإغلاق والرجوع.</p>
+              </div>
+              <div class="card">
+                <h3>Payments</h3>
+                <p>Wallet Pay أو مزود خارجي مثل Stripe؛ يدعم الإكراميات والفواتير.</p>
+              </div>
+              <div class="card">
+                <h3>Auth</h3>
+                <p>Telegram Login أو مفاتيح مرور مخصصة لحفظ الجلسات بين الأجهزة.</p>
+              </div>
+            </div>
+            <p class="tip">
+              اختبر الـ Mini App في حساب تجريبي قبل النشر، وتأكد من تهيئة الدومين وSSL وأن البوت مفعّل في BotFather.
+            </p>
+          </section>
+
+          <section>
+            <h2>نماذج التطوير</h2>
+            <h3>فريق داخلي</h3>
+            <p>
+              مناسب إذا كان لديك مطورو ويب/JS. تتحكم في خارطة الطريق وتعيد استخدام الأنظمة الخلفية الحالية، لكنك تحتاج لمتابعة
+              تحديثات Web Apps API باستمرار.
+            </p>
+            <h3>تعاقد خارجي</h3>
+            <p>
+              أسرع طريق للإطلاق خلال أسابيع. اختر شريكاً لديه أمثلة Mini App جاهزة، يفهم متطلبات مراجعة تيليغرام ويقدم تسليمًا واضحًا
+              للكود والرموز والوثائق.
+            </p>
+            <h3>نموذج هجين</h3>
+            <p>
+              نفّذ MVP مع مزود خارجي ثم استلم الصيانة داخلياً. اطلب خطة نقل معرفة، حالات اختبار وقائمة QA حتى لا تعتمد بالكامل على
+              المورد.
+            </p>
+          </section>
+
+          <section>
+            <h2>قائمة تدقيق للموجز</h2>
+            <ol>
+              <li>أهداف العمل وقياسات النجاح (طلبات، اشتراكات، عودة المستخدمين).</li>
+              <li>مسار المستخدم: نقاط الدخول، خطوات التحويل، الإشعارات، سلوك زر الرجوع/الإغلاق.</li>
+              <li>التكاملات: الخلفية، CRM، المدفوعات، التحليلات، التخزين.</li>
+              <li>التجربة: لغات متعددة، إمكانية وصول، دعم الهاتف والسطح المكتب، الثيم.</li>
+              <li>الأمن: إدارة الرموز، الأدوار والصلاحيات، السجلات وخطط الاسترداد.</li>
+            </ol>
+          </section>
+
+          <section>
+            <h2>اختبارات ما قبل الإطلاق</h2>
+            <ul>
+              <li>فتح الشاشة الأولى خلال أقل من 1.5 ثانية.</li>
+              <li>رسائل خطأ واضحة في حال فشل الشبكة أو مهلات API.</li>
+              <li>دفع حقيقي على iOS وAndroid.</li>
+              <li>عمل أزرار الرجوع/الإغلاق والثيم الديناميكي كما هو متوقع.</li>
+              <li>مراقبة وتتبّع مؤشرات: فتح الـ Mini App، التحويلات، أخطاء الدفع.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>التوسّع بعد MVP</h2>
+            <p>
+              أضف الترجمة، حملات تسويق آلية، برامج إحالة ولوحات تحكم للفرق. غالباً ما ينجح التطبيق حين يكون مرتبطاً مباشرة بأنظمة
+              العمل الأساسية وليس كقناة منفصلة.
+            </p>
+          </section>
+
+          <section>
+            <h2>الخلاصة</h2>
+            <p>
+              توفر Mini Apps طريقة سريعة للوصول إلى جمهور تيليغرام دون بناء تطبيقات جوال كاملة. باختيار نموذج التطوير المناسب وتحضير
+              موجز واضح واختبارات دقيقة ستطلق تجربة متكاملة خلال أسابيع.
+            </p>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script src="/assets/js/structured-data.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
+  </body>
+</html>

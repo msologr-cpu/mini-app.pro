@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telegramミニアプリ — 自社で作る？外注する？ | Unitee Space</title>
+    <meta
+      name="description"
+      content="Telegramミニアプリの使い所、開発パターン、ベンダーを選ぶときのチェックポイントとSEOメタ情報をまとめました。"
+    />
+    <link rel="canonical" href="https://mini-app.pro/JP/blog/telegram-mini-apps-kak-sozdat/" />
+    <meta property="og:url" content="https://mini-app.pro/JP/blog/telegram-mini-apps-kak-sozdat/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Telegramミニアプリ — 自社で作る？外注する？ | Unitee Space" />
+    <meta
+      property="og:description"
+      content="ミニアプリの活用例、ビルダーとフル開発の違い、依頼前に整理すべき要件と品質管理の手順。"
+    />
+    <meta property="og:image" content="https://images.surferseo.art/04a4671e-4fc3-4f19-811c-953e3adc871d.webp" />
+    <meta property="article:published_time" content="2025-11-25" />
+    <meta property="article:author" content="Unitee Space" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Telegramミニアプリ — 自社で作る？外注する？ | Unitee Space" />
+    <meta
+      name="twitter:description"
+      content="ビジネスでの価値、利用できるAPI、ベンダーと進める際の品質管理ポイントを解説。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: var(--bg-main);
+        color: var(--text-primary);
+        line-height: 1.7;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus {
+        text-decoration: underline;
+      }
+
+      .page {
+        min-height: 100vh;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 600;
+        color: var(--text-primary);
+      }
+
+      .brand-mark {
+        display: grid;
+        place-items: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 12px;
+        background: var(--bg-muted);
+        font-weight: 700;
+      }
+
+      .language-switcher {
+        position: relative;
+      }
+
+      .language-switcher__toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 14px;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        background: var(--bg-surface);
+        cursor: pointer;
+        font-weight: 600;
+      }
+
+      .language-switcher__dropdown {
+        position: absolute;
+        right: 0;
+        top: calc(100% + 8px);
+        min-width: 180px;
+        background: var(--bg-surface);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        box-shadow: var(--shadow-soft);
+        padding: 8px;
+      }
+
+      .language-switcher__option {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 12px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: var(--text-primary);
+      }
+
+      .language-switcher__option:hover,
+      .language-switcher__option:focus {
+        background: var(--bg-muted);
+      }
+
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 96px;
+      }
+
+      article header {
+        position: static;
+        background: transparent;
+        border: none;
+        margin-bottom: 24px;
+      }
+
+      article h1 {
+        font-size: 2.4rem;
+        margin: 12px 0 16px;
+        line-height: 1.2;
+      }
+
+      article h2 {
+        margin-top: 48px;
+        font-size: 1.6rem;
+      }
+
+      article h3 {
+        margin-top: 32px;
+        font-size: 1.2rem;
+      }
+
+      article p {
+        margin: 0 0 20px;
+        color: var(--text-secondary);
+      }
+
+      article ul,
+      article ol {
+        color: var(--text-secondary);
+        padding-left: 22px;
+      }
+
+      article img {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+        margin: 12px 0 20px;
+      }
+
+      .post-meta {
+        color: var(--text-subtle);
+      }
+
+      @media (max-width: 720px) {
+        article h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <div class="page">
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="brand" href="/" aria-label="mini-app.pro">
+            <span class="brand-mark" aria-hidden="true">μ</span>
+            <span>
+              <span class="brand-title">mini-app.pro</span><br />
+              <span class="brand-tagline">Telegramミニアプリ開発</span>
+            </span>
+          </a>
+          <div class="language-switcher" data-language-switcher>
+            <button
+              type="button"
+              class="language-switcher__toggle"
+              data-language-toggle
+              aria-haspopup="listbox"
+              aria-expanded="false"
+            >
+              <span class="language-switcher__flag" data-language-flag aria-hidden="true">🌐</span>
+              <span class="language-switcher__code" data-language-code>ja</span>
+            </button>
+            <div class="language-switcher__dropdown" role="listbox" data-language-options hidden></div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <article>
+          <header>
+            <p class="post-meta">2025年11月25日 · 読了12分</p>
+            <h1>Telegramミニアプリの作り方と外注のコツ</h1>
+            <p class="lead">
+              ミニアプリはTelegram内で開く軽量なWebアプリです。インストール不要で、購入、支払い、サポートを一つのチャットで完結できます。
+              ここでは導入シナリオと開発方法、チェックリストを紹介します。
+            </p>
+          </header>
+
+          <section>
+            <h2><strong>Telegramミニアプリとは</strong></h2>
+            <p>
+              ボットやリンクから開くWebビューのアプリで、ユーザーはそのままログイン・入力・支払いができます。ブラウザや別アプリを開く必要はありません。
+            </p>
+            <p>
+              企業にとっては、MVPの検証、キャンペーン、サポート窓口を素早く立ち上げる手段です。ウェブサイトの流れを維持しつつ、メッセンジャーの利便性を活かせます。
+            </p>
+          </section>
+
+          <section>
+            <h2><strong>活用できるシーン</strong></h2>
+            <ul>
+              <li><strong>EC・決済:</strong> カート、カタログ、チェックアウト、配送状況の確認。</li>
+              <li><strong>サポート:</strong> FAQ、問い合わせフォーム、チケット管理。</li>
+              <li><strong>コミュニティ/教育:</strong> 有料コンテンツ、テスト、サブスク提供。</li>
+              <li><strong>金融:</strong> ウォレット、計算ツール、書類提出や署名の収集。</li>
+            </ul>
+            <p>TelegramのUIコンポーネントで動作するため、導線がシンプルで離脱を防ぎます。</p>
+          </section>
+
+          <section>
+            <h2><strong>開発パターン</strong></h2>
+            <h3><strong>ビルダーを使う</strong></h3>
+            <p>ノーコードでUIを組み、決済やWebhookを数時間で接続。短期キャンペーンや検証に向いています。</p>
+            <h3><strong>フルスクラッチ開発</strong></h3>
+            <p>複雑なロジックや独自連携が必要なら、Telegram APIとボット、専用バックエンドで構築します。性能やセキュリティを細かく調整できます。</p>
+            <h3><strong>外部システム連携</strong></h3>
+            <p>CRM・決済ゲートウェイ・ファイルサービスなどと組み合わせ可能です。データ形式、Webhook、プライバシーポリシーを事前に確認しましょう。</p>
+          </section>
+
+          <section>
+            <h2><strong>要件定義チェックリスト</strong></h2>
+            <p>
+              目的、ユーザー役割、主要フロー（登録・支払い・サポート）を整理し、必要な統合や画面の状態を記載します。詳細なブリーフほど開発がスムーズです。
+            </p>
+            <h3><strong>確認すべき項目</strong></h3>
+            <ol>
+              <li>コア機能と成功指標。</li>
+              <li>データソースとセキュリティ要件。</li>
+              <li>想定トラフィックとサーバー負荷。</li>
+              <li>保守・アップデートの方針。</li>
+            </ol>
+          </section>
+
+          <section>
+            <h2><strong>パートナーの選び方</strong></h2>
+            <p>ポートフォリオ、レビュー、Telegram APIの経験を確認し、工程・納期・コード権利を明文化した契約を結びます。</p>
+            <p>スタジオならデザインからQAまで一括対応。フリーランスに依頼する場合はサポート範囲や機能追加の条件を事前に決めておきましょう。</p>
+            <h3><strong>進行中のチェックポイント</strong></h3>
+            <ol>
+              <li>デザイン: プロトタイプ、テキスト、UI状態。</li>
+              <li>開発: アクション、API、ボット、バックエンド。</li>
+              <li>テスト: 端末やTelegramバージョンの違いを確認。</li>
+              <li>リリース: 分析設定、決済確認、パフォーマンス最適化。</li>
+            </ol>
+          </section>
+
+          <section>
+            <h2><strong>事例</strong></h2>
+            <p>オンラインストア、ロイヤリティプログラム、簡易CRM、金融ツールなど、多様な業種でミニアプリが活用されています。軽快な体験が特徴です。</p>
+            <img src="https://images.surferseo.art/2bef40a9-f534-4379-b0f3-c56e6b492e39.webp" alt="メッセンジャーがサービスのハブになる" />
+            <img src="https://images.surferseo.art/dbee6420-412d-4628-a34b-ee058455c9de.webp" alt="Club100プロジェクトのミニアプリ例" />
+          </section>
+
+          <section>
+            <h2><strong>まとめ</strong></h2>
+            <p>Telegramミニアプリは、サービス提供・自動化・決済を素早く実装できる強力な手段です。ウェブの使いやすさとメッセンジャーの到達力を組み合わせます。</p>
+            <p>適切な開発方法を選び、明確な要件と運用体制を整えれば、機能追加やUI改善も短時間で行えます。ビジネスとユーザー双方にメリットをもたらすチャネルになります。</p>
+          </section>
+        </article>
+      </main>
+    </div>
+    <script src="/assets/js/structured-data.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
+  </body>
+</html>
