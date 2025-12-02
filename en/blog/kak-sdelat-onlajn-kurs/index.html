@@ -98,7 +98,26 @@
               <span class="brand-tagline">Telegram mini-app builder</span>
             </span>
           </a>
-          <div class="header-controls"></div>
+          <div class="header-controls">
+            <div class="language-switcher" data-language-switcher>
+              <button
+                type="button"
+                class="language-switcher__toggle"
+                data-language-toggle
+                aria-haspopup="listbox"
+                aria-expanded="false"
+              >
+                <span class="language-switcher__flag" data-language-flag aria-hidden="true">🌐</span>
+                <span class="language-switcher__code" data-language-code>EN</span>
+              </button>
+              <div
+                class="language-switcher__dropdown"
+                role="listbox"
+                data-language-options
+                hidden
+              ></div>
+            </div>
+          </div>
         </div>
       </header>
       <main class="article-main">
@@ -117,7 +136,12 @@
             <meta itemprop="author" content="Unitee Space" />
           </header>
           <figure>
-            <img src="/assets/images/blog-miniapp-preview.svg" alt="Mini app design for a Telegram online course" loading="lazy" />
+            <img
+              src="/assets/images/kak-sdelat-onlajn-kurs/online-course-hero.svg"
+              alt="Mini app interface showing course modules, payments, and progress"
+              loading="lazy"
+            />
+            <figcaption>Course onboarding, payments, and lessons inside a Telegram mini app.</figcaption>
           </figure>
           <p>In recent years, GetCourse has become synonymous with online schools. Thousands of experts and course creators rely on it for sales and automated funnels. Yet even a proven platform does not have to be the only one — markets and technologies change.</p>
           <p>Mini Apps, lightweight apps inside Telegram, are now a mature model. If you need to launch courses, collect leads, run marathons, or build a full school fast, Unitee Space offers a no-code alternative with days—not months—of setup and no extra infrastructure.</p>
@@ -157,6 +181,15 @@
           <p><strong>Personalized sales.</strong> Segment learners by activity and trigger special offers, upsells, or access to new tiers.</p>
           <p><strong>What to avoid.</strong> Do not copy an LMS one-to-one and avoid overloading the UI.</p>
           <p><strong>Deep analytics.</strong> Flexible triggers and micro-segmentation keep the course evolving.</p>
+
+          <figure>
+            <img
+              src="/assets/images/kak-sdelat-onlajn-kurs/mini-app-flow.svg"
+              alt="User journey from Telegram bot to course payment, lessons, and analytics"
+              loading="lazy"
+            />
+            <figcaption>Typical path: bot greeting → payment → lessons → gamification → analytics.</figcaption>
+          </figure>
 
           <h2>Why Telegram Mini Apps beat classic web tech</h2>
           <p>Mini Apps remove servers, domains, and complex adaptation. Telegram is already installed, so interaction starts instantly.</p>
@@ -199,5 +232,6 @@
       </main>
     </div>
     <script src="/assets/js/structured-data.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
   </body>
 </html>

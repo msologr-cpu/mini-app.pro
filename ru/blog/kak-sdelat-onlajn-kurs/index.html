@@ -98,7 +98,26 @@
               <span class="brand-tagline">Конструктор мини-приложений Telegram</span>
             </span>
           </a>
-          <div class="header-controls"></div>
+          <div class="header-controls">
+            <div class="language-switcher" data-language-switcher>
+              <button
+                type="button"
+                class="language-switcher__toggle"
+                data-language-toggle
+                aria-haspopup="listbox"
+                aria-expanded="false"
+              >
+                <span class="language-switcher__flag" data-language-flag aria-hidden="true">🌐</span>
+                <span class="language-switcher__code" data-language-code>RU</span>
+              </button>
+              <div
+                class="language-switcher__dropdown"
+                role="listbox"
+                data-language-options
+                hidden
+              ></div>
+            </div>
+          </div>
         </div>
       </header>
       <main class="article-main">
@@ -117,7 +136,12 @@
             <meta itemprop="author" content="Unitee Space" />
           </header>
           <figure>
-            <img src="/assets/images/blog-miniapp-preview.svg" alt="Дизайн мини-приложения для онлайн-курса в Telegram" loading="lazy" />
+            <img
+              src="/assets/images/kak-sdelat-onlajn-kurs/online-course-hero.svg"
+              alt="Интерфейс мини-приложения с модулями курса, оплатой и прогрессом"
+              loading="lazy"
+            />
+            <figcaption>Онбординг, оплата и уроки — всё внутри мини-приложения Telegram.</figcaption>
           </figure>
           <p>В последние годы GetCourse стал синонимом онлайн-школы. Тысячи экспертов, коучей и образовательных проектов настроили на нём продажи курсов и автоматизацию воронок. Но даже проверенная платформа не обязана быть единственной: рынок и технологии меняются.</p>
           <p>Сегодня появились Mini Apps — мини-приложения внутри Telegram. То, что недавно казалось экспериментом, стало зрелой моделью. Если нужно быстро запускать курсы, собирать лиды, устраивать марафоны или строить онлайн-школу, Unitee Space даёт альтернативу без кода и сложной инфраструктуры, где запуск занимает дни, а не месяцы.</p>
@@ -158,6 +182,15 @@
           </p>
           <p><strong>На что обратить внимание.</strong> Не копируйте LMS-структуру один в один и не перегружайте интерфейс.</p>
           <p><strong>Глубокая аналитика.</strong> Гибкие триггеры и микросегменты помогают развивать курс.</p>
+
+          <figure>
+            <img
+              src="/assets/images/kak-sdelat-onlajn-kurs/mini-app-flow.svg"
+              alt="Путь пользователя от Telegram-бота к оплате, урокам и аналитике"
+              loading="lazy"
+            />
+            <figcaption>Типовой сценарий: приветствие в боте → оплата → уроки → геймификация → аналитика.</figcaption>
+          </figure>
 
           <h2>Возможности Telegram Mini Apps: чем они лучше веб-технологий?</h2>
           <p>Mini Apps избавляют от серверов, доменов и сложной адаптации. Telegram уже установлен, поэтому взаимодействие начинается мгновенно.</p>
@@ -200,5 +233,6 @@
       </main>
     </div>
     <script src="/assets/js/structured-data.js" defer></script>
+    <script src="/assets/js/i18n.js" defer></script>
   </body>
 </html>
