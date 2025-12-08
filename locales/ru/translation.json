@@ -118,6 +118,16 @@
     "heading": "Блог Unitee Space",
     "intro": "Экспертиза по запуску <a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=ru\">мини-приложений Telegram</a>, созданию сервисов без кода и развитию внутренних продуктов. Следите за новыми статьями, чтобы быстрее внедрять лучшие практики в бизнесе.",
     "posts": {
+      "onlineCourse": {
+        "title": "Как сделать онлайн курс в Telegram Mini Apps",
+        "lead": "Чем мини приложения отличаются от GetCourse, как запустить курс быстрее и выгоднее, какие инструменты использовать и на чём зарабатывать в Telegram.",
+        "meta": "02 декабря 2025 • 14 минут чтения"
+      },
+      "telegramMiniAppsHowTo": {
+        "title": "Telegram mini apps — как создать или заказать веб приложение?",
+        "lead": "Что такое mini app, какие преимущества дают мини-приложения, чем они отличаются от классических приложений и как контролировать разработку: от ТЗ до выбора подрядчика.",
+        "meta": "25 ноября 2025 • 18 минут чтения"
+      },
       "telegramMiniApps": {
         "title": "Что такое мини-приложение Telegram и как запустить его без кода",
         "lead": "<a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=ru\">Мини-приложение Telegram</a> — это веб-сервис внутри мессенджера, который обеспечивает компаниям мгновенный и удобный доступ к аудитории. Мы рассказываем, как работают такие решения, где они особенно эффективны и как запустить собственный no-code проект на платформе <a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=ru\" itemprop=\"brand\">Unitee Space</a>.",
