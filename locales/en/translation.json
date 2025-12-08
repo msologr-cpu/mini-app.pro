@@ -118,6 +118,16 @@
     "heading": "Unitee Space blog",
     "intro": "Expertise on launching <a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=en\">Telegram mini-apps</a>, building no-code services and scaling internal products. Follow fresh articles to apply best practices to your business.",
     "posts": {
+      "onlineCourse": {
+        "title": "How to build an online course with Telegram mini-apps",
+        "lead": "Mini-apps or GetCourse? A comparison of costs, timelines, tool stacks and monetisation scenarios to launch your course directly inside Telegram.",
+        "meta": "02 December 2025 • 14 min read"
+      },
+      "telegramMiniAppsHowTo": {
+        "title": "Telegram mini-apps: how to create or commission them",
+        "lead": "Why Telegram mini-apps matter, development options, a checklist for a clear brief and tips for choosing a reliable vendor.",
+        "meta": "25 November 2025 • 12 min read"
+      },
       "telegramMiniApps": {
         "title": "What is a Telegram mini-app and how to build one without coding",
         "lead": "A <a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=en\">Telegram mini-app</a> is a web service embedded in the messenger that gives companies instant, convenient access to their audience. We explain how these experiences work, where they excel and how to launch your own no-code project with the <a href=\"https://unitee.space?utm_source=mini-apppro&utm_medium=seo&utm_campaign=sat&utm_content=en\" itemprop=\"brand\">Unitee Space</a> platform.",
