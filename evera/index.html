@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evera AI Hub — Pricing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body class="paywall-body">
+    <main class="paywall-shell container">
+      <header class="paywall-hero">
+        <div>
+          <p class="eyebrow" data-eyebrow>Evera AI Hub</p>
+          <h1 data-headline>Upgrade to Evera PRO</h1>
+          <p class="lead" data-subhead>
+            Unlock the full AI library, memory vault, and premium drops inside Evera.
+          </p>
+        </div>
+        <div class="lang-toggle" aria-label="Language switcher">
+          <button type="button" data-lang-switch="ru">RU</button>
+          <button type="button" class="is-active" data-lang-switch="en">EN</button>
+        </div>
+      </header>
+
+      <section class="plan-grid">
+        <article class="plan-card plan-card--free">
+          <div class="plan-head">
+            <div>
+              <p class="eyebrow">Evera</p>
+              <h2 data-free-title>Starter Free</h2>
+              <p class="plan-price" data-free-price>Free forever</p>
+              <p class="plan-note" data-free-note>Stay on the starter tier while you explore the AI Hub.</p>
+            </div>
+          </div>
+          <ul class="feature-list">
+            <li data-free-feature>1 Space + core prompts</li>
+            <li data-free-feature>Limited uploads & saves</li>
+            <li data-free-feature>Community templates access</li>
+          </ul>
+        </article>
+
+        <article class="plan-card plan-card--pro">
+          <div class="plan-head">
+            <div class="plan-headline">
+              <p class="eyebrow">Evera</p>
+              <h2 data-pro-title>Evera PRO</h2>
+            </div>
+            <div class="period-tabs" data-period-tabs></div>
+            <div class="price-main" data-main-price>—</div>
+            <div class="price-lines">
+              <div class="price-line" data-stars-line>≈ — ⭐ Telegram Stars</div>
+              <div class="price-line price-line--highlight" data-crypto-line>TON / USDT: ≈ — $</div>
+              <div class="price-line price-line--muted" data-crypto-breakdown>≈ — TON • ≈ — USDT</div>
+            </div>
+            <div class="micro-lines">
+              <div data-micro-stars>⭐ Stars are the easiest checkout.</div>
+              <div data-micro-crypto>💎 TON / USDT is cheaper for subscriptions.</div>
+            </div>
+          </div>
+          <div class="cta-row">
+            <button type="button" class="btn btn-primary" data-cta-crypto>Pay with TON / USDT</button>
+            <button type="button" class="btn btn-ghost" data-cta-stars>Pay with Stars</button>
+          </div>
+        </article>
+      </section>
+
+      <div class="footnote" data-footnote>
+        Stars = instant Telegram-style payment.<br />TON / USDT = better value for recurring plans.
+      </div>
+    </main>
+
+    <script type="module" src="/assets/js/paywall.js"></script>
+  </body>
+</html>
